@@ -1,0 +1,14 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    "tweak_terrainmetadataeditor.modder.x64.dll: only declared display sites changed; original data/imports/relocations preserved",
+    "binaries/tweak_terrainmetadataeditor.modder.x64.dll: differential reconstruction SHA-256 verified",
+    "qttoolutility.modder.x64.dll: only declared display sites changed; original data/imports/relocations preserved",
+    "binaries/qttoolutility.modder.x64.dll: differential reconstruction SHA-256 verified",
+    "Qt5Widgets.dll: only declared display sites changed; original data/imports/relocations preserved",
+    "binaries/Qt5Widgets.dll: differential reconstruction SHA-256 verified",
+    "Status tooltip schema and tool IDs unchanged",
+    "working_data/Terry/status_tooltips.xml: differential reconstruction SHA-256 verified"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "cn-saved.layer": {
+    "chineseSha256": "477AE762C36189CCF540EE53B56E69C52FD6EAC83A5BFE2A5BBDF2D953C0A10D",
+    "englishSha256": "477AE762C36189CCF540EE53B56E69C52FD6EAC83A5BFE2A5BBDF2D953C0A10D",
+    "byteIdentical": true
+  },
+  "cn-saved.terry": {
+    "chineseSha256": "640D2A9C4A7B22776B6FEDA3AEDDFF8E5FF6FD4649FCE0438E098C4F89CA8C08",
+    "englishSha256": "640D2A9C4A7B22776B6FEDA3AEDDFF8E5FF6FD4649FCE0438E098C4F89CA8C08",
+    "byteIdentical": true
+  },
+  "pointLight": {
+    "colour": "255 255 255 255",
+    "colour_scale": "21000",
+    "radius": "12",
+    "animation_type": "LAT_NONE",
+    "animation_speed_scale": "0 0",
+    "colour_min": "0",
+    "random_offset": "0",
+    "falloff_type": "WPLFT_LINEAR",
+    "for_light_probes_only": "false"
+  },
+  "finalChineseEdit": [
+    [
+      "ECPointLight",
+      "radius",
+      "12",
+      "13"
+    ]
+  ],
+  "selectionUndoRedo": "Observed 1 selected -> undo 0 -> redo 1",
+  "finalChineseSave": true,
+  "deliveryVersionSmoke": {
+    "coldStart": true,
+    "reopenedRadius": "13",
+    "translatedUndoAndKeyboardMenus": true,
+    "manifestSha256": "91E2D55A791F662819C60BC2CC60A6B85CEC33A1A0F5C40165FD2ECA82577D38"
+  }
+}

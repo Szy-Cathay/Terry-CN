@@ -1,0 +1,13 @@
+{
+  "passed": 11330,
+  "failed": 0,
+  "dictionaryEntries": 2258,
+  "checks": [
+    "All native mappings",
+    "ASLR relocated QString pointers",
+    "Five ABI arguments preserved",
+    "Original strings unchanged",
+    "Unknown/empty/Unicode passthrough",
+    "Explicit lengths and null passthrough"
+  ]
+}

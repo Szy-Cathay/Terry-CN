@@ -1,0 +1,11 @@
+# Stable source formatting on all checkouts
+* text=auto eol=lf whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.zip -text
+
+# Delivery bytes must continue to match the verified ZIP and SHA-256 manifest.
+/patch.json -text
+/Install-TerryCN.ps1 -text
+/*.cmd -text
+/使用说明.txt -text
+/验证说明.txt -text
+/*.zip.sha256 -text

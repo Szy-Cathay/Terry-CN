@@ -1,0 +1,40 @@
+﻿Terry-CN 汉化补丁维护说明
+
+交付给玩家的文件是根目录 Terry-CN-WH3-20261010-R3.zip。
+ZIP 只包含差分清单、安装/恢复/检查工具和使用文档，不包含官方完整 DLL。
+
+本工程保留的目录均用于汉化补丁维护：
+backups/original-20261009：构建所需的官方原版基线，按 source-hashes.json 校验；不对外打包。
+build/release：当前版本的构建结果和调用点清单，可随时由原版基线重建。
+reports：原生代码、安装恢复、完整性、场景回读、快捷键及回收清单。
+tests/fixtures：旧补丁升级与快捷键保护的回归测试基线。
+tools：构建器、检查器、打包器及 Python 依赖。
+
+词库分工：
+translations.zh-CN.json：原有汉化词库。
+translations.ui.zh-CN.json：已审计的 Terry 界面文字与文件筛选器。
+translations.messages.zh-CN.json：可用于共享工具组件的提示和错误消息。
+translations.display.zh-CN.json、translations.properties.zh-CN.json：显示层词库。
+status-tooltips.zh-CN.json：15 条工具操作说明。
+protected-identifiers.json：禁止作为通用字面量改写的配置与快捷键标识。
+
+构建与检查顺序（Python 3，Windows x64）：
+python tools/build_patch.py --source backups/original-20261009 --output build/release
+python tools/test_display_hooks.py
+python tools/validate_patch.py build/release
+将验证过的 build/release/patch.json 复制到根目录 patch.json。
+关闭 Terry 和 BOB 后运行 python tools/test_installer.py。
+实际完成界面、编辑和跨语言保存测试，更新验证说明和报告。
+python tools/package_release.py
+
+打包器拒绝覆盖同名 ZIP；应先将上次交付移入回收站或保留到明确的归档位置。
+构建器继承根目录 manifest 中的已知补丁哈希，旧版升级仍必须使用校验通过的原版备份。
+
+不要将属性键、枚举值、文件路径、资源键或快捷键 ID 翻译后写回模型。
+新增词条优先使用显示层；只在确认调用点仅服务界面时改写字面量。
+渲染层字典按完整字符串匹配，未知内容透传；编辑框不改写用户输入。
+对列表的显示转换不会改变选择项的内部值，但恰好与词条同名的自定义列表名称
+也可能显示为译文，编辑和存储的实际名称仍然保留。不要把显示文字当作资源键复制。
+
+当前仅支持 source-hashes.json 对应的 Assembly Kit build 25616861。
+官方更新后必须重新审计调用点和 Qt ABI，不能仅修改版本号或跳过哈希校验。

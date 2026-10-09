@@ -1,0 +1,17 @@
+{
+  "": "将鼠标指向工具，可查看操作提示",
+  "Select": "左键：选择／取消选择 || 左键拖动：框选 || 右键：打开操作菜单",
+  "Translate,Rotate,Scale": "拖动选中对象：在地面上移动 || Shift＋拖动：复制并移动 || Ctrl＋拖动：旋转",
+  "Paint Terrain,Terrain Height Painting,Terrain Texture Painting,Terrain Painting (Other),Terrain Forest Painting": "左键：绘制 || 右键：退出 || Shift：快速平滑 || Ctrl＋Alt＋上下移动鼠标：改变笔刷大小 || 左右移动：旋转笔刷 || [ / ]：调节大小",
+  "Tape Measure": "依次点击左键放置起点和终点，测量距离",
+  "Create Prefab,Create Building,Create Prop,Create Decal,Create VFX,Create Vegetation (Place),Create Point Light,Create Spot Light,Create Light Probe": "左键：放置对象 || 右键：退出放置 || Shift＋左右移动鼠标：旋转 || [ / ]：调节大小",
+  "Create Polygon Mesh,Create Terrain Hole": "左键：第一次确定朝向，之后添加顶点 || 右键：退出",
+  "Create Vegetation (Paint)": "左键：绘制植被 || 右键：退出 || [ / ]：调节大小",
+  "Create Procedural Exclusion Zone": "左键：添加区域顶点 || 右键：退出",
+  "Create AI Hint": "左键：依次设置起点和终点 || 右键：退出",
+  "Create No-Go Region,Create Go Region": "左键：添加区域顶点 || 右键：退出",
+  "Create Deployment Zone,Create Deployment Zone Region": "左键：放置顶点／调整大小 || 右键：退出",
+  "Create Playable Area": "左键：选择起点／结束编辑 || 右键：取消",
+  "Create Sound Marker": "左键：放置／添加顶点／结束编辑 || 右键：退出 || 按住 Shift：将三维折线贴合地形",
+  "Create Camera Bounds": "左键：依次设置起点、范围和高度"
+}

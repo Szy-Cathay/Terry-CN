@@ -1,0 +1,32 @@
+# Local official baselines and generated full binaries
+/backups/
+/build/
+
+# Reinstallable development dependencies and caches
+/tools/python-libs/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local inventories, personal settings and recycle-bin records
+/reports/*
+!/reports/native-hook-tests.json
+!/reports/installer-test-results.json
+!/reports/patch-integrity-tests.json
+!/reports/package-verification.json
+!/reports/scene-roundtrip.json
+
+# Local credentials, editor state and temporary files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.vscode/
+.idea/
+*.tmp
+*.log
+Thumbs.db
+Desktop.ini

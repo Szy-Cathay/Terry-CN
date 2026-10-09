@@ -1,0 +1,206 @@
+<shortcuts>
+    <category id="Tools">
+        <category id="Entity">
+            <shortcut keys="" id="FactionPrefab"/>
+            <shortcut keys="" id="ProceduralExclusionZone"/>
+            <shortcut keys="" id="Building"/>
+            <shortcut keys="" id="BuildingProjectileEmitter"/>
+            <shortcut keys="" id="SoundMarker"/>
+            <shortcut keys="" id="Prop"/>
+            <shortcut keys="" id="BattlefieldZone"/>
+            <shortcut keys="" id="AIHint"/>
+            <shortcut keys="" id="PointLight"/>
+            <shortcut keys="" id="Vegetation"/>
+            <shortcut keys="" id="TapeMeasure"/>
+            <shortcut keys="" id="SiegeAINodePoly"/>
+            <shortcut keys="" id="SpotLight"/>
+            <shortcut keys="" id="River"/>
+            <shortcut keys="" id="LightProbe"/>
+            <shortcut keys="" id="Create Vegetation (Paint)"/>
+            <shortcut keys="" id="PolygonMesh"/>
+            <shortcut keys="" id="DeploymentZoneRegion"/>
+            <shortcut keys="" id="AISeparator"/>
+            <shortcut keys="" id="GoRegion"/>
+            <shortcut keys="" id="LiteBuildingOutline"/>
+            <shortcut keys="" id="BattleCatchmentAreaInTile"/>
+            <shortcut keys="" id="EditorSphere"/>
+            <shortcut keys="" id="VFX"/>
+            <shortcut keys="" id="SoundEnvironment"/>
+            <shortcut keys="" id="EFLine"/>
+            <shortcut keys="" id="Unit"/>
+            <shortcut keys="" id="SiegeAINode"/>
+            <shortcut keys="" id="EditorPolyline2DProjected"/>
+            <shortcut keys="" id="EditorBox"/>
+            <shortcut keys="" id="CaptureLocation"/>
+            <shortcut keys="" id="EditorRectangleProjected"/>
+            <shortcut keys="" id="CameraConstraintVolume"/>
+            <shortcut keys="" id="EditorCircleProjected"/>
+            <shortcut keys="" id="DeploymentZone"/>
+            <shortcut keys="" id="Decal"/>
+            <shortcut keys="" id="PlayableArea"/>
+            <shortcut keys="" id="TerrainHole"/>
+            <shortcut keys="" id="Prefab"/>
+            <shortcut keys="" id="Marker"/>
+            <shortcut keys="" id="EditorSpline3D"/>
+            <shortcut keys="" id="EnvironmentVolume"/>
+            <shortcut keys="" id="EditorSpline2DProjected"/>
+            <shortcut keys="" id="CameraZone"/>
+            <shortcut keys="" id="Layout"/>
+            <shortcut keys="" id="BattleCatchmentArea"/>
+            <shortcut keys="" id="NoGoRegion"/>
+            <shortcut keys="" id="CompositeScene"/>
+            <shortcut keys="" id="SiegeAIBoundary"/>
+            <shortcut keys="" id="SiegeAIEdge"/>
+            <shortcut keys="" id="EditorPointCloud"/>
+        </category>
+        <shortcut keys="" id="SliceMapForMegatile"/>
+        <category id="Transform">
+            <shortcut keys="" id="View3DDrag"/>
+            <shortcut keys="L" id="ToggleLocalWorld"/>
+            <shortcut keys="1" id="SelectTool"/>
+            <shortcut keys="Shift+T" id="ToggleTerrainClampAndOrient"/>
+            <shortcut keys="" id="ToggleMultiSelectMode"/>
+            <shortcut keys="3" id="RotateTool"/>
+            <shortcut keys="" id="ToggleTxformOrigin"/>
+            <shortcut keys="Shift+2" id="PlaceTool"/>
+            <shortcut keys="2" id="TranslateTool"/>
+            <shortcut keys="4" id="ScaleTool"/>
+            <shortcut keys="Tab" id="EditSelectedEntity"/>
+        </category>
+        <category id="Association">
+            <shortcut keys="" id="AssociationTool"/>
+        </category>
+        <shortcut keys="" id="GenerateExplicitTiles"/>
+        <shortcut keys="Shift+5" id="RaiseTerrainToSelection"/>
+        <shortcut keys="" id="AddTileToTdb"/>
+        <shortcut keys="" id="DeleteFilesNotInProject"/>
+        <shortcut keys="" id="CreateTilemapForTile"/>
+        <shortcut keys="" id="GenerateBCA"/>
+        <shortcut keys="" id="ResizeTile"/>
+        <category id="Paint Terrain">
+            <shortcut keys="]" id="GPSBrushScaleUp"/>
+            <shortcut keys="," id="GPSPalettePrev"/>
+            <shortcut keys="N" id="GPSOtherValueDown"/>
+            <shortcut keys="." id="GPSPaletteNext"/>
+            <shortcut keys="P" id="GPSOpacityUp"/>
+            <shortcut keys="[" id="GPSBrushScaleDown"/>
+            <shortcut keys="M" id="GPSOtherValueUp"/>
+            <shortcut keys="O" id="GPSOpacityDown"/>
+        </category>
+        <shortcut keys="" id="GenerateSoundMarkerReport"/>
+        <shortcut keys="" id="ImportHeightmap"/>
+        <shortcut keys="" id="UpdateSoundMarkersHeights"/>
+        <shortcut keys="Alt+G" id="ShowEventAreaMaskPermanently"/>
+        <shortcut keys="" id="PaintTerrainHeight"/>
+        <shortcut keys="" id="ExportHeightmap"/>
+        <shortcut keys="5" id="AlignTerrainToSelection"/>
+        <shortcut keys="" id="GenerateBuildingNoGo"/>
+        <shortcut keys="" id="GenerateBuildingGo"/>
+        <category id="SnapVertices">
+            <shortcut keys="" id="SnapVerticesTool"/>
+        </category>
+        <shortcut keys="" id="AssignDistrictsToSiegeAINodes"/>
+        <shortcut keys="" id="ExprtLFNormals"/>
+        <shortcut keys="" id="PaintTerrainTexture"/>
+        <shortcut keys="" id="GenerateAssetReport"/>
+        <category id="SnapCollision">
+            <shortcut keys="" id="SnapCollisionTool"/>
+        </category>
+        <shortcut keys="" id="PaintForest"/>
+        <shortcut keys="" id="CreateMegatile"/>
+        <shortcut keys="" id="ApplyLFPatches"/>
+        <shortcut keys="" id="ExportCampaignSettlementRotations"/>
+        <shortcut keys="" id="EraseTool"/>
+        <shortcut keys="" id="GenerateCampaignSettlements"/>
+        <shortcut keys="" id="TapeMeasureTool"/>
+        <category id="SnapBBox">
+            <shortcut keys="" id="SnapBBoxTool"/>
+        </category>
+        <shortcut keys="" id="RemoveBuildings"/>
+        <shortcut keys="" id="AdjustHeightForMegatile"/>
+        <shortcut keys="" id="GenerateBuildingZones"/>
+        <shortcut keys="" id="CameraTool"/>
+        <shortcut keys="Alt+5" id="LowerTerrainToSelection"/>
+        <category id="TerrainVertex">
+            <shortcut keys="" id="TerrainVertexTool"/>
+        </category>
+    </category>
+    <category id="Scene">
+        <shortcut keys="" id="AddToActiveLayer"/>
+        <shortcut keys="Ctrl+H" id="HideSelection"/>
+        <shortcut keys="Ctrl+D" id="DeselectAll"/>
+        <shortcut keys="" id="UnfreezeAll"/>
+        <shortcut keys="" id="AddLogicalLayer"/>
+        <shortcut keys="" id="UnhideAll"/>
+        <shortcut keys="F" id="FreezeSelection"/>
+        <shortcut keys="Ctrl+U" id="Ungroup"/>
+        <shortcut keys="Ctrl+G" id="Group"/>
+        <shortcut keys="" id="AddFileLayer"/>
+        <shortcut keys="" id="AddBattleLayer"/>
+        <shortcut keys="Ctrl+I" id="SelectInverted"/>
+        <shortcut keys="" id="ImportCustomRGB"/>
+        <shortcut keys="" id="SelectParentLayer"/>
+        <shortcut keys="Ctrl+A" id="SelectAll"/>
+    </category>
+    <category id="Main">
+        <shortcut keys="Ctrl+O" id="OpenProject"/>
+        <shortcut keys="" id="Fullscreen"/>
+        <shortcut keys="" id="CloseProject"/>
+        <shortcut keys="" id="TileDatabase"/>
+        <shortcut keys="Ctrl+P" id="ProcessWithBOB"/>
+        <shortcut keys="Ctrl+N" id="NewProject"/>
+        <shortcut keys="" id="Exit"/>
+        <shortcut keys="" id="StatusBar"/>
+        <shortcut keys="" id="ConfigureKeyset"/>
+        <shortcut keys="" id="SaveProjectAs"/>
+        <shortcut keys="" id="InterfaceReset"/>
+        <shortcut keys="" id="ShowInExplorer"/>
+    </category>
+    <category id="Window">
+        <shortcut keys="Alt+F9" id="WarscapeScene"/>
+        <shortcut keys="" id="ErrorLog"/>
+        <shortcut keys="" id="LayoutEditor"/>
+        <shortcut keys="" id="SceneTransformView"/>
+        <shortcut keys="" id="ProjectValidator"/>
+        <shortcut keys="" id="ProjectPropertyEditor"/>
+        <shortcut keys="" id="SceneLogicalView"/>
+        <shortcut keys="" id="TileCellView"/>
+        <shortcut keys="" id="View2D"/>
+        <shortcut keys="" id="AdvancedSelect"/>
+        <shortcut keys="" id="EntityPropertyEditor"/>
+        <shortcut keys="" id="WarscapeStats"/>
+        <shortcut keys="Alt+F10" id="WarscapeEnvironment"/>
+        <shortcut keys="" id="ToolPropertiesWidget"/>
+        <shortcut keys="" id="SettingsEditor"/>
+        <shortcut keys="" id="BattleXMLView"/>
+        <shortcut keys="" id="UndoView"/>
+    </category>
+    <category id="Camera">
+        <shortcut keys="" id="CopyCamera"/>
+        <shortcut keys="" id="CameraPan"/>
+        <shortcut keys="E" id="CameraRotateRight"/>
+        <shortcut keys="Q" id="CameraRotateLeft"/>
+        <shortcut keys="D" id="CameraMoveRight"/>
+        <shortcut keys="C" id="CameraRaise"/>
+        <shortcut keys="Z" id="CameraZoom"/>
+        <shortcut keys="S" id="CameraMoveBackward"/>
+        <shortcut keys="W" id="CameraMoveForward"/>
+        <shortcut keys="X" id="CameraLower"/>
+        <shortcut keys="A" id="CameraMoveLeft"/>
+        <shortcut keys="R" id="CameraReset"/>
+        <shortcut keys="" id="PasteCamera"/>
+    </category>
+    <category id="Miscellaneous">
+        <shortcut keys="" id="ToggleSelectAfterPlacement"/>
+        <shortcut keys="H" id="ToggleHeightMapAsColour"/>
+    </category>
+    <category id="View3D">
+        <shortcut keys="Shift+C" id="ToggleCamera"/>
+        <shortcut keys="G" id="EditorOverlay"/>
+    </category>
+    <category id="Debug">
+        <shortcut keys="" id="ReloadShaders"/>
+        <shortcut keys="" id="SaveSettings"/>
+        <shortcut keys="" id="SaveHoudiniState"/>
+    </category>
+</shortcuts>

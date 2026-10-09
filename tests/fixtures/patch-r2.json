@@ -1,0 +1,5783 @@
+{
+  "format": 1,
+  "files": [
+    {
+      "path": "binaries/tweak_terrainmetadataeditor.modder.x64.dll",
+      "originalSha256": "52A94B04823E4798345A315EE51A89990000ECBCF5B9EBDD7C79D0C1A7A37706",
+      "patchedSha256": "07F0096B85A90A9542C64B4307057A22E431640DFCF6B6DC68A34CE8F0662DCD",
+      "originalLength": 10128896,
+      "patchedLength": 10137600,
+      "edits": [
+        {
+          "offset": 262,
+          "before": "Bw==",
+          "after": "CA=="
+        },
+        {
+          "offset": 289,
+          "before": "MA==",
+          "after": "Ug=="
+        },
+        {
+          "offset": 337,
+          "before": "IA==",
+          "after": "UA=="
+        },
+        {
+          "offset": 344,
+          "before": "AAAA",
+          "after": "gs2a"
+        },
+        {
+          "offset": 800,
+          "before": "AAAAAAAAAAAAAA==",
+          "after": "LnRlcnJ5Y24QIQ=="
+        },
+        {
+          "offset": 813,
+          "before": "AAA=",
+          "after": "ILQ="
+        },
+        {
+          "offset": 817,
+          "before": "AA==",
+          "after": "Ig=="
+        },
+        {
+          "offset": 821,
+          "before": "AAA=",
+          "after": "jpo="
+        },
+        {
+          "offset": 836,
+          "before": "AA==",
+          "after": "QA=="
+        },
+        {
+          "offset": 839,
+          "before": "AA==",
+          "after": "QA=="
+        },
+        {
+          "offset": 7141,
+          "before": "Fg==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 7148,
+          "before": "aJpm",
+          "after": "EPiz"
+        },
+        {
+          "offset": 10645,
+          "before": "GQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 10652,
+          "before": "EIRn",
+          "after": "duqz"
+        },
+        {
+          "offset": 47315,
+          "before": "Eg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 47322,
+          "before": "QgJl",
+          "after": "S1uz"
+        },
+        {
+          "offset": 47468,
+          "before": "EQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 47475,
+          "before": "0QFl",
+          "after": "wlqz"
+        },
+        {
+          "offset": 48507,
+          "before": "HA==",
+          "after": "IQ=="
+        },
+        {
+          "offset": 48514,
+          "before": "kgRl",
+          "after": "w1az"
+        },
+        {
+          "offset": 48658,
+          "before": "IgRl",
+          "after": "VVaz"
+        },
+        {
+          "offset": 49173,
+          "before": "JQ==",
+          "after": "IQ=="
+        },
+        {
+          "offset": 49180,
+          "before": "OAJl",
+          "after": "VVSz"
+        },
+        {
+          "offset": 49316,
+          "before": "Bw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 49323,
+          "before": "0QFl",
+          "after": "6FOz"
+        },
+        {
+          "offset": 49481,
+          "before": "Bg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 49488,
+          "before": "NAFl",
+          "after": "SlOz"
+        },
+        {
+          "offset": 50072,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 50079,
+          "before": "7f5k",
+          "after": "CFGz"
+        },
+        {
+          "offset": 50206,
+          "before": "dv5k",
+          "after": "kFCz"
+        },
+        {
+          "offset": 50900,
+          "before": "CQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 50907,
+          "before": "Oetk",
+          "after": "2k2z"
+        },
+        {
+          "offset": 50925,
+          "before": "Cw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 50932,
+          "before": "MOtk",
+          "after": "yE2z"
+        },
+        {
+          "offset": 50950,
+          "before": "Dg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 50957,
+          "before": "J+tk",
+          "after": "vE2z"
+        },
+        {
+          "offset": 50975,
+          "before": "Dg==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 50982,
+          "before": "Hutk",
+          "after": "sE2z"
+        },
+        {
+          "offset": 51055,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 51062,
+          "before": "7upk",
+          "after": "ak2z"
+        },
+        {
+          "offset": 51080,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 51087,
+          "before": "2epk",
+          "after": "WE2z"
+        },
+        {
+          "offset": 67046,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 67053,
+          "before": "B7Vk",
+          "after": "AQ+z"
+        },
+        {
+          "offset": 72812,
+          "before": "Ew==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 72819,
+          "before": "kaxk",
+          "after": "jviy"
+        },
+        {
+          "offset": 82346,
+          "before": "Fg==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 82353,
+          "before": "40ll",
+          "after": "ZtOy"
+        },
+        {
+          "offset": 93208,
+          "before": "FA==",
+          "after": "GA=="
+        },
+        {
+          "offset": 93215,
+          "before": "RStl",
+          "after": "Dqmy"
+        },
+        {
+          "offset": 93426,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 93433,
+          "before": "T49k",
+          "after": "Taiy"
+        },
+        {
+          "offset": 97681,
+          "before": "CA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 97688,
+          "before": "RA5l",
+          "after": "tZey"
+        },
+        {
+          "offset": 97772,
+          "before": "EQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 97779,
+          "before": "+Q1l",
+          "after": "Z5ey"
+        },
+        {
+          "offset": 97863,
+          "before": "CA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 97870,
+          "before": "tg1l",
+          "after": "GZey"
+        },
+        {
+          "offset": 98077,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 98084,
+          "before": "8Axl",
+          "after": "Spay"
+        },
+        {
+          "offset": 98203,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 98210,
+          "before": "ggxl",
+          "after": "2ZWy"
+        },
+        {
+          "offset": 98294,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 98301,
+          "before": "Nwxl",
+          "after": "i5Wy"
+        },
+        {
+          "offset": 98568,
+          "before": "EQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 98575,
+          "before": "NQtl",
+          "after": "hpSy"
+        },
+        {
+          "offset": 98828,
+          "before": "Cg==",
+          "after": "EA=="
+        },
+        {
+          "offset": 98835,
+          "before": "SQpl",
+          "after": "lZOy"
+        },
+        {
+          "offset": 99088,
+          "before": "Dg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 99095,
+          "before": "VQll",
+          "after": "opKy"
+        },
+        {
+          "offset": 99181,
+          "before": "Eg==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 99188,
+          "before": "CAll",
+          "after": "UpKy"
+        },
+        {
+          "offset": 99337,
+          "before": "Dg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 99344,
+          "before": "hAhl",
+          "after": "zJGy"
+        },
+        {
+          "offset": 99501,
+          "before": "FA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 99508,
+          "before": "8Adl",
+          "after": "NZGy"
+        },
+        {
+          "offset": 99607,
+          "before": "DQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 99614,
+          "before": "tv1k",
+          "after": "2JCy"
+        },
+        {
+          "offset": 99860,
+          "before": "Dg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 99867,
+          "before": "oQZl",
+          "after": "64+y"
+        },
+        {
+          "offset": 99955,
+          "before": "Dg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 99962,
+          "before": "UgZl",
+          "after": "mY+y"
+        },
+        {
+          "offset": 100217,
+          "before": "Bg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 100224,
+          "before": "XAVl",
+          "after": "oI6y"
+        },
+        {
+          "offset": 100307,
+          "before": "DQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 100314,
+          "before": "CgVl",
+          "after": "U46y"
+        },
+        {
+          "offset": 101510,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 101517,
+          "before": "z85k",
+          "after": "sImy"
+        },
+        {
+          "offset": 101628,
+          "before": "Bg==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 101636,
+          "before": "AmU=",
+          "after": "ibI="
+        },
+        {
+          "offset": 102421,
+          "before": "Gg==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 102428,
+          "before": "aP9k",
+          "after": "Moay"
+        },
+        {
+          "offset": 102845,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 102852,
+          "before": "dPFk",
+          "after": "poSy"
+        },
+        {
+          "offset": 103061,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 103068,
+          "before": "MP1k",
+          "after": "1YOy"
+        },
+        {
+          "offset": 103574,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 103581,
+          "before": "T/tk",
+          "after": "4YGy"
+        },
+        {
+          "offset": 104696,
+          "before": "EA==",
+          "after": "EQ=="
+        },
+        {
+          "offset": 104703,
+          "before": "Nfdk",
+          "after": "hn2y"
+        },
+        {
+          "offset": 105338,
+          "before": "DA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 105345,
+          "before": "6/Rk",
+          "after": "Fnuy"
+        },
+        {
+          "offset": 106810,
+          "before": "Ew==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 106817,
+          "before": "q+9k",
+          "after": "aXWy"
+        },
+        {
+          "offset": 107113,
+          "before": "FA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 107120,
+          "before": "rO5k",
+          "after": "UHSy"
+        },
+        {
+          "offset": 107839,
+          "before": "Ew==",
+          "after": "DA=="
+        },
+        {
+          "offset": 107846,
+          "before": "Buxk",
+          "after": "kHGy"
+        },
+        {
+          "offset": 108286,
+          "before": "Ew==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 108293,
+          "before": "f+pk",
+          "after": "3m+y"
+        },
+        {
+          "offset": 108740,
+          "before": "Fg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 108747,
+          "before": "8ehk",
+          "after": "K26y"
+        },
+        {
+          "offset": 109194,
+          "before": "FQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 109201,
+          "before": "Y+dk",
+          "after": "eGyy"
+        },
+        {
+          "offset": 109648,
+          "before": "FQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 109655,
+          "before": "1eVk",
+          "after": "wmqy"
+        },
+        {
+          "offset": 110133,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 110140,
+          "before": "KORk",
+          "after": "7Wiy"
+        },
+        {
+          "offset": 110619,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 110626,
+          "before": "SuJk",
+          "after": "Dmey"
+        },
+        {
+          "offset": 110841,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 110848,
+          "before": "fOFk",
+          "after": "N2ay"
+        },
+        {
+          "offset": 111060,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 111067,
+          "before": "seBk",
+          "after": "Y2Wy"
+        },
+        {
+          "offset": 111735,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 111742,
+          "before": "Pt5k",
+          "after": "x2Ky"
+        },
+        {
+          "offset": 112754,
+          "before": "Bw==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 112761,
+          "before": "W9pk",
+          "after": "016y"
+        },
+        {
+          "offset": 112978,
+          "before": "Cg==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 112985,
+          "before": "g9lk",
+          "after": "/V2y"
+        },
+        {
+          "offset": 113507,
+          "before": "Cg==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 113514,
+          "before": "ktdk",
+          "after": "9luy"
+        },
+        {
+          "offset": 113929,
+          "before": "Cw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 113936,
+          "before": "/NVk",
+          "after": "V1qy"
+        },
+        {
+          "offset": 114265,
+          "before": "09Rk",
+          "after": "IVmy"
+        },
+        {
+          "offset": 114804,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 114811,
+          "before": "8dJk",
+          "after": "DFey"
+        },
+        {
+          "offset": 115449,
+          "before": "FQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 115456,
+          "before": "1NBk",
+          "after": "jlSy"
+        },
+        {
+          "offset": 115671,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 115678,
+          "before": "GtBk",
+          "after": "w1Oy"
+        },
+        {
+          "offset": 117023,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 117030,
+          "before": "Zvlj",
+          "after": "gUuy"
+        },
+        {
+          "offset": 117466,
+          "before": "DQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 117473,
+          "before": "i8pk",
+          "after": "x0yy"
+        },
+        {
+          "offset": 117883,
+          "before": "Fw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 117890,
+          "before": "Cslk",
+          "after": "M0uy"
+        },
+        {
+          "offset": 118165,
+          "before": "Ew==",
+          "after": "DA=="
+        },
+        {
+          "offset": 118172,
+          "before": "IMhk",
+          "after": "LEqy"
+        },
+        {
+          "offset": 118420,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 118427,
+          "before": "Tcdk",
+          "after": "Okmy"
+        },
+        {
+          "offset": 120384,
+          "before": "BQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 120391,
+          "before": "/cFj",
+          "after": "lUGy"
+        },
+        {
+          "offset": 120409,
+          "before": "CA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 120416,
+          "before": "PK5k",
+          "after": "iUGy"
+        },
+        {
+          "offset": 120434,
+          "before": "GA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 120441,
+          "before": "M65k",
+          "after": "fUGy"
+        },
+        {
+          "offset": 120459,
+          "before": "GQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 120466,
+          "before": "Oq5k",
+          "after": "d0Gy"
+        },
+        {
+          "offset": 120484,
+          "before": "IQ==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 120491,
+          "before": "Qa5k",
+          "after": "cUGy"
+        },
+        {
+          "offset": 120509,
+          "before": "Fw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 120516,
+          "before": "UK5k",
+          "after": "bkGy"
+        },
+        {
+          "offset": 120534,
+          "before": "Fw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 120541,
+          "before": "T65k",
+          "after": "aEGy"
+        },
+        {
+          "offset": 128519,
+          "before": "Ew==",
+          "after": "GA=="
+        },
+        {
+          "offset": 128526,
+          "before": "DtNj",
+          "after": "SiKy"
+        },
+        {
+          "offset": 140376,
+          "before": "Eg==",
+          "after": "GQ=="
+        },
+        {
+          "offset": 140383,
+          "before": "RcBj",
+          "after": "EvSx"
+        },
+        {
+          "offset": 142114,
+          "before": "qrhj",
+          "after": "ae2x"
+        },
+        {
+          "offset": 147160,
+          "before": "SKVj",
+          "after": "utmx"
+        },
+        {
+          "offset": 167710,
+          "before": "FA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 167717,
+          "before": "L1tj",
+          "after": "dImx"
+        },
+        {
+          "offset": 169725,
+          "before": "EA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 169732,
+          "before": "SFJj",
+          "after": "pYGx"
+        },
+        {
+          "offset": 169802,
+          "before": "DQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 169809,
+          "before": "E1Jj",
+          "after": "aIGx"
+        },
+        {
+          "offset": 181557,
+          "before": "TyRj",
+          "after": "lFOx"
+        },
+        {
+          "offset": 221493,
+          "before": "Dg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 221500,
+          "before": "YJpi",
+          "after": "lLew"
+        },
+        {
+          "offset": 247704,
+          "before": "CA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 247711,
+          "before": "9TZi",
+          "after": "PlGw"
+        },
+        {
+          "offset": 249296,
+          "before": "EA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 249303,
+          "before": "rTJi",
+          "after": "Fkuw"
+        },
+        {
+          "offset": 249318,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 249325,
+          "before": "37ph",
+          "after": "EEuw"
+        },
+        {
+          "offset": 249784,
+          "before": "Ug==",
+          "after": "Mw=="
+        },
+        {
+          "offset": 249791,
+          "before": "3TBi",
+          "after": "RUmw"
+        },
+        {
+          "offset": 250043,
+          "before": "RA==",
+          "after": "Qg=="
+        },
+        {
+          "offset": 250050,
+          "before": "OjBi",
+          "after": "dkiw"
+        },
+        {
+          "offset": 288985,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 288992,
+          "before": "6Nlh",
+          "after": "m7Cv"
+        },
+        {
+          "offset": 289269,
+          "before": "V91h",
+          "after": "ja+v"
+        },
+        {
+          "offset": 301301,
+          "before": "EA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 301308,
+          "before": "aK1h",
+          "after": "jYCv"
+        },
+        {
+          "offset": 305258,
+          "before": "EA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 305265,
+          "before": "G55h",
+          "after": "KHGv"
+        },
+        {
+          "offset": 336457,
+          "before": "GA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 336464,
+          "before": "LGJh",
+          "after": "XPeu"
+        },
+        {
+          "offset": 351212,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 351219,
+          "before": "1eZg",
+          "after": "iL2u"
+        },
+        {
+          "offset": 378127,
+          "before": "BQ==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 378134,
+          "before": "xtJg",
+          "after": "qVSu"
+        },
+        {
+          "offset": 378353,
+          "before": "Dg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 378360,
+          "before": "7NFg",
+          "after": "0VOu"
+        },
+        {
+          "offset": 378579,
+          "before": "CA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 378586,
+          "before": "GtFg",
+          "after": "/1Ku"
+        },
+        {
+          "offset": 380173,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 380180,
+          "before": "mINg",
+          "after": "1Uyu"
+        },
+        {
+          "offset": 380195,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 380202,
+          "before": "Hi9g",
+          "after": "HEiu"
+        },
+        {
+          "offset": 382560,
+          "before": "FA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 382567,
+          "before": "XXpg",
+          "after": "lUOu"
+        },
+        {
+          "offset": 384025,
+          "before": "Dg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 384032,
+          "before": "vHRg",
+          "after": "8j2u"
+        },
+        {
+          "offset": 386651,
+          "before": "HA==",
+          "after": "Hg=="
+        },
+        {
+          "offset": 386658,
+          "before": "impg",
+          "after": "wDOu"
+        },
+        {
+          "offset": 391449,
+          "before": "Ew==",
+          "after": "Fg=="
+        },
+        {
+          "offset": 391456,
+          "before": "DFhg",
+          "after": "ISGu"
+        },
+        {
+          "offset": 391523,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 391530,
+          "before": "2ldg",
+          "after": "7iCu"
+        },
+        {
+          "offset": 391833,
+          "before": "Ew==",
+          "after": "GA=="
+        },
+        {
+          "offset": 391840,
+          "before": "vFZg",
+          "after": "xR+u"
+        },
+        {
+          "offset": 391924,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 391931,
+          "before": "dVZg",
+          "after": "gx+u"
+        },
+        {
+          "offset": 392023,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 392030,
+          "before": "GlZg",
+          "after": "Jx+u"
+        },
+        {
+          "offset": 392140,
+          "before": "EA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 392147,
+          "before": "yVVg",
+          "after": "uR6u"
+        },
+        {
+          "offset": 392250,
+          "before": "DQ==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 392257,
+          "before": "c1Vg",
+          "after": "YR6u"
+        },
+        {
+          "offset": 392356,
+          "before": "IFVg",
+          "after": "FB6u"
+        },
+        {
+          "offset": 392440,
+          "before": "Fw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 392447,
+          "before": "zVRg",
+          "after": "wB2u"
+        },
+        {
+          "offset": 392539,
+          "before": "Bg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 392546,
+          "before": "glRg",
+          "after": "cB2u"
+        },
+        {
+          "offset": 392630,
+          "before": "Bg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 392637,
+          "before": "L1Rg",
+          "after": "Ih2u"
+        },
+        {
+          "offset": 392729,
+          "before": "Bg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 392736,
+          "before": "1FNg",
+          "after": "zByu"
+        },
+        {
+          "offset": 392820,
+          "before": "Bg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 392827,
+          "before": "gVNg",
+          "after": "hByu"
+        },
+        {
+          "offset": 392919,
+          "before": "HA==",
+          "after": "Hg=="
+        },
+        {
+          "offset": 392926,
+          "before": "DlJg",
+          "after": "RBuu"
+        },
+        {
+          "offset": 393018,
+          "before": "EA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 393025,
+          "before": "w1Jg",
+          "after": "0Ruu"
+        },
+        {
+          "offset": 395324,
+          "before": "Bw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 395331,
+          "before": "wU5g",
+          "after": "5RKu"
+        },
+        {
+          "offset": 418567,
+          "before": "GQ==",
+          "after": "Hg=="
+        },
+        {
+          "offset": 418574,
+          "before": "9vRf",
+          "after": "Ibit"
+        },
+        {
+          "offset": 418692,
+          "before": "CA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 418699,
+          "before": "mfRf",
+          "after": "w7et"
+        },
+        {
+          "offset": 432131,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 432138,
+          "before": "ysNf",
+          "after": "S4Ot"
+        },
+        {
+          "offset": 432225,
+          "before": "FA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 432232,
+          "before": "hMNf",
+          "after": "AIOt"
+        },
+        {
+          "offset": 432429,
+          "before": "Fw==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 432436,
+          "before": "0MJf",
+          "after": "SoKt"
+        },
+        {
+          "offset": 499487,
+          "before": "Eg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 499494,
+          "before": "ztJe",
+          "after": "dHys"
+        },
+        {
+          "offset": 501366,
+          "before": "VQ==",
+          "after": "Mw=="
+        },
+        {
+          "offset": 501373,
+          "before": "j8te",
+          "after": "LXWs"
+        },
+        {
+          "offset": 501518,
+          "before": "Vste",
+          "after": "0HSs"
+        },
+        {
+          "offset": 501737,
+          "before": "Tg==",
+          "after": "LQ=="
+        },
+        {
+          "offset": 501744,
+          "before": "jMpe",
+          "after": "AXSs"
+        },
+        {
+          "offset": 501882,
+          "before": "Fg==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 501889,
+          "before": "S8pe",
+          "after": "nnOs"
+        },
+        {
+          "offset": 503107,
+          "before": "CA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 503114,
+          "before": "mtVe",
+          "after": "626s"
+        },
+        {
+          "offset": 503416,
+          "before": "Ew==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 503423,
+          "before": "ddRe",
+          "after": "xm2s"
+        },
+        {
+          "offset": 503725,
+          "before": "Gg==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 503732,
+          "before": "WNNe",
+          "after": "oWys"
+        },
+        {
+          "offset": 503991,
+          "before": "ddJe",
+          "after": "tGus"
+        },
+        {
+          "offset": 504414,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 504421,
+          "before": "09Be",
+          "after": "BWSs"
+        },
+        {
+          "offset": 504603,
+          "before": "Bg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 504610,
+          "before": "yp5e",
+          "after": "vWes"
+        },
+        {
+          "offset": 504878,
+          "before": "1sxe",
+          "after": "R2is"
+        },
+        {
+          "offset": 505045,
+          "before": "Fw==",
+          "after": "Hg=="
+        },
+        {
+          "offset": 505052,
+          "before": "aM5e",
+          "after": "oGes"
+        },
+        {
+          "offset": 511362,
+          "before": "Cw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 511369,
+          "before": "67Ve",
+          "after": "Ek+s"
+        },
+        {
+          "offset": 511731,
+          "before": "Ng==",
+          "after": "Lw=="
+        },
+        {
+          "offset": 511738,
+          "before": "irRe",
+          "after": "rk2s"
+        },
+        {
+          "offset": 511797,
+          "before": "Dg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 511804,
+          "before": "gLRe",
+          "after": "nE2s"
+        },
+        {
+          "offset": 515179,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 515186,
+          "before": "fohe",
+          "after": "dkCs"
+        },
+        {
+          "offset": 515297,
+          "before": "Pwde",
+          "after": "sTus"
+        },
+        {
+          "offset": 517325,
+          "before": "LA==",
+          "after": "LQ=="
+        },
+        {
+          "offset": 517332,
+          "before": "WJ1e",
+          "after": "Gzis"
+        },
+        {
+          "offset": 517348,
+          "before": "EA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 517355,
+          "before": "cZ1e",
+          "after": "Mjis"
+        },
+        {
+          "offset": 517928,
+          "before": "UQ==",
+          "after": "Ow=="
+        },
+        {
+          "offset": 517935,
+          "before": "TZte",
+          "after": "ATas"
+        },
+        {
+          "offset": 518001,
+          "before": "EA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 518008,
+          "before": "5Jpe",
+          "after": "pTWs"
+        },
+        {
+          "offset": 524758,
+          "before": "Eg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 524765,
+          "before": "V4Je",
+          "after": "jxus"
+        },
+        {
+          "offset": 528063,
+          "before": "jXVe",
+          "after": "vQ6s"
+        },
+        {
+          "offset": 528209,
+          "before": "Dg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 528216,
+          "before": "BHVe",
+          "after": "NA6s"
+        },
+        {
+          "offset": 528376,
+          "before": "DQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 528383,
+          "before": "bXRe",
+          "after": "nQ2s"
+        },
+        {
+          "offset": 558494,
+          "before": "khxe",
+          "after": "Dpir"
+        },
+        {
+          "offset": 562017,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 562024,
+          "before": "qA9e",
+          "after": "S4qr"
+        },
+        {
+          "offset": 565500,
+          "before": "zAJe",
+          "after": "vnyr"
+        },
+        {
+          "offset": 676587,
+          "before": "Cg==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 676594,
+          "before": "ql9b",
+          "after": "z8qp"
+        },
+        {
+          "offset": 676612,
+          "before": "Dg==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 676619,
+          "before": "oV9b",
+          "after": "wMqp"
+        },
+        {
+          "offset": 677531,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 677538,
+          "before": "Glxb",
+          "after": "M8ep"
+        },
+        {
+          "offset": 677556,
+          "before": "Cw==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 677563,
+          "before": "EVxb",
+          "after": "J8ep"
+        },
+        {
+          "offset": 677588,
+          "before": "CFxb",
+          "after": "GMep"
+        },
+        {
+          "offset": 677606,
+          "before": "CA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 677613,
+          "before": "/1tb",
+          "after": "Ccep"
+        },
+        {
+          "offset": 756564,
+          "before": "EDVa",
+          "after": "qZKo"
+        },
+        {
+          "offset": 756873,
+          "before": "EA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 756880,
+          "before": "fDBa",
+          "after": "g5Go"
+        },
+        {
+          "offset": 757348,
+          "before": "CQ==",
+          "after": "DQ=="
+        },
+        {
+          "offset": 757355,
+          "before": "ASRa",
+          "after": "uI+o"
+        },
+        {
+          "offset": 757373,
+          "before": "Cg==",
+          "after": "DQ=="
+        },
+        {
+          "offset": 757380,
+          "before": "+CNa",
+          "after": "rY+o"
+        },
+        {
+          "offset": 757398,
+          "before": "CQ==",
+          "after": "DQ=="
+        },
+        {
+          "offset": 757405,
+          "before": "7yNa",
+          "after": "oo+o"
+        },
+        {
+          "offset": 757517,
+          "before": "Eg==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 757524,
+          "before": "wC9a",
+          "after": "OY+o"
+        },
+        {
+          "offset": 758574,
+          "before": "1i5a",
+          "after": "NYuo"
+        },
+        {
+          "offset": 903926,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 903933,
+          "before": "SzFY",
+          "after": "SUqm"
+        },
+        {
+          "offset": 981669,
+          "before": "FA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 981676,
+          "before": "8GFX",
+          "after": "xyOl"
+        },
+        {
+          "offset": 981940,
+          "before": "FA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 981947,
+          "before": "GWFX",
+          "after": "xSKl"
+        },
+        {
+          "offset": 982206,
+          "before": "Ew==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 982213,
+          "before": "P2BX",
+          "after": "yCGl"
+        },
+        {
+          "offset": 982466,
+          "before": "Ew==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 982473,
+          "before": "Y19X",
+          "after": "2iCl"
+        },
+        {
+          "offset": 982722,
+          "before": "EQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 982729,
+          "before": "i15X",
+          "after": "8B+l"
+        },
+        {
+          "offset": 982981,
+          "before": "EQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 982988,
+          "before": "sF1X",
+          "after": "AB+l"
+        },
+        {
+          "offset": 983240,
+          "before": "FQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 983247,
+          "before": "1VxX",
+          "after": "EB6l"
+        },
+        {
+          "offset": 983499,
+          "before": "FQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 983506,
+          "before": "ClxX",
+          "after": "IB2l"
+        },
+        {
+          "offset": 1008815,
+          "before": "Fw==",
+          "after": "MA=="
+        },
+        {
+          "offset": 1008822,
+          "before": "/pJX",
+          "after": "T7qk"
+        },
+        {
+          "offset": 1013658,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1013665,
+          "before": "q5tX",
+          "after": "laek"
+        },
+        {
+          "offset": 1014977,
+          "before": "k5ZX",
+          "after": "fKKk"
+        },
+        {
+          "offset": 1015072,
+          "before": "Mg==",
+          "after": "OQ=="
+        },
+        {
+          "offset": 1015079,
+          "before": "PZZX",
+          "after": "I6Kk"
+        },
+        {
+          "offset": 1019158,
+          "before": "HA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1019165,
+          "before": "/4ZX",
+          "after": "Z5Kk"
+        },
+        {
+          "offset": 1019597,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1019604,
+          "before": "dG1W",
+          "after": "coak"
+        },
+        {
+          "offset": 1020178,
+          "before": "Fw==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1020185,
+          "before": "I4NX",
+          "after": "gY6k"
+        },
+        {
+          "offset": 1020301,
+          "before": "CA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1020308,
+          "before": "wIJX",
+          "after": "lImk"
+        },
+        {
+          "offset": 1064114,
+          "before": "GA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1064121,
+          "before": "s7RW",
+          "after": "9+Kj"
+        },
+        {
+          "offset": 1107266,
+          "before": "CA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1107273,
+          "before": "6/1V",
+          "after": "fTqj"
+        },
+        {
+          "offset": 1107938,
+          "before": "Cw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1107945,
+          "before": "W/tV",
+          "after": "6jej"
+        },
+        {
+          "offset": 1108611,
+          "before": "0fhV",
+          "after": "XTWj"
+        },
+        {
+          "offset": 1111327,
+          "before": "CQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1111334,
+          "before": "Pu5V",
+          "after": "xyqj"
+        },
+        {
+          "offset": 1182750,
+          "before": "Dg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1182757,
+          "before": "Jz9V",
+          "after": "1ROi"
+        },
+        {
+          "offset": 1183609,
+          "before": "Dg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1183616,
+          "before": "zDtV",
+          "after": "ehCi"
+        },
+        {
+          "offset": 1188589,
+          "before": "BylV",
+          "after": "IP2h"
+        },
+        {
+          "offset": 1189112,
+          "before": "EQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1189119,
+          "before": "xW5V",
+          "after": "G/uh"
+        },
+        {
+          "offset": 1189340,
+          "before": "EQ==",
+          "after": "Ew=="
+        },
+        {
+          "offset": 1189347,
+          "before": "+W1V",
+          "after": "Svqh"
+        },
+        {
+          "offset": 1190433,
+          "before": "Bw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1190440,
+          "before": "hDpU",
+          "after": "Gfah"
+        },
+        {
+          "offset": 1194870,
+          "before": "CQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1194877,
+          "before": "91hV",
+          "after": "0eSh"
+        },
+        {
+          "offset": 1195245,
+          "before": "l1dV",
+          "after": "buOh"
+        },
+        {
+          "offset": 1195554,
+          "before": "clZV",
+          "after": "RuKh"
+        },
+        {
+          "offset": 1195853,
+          "before": "V1VV",
+          "after": "JeGh"
+        },
+        {
+          "offset": 1196149,
+          "before": "P1RV",
+          "after": "B+Ch"
+        },
+        {
+          "offset": 1196441,
+          "before": "Fw==",
+          "after": "IQ=="
+        },
+        {
+          "offset": 1196448,
+          "before": "LFNV",
+          "after": "8t6h"
+        },
+        {
+          "offset": 1196749,
+          "before": "CA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1196756,
+          "before": "EFJV",
+          "after": "4N2h"
+        },
+        {
+          "offset": 1197047,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1197054,
+          "before": "9lBV",
+          "after": "ydyh"
+        },
+        {
+          "offset": 1197348,
+          "before": "Dw==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 1197355,
+          "before": "2U9V",
+          "after": "qduh"
+        },
+        {
+          "offset": 1197661,
+          "before": "t05V",
+          "after": "k9qh"
+        },
+        {
+          "offset": 1197966,
+          "before": "EA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1197973,
+          "before": "BwpU",
+          "after": "99Kh"
+        },
+        {
+          "offset": 1205268,
+          "before": "Dg==",
+          "after": "Ew=="
+        },
+        {
+          "offset": 1205275,
+          "before": "OTBV",
+          "after": "4ryh"
+        },
+        {
+          "offset": 1207853,
+          "before": "DQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1207860,
+          "before": "SCdV",
+          "after": "3bKh"
+        },
+        {
+          "offset": 1211474,
+          "before": "EQ==",
+          "after": "Ew=="
+        },
+        {
+          "offset": 1211481,
+          "before": "MxlV",
+          "after": "xaSh"
+        },
+        {
+          "offset": 1215310,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1215317,
+          "before": "7wlV",
+          "after": "3ZWh"
+        },
+        {
+          "offset": 1215613,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1215620,
+          "before": "0AhV",
+          "after": "u5Sh"
+        },
+        {
+          "offset": 1217247,
+          "before": "EA==",
+          "after": "GA=="
+        },
+        {
+          "offset": 1217254,
+          "before": "tlBU",
+          "after": "Zo6h"
+        },
+        {
+          "offset": 1218193,
+          "before": "Cw==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1218200,
+          "before": "xFNU",
+          "after": "zYqh"
+        },
+        {
+          "offset": 1221178,
+          "before": "EA==",
+          "after": "GA=="
+        },
+        {
+          "offset": 1221185,
+          "before": "m0hU",
+          "after": "On+h"
+        },
+        {
+          "offset": 1221659,
+          "before": "Eg==",
+          "after": "GA=="
+        },
+        {
+          "offset": 1221666,
+          "before": "4kZU",
+          "after": "cn2h"
+        },
+        {
+          "offset": 1222148,
+          "before": "EQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1222155,
+          "before": "KUVU",
+          "after": "onuh"
+        },
+        {
+          "offset": 1227102,
+          "before": "Cw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1227109,
+          "before": "XzJU",
+          "after": "W2ih"
+        },
+        {
+          "offset": 1229263,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1229270,
+          "before": "VipU",
+          "after": "91+h"
+        },
+        {
+          "offset": 1230278,
+          "before": "EA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1230285,
+          "before": "pyZU",
+          "after": "E1yh"
+        },
+        {
+          "offset": 1244159,
+          "before": "Gg==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1244166,
+          "before": "nvVT",
+          "after": "8CWh"
+        },
+        {
+          "offset": 1249832,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1249839,
+          "before": "CXFT",
+          "after": "OwSh"
+        },
+        {
+          "offset": 1254633,
+          "before": "88xT",
+          "after": "I/2g"
+        },
+        {
+          "offset": 1286335,
+          "before": "Bg==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1286342,
+          "before": "NnxT",
+          "after": "ZYGg"
+        },
+        {
+          "offset": 1287340,
+          "before": "CA==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1287347,
+          "before": "gXhT",
+          "after": "gn2g"
+        },
+        {
+          "offset": 1287389,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1287396,
+          "before": "XHhT",
+          "after": "0W+g"
+        },
+        {
+          "offset": 1287442,
+          "before": "Cw==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 1287449,
+          "before": "M3hT",
+          "after": "Jn2g"
+        },
+        {
+          "offset": 1287491,
+          "before": "EA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1287498,
+          "before": "qvRS",
+          "after": "BX2g"
+        },
+        {
+          "offset": 1287544,
+          "before": "Ew==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1287551,
+          "before": "3XdT",
+          "after": "43yg"
+        },
+        {
+          "offset": 1287597,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1287604,
+          "before": "wHdT",
+          "after": "wXyg"
+        },
+        {
+          "offset": 1294811,
+          "before": "CA==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1294818,
+          "before": "UltT",
+          "after": "U2Cg"
+        },
+        {
+          "offset": 1295994,
+          "before": "Bw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1296001,
+          "before": "21lT",
+          "after": "AVyg"
+        },
+        {
+          "offset": 1296156,
+          "before": "Bw==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1296163,
+          "before": "SchS",
+          "after": "bFug"
+        },
+        {
+          "offset": 1297492,
+          "before": "Cw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1297499,
+          "before": "IVRT",
+          "after": "Plag"
+        },
+        {
+          "offset": 1297840,
+          "before": "2FJT",
+          "after": "9lSg"
+        },
+        {
+          "offset": 1297886,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1297893,
+          "before": "W09T",
+          "after": "0Eag"
+        },
+        {
+          "offset": 1306164,
+          "before": "Bg==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1306172,
+          "before": "oVI=",
+          "after": "KKA="
+        },
+        {
+          "offset": 1308111,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1308118,
+          "before": "9plS",
+          "after": "myCg"
+        },
+        {
+          "offset": 1309436,
+          "before": "CA==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1309443,
+          "before": "KZ9S",
+          "after": "qieg"
+        },
+        {
+          "offset": 1309603,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1309610,
+          "before": "9p1S",
+          "after": "DSeg"
+        },
+        {
+          "offset": 1309982,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1309989,
+          "before": "pydT",
+          "after": "mSWg"
+        },
+        {
+          "offset": 1310155,
+          "before": "CSdT",
+          "after": "+iSg"
+        },
+        {
+          "offset": 1313156,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1313163,
+          "before": "QYZS",
+          "after": "5gyg"
+        },
+        {
+          "offset": 1313874,
+          "before": "Gg==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 1313881,
+          "before": "K4NS",
+          "after": "9Qmg"
+        },
+        {
+          "offset": 1314155,
+          "before": "CA==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1314162,
+          "before": "uoxS",
+          "after": "OxWg"
+        },
+        {
+          "offset": 1319665,
+          "before": "k8ZR",
+          "after": "2PWf"
+        },
+        {
+          "offset": 1321252,
+          "before": "Bw==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1321259,
+          "before": "QWZS",
+          "after": "ZPmf"
+        },
+        {
+          "offset": 1321377,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1321384,
+          "before": "dPxS",
+          "after": "Lfmf"
+        },
+        {
+          "offset": 1324233,
+          "before": "DA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 1324240,
+          "before": "tA5T",
+          "after": "Eu6f"
+        },
+        {
+          "offset": 1324377,
+          "before": "DQ==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1324384,
+          "before": "NA5T",
+          "after": "ku2f"
+        },
+        {
+          "offset": 1327141,
+          "before": "Dg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1327145,
+          "before": "iwNT",
+          "after": "1vSf"
+        },
+        {
+          "offset": 1328578,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1328585,
+          "before": "Jx9S",
+          "after": "H9ef"
+        },
+        {
+          "offset": 1328634,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1328641,
+          "before": "S81S",
+          "after": "Ndmf"
+        },
+        {
+          "offset": 1328796,
+          "before": "KP1S",
+          "after": "bNyf"
+        },
+        {
+          "offset": 1329348,
+          "before": "Eg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 1329355,
+          "before": "WcpS",
+          "after": "Tdqf"
+        },
+        {
+          "offset": 1337691,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1337698,
+          "before": "ssFS",
+          "after": "xrmf"
+        },
+        {
+          "offset": 1344365,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1344372,
+          "before": "IKpS",
+          "after": "u5+f"
+        },
+        {
+          "offset": 1344867,
+          "before": "vV5R",
+          "after": "L5Of"
+        },
+        {
+          "offset": 1344914,
+          "before": "Bw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1344921,
+          "before": "Q6lS",
+          "after": "qZ2f"
+        },
+        {
+          "offset": 1346006,
+          "before": "rl9R",
+          "after": "846f"
+        },
+        {
+          "offset": 1350364,
+          "before": "Fg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1350371,
+          "before": "mZJS",
+          "after": "Zoif"
+        },
+        {
+          "offset": 1352699,
+          "before": "JUBR",
+          "after": "l3Sf"
+        },
+        {
+          "offset": 1357700,
+          "before": "Fw==",
+          "after": "Gg=="
+        },
+        {
+          "offset": 1357708,
+          "before": "gVI=",
+          "after": "a58="
+        },
+        {
+          "offset": 1362359,
+          "before": "FQ==",
+          "after": "IA=="
+        },
+        {
+          "offset": 1362366,
+          "before": "NnJS",
+          "after": "uVmf"
+        },
+        {
+          "offset": 1364416,
+          "before": "EA==",
+          "after": "Gg=="
+        },
+        {
+          "offset": 1364423,
+          "before": "PWdS",
+          "after": "0VGf"
+        },
+        {
+          "offset": 1394787,
+          "before": "Hw==",
+          "after": "GA=="
+        },
+        {
+          "offset": 1394794,
+          "before": "ivpR",
+          "after": "Sdue"
+        },
+        {
+          "offset": 1401762,
+          "before": "yt9R",
+          "after": "KsCe"
+        },
+        {
+          "offset": 1401806,
+          "before": "Bw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1401813,
+          "before": "p99R",
+          "after": "BMCe"
+        },
+        {
+          "offset": 1401844,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1401851,
+          "before": "0cBR",
+          "after": "w76e"
+        },
+        {
+          "offset": 1427289,
+          "before": "IA==",
+          "after": "IQ=="
+        },
+        {
+          "offset": 1427296,
+          "before": "DJhR",
+          "after": "gFye"
+        },
+        {
+          "offset": 1427319,
+          "before": "HZhR",
+          "after": "i1ye"
+        },
+        {
+          "offset": 1457546,
+          "before": "Cw==",
+          "after": "EQ=="
+        },
+        {
+          "offset": 1457553,
+          "before": "qx5R",
+          "after": "fuad"
+        },
+        {
+          "offset": 1457866,
+          "before": "Dg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1457873,
+          "before": "ewxR",
+          "after": "KeGd"
+        },
+        {
+          "offset": 1458458,
+          "before": "EQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1458465,
+          "before": "UxtR",
+          "after": "AOOd"
+        },
+        {
+          "offset": 1459062,
+          "before": "JA==",
+          "after": "IQ=="
+        },
+        {
+          "offset": 1459069,
+          "before": "NxlR",
+          "after": "t+Cd"
+        },
+        {
+          "offset": 1460073,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1460080,
+          "before": "tBVR",
+          "after": "5tyd"
+        },
+        {
+          "offset": 1460809,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1460816,
+          "before": "DBNR",
+          "after": "Gdqd"
+        },
+        {
+          "offset": 1460917,
+          "before": "Dw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1460924,
+          "before": "uBJR",
+          "after": "wNmd"
+        },
+        {
+          "offset": 1464687,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1464694,
+          "before": "HgRR",
+          "after": "Gcud"
+        },
+        {
+          "offset": 1464864,
+          "before": "Dg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1464871,
+          "before": "fQNR",
+          "after": "dcqd"
+        },
+        {
+          "offset": 1465803,
+          "before": "EQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1465810,
+          "before": "4v9Q",
+          "after": "3cad"
+        },
+        {
+          "offset": 1466870,
+          "before": "Ew==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 1466877,
+          "before": "T/xQ",
+          "after": "xcKd"
+        },
+        {
+          "offset": 1467856,
+          "before": "Ew==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1467863,
+          "before": "jfhQ",
+          "after": "+76d"
+        },
+        {
+          "offset": 1468295,
+          "before": "Dg==",
+          "after": "EA=="
+        },
+        {
+          "offset": 1468302,
+          "before": "PvZQ",
+          "after": "V72d"
+        },
+        {
+          "offset": 1468770,
+          "before": "FA==",
+          "after": "Fw=="
+        },
+        {
+          "offset": 1468777,
+          "before": "c/RQ",
+          "after": "jbud"
+        },
+        {
+          "offset": 1472402,
+          "before": "Cw==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 1472409,
+          "before": "4+ZQ",
+          "after": "da2d"
+        },
+        {
+          "offset": 1476848,
+          "before": "CA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1476855,
+          "before": "ldVQ",
+          "after": "J5yd"
+        },
+        {
+          "offset": 1518708,
+          "before": "Ww==",
+          "after": "Qw=="
+        },
+        {
+          "offset": 1518715,
+          "before": "4VNQ",
+          "after": "tvic"
+        },
+        {
+          "offset": 1521754,
+          "before": "QkxQ",
+          "after": "G+2c"
+        },
+        {
+          "offset": 1605579,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1605586,
+          "before": "Gh5P",
+          "after": "sKWb"
+        },
+        {
+          "offset": 1605704,
+          "before": "Fg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1605711,
+          "before": "rR1P",
+          "after": "QKWb"
+        },
+        {
+          "offset": 1605835,
+          "before": "Fg==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1605842,
+          "before": "Qh1P",
+          "after": "0KSb"
+        },
+        {
+          "offset": 1606605,
+          "before": "CQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 1606612,
+          "before": "aBpP",
+          "after": "5KGb"
+        },
+        {
+          "offset": 1611333,
+          "before": "lwhP",
+          "after": "g4+b"
+        },
+        {
+          "offset": 1611478,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1611485,
+          "before": "a2VN",
+          "after": "aX6b"
+        },
+        {
+          "offset": 1621759,
+          "before": "CA==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1621766,
+          "before": "JttN",
+          "after": "p2Ob"
+        },
+        {
+          "offset": 1631205,
+          "before": "Hg==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 1631212,
+          "before": "eL5O",
+          "after": "AkKb"
+        },
+        {
+          "offset": 1631912,
+          "before": "CQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1631919,
+          "before": "5btO",
+          "after": "Wz+b"
+        },
+        {
+          "offset": 1632194,
+          "before": "4rpO",
+          "after": "VT6b"
+        },
+        {
+          "offset": 1632463,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1632470,
+          "before": "mmhN",
+          "after": "qDGb"
+        },
+        {
+          "offset": 1633124,
+          "before": "Gg==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1633131,
+          "before": "SbdO",
+          "after": "tjqb"
+        },
+        {
+          "offset": 1633944,
+          "before": "Jw==",
+          "after": "Ig=="
+        },
+        {
+          "offset": 1633951,
+          "before": "NbRO",
+          "after": "mDeb"
+        },
+        {
+          "offset": 1633969,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1633976,
+          "before": "kA1N",
+          "after": "jiab"
+        },
+        {
+          "offset": 1638960,
+          "before": "Fg==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 1638967,
+          "before": "TaFO",
+          "after": "IySb"
+        },
+        {
+          "offset": 1639737,
+          "before": "CQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1639744,
+          "before": "VJ1O",
+          "after": "yiCb"
+        },
+        {
+          "offset": 1640042,
+          "before": "OpxO",
+          "after": "rR+b"
+        },
+        {
+          "offset": 1640326,
+          "before": "EA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1640333,
+          "before": "d4hN",
+          "after": "/xKb"
+        },
+        {
+          "offset": 1640633,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1640640,
+          "before": "jApO",
+          "after": "dhab"
+        },
+        {
+          "offset": 1640934,
+          "before": "EA==",
+          "after": "EQ=="
+        },
+        {
+          "offset": 1640941,
+          "before": "R4ZN",
+          "after": "mAyb"
+        },
+        {
+          "offset": 1641518,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1641525,
+          "before": "b5dO",
+          "after": "QRqb"
+        },
+        {
+          "offset": 1641817,
+          "before": "Fw==",
+          "after": "Ew=="
+        },
+        {
+          "offset": 1641824,
+          "before": "TJZO",
+          "after": "HRmb"
+        },
+        {
+          "offset": 1642992,
+          "before": "ZNFN",
+          "after": "8A2b"
+        },
+        {
+          "offset": 1643054,
+          "before": "lpFO",
+          "after": "YxSb"
+        },
+        {
+          "offset": 1643127,
+          "before": "DddM",
+          "after": "Ugab"
+        },
+        {
+          "offset": 1645674,
+          "before": "Gg==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 1645681,
+          "before": "Y4dO",
+          "after": "LQqb"
+        },
+        {
+          "offset": 1646299,
+          "before": "GYVO",
+          "after": "3web"
+        },
+        {
+          "offset": 1646766,
+          "before": "Bg==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1646774,
+          "before": "bk0=",
+          "after": "9Zo="
+        },
+        {
+          "offset": 1646880,
+          "before": "hIFO",
+          "after": "9wSb"
+        },
+        {
+          "offset": 1646978,
+          "before": "DQ==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1646985,
+          "before": "+4BO",
+          "after": "TQWb"
+        },
+        {
+          "offset": 1647083,
+          "before": "Bg==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1647091,
+          "before": "bU0=",
+          "after": "9Jo="
+        },
+        {
+          "offset": 1647188,
+          "before": "Bw==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1647195,
+          "before": "EW1N",
+          "after": "NACb"
+        },
+        {
+          "offset": 1647300,
+          "before": "4H9O",
+          "after": "UwOb"
+        },
+        {
+          "offset": 1647398,
+          "before": "DQ==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1647405,
+          "before": "V39O",
+          "after": "qQOb"
+        },
+        {
+          "offset": 1838505,
+          "before": "DQ==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1838512,
+          "before": "zARL",
+          "after": "MBmY"
+        },
+        {
+          "offset": 1852323,
+          "before": "CA==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 1852330,
+          "before": "6kxL",
+          "after": "TOOX"
+        },
+        {
+          "offset": 1902448,
+          "before": "HQ==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1902455,
+          "before": "FQtK",
+          "after": "iR+X"
+        },
+        {
+          "offset": 1914801,
+          "before": "Ew==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1914808,
+          "before": "xElK",
+          "after": "neOW"
+        },
+        {
+          "offset": 1915006,
+          "before": "GQ==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 1915013,
+          "before": "D0lK",
+          "after": "ke6W"
+        },
+        {
+          "offset": 1928595,
+          "before": "Fw==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1928602,
+          "before": "uqRJ",
+          "after": "mLmW"
+        },
+        {
+          "offset": 1963688,
+          "before": "FA==",
+          "after": "GA=="
+        },
+        {
+          "offset": 1963695,
+          "before": "ncpI",
+          "after": "mTCW"
+        },
+        {
+          "offset": 1963713,
+          "before": "Ew==",
+          "after": "GA=="
+        },
+        {
+          "offset": 1963720,
+          "before": "nMpI",
+          "after": "mTCW"
+        },
+        {
+          "offset": 1963770,
+          "before": "gspI",
+          "after": "gDCW"
+        },
+        {
+          "offset": 1963788,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1963795,
+          "before": "ecpI",
+          "after": "dDCW"
+        },
+        {
+          "offset": 1963813,
+          "before": "Ew==",
+          "after": "FA=="
+        },
+        {
+          "offset": 1963820,
+          "before": "cMpI",
+          "after": "aDCW"
+        },
+        {
+          "offset": 1963838,
+          "before": "FA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1963845,
+          "before": "b8pI",
+          "after": "ZDCW"
+        },
+        {
+          "offset": 1963863,
+          "before": "Eg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1963870,
+          "before": "bspI",
+          "after": "YTCW"
+        },
+        {
+          "offset": 1963913,
+          "before": "DA==",
+          "after": "GA=="
+        },
+        {
+          "offset": 1963920,
+          "before": "ZMpI",
+          "after": "PDCW"
+        },
+        {
+          "offset": 1963938,
+          "before": "DQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1963945,
+          "before": "W8pI",
+          "after": "PDCW"
+        },
+        {
+          "offset": 1963963,
+          "before": "Ew==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1963970,
+          "before": "UspI",
+          "after": "MDCW"
+        },
+        {
+          "offset": 1963988,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1963995,
+          "before": "TcpI",
+          "after": "KjCW"
+        },
+        {
+          "offset": 1964038,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1964045,
+          "before": "J8pI",
+          "after": "/y+W"
+        },
+        {
+          "offset": 1964063,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1964070,
+          "before": "HspI",
+          "after": "8y+W"
+        },
+        {
+          "offset": 1964088,
+          "before": "Fg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1964095,
+          "before": "FcpI",
+          "after": "5y+W"
+        },
+        {
+          "offset": 1964113,
+          "before": "CQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1964120,
+          "before": "FMpI",
+          "after": "4S+W"
+        },
+        {
+          "offset": 1964138,
+          "before": "Ew==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1964145,
+          "before": "C8pI",
+          "after": "1S+W"
+        },
+        {
+          "offset": 1964170,
+          "before": "CspI",
+          "after": "zy+W"
+        },
+        {
+          "offset": 1964188,
+          "before": "Dw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1964195,
+          "before": "CcpI",
+          "after": "zC+W"
+        },
+        {
+          "offset": 1990177,
+          "before": "Dg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1990184,
+          "before": "dGlJ",
+          "after": "WsqV"
+        },
+        {
+          "offset": 1992049,
+          "before": "CA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1992056,
+          "before": "5GJJ",
+          "after": "F8OV"
+        },
+        {
+          "offset": 1994101,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1994108,
+          "before": "JCxI",
+          "after": "O7WV"
+        },
+        {
+          "offset": 1994306,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 1994313,
+          "before": "965I",
+          "after": "bKaV"
+        },
+        {
+          "offset": 1994501,
+          "before": "Cw==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 1994508,
+          "before": "QK5I",
+          "after": "M7OV"
+        },
+        {
+          "offset": 1994674,
+          "before": "EA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 1994681,
+          "before": "OypI",
+          "after": "lrKV"
+        },
+        {
+          "offset": 1994840,
+          "before": "wPRH",
+          "after": "RLiV"
+        },
+        {
+          "offset": 1997186,
+          "before": "Cw==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 1997193,
+          "before": "I09J",
+          "after": "Gq+V"
+        },
+        {
+          "offset": 1997342,
+          "before": "Yw==",
+          "after": "SA=="
+        },
+        {
+          "offset": 1997349,
+          "before": "l05J",
+          "after": "jq6V"
+        },
+        {
+          "offset": 1998616,
+          "before": "EQ==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 1998623,
+          "before": "5UpJ",
+          "after": "p5aV"
+        },
+        {
+          "offset": 1999533,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 1999540,
+          "before": "aEdJ",
+          "after": "SKaV"
+        },
+        {
+          "offset": 2000337,
+          "before": "DQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2000344,
+          "before": "VERJ",
+          "after": "MaOV"
+        },
+        {
+          "offset": 2001200,
+          "before": "FA==",
+          "after": "Fw=="
+        },
+        {
+          "offset": 2001207,
+          "before": "7T9J",
+          "after": "4p+V"
+        },
+        {
+          "offset": 2002892,
+          "before": "DA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2002899,
+          "before": "aTpJ",
+          "after": "XpmV"
+        },
+        {
+          "offset": 2003688,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2003695,
+          "before": "sQZI",
+          "after": "yI+V"
+        },
+        {
+          "offset": 2003877,
+          "before": "c9FH",
+          "after": "95SV"
+        },
+        {
+          "offset": 2004594,
+          "before": "GQ==",
+          "after": "JA=="
+        },
+        {
+          "offset": 2004601,
+          "before": "0zNJ",
+          "after": "yJKV"
+        },
+        {
+          "offset": 2005807,
+          "before": "Ew==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2005814,
+          "before": "Ni9J",
+          "after": "MI6V"
+        },
+        {
+          "offset": 2005972,
+          "before": "Bw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2005979,
+          "before": "qS5J",
+          "after": "m42V"
+        },
+        {
+          "offset": 2006542,
+          "before": "CsdH",
+          "after": "joqV"
+        },
+        {
+          "offset": 2007158,
+          "before": "GQ==",
+          "after": "JA=="
+        },
+        {
+          "offset": 2007165,
+          "before": "zylJ",
+          "after": "xIiV"
+        },
+        {
+          "offset": 2008306,
+          "before": "Dw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2008313,
+          "before": "kyVJ",
+          "after": "hISV"
+        },
+        {
+          "offset": 2008463,
+          "before": "Zw==",
+          "after": "Sw=="
+        },
+        {
+          "offset": 2008470,
+          "before": "BiVJ",
+          "after": "+oOV"
+        },
+        {
+          "offset": 2015722,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2015729,
+          "before": "r9dH",
+          "after": "xmCV"
+        },
+        {
+          "offset": 2022823,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2022830,
+          "before": "8rtH",
+          "after": "CUWV"
+        },
+        {
+          "offset": 2023021,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2023028,
+          "before": "zD5I",
+          "after": "QTaV"
+        },
+        {
+          "offset": 2023153,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2023160,
+          "before": "KOxI",
+          "after": "5EqV"
+        },
+        {
+          "offset": 2029398,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2029405,
+          "before": "w9NI",
+          "after": "fzKV"
+        },
+        {
+          "offset": 2029492,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2029499,
+          "before": "hSVI",
+          "after": "+hyV"
+        },
+        {
+          "offset": 2029580,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2029587,
+          "before": "jaFH",
+          "after": "pCqV"
+        },
+        {
+          "offset": 2037368,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2037375,
+          "before": "YU5H",
+          "after": "6P6U"
+        },
+        {
+          "offset": 2042923,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2042930,
+          "before": "DvFH",
+          "after": "g+iU"
+        },
+        {
+          "offset": 2042983,
+          "before": "RaVI",
+          "after": "fP2U"
+        },
+        {
+          "offset": 2043036,
+          "before": "IKVI",
+          "after": "UP2U"
+        },
+        {
+          "offset": 2043082,
+          "before": "DQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2043089,
+          "before": "+6RI",
+          "after": "JP2U"
+        },
+        {
+          "offset": 2044474,
+          "before": "Dg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2044481,
+          "before": "o6FI",
+          "after": "xPeU"
+        },
+        {
+          "offset": 2044717,
+          "before": "Z49G",
+          "after": "geGU"
+        },
+        {
+          "offset": 2044849,
+          "before": "Q6BI",
+          "after": "ZPaU"
+        },
+        {
+          "offset": 2045192,
+          "before": "CA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2045199,
+          "before": "FSNH",
+          "after": "P+aU"
+        },
+        {
+          "offset": 2046544,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2046551,
+          "before": "9ZtI",
+          "after": "yO+U"
+        },
+        {
+          "offset": 2084213,
+          "before": "Bw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2084220,
+          "before": "0BRI",
+          "after": "sFyU"
+        },
+        {
+          "offset": 2084322,
+          "before": "IQ==",
+          "after": "Hg=="
+        },
+        {
+          "offset": 2084329,
+          "before": "axRI",
+          "after": "UFyU"
+        },
+        {
+          "offset": 2084710,
+          "before": "DQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2084717,
+          "before": "DxNI",
+          "after": "61qU"
+        },
+        {
+          "offset": 2099889,
+          "before": "IwBI",
+          "after": "tB+U"
+        },
+        {
+          "offset": 2137119,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2137126,
+          "before": "puxE",
+          "after": "13yT"
+        },
+        {
+          "offset": 2146950,
+          "before": "GQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2146957,
+          "before": "1z1F",
+          "after": "7meT"
+        },
+        {
+          "offset": 2147060,
+          "before": "EEhH",
+          "after": "mmeT"
+        },
+        {
+          "offset": 2147309,
+          "before": "VQ==",
+          "after": "Qg=="
+        },
+        {
+          "offset": 2147316,
+          "before": "uEdH",
+          "after": "tmaT"
+        },
+        {
+          "offset": 2147359,
+          "before": "SQ==",
+          "after": "RQ=="
+        },
+        {
+          "offset": 2147366,
+          "before": "5kdH",
+          "after": "x2aT"
+        },
+        {
+          "offset": 2147491,
+          "before": "uUdH",
+          "after": "kGaT"
+        },
+        {
+          "offset": 2148404,
+          "before": "EQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2148411,
+          "before": "scNF",
+          "after": "H02T"
+        },
+        {
+          "offset": 2148622,
+          "before": "EA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2148629,
+          "before": "t0NH",
+          "after": "K2KT"
+        },
+        {
+          "offset": 2148679,
+          "before": "GA==",
+          "after": "IQ=="
+        },
+        {
+          "offset": 2148686,
+          "before": "lkNH",
+          "after": "BWKT"
+        },
+        {
+          "offset": 2148736,
+          "before": "BQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2148743,
+          "before": "sZRF",
+          "after": "7mGT"
+        },
+        {
+          "offset": 2148793,
+          "before": "CA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2148800,
+          "before": "jK1G",
+          "after": "wmGT"
+        },
+        {
+          "offset": 2148850,
+          "before": "Bw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2148857,
+          "before": "C0NH",
+          "after": "lmGT"
+        },
+        {
+          "offset": 2148934,
+          "before": "CQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2148941,
+          "before": "v0JH",
+          "after": "T2GT"
+        },
+        {
+          "offset": 2160890,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2160897,
+          "before": "kx9H",
+          "after": "qDKT"
+        },
+        {
+          "offset": 2179713,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2179720,
+          "before": "kEZG",
+          "after": "NOmS"
+        },
+        {
+          "offset": 2187852,
+          "before": "PA==",
+          "after": "Ng=="
+        },
+        {
+          "offset": 2187859,
+          "before": "ScFG",
+          "after": "cMmS"
+        },
+        {
+          "offset": 2188599,
+          "before": "Bg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2188606,
+          "before": "sr5G",
+          "after": "vMaS"
+        },
+        {
+          "offset": 2188820,
+          "before": "EQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2188827,
+          "before": "4b1G",
+          "after": "78WS"
+        },
+        {
+          "offset": 2189034,
+          "before": "Fw==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2189041,
+          "before": "I71G",
+          "after": "KcWS"
+        },
+        {
+          "offset": 2189245,
+          "before": "Ew==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2189252,
+          "before": "aLxG",
+          "after": "bMSS"
+        },
+        {
+          "offset": 2189426,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2189433,
+          "before": "y7tG",
+          "after": "zcOS"
+        },
+        {
+          "offset": 2189464,
+          "before": "Dg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2189471,
+          "before": "vbtG",
+          "after": "usOS"
+        },
+        {
+          "offset": 2189502,
+          "before": "Ew==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2189509,
+          "before": "p7tG",
+          "after": "ocOS"
+        },
+        {
+          "offset": 2189540,
+          "before": "Bg==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 2189547,
+          "before": "kedE",
+          "after": "iMOS"
+        },
+        {
+          "offset": 2189578,
+          "before": "CQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2189585,
+          "before": "c7tG",
+          "after": "bMOS"
+        },
+        {
+          "offset": 2189616,
+          "before": "CQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2189623,
+          "before": "XbtG",
+          "after": "U8OS"
+        },
+        {
+          "offset": 2189654,
+          "before": "Cw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2189661,
+          "before": "R7tG",
+          "after": "OsOS"
+        },
+        {
+          "offset": 2189692,
+          "before": "Ew==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2189699,
+          "before": "MbtG",
+          "after": "IcOS"
+        },
+        {
+          "offset": 2189730,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2189737,
+          "before": "I7tG",
+          "after": "DsOS"
+        },
+        {
+          "offset": 2190403,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2190410,
+          "before": "krhG",
+          "after": "esCS"
+        },
+        {
+          "offset": 2190719,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2190726,
+          "before": "shVF",
+          "after": "5KiS"
+        },
+        {
+          "offset": 2190842,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2190849,
+          "before": "d+NE",
+          "after": "hKyS"
+        },
+        {
+          "offset": 2210585,
+          "before": "Cw==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2210592,
+          "before": "NGpG",
+          "after": "sXGS"
+        },
+        {
+          "offset": 2212095,
+          "before": "Ew==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2212102,
+          "before": "NmVG",
+          "after": "22uS"
+        },
+        {
+          "offset": 2214209,
+          "before": "BQ==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 2214216,
+          "before": "jF5G",
+          "after": "pmOS"
+        },
+        {
+          "offset": 2221579,
+          "before": "Bw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2221586,
+          "before": "8nBE",
+          "after": "FjWS"
+        },
+        {
+          "offset": 2231119,
+          "before": "CA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2231126,
+          "before": "zkxE",
+          "after": "+A+S"
+        },
+        {
+          "offset": 2231419,
+          "before": "Cg==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2231426,
+          "before": "Ah5G",
+          "after": "diCS"
+        },
+        {
+          "offset": 2232470,
+          "before": "CQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2232477,
+          "before": "nzFG",
+          "after": "YhyS"
+        },
+        {
+          "offset": 2234136,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2234143,
+          "before": "XS1G",
+          "after": "7RWS"
+        },
+        {
+          "offset": 2234592,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2234599,
+          "before": "3StG",
+          "after": "OBSS"
+        },
+        {
+          "offset": 2252422,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2252429,
+          "before": "D+dF",
+          "after": "n86R"
+        },
+        {
+          "offset": 2253727,
+          "before": "gYBD",
+          "after": "87SR"
+        },
+        {
+          "offset": 2254012,
+          "before": "Bg==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 2254019,
+          "before": "5eBF",
+          "after": "dsiR"
+        },
+        {
+          "offset": 2254299,
+          "before": "Bg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2254306,
+          "before": "PhJF",
+          "after": "YceR"
+        },
+        {
+          "offset": 2254569,
+          "before": "EQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2254576,
+          "before": "xN5F",
+          "after": "YMaR"
+        },
+        {
+          "offset": 2254817,
+          "before": "Bg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2254824,
+          "before": "4N1F",
+          "after": "eMWR"
+        },
+        {
+          "offset": 2256785,
+          "before": "DA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2256792,
+          "before": "vNZF",
+          "after": "1b2R"
+        },
+        {
+          "offset": 2257000,
+          "before": "Hg==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 2257007,
+          "before": "9dVF",
+          "after": "Dr2R"
+        },
+        {
+          "offset": 2258421,
+          "before": "CQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2258428,
+          "before": "uMxF",
+          "after": "nbeR"
+        },
+        {
+          "offset": 2258746,
+          "before": "Cg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2258753,
+          "before": "g8tF",
+          "after": "a7aR"
+        },
+        {
+          "offset": 2259071,
+          "before": "CQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2259078,
+          "before": "TspF",
+          "after": "ObWR"
+        },
+        {
+          "offset": 2259394,
+          "before": "XmpD",
+          "after": "0J6R"
+        },
+        {
+          "offset": 2259727,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2259734,
+          "before": "ysdF",
+          "after": "vLKR"
+        },
+        {
+          "offset": 2260050,
+          "before": "msZF",
+          "after": "h7GR"
+        },
+        {
+          "offset": 2260355,
+          "before": "EQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2260362,
+          "before": "csVF",
+          "after": "X7CR"
+        },
+        {
+          "offset": 2262232,
+          "before": "EA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2262239,
+          "before": "Nb5F",
+          "after": "GqmR"
+        },
+        {
+          "offset": 2262506,
+          "before": "BA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2262513,
+          "before": "N71F",
+          "after": "FaiR"
+        },
+        {
+          "offset": 2262643,
+          "before": "CQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2262650,
+          "before": "urxF",
+          "after": "maeR"
+        },
+        {
+          "offset": 2262813,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2262820,
+          "before": "HLxF",
+          "after": "9qaR"
+        },
+        {
+          "offset": 2262940,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2262947,
+          "before": "pbtF",
+          "after": "fqaR"
+        },
+        {
+          "offset": 2263245,
+          "before": "Hg==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 2263252,
+          "before": "gLpF",
+          "after": "VKWR"
+        },
+        {
+          "offset": 2263597,
+          "before": "R7lF",
+          "after": "F6SR"
+        },
+        {
+          "offset": 2263877,
+          "before": "L7hF",
+          "after": "/6KR"
+        },
+        {
+          "offset": 2264133,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2264140,
+          "before": "9LZF",
+          "after": "zqGR"
+        },
+        {
+          "offset": 2281716,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2281723,
+          "before": "qXVF",
+          "after": "UF2R"
+        },
+        {
+          "offset": 2281895,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2281902,
+          "before": "7nNF",
+          "after": "fluR"
+        },
+        {
+          "offset": 2297393,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2297400,
+          "before": "VDxF",
+          "after": "JiCR"
+        },
+        {
+          "offset": 2297520,
+          "before": "Dw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2297527,
+          "before": "7TtF",
+          "after": "uh+R"
+        },
+        {
+          "offset": 2297940,
+          "before": "QLJC",
+          "after": "WgSR"
+        },
+        {
+          "offset": 2298167,
+          "before": "CQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2298174,
+          "before": "djlF",
+          "after": "QB2R"
+        },
+        {
+          "offset": 2298384,
+          "before": "BQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2298391,
+          "before": "vThF",
+          "after": "bhyR"
+        },
+        {
+          "offset": 2298613,
+          "before": "/zdF",
+          "after": "nRuR"
+        },
+        {
+          "offset": 2298828,
+          "before": "BQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2298835,
+          "before": "ZUpD",
+          "after": "oheR"
+        },
+        {
+          "offset": 2299228,
+          "before": "BQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2299235,
+          "before": "tTVF",
+          "after": "NhmR"
+        },
+        {
+          "offset": 2299367,
+          "before": "BQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2299374,
+          "before": "MjVF",
+          "after": "uBiR"
+        },
+        {
+          "offset": 2299513,
+          "before": "Jg==",
+          "after": "JA=="
+        },
+        {
+          "offset": 2299520,
+          "before": "rDRF",
+          "after": "MxiR"
+        },
+        {
+          "offset": 2299568,
+          "before": "MA==",
+          "after": "LQ=="
+        },
+        {
+          "offset": 2299575,
+          "before": "nTRF",
+          "after": "IRiR"
+        },
+        {
+          "offset": 2299616,
+          "before": "EA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2299623,
+          "before": "pTRF",
+          "after": "HxiR"
+        },
+        {
+          "offset": 2299725,
+          "before": "Dw==",
+          "after": "GA=="
+        },
+        {
+          "offset": 2299732,
+          "before": "UDRF",
+          "after": "vxeR"
+        },
+        {
+          "offset": 2299864,
+          "before": "Eg==",
+          "after": "GA=="
+        },
+        {
+          "offset": 2299871,
+          "before": "1TNF",
+          "after": "TReR"
+        },
+        {
+          "offset": 2300007,
+          "before": "Lg==",
+          "after": "MA=="
+        },
+        {
+          "offset": 2300014,
+          "before": "XjNF",
+          "after": "1xaR"
+        },
+        {
+          "offset": 2300053,
+          "before": "EA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2300060,
+          "before": "YDNF",
+          "after": "2haR"
+        },
+        {
+          "offset": 2300321,
+          "before": "BQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2300328,
+          "before": "aDJF",
+          "after": "5BWR"
+        },
+        {
+          "offset": 2300453,
+          "before": "Ew==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2300460,
+          "before": "8DFF",
+          "after": "bRWR"
+        },
+        {
+          "offset": 2301188,
+          "before": "GQ==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2301195,
+          "before": "KS9F",
+          "after": "mxKR"
+        },
+        {
+          "offset": 2301888,
+          "before": "CA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2301895,
+          "before": "tSxF",
+          "after": "9Q+R"
+        },
+        {
+          "offset": 2305958,
+          "before": "BQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2305965,
+          "before": "9xxF",
+          "after": "HwCR"
+        },
+        {
+          "offset": 2307578,
+          "before": "Gg==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 2307585,
+          "before": "6xZF",
+          "after": "3vmQ"
+        },
+        {
+          "offset": 2308047,
+          "before": "Fw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2308054,
+          "before": "ThVF",
+          "after": "JfiQ"
+        },
+        {
+          "offset": 2308433,
+          "before": "Gw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2308440,
+          "before": "/BNF",
+          "after": "tvaQ"
+        },
+        {
+          "offset": 2308823,
+          "before": "HQ==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 2308830,
+          "before": "rhJF",
+          "after": "Q/WQ"
+        },
+        {
+          "offset": 2315402,
+          "before": "Cw==",
+          "after": "CA=="
+        },
+        {
+          "offset": 2315409,
+          "before": "+/lE",
+          "after": "rNuQ"
+        },
+        {
+          "offset": 2345683,
+          "before": "EQ==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2345690,
+          "before": "coZE",
+          "after": "bGWQ"
+        },
+        {
+          "offset": 2345793,
+          "before": "DQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2345800,
+          "before": "HIZE",
+          "after": "FGWQ"
+        },
+        {
+          "offset": 2345904,
+          "before": "Cg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2345911,
+          "before": "vYVE",
+          "after": "uGSQ"
+        },
+        {
+          "offset": 2346005,
+          "before": "DA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2346012,
+          "before": "aIVE",
+          "after": "ZmSQ"
+        },
+        {
+          "offset": 2415406,
+          "before": "Cw==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 2415413,
+          "before": "z31D",
+          "after": "YFWP"
+        },
+        {
+          "offset": 2415808,
+          "before": "ZHxD",
+          "after": "31OP"
+        },
+        {
+          "offset": 2430640,
+          "before": "Bw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2430647,
+          "before": "nTND",
+          "after": "7xmP"
+        },
+        {
+          "offset": 2430743,
+          "before": "Bw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2430750,
+          "before": "PjND",
+          "after": "lRmP"
+        },
+        {
+          "offset": 2430846,
+          "before": "Bw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2430853,
+          "before": "3zJD",
+          "after": "OxmP"
+        },
+        {
+          "offset": 2430949,
+          "before": "FA==",
+          "after": "GA=="
+        },
+        {
+          "offset": 2430956,
+          "before": "gDJD",
+          "after": "4RiP"
+        },
+        {
+          "offset": 2431339,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2431346,
+          "before": "EjFD",
+          "after": "dBeP"
+        },
+        {
+          "offset": 2431668,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2431675,
+          "before": "YS5D",
+          "after": "wxOP"
+        },
+        {
+          "offset": 2434750,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2434757,
+          "before": "x5tA",
+          "after": "4u2O"
+        },
+        {
+          "offset": 2434960,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2434967,
+          "before": "2SlB",
+          "after": "5/KO"
+        },
+        {
+          "offset": 2435064,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2435071,
+          "before": "OVtB",
+          "after": "a+6O"
+        },
+        {
+          "offset": 2435168,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2435175,
+          "before": "ESlB",
+          "after": "HvKO"
+        },
+        {
+          "offset": 2435279,
+          "before": "tcBA",
+          "after": "+u+O"
+        },
+        {
+          "offset": 2435480,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2435487,
+          "before": "oTtB",
+          "after": "TgeP"
+        },
+        {
+          "offset": 2437269,
+          "before": "CA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2437276,
+          "before": "qC1B",
+          "after": "WACP"
+        },
+        {
+          "offset": 2437325,
+          "before": "DQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2437332,
+          "before": "uEZC",
+          "after": "LQCP"
+        },
+        {
+          "offset": 2437573,
+          "before": "Ew==",
+          "after": "GA=="
+        },
+        {
+          "offset": 2437580,
+          "before": "2CZD",
+          "after": "Qv+O"
+        },
+        {
+          "offset": 2437740,
+          "before": "UCZD",
+          "after": "u/6O"
+        },
+        {
+          "offset": 2437880,
+          "before": "CQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2437887,
+          "before": "DdpC",
+          "after": "nfiO"
+        },
+        {
+          "offset": 2575855,
+          "before": "GA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2575862,
+          "before": "LgdB",
+          "after": "ROOM"
+        },
+        {
+          "offset": 2575880,
+          "before": "GA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2575887,
+          "before": "NQdB",
+          "after": "O+OM"
+        },
+        {
+          "offset": 2575905,
+          "before": "Ew==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2575912,
+          "before": "PAdB",
+          "after": "NeOM"
+        },
+        {
+          "offset": 2612833,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2612840,
+          "before": "bAZA",
+          "after": "C1OM"
+        },
+        {
+          "offset": 2612883,
+          "before": "Cg==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2612890,
+          "before": "SgZA",
+          "after": "4FKM"
+        },
+        {
+          "offset": 2612933,
+          "before": "Cw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2612940,
+          "before": "wAZA",
+          "after": "tVKM"
+        },
+        {
+          "offset": 2612958,
+          "before": "DQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2612965,
+          "before": "twZA",
+          "after": "o1KM"
+        },
+        {
+          "offset": 2612983,
+          "before": "DQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2612990,
+          "before": "rgZA",
+          "after": "l1KM"
+        },
+        {
+          "offset": 2613008,
+          "before": "DA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2613015,
+          "before": "pQZA",
+          "after": "i1KM"
+        },
+        {
+          "offset": 2613033,
+          "before": "DA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2613040,
+          "before": "nAZA",
+          "after": "glKM"
+        },
+        {
+          "offset": 2613065,
+          "before": "7wVA",
+          "after": "eVKM"
+        },
+        {
+          "offset": 2613108,
+          "before": "DQ==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 2613115,
+          "before": "YQZA",
+          "after": "TlKM"
+        },
+        {
+          "offset": 2613133,
+          "before": "Dw==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 2613140,
+          "before": "WAZA",
+          "after": "P1KM"
+        },
+        {
+          "offset": 2613158,
+          "before": "GA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2613165,
+          "before": "TwZA",
+          "after": "MFKM"
+        },
+        {
+          "offset": 2613346,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2613353,
+          "before": "s2hA",
+          "after": "FU6M"
+        },
+        {
+          "offset": 2613570,
+          "before": "BQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2613577,
+          "before": "+7Y9",
+          "after": "kzaM"
+        },
+        {
+          "offset": 2613595,
+          "before": "CA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2613602,
+          "before": "OqM+",
+          "after": "hzaM"
+        },
+        {
+          "offset": 2613620,
+          "before": "GA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2613627,
+          "before": "MaM+",
+          "after": "ezaM"
+        },
+        {
+          "offset": 2613645,
+          "before": "GQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2613652,
+          "before": "OKM+",
+          "after": "dTaM"
+        },
+        {
+          "offset": 2613670,
+          "before": "IQ==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2613677,
+          "before": "P6M+",
+          "after": "bzaM"
+        },
+        {
+          "offset": 2613695,
+          "before": "Fw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2613702,
+          "before": "TqM+",
+          "after": "bDaM"
+        },
+        {
+          "offset": 2613720,
+          "before": "Fw==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2613727,
+          "before": "TaM+",
+          "after": "ZjaM"
+        },
+        {
+          "offset": 2616148,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2616155,
+          "before": "efk/",
+          "after": "GEaM"
+        },
+        {
+          "offset": 2616198,
+          "before": "Cg==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2616205,
+          "before": "V/k/",
+          "after": "7UWM"
+        },
+        {
+          "offset": 2616380,
+          "before": "/Pg/",
+          "after": "hkWM"
+        },
+        {
+          "offset": 2616658,
+          "before": "BA==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2616665,
+          "before": "w1tA",
+          "after": "JUGM"
+        },
+        {
+          "offset": 2617842,
+          "before": "BQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2617849,
+          "before": "S6Y9",
+          "after": "4yWM"
+        },
+        {
+          "offset": 2617867,
+          "before": "CA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2617874,
+          "before": "ipI+",
+          "after": "1yWM"
+        },
+        {
+          "offset": 2628755,
+          "before": "EA==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2628762,
+          "before": "0lJA",
+          "after": "UxWM"
+        },
+        {
+          "offset": 2629037,
+          "before": "BQ==",
+          "after": "CQ=="
+        },
+        {
+          "offset": 2629044,
+          "before": "zFFA",
+          "after": "SRSM"
+        },
+        {
+          "offset": 2629241,
+          "before": "G6Q9",
+          "after": "NfaL"
+        },
+        {
+          "offset": 2629612,
+          "before": "Cg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2629619,
+          "before": "mU9A",
+          "after": "FBKM"
+        },
+        {
+          "offset": 2629773,
+          "before": "Cg==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2629780,
+          "before": "CE9A",
+          "after": "gxGM"
+        },
+        {
+          "offset": 2632340,
+          "before": "Bw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2632347,
+          "before": "GTo+",
+          "after": "jAeM"
+        },
+        {
+          "offset": 2632393,
+          "before": "Dg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2632400,
+          "before": "ZEVA",
+          "after": "XgeM"
+        },
+        {
+          "offset": 2632583,
+          "before": "Bw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2632590,
+          "before": "tkRA",
+          "after": "rQaM"
+        },
+        {
+          "offset": 2632804,
+          "before": "MJY9",
+          "after": "SuiL"
+        },
+        {
+          "offset": 2633131,
+          "before": "oUJA",
+          "after": "nQSM"
+        },
+        {
+          "offset": 2633932,
+          "before": "DQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2633939,
+          "before": "iT9A",
+          "after": "ggGM"
+        },
+        {
+          "offset": 2635046,
+          "before": "Bw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2635053,
+          "before": "hy8+",
+          "after": "+vyL"
+        },
+        {
+          "offset": 2635103,
+          "before": "Bw==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2635110,
+          "before": "Ri8+",
+          "after": "2+qL"
+        },
+        {
+          "offset": 2635976,
+          "before": "GA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2635983,
+          "before": "1TdA",
+          "after": "lvmL"
+        },
+        {
+          "offset": 2637817,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2637824,
+          "before": "zA8+",
+          "after": "ePKL"
+        },
+        {
+          "offset": 2637873,
+          "before": "jzBA",
+          "after": "TvKL"
+        },
+        {
+          "offset": 2637915,
+          "before": "BQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2637922,
+          "before": "1h0+",
+          "after": "E+uL"
+        },
+        {
+          "offset": 2639752,
+          "before": "/KE9",
+          "after": "QdGL"
+        },
+        {
+          "offset": 2657752,
+          "before": "EA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2657759,
+          "before": "ZSJA",
+          "after": "p6SL"
+        },
+        {
+          "offset": 2665347,
+          "before": "Ew==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2665354,
+          "before": "4gRA",
+          "after": "EoeL"
+        },
+        {
+          "offset": 2687004,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2687011,
+          "before": "TVE9",
+          "after": "WxqL"
+        },
+        {
+          "offset": 2711996,
+          "before": "Bw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2712003,
+          "before": "QfU8",
+          "after": "ZbmK"
+        },
+        {
+          "offset": 2715138,
+          "before": "DA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2715145,
+          "before": "yxI/",
+          "after": "psSK"
+        },
+        {
+          "offset": 2715427,
+          "before": "Ww==",
+          "after": "Pw=="
+        },
+        {
+          "offset": 2715434,
+          "before": "whE/",
+          "after": "m8OK"
+        },
+        {
+          "offset": 2715450,
+          "before": "Bw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2715457,
+          "before": "w+c8",
+          "after": "56uK"
+        },
+        {
+          "offset": 2716669,
+          "before": "GQ==",
+          "after": "GA=="
+        },
+        {
+          "offset": 2716676,
+          "before": "IAQ/",
+          "after": "Ab+K"
+        },
+        {
+          "offset": 2716730,
+          "before": "OQ==",
+          "after": "GA=="
+        },
+        {
+          "offset": 2716737,
+          "before": "Cw0/",
+          "after": "3b6K"
+        },
+        {
+          "offset": 2716753,
+          "before": "GQ==",
+          "after": "GA=="
+        },
+        {
+          "offset": 2716760,
+          "before": "zAM/",
+          "after": "rb6K"
+        },
+        {
+          "offset": 2717420,
+          "before": "Cg==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2717427,
+          "before": "AQg/",
+          "after": "RLyK"
+        },
+        {
+          "offset": 2718252,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2718259,
+          "before": "OQU/",
+          "after": "EbmK"
+        },
+        {
+          "offset": 2719846,
+          "before": "DQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2719853,
+          "before": "7/0+",
+          "after": "6LGK"
+        },
+        {
+          "offset": 2725185,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2725192,
+          "before": "KLw8",
+          "after": "NoWK"
+        },
+        {
+          "offset": 2726625,
+          "before": "EA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2726632,
+          "before": "xOY+",
+          "after": "b5iK"
+        },
+        {
+          "offset": 2736619,
+          "before": "Og==",
+          "after": "Mw=="
+        },
+        {
+          "offset": 2736626,
+          "before": "6sE+",
+          "after": "cnGK"
+        },
+        {
+          "offset": 2736641,
+          "before": "Fg==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 2736648,
+          "before": "fOE9",
+          "after": "UmSK"
+        },
+        {
+          "offset": 2736952,
+          "before": "Fg==",
+          "after": "Gw=="
+        },
+        {
+          "offset": 2736959,
+          "before": "ReA9",
+          "after": "G2OK"
+        },
+        {
+          "offset": 2738539,
+          "before": "EQ==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2738546,
+          "before": "grs+",
+          "after": "JmqK"
+        },
+        {
+          "offset": 2746126,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2746133,
+          "before": "j7w9",
+          "after": "YT+K"
+        },
+        {
+          "offset": 2746191,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2746198,
+          "before": "Gmo8",
+          "after": "KDOK"
+        },
+        {
+          "offset": 2746250,
+          "before": "EQ==",
+          "after": "Dw=="
+        },
+        {
+          "offset": 2746257,
+          "before": "w48+",
+          "after": "FEyK"
+        },
+        {
+          "offset": 2746316,
+          "before": "VPw7",
+          "after": "xjCK"
+        },
+        {
+          "offset": 2746368,
+          "before": "Cw==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2746375,
+          "before": "ZY8+",
+          "after": "rkuK"
+        },
+        {
+          "offset": 2746424,
+          "before": "Cg==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2746431,
+          "before": "PY8+",
+          "after": "jEuK"
+        },
+        {
+          "offset": 2746473,
+          "before": "DA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2746480,
+          "before": "HI8+",
+          "after": "cUuK"
+        },
+        {
+          "offset": 2746533,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2746540,
+          "before": "8I4+",
+          "after": "S0uK"
+        },
+        {
+          "offset": 2746680,
+          "before": "Cg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2746687,
+          "before": "NWg+",
+          "after": "MEeK"
+        },
+        {
+          "offset": 2746749,
+          "before": "DA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2746756,
+          "before": "AGg+",
+          "after": "/kaK"
+        },
+        {
+          "offset": 2746818,
+          "before": "Dg==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2746825,
+          "before": "440+",
+          "after": "NUqK"
+        },
+        {
+          "offset": 2746887,
+          "before": "EA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2746894,
+          "before": "ro0+",
+          "after": "A0qK"
+        },
+        {
+          "offset": 2746938,
+          "before": "Cg==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2746945,
+          "before": "G2E9",
+          "after": "40mK"
+        },
+        {
+          "offset": 2746998,
+          "before": "Dw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2747005,
+          "before": "V40+",
+          "after": "rkmK"
+        },
+        {
+          "offset": 2747065,
+          "before": "O2E9",
+          "after": "VDWK"
+        },
+        {
+          "offset": 2747136,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2747143,
+          "before": "3Yw+",
+          "after": "K0mK"
+        },
+        {
+          "offset": 2747205,
+          "before": "FA==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 2747212,
+          "before": "sIw+",
+          "after": "+UiK"
+        },
+        {
+          "offset": 2747274,
+          "before": "Dg==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2747281,
+          "before": "g4w+",
+          "after": "x0iK"
+        },
+        {
+          "offset": 2747343,
+          "before": "GQ==",
+          "after": "GA=="
+        },
+        {
+          "offset": 2747350,
+          "before": "Tow+",
+          "after": "L0eK"
+        },
+        {
+          "offset": 2748240,
+          "before": "GQ==",
+          "after": "Hg=="
+        },
+        {
+          "offset": 2748247,
+          "before": "rWg8",
+          "after": "2CuK"
+        },
+        {
+          "offset": 2748750,
+          "before": "Fw==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2748757,
+          "before": "54g+",
+          "after": "GUOK"
+        },
+        {
+          "offset": 2749601,
+          "before": "Aw==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2749608,
+          "before": "/K49",
+          "after": "zjGK"
+        },
+        {
+          "offset": 2749808,
+          "before": "BQ==",
+          "after": "Bg=="
+        },
+        {
+          "offset": 2749815,
+          "before": "+Vs8",
+          "after": "ByWK"
+        },
+        {
+          "offset": 2976035,
+          "before": "EA==",
+          "after": "FQ=="
+        },
+        {
+          "offset": 2976042,
+          "before": "Gkc7",
+          "after": "XMmG"
+        },
+        {
+          "offset": 3072379,
+          "before": "Rg==",
+          "after": "LQ=="
+        },
+        {
+          "offset": 3072386,
+          "before": "WpU5",
+          "after": "AlOF"
+        },
+        {
+          "offset": 3154539,
+          "before": "DQ==",
+          "after": "Eg=="
+        },
+        {
+          "offset": 3154546,
+          "before": "ysE4",
+          "after": "QBKE"
+        },
+        {
+          "offset": 3154562,
+          "before": "Og==",
+          "after": "OQ=="
+        },
+        {
+          "offset": 3154569,
+          "before": "w8E4",
+          "after": "PBKE"
+        },
+        {
+          "offset": 3165250,
+          "before": "7lU2",
+          "after": "atGD"
+        }
+      ],
+      "append": "JTEg56eS5ZCO6Ieq5Yqo5L+d5a2YAOaXoOazleWKoOi9veWbvueJhwDnp7vpmaTmraTmnaHku7YA5aSN5Yi25q2k5p2h5Lu2AOmAieaLqeespuWQiOS7peS4i+adoeS7tueahOWvueixoQDkuKrmnaHku7YA5re75Yqg5omA6YCJ57G75Z6L55qE562b6YCJ5p2h5Lu2AOaWsOWingDnrZvpgInmnaHku7YA5riF56m6AOmAieaLqQDlsLrlr7gA5a+56LGh57G75Z6LAOe7hOS7tuexu+WeiwDlsZ7mgKflgLwA5YWo6YOoAOS7u+S4gADlsJrmnKrpgInmi6nlsZ7mgKcA5om+5LiN5Yiw5ri45oiP5pWw5o2uAOW3peeoi+WvvOWHuueKtuaAge+8mgDlnLDlnZfmlbDmja7lupPnvJbovpHlmagA6ZSZ6K+vAOWcsOWdl+WcsOWbvgDlr7nosaHlsZ7mgKcA6K6+572uAOW3peWFt+WxnuaApwDmkqTplIDorrDlvZUA5Zy65pmv57uT5p6EAOWcuuaZr+epuumXtOe7k+aehADmiJjmlpfphY3nva4gWE1MAOWcsOWbvuWxnuaApwDlnLDlnZfpga7nvankuI7ov57mjqUA5byV5pOO5Zy65pmvAOW8leaTjueOr+WigwDluIPlsYDnvJbovpHlmagA5byV5pOO57uf6K6hAOW3peeoi+mUmeivrwDplJnor6/liJfooagA5oyJ5p2h5Lu26YCJ5oupAOaWh+S7tgDmlrDlu7rigKYA5LuO5Zyw5Z2X5pWw5o2u5bqT5omT5byA4oCmAOS/neWtmADlj6blrZjkuLrigKYA5YWz6ZetAOS6pOe7mSBCT0Ig57yW6K+RAOWcqOa4uOaIj+S4rea1i+ivlQDliIfmjaLoh7PmuLjmiI/op4blm74A5YiH5o2i6Iez57yW6L6R6KeG5Zu+AOato+W4uOaYvuekugDmn6XnnIvln7rnoYDpopzoibIA5p+l55yL5rOV57q/6LS05Zu+AOafpeeci+mHkeWxnuW6pgDmn6XnnIvnspfns5nluqYA6YCA5Ye6AOe8lui+kQDmkqTplIAA6YeN5YGaAOinhuWbvgDlt6XlhbfmoI8A54q25oCB5qCPAOWFqOWxjwDogZrnhKbpgInkuK3lr7nosaEA6YeN572u55u45py6AOW3peWFtwDnspjotLTnm7jmnLrkvY3nva4A6LCD6K+VAOS/neWtmOiuvue9rgDorr7kuLrpu5jorqTnjq/looMA5oGi5aSN546v5aKDAOW4ruWKqQDln7rmnKzmk43kvZwA6L+b6Zi25pON5L2cAOWIm+W7uuWPr+inhuWvueixoQDliJvlu7rpgLvovpHlr7nosaEA5Yib5bu66L6F5Yqp5Yeg5L2V5L2TAOWIm+W7uuWjsOmfs+WvueixoQDliJvlu7rlhbbku5blr7nosaEA6YCJ5oup5ri45oiP5a6J6KOF55uu5b2VAOmAieaLqeaImOaWl+mFjee9riBYTUzvvJoA5a+85Ye6AOWIoOmZpADlpITnkIblrozmiJDvvJoA5bel56iL5bey5L+u5pS5AOW3peeoi+W3suS/neWtmADlj5bmtogA6buY6K6k55u45py6AOaTjeS9nOaIkOWKn++8gQDlkI3np7DvvI/or7TmmI4A57G75Z6LAOeUqOWJqui0tOadv+S4reWvueixoeeahOWJr+acrOabv+aNouW9k+WJjemAieaLqeOAggDkvb/nlKjmm7/mjaLlt6Xlhbfml7bvvIzliarotLTmnb/kuK3lv4XpobvmgbDlpb3mnInkuIDkuKrlr7nosaHjgIIA5re75YqgAOenu+mZpADpgInmi6nluIPlsYDigKYA6YCJ5oup6aKE5Yi25Lu24oCmAOaJvuS4jeWIsOW4g+WxgCAlMQDnsbvlnovvvJoA5Yy56YWN6KeE5YiZ77yaAOaWsOi1hOa6kOWQje+8mgDliqDovb3lm77lsYLlpLHotKUA5YWB6K6457yW6L6R6aKE5Yi25Lu2AOWxleW8gOmihOWItuS7tgDnlKjpgInkuK3lr7nosaHliJvlu7rpooTliLbku7YA5bey5pu/5o2iICUxIOS4quWvueixoQDmm7/mjaLnu5PmnpwA6YCJ5oup5pys5bGC5omA5pyJ5a+56LGhAOeymOi0tADliqDovb0A5Zyo5paH5Lu25aS55Lit5p+l55yLAOWcqOW9k+WJjeS9jee9rue8lui+kQDlsZXlvIAA5Zyo5paw56qX5Y+j5omT5byAAOW6lOeUqOabtOaUuQDov5jljp/mm7TmlLkA5rK/IFgg5pa55ZCR57+76L2sAOayvyBaIOaWueWQkee/u+i9rADmibnph4/mm7/mjaLotYTmupDlkI0A6K2m5ZGKAOS4uuWcsOWdl+WIm+W7uuaImOaWl+WcsOWbvuKApgDnlJ/miJAA5paH5Lu25LiN5a2Y5Zyo44CCAOivu+WPluaWh+S7tuWksei0peOAggDkuI3mlK/mjIHmraTlm77niYfnsbvlnovjgIIA6ZSu55uY5b+r5o236ZSuAOW/q+aNt+mUriAlMSDlt7LnlKjkuo7igJwlMuKAne+8jOaYr+WQpuabv+aNouWug++8nwDmm7/mjaLlv6vmjbfplK7vvJ8A5b+r5o236ZSuICUxIOW3sueUqOS6juKAnCUy4oCd77yM5peg5rOV5L+u5pS5AOaXoOazleiuvue9ruW/q+aNt+mUrgDntKDmnZDliJfooajvvJoA5YWD57Sg5bGe5oCn77yaAOWFg+e0oOWvueixoeWxnuaAp++8mgDmqKHmnb/vvJoA6ZqP5py6AOi1t+Wni++8j+S4u+S9k++8j+e7k+adn+W6j+WIlwDkv53lrZjluIPlsYAA5biD5bGA5b+F6aG75L+d5a2Y5Zyo5b2T5YmN6YWN572u55qE6Lev5b6E77yaJTEA6Lev5b6E5LiN5q2j56GuAOaWsOW7ugDlnKjno4Hnm5jkuIrliJvlu7rluIPlsYDmlofku7bml7blj5HnlJ/plJnor68A5paw5bu65biD5bGA5aSx6LSlAOW4g+WxgOaWh+S7tuW/hemhu+WIm+W7uuWcqOmFjee9rueahOW4g+WxgOi3r+W+hOKAnCUx4oCd5YaFAOmaj+acuumbhuWQiO+8mgDotbflp4vluo/liJfvvJoA5Li75L2T5bqP5YiX77yaAOe7k+adn+W6j+WIl++8mgDliJvlu7oA5YiH5YiGAOiwg+aVtADlt7Lli77pgIkA5pyq5Yu+6YCJAOWujOWFqOetieS6jgDlvIDlpLTmmK8A57uT5bC+5pivAOWMheWQqwDmjInnu4Tku7bnsbvlnovnrZvpgIkA5oyJ5bC65a+4562b6YCJAOWuveW6pu+8iFjvvIkA6auY5bqm77yIWe+8iQDmt7HluqbvvIha77yJAOaMieWvueixoeexu+Wei+etm+mAiQDnu4Tku7bnsbvlnovvvJoA5YeP5bCP56yU5Yi3AOWinuWkp+eslOWItwDkuIrkuIDkuKrosIPoibLmnb/lgLwA5LiL5LiA5Liq6LCD6Imy5p2/5YC8AOmZjeS9juS4jemAj+aYjuW6pgDmj5Dpq5jkuI3pgI/mmI7luqYA5YeP5bCP5YW25LuW5pWw5YC8AOWinuWkp+WFtuS7luaVsOWAvADmlofku7bniYjmnKzovoPmlrDvvIzlvZPliY3nvJbovpHlmajml6Dms5Xor7vlj5YA5omT5byAAOWKoOi9veW3peeoiwDliqDovb3lt6XnqIvml7blj5HnlJ/kuobplJnor6/vvIzor7fmn6XnnIvplJnor6/liJfooajjgIIA5piv5ZCm5L+d5a2Y5pu05pS577yfAOW3peeoi+S/neWtmOWksei0peOAggDmib7kuI3liLDpooTliLbku7YgJTEA5re75Yqg5Zyw5Z2XAOenu+mZpOWcsOWdlwDnp7vliqjlnLDlnZcA6YCJ5oup5pON5L2cAOaWsOW7uuaWh+S7tuWbvuWxggDlj5bmtojpgInmi6kA5paw5bu65Zyw5b2i5Zu+5bGCAOWvvOWFpeiHquWumuS5iSBSR0IA5LiN6YCP5piO5bqmAOa3u+WKoOWbvuWxggDnp7vpmaTlm77lsYIA5a+85YWl4oCmAOWvvOWHuuKApgDosIPmlbTlm77lsYLojIPlm7TigKYA5bqU55So5b2T5YmN5LiN6YCP5piO5bqm5bm26YeN572uAOWkjeWItuWcsOWbvumAmumBkwDlpI3liLblm77lsYIA57KY6LS05Zyw5Zu+6YCa6YGT77yP5Zu+5bGCAOWQiOW5tuWbvuWxggDmt7vliqDoh6rlrprkuYkgUkdCAOWvvOWFpeWksei0pQDlr7zlh7roh6rlrprkuYkgUkdCAOaYr+WQpuaYvuekugDplIHlrprnirbmgIEA6K6+5Li65b2T5YmN57yW6L6R5Zu+5bGCAOaYvuekuu+8j+makOiXj+e9keagvADliIfmjaLlnLDpnaLnvZHmoLzlkLjpmYQA5YiH5o2i6auY5bqm572R5qC85ZC46ZmEAOWIh+aNouinkuW6puWQuOmZhADnm7jmnLrnsbvlnosA55u45py65peL6L2s5pa55byPAOebuOacuuaLluWKqOWPgueFp+mdogDlj5bmtojpooTliLbku7bnvJbovpEA5L+d5a2Y6aKE5Yi25Lu25bel56iL5aSx6LSl44CCAOiHquWumuS5iQDmlbDmja7lupMA6Ieq5a6a5LmJ5qih5Z6LAOWcsOW9oue9keagvOWvhuW6pgDlnLDlvaLln7rnoYDpq5jluqYA6buY6K6k5rCU5YCZAOS4iee7tOinhuWbvgDmiZPlvIDigKYA5Zyw5Z2X56qX5Y+jAOS4reW/gwDlnLDlnZfpm4YA5ZCN56ewAOi3r+W+hADliqDlhaXmlbDmja7lupMA6YCJ5oup5Zyw5Zu+AOacgOi/keaJk+W8gO+8mgDmiZPlvIDlhbbku5blt6XnqIvigKYA5ZCv5Yqo5pe25pi+56S6AOWIm+W7uuaWsOW3peeoiwDmgLvorqEA5bel56iL5riF55CG5bel5YW3AOWIt+aWsADliqDovb3lt6XnqIvlpLHotKUA5qih5Z6L6Lev5b6E4oCcJTHigJ3ml6DmlYgA54m55pWI6LWE5rqQ5ZCN56ew4oCcJTHigJ3ml6DmlYgA6LWE5rqQ5qCH6K+G4oCcJTHigJ3ml6DmlYgA5qOA5p+l5bel56iL5Lit55qE6ZSZ6K+vAOW3peeoi+exu+WeiwDlt6XnqIsA5paH5Lu25Zu+5bGC5ZCN56ew5LiN6IO95Li656m677yBAOWQjeensOaXoOaViADph43lkb3lkI3vvIhGMu+8iQDmlrDlu7rpgLvovpHlm77lsYIA5bCG6YCJ5Lit5a+56LGh5Yqg5YWl5b2T5YmN5Zu+5bGCAOaWsOW7uuaImOaWl+mFjee9rgDnrZvpgInmmL7npLrnsbvlnosA5pi+56S65a+56LGh57yW5Y+3AOaWh+S7tuWbvuWxggDmt7vliqDmlofku7blm77lsYIA5re75Yqg6YC76L6R5Zu+5bGCAOaTjeS9nOW3suWPlua2iADpgInmi6nmiYDlsZ7lm77lsYIA5paw5bu65oiY5paXIFhNTADmt7vliqDmiJjmlpcgWE1MIOWbvuWxggDmlofku7blm77lsYLvvJoA6Kej6Zmk54i25a2Q5YWz57O7AOaUvue9ruWQjuiHquWKqOmAieS4reWvueixoeOAggrlj6/lnKjkuInnu7Top4blm77orr7nva7kuK3liIfmjaLjgIIA5a+85YWl6ZSZ6K+vAOi/nuaOpeWxnuaApwDov57mjqXnm67moIflsZ7mgKcA5LuO5Zu+54mH5a+85YWl6YGu572pAOWNleWFg+agvOWwuuWvuADlm77niYflsLrlr7jkuI3mraPnoa7vvIzlupTkuLogJTHDlyUyAOWcsOWdl+mbhumHjeWRveWQjeWksei0peOAggDph43lkb3lkI3igKYA5Yig6Zmk4oCmAOWIm+W7uuWcsOWdl+Wksei0peOAggDml6Dms5XkuLrlnLDlnZfliJvlu7ogVGVycnkg5bel56iLAOS4uuWcsOWdl+WIm+W7uuaImOaWl+WcsOWbvgDliarliIcA5Yib5bu6IFRlcnJ5IOW3peeoiwDlpI3liLblnLDlnZcA6YOo5YiG5Zyw5Z2X5pyq6IO956e75Yqo44CCAOmDqOWIhuWcsOWdl+acquiDveWkjeWItuOAggDlsZ7mgKfigKYA5q2j5Zyo6Ieq5Yqo5L+d5a2Y4oCmAOWbvuWxgiAlMQDkuI3lho3mmL7npLrmraTmj5DnpLoA5LiN5pSv5oyB5q2k5Zu+54mH5qC85byP44CCAOW3peeoi+aJk+W8gOWksei0peOAggDkvY7popHpq5jluqbvvIjkuLvkvZPvvIkA5L2O6aKR6auY5bqm77yI5rW35rSL77yJAOa1t+a0i+mrmOW6pgDov7fpm77pq5jluqYA57q555CG77yIOCDpgJrpgZPvvIkA57q555CG77yIMTYg6YCa6YGT77yJAOaImOW9uee6ueeQhgDoh6rlrprkuYnpopzoibLvvIhSR0LvvIkA6aKc6Imy5Y+g5YqgAOa1t+a0i+minOiJsuWPoOWKoADmoJHmnKgA6IWQ6JqA6YGu572pAOiUk+W7tumBrue9qQDmqKHlnovnroDljJbpga7nvakA56ev6Zuq6YGu572pAOWcsOW9ouaYvuekuumBrue9qQDlnLDlnZflj6/op4HmgKfpga7nvakA5LqL5Lu25Yy65Z+f6YGu572pAOWIoOmZpOWcsOWdlwDmlrDlu7rlnLDlnZcA6aKc6ImyAOmHjeWRveWQjeWcsOWdlwDph43lkb3lkI3lnLDlnZflkI7vvIzlvJXnlKjlroPnmoTlnLDlm77nrYnlt7LnvJbor5HmlbDmja7lj6/og73lpLHmlYjjgIIA5Zyw5Z2X5bGe5oCnAOmBrue9qeS4jui/nuaOpQDliKDpmaTlnLDlnZfpm4bigJwlMeKAnQDmlrDlu7rlnLDlnZfpm4YA5LiN6IO95L2/55So6buR6Imy5L2c5Li65qCH6K+G6aKc6ImyAOWcsOWdl+mbhuWxnuaApwDluLjop4QA6YeN5ZG95ZCN5Zyw5Z2X6ZuGAOmHjeWRveWQjeWcsOWdl+mbhuWQju+8jOW8leeUqOWug+eahOWcsOWbvuetieW3sue8luivkeaVsOaNruWPr+iDveWkseaViOOAggDov57mjqUA5Lit5b+DIFgA5Lit5b+DIFkA5ZC46ZmE5Yiw5Zyw5Z2XAOS/neWtmOS9jee9ru+8mgDov5vluqbvvJoA5a+85Ye65a6M5oiQAOebuOacuuWIl+ihqADnm7jlr7nkuo7kuK3lv4PnmoTkuJbnlYzkvY3nva4A5b2T5YmN55u45py6AOW3sumAieWvueixoe+8miUxIOS4qgDmm7/mjaLpgInkuK3lr7nosaEA5Zyo6YCJ5Lit5a+56LGh5L2N572u5Yib5bu6AOeUqOW9k+WJjee8lui+keWvueixoeeahOWJr+acrO+8jOabv+aNouWcuuaZr+S4remAieS4reeahOWvueixoeOAggDlnKjmr4/kuKrpgInkuK3lr7nosaHnmoTkvY3nva7vvIzliJvlu7rlvZPliY3nvJbovpHlr7nosaHnmoTlia/mnKzjgIIA5om56YeP5pON5L2cAOacneWQkei0tOWQiOihqOmdogDmlL7nva7ml7blkLjpmYTlhbbku5bniankvZPooajpnaIA5aSn5bCP5q+U5L6LAOaKrOmrmOi3neemuwDmsLTlubPmnJ3lkJEA5pS+572u5pa55byPAOaooeWei+aYvuekuuiuvue9rgDlrr3luqYA5Y+M5Ye75p2h55uu77yM5bCG5a6D5Yqg5YWl6KaB57uY5Yi255qE5a+56LGh5YiX6KGo77yaAOWkp+Wwj+avlOS+i++8mgDnlJ/miJDpgJ/luqbvvJoA5pen5byP6ZqP5py65peL6L2s77yaAOW9k+WJjee7mOWItuWvueixoe+8mgDnm7jlr7nlh7rnjrDmpoLnjocA5pyA5bCP6Ze06LedAOS/neeVmei+ueeVjADlt7LplIHlrpoA5pyA5bCP5q+U5L6LAOacgOWkp+avlOS+iwDlpI3liLbmlbDlgLwA5pyd5ZCR6LS05ZCI5Zyw5b2iAOmaj+acuuaXi+i9rADmuIXnqbrpgInmi6kA5bqU55So5Yiw5YWo6YOoAOe7mOWItuakjeiiqwDlsLrlr7jvvJoA5Y+C5pWwAOaYvuekuue9keagvADnu5jliLblnLDlvaLpq5jluqYA57uY5Yi25qOu5p6XAOWKoOi9veeslOWItwDph43lkb3lkI0A6YeN5paw5Yqg6L29AOWFs+iBlOWIsOaTjeS9nADlj5bmtojlhbPogZQA5rK/5puy57q/57uY5Yi2AOeUqOabsue6v+iuvue9ruWcsOW9oumrmOW6pgDmlrDlu7rlnIblvaLnrJTliLcA5paw5bu65pa55b2i56yU5Yi3AOaWsOW7uuWbvueJh+eslOWItwDloavlhYUA55So56yU5Yi35aGr5YWFAOS7juWcsOW9ouWhq+WFhQDnrJTliLflsZ7mgKcA5Zyw5Zu+6YCa6YGTAOaTjeS9nADnrJTliLcA57uY5Yi2AOaMieabsue6v+iuvue9ruWcsOW9oumrmOW6pgDmm7Lnur8A5Yqg6L2956yU5Yi35aSx6LSlAOe8lui+kemAieS4reWvueixoQDlvLrliLbpgInmi6kA56e75YqoAOi0tOWcsOaUvue9rgDml4vovawA54mp5L2T6Ieq6LqrAOS4lueVjOWdkOaghwDnvKnmlL7lt6Xlhbfkvb/nlKjniankvZPoh6rouqvlnZDmoIcA5ZCM5pe26YCJ5oup5aSa5Liq5a+56LGh5pe25L2/55So5LiW55WM5Z2Q5qCHAOWdkOagh+WPgueFpwDmiYDpgInlr7nosaHmlbTkvZPkuK3lv4MA5ZCE5Liq5a+56LGh6Ieq6Lqr5Lit5b+DAOWPqumAieS4reS4gOS4quWvueixoeaXtuS9v+eUqOivpeWvueixoeeahOS4reW/gwDml4vovazkuI7nvKnmlL7kuK3lv4MA5aWX57Si6YCJ5oupAOWkmumAieaWueW8jwDliIfmjaLnrYnmr5TkvovnvKnmlL4A55u45a+55Y+Y5YyW6YePAOavj+asoeW+ruiwg+i3neemuwDliIfmjaLoh6rouqvvvI/kuJbnlYzlnZDmoIcA5YiH5o2i5Y+Y5o2i5Lit5b+DAOWIh+aNouWkmumAieaWueW8jwDliIfmjaLotLTlnLDkuI7mnJ3lkJHlr7npvZAA55u45a+5JTEA5Y+q5pi+56S66YCJ5Lit5a+56LGhAOe7k+adn+WNleeLrOaYvuekugDmmL7npLrmiYDmnInlr7nosaEA6Kej6ZSB5omA5pyJ5a+56LGhAOeBteaVj+W6pgDljYrlvoQA5a+56b2QIFgg6L20AOWvuem9kCBZIOi9tADlr7npvZAgWiDovbQA5bCG5bmz6Z2i56e75Yiw6KeG6YeO5YaFAOaooeW8jwDmk6bpmaQA5peL6L2s6KeS5bqmAOmrmOW6puWBj+enuwDpgInmi6nlnLDlm77pgJrpgZPnsbvlnosA6YCJ5oup57uY5Yi26IyD5Zu0AOWQiOaIkOWIsOmhtuWxggDlkIjmiJDliLDmlrDlm77lsYIA5Zyo5Zu+5bGC5LmL6Ze05aSN5Yi2AOebkuW9ogDljYrlnIYA54K55LqRAOS6jOe7tOaKmOe6vwDkuInnu7Tmipjnur8A5LqM57u05aSa6L655b2iAOS4iee7tOWkmui+ueW9ogDnkIPkvZMA5Y+M55CD5L2TAOWPjOWchuafsQDml6DpmZDlj4zlnIbmn7EA5a+85YWl6auY5bqm5Zu+AOaWh+S7tu+8mgDojIPlm7TkuIvpmZDvvJoA6IyD5Zu05LiK6ZmQ77yaAOmAmumBkwDljZXkuKrpgJrpgZMA5paH5Lu25aS577yaAOaJgOaciemAmumBkwDpgInmi6nmlofku7blpLkA6LCD5pW057q555CG5Zu+5bGCAOiMg+WbtADlgY/np7sA5re75Yqg5puy57q/5o6n5Yi254K5AOiwg+aVtOabsue6v+WuveW6pgDosIPmlbTlnLDlnZflpKflsI/vvJ8A57yp5bCP5Zyw5Z2X5Lya5Lii5aSx6IyD5Zu05LmL5aSW55qE5pWw5o2u77yM56Gu5a6a57un57ut5ZCX77yfAOWwhuWcsOWdl+WKoOWFpeaVsOaNruW6kwDlnLDlnZflt7LliqDlhaXmlbDmja7lupMA57uf6K6h5L+h5oGvAOmAieaLqeS/neWtmOS9jee9rgDovazmjaLkuLrnu4QA5b2T5YmN5Zyw5Z2X6L+Y5rKh5pyJ5L+d5a2Y6Lev5b6E77yM6K+35YWI5L+d5a2Y44CCAOaTjeS9nOaIkOWKnwDluKblgY/np7vnspjotLQA5oyJ5LiW55WM5L2N572u5aSN5Yi2AOaMieS4lueVjOS9jee9ruWJquWIhwDmjInkuJbnlYzkvY3nva7nspjotLQA57yW57uEAOmakOiXj+mAieS4reWvueixoQDplIHlrprpgInkuK3lr7nosaEA5YWo6YCJAOWPjemAiQDlr7zlh7rpq5jluqblm77igKYA5a+85YWl6auY5bqm5Zu+4oCmAOiwg+aVtOWcsOWdl+Wkp+Wwj+KApgDlt6XnqIvmuIXnkIblt6XlhbfigKYA5bel56iL6L+Y5rKh5pyJ5L+d5a2Y6Lev5b6E77yM6K+35YWI5L+d5a2Y44CCAOWwmuacquWKoOi9veWcsOWbvgDlsJrmnKrliqDovb3lt6XnqIvvvIzliarotLTmnb/kuK3kuZ/msqHmnInlnLDlm77ot6/lvoTjgIIA5bel56iL5ZCR5a+8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "path": "binaries/qttoolutility.modder.x64.dll",
+      "originalSha256": "DDFE6F996E638B4C0C753D479B7FCB6F7BF22EE3822446FA6037931D89654F05",
+      "patchedSha256": "043A875BA1928AC9B2C9100169550D7FCA6B8134287536DFDF3596AA91659E65",
+      "originalLength": 8938496,
+      "patchedLength": 8939520,
+      "edits": [
+        {
+          "offset": 302,
+          "before": "Bg==",
+          "after": "Bw=="
+        },
+        {
+          "offset": 329,
+          "before": "kg==",
+          "after": "lg=="
+        },
+        {
+          "offset": 377,
+          "before": "0A==",
+          "after": "4A=="
+        },
+        {
+          "offset": 384,
+          "before": "AAAA",
+          "after": "LyeJ"
+        },
+        {
+          "offset": 800,
+          "before": "AAAAAAAAAAAAAA==",
+          "after": "LnRlcnJ5Y25BAg=="
+        },
+        {
+          "offset": 813,
+          "before": "AAA=",
+          "after": "0KE="
+        },
+        {
+          "offset": 817,
+          "before": "AA==",
+          "after": "BA=="
+        },
+        {
+          "offset": 821,
+          "before": "AAA=",
+          "after": "ZIg="
+        },
+        {
+          "offset": 836,
+          "before": "AA==",
+          "after": "YA=="
+        },
+        {
+          "offset": 839,
+          "before": "AA==",
+          "after": "YA=="
+        },
+        {
+          "offset": 2617249,
+          "before": "CA==",
+          "after": "DA=="
+        },
+        {
+          "offset": 2617256,
+          "before": "NLw4",
+          "after": "VNR5"
+        },
+        {
+          "offset": 2955776,
+          "before": "/xUqGTEA",
+          "after": "6KuqdACQ"
+        },
+        {
+          "offset": 2957634,
+          "before": "/xXoETEA",
+          "after": "6GmjdACQ"
+        }
+      ],
+      "append": "54m55pWI5ZCN56ewAAAAAP////8EAAAAAAAAAAAAAAAYAAAAAAAAAOqBqFKtZD5lAAAAAAAAAAD/////BQAAAAAAAAAAAAAAGAAAAAAAAAA6V29mhVENVPB5AAAAAAAA/////wQAAAAAAAAAAAAAABgAAAAAAAAAeXJIZUSNkG4AAAAAAAAAAP////8EAAAAAAAAAAAAAAAYAAAAAAAAACdZD1zUa4tPAAAAAAAAAABIhdIPhIIBAACAegBBD4VeAAAAgHoBdQ+FVAAAAIB6AnQPhUoAAACAegNvD4VAAAAAgHoEcA+FNgAAAIB6BWwPhSwAAACAegZhD4UiAAAAgHoHeQ+FGAAAAIB6CAAPhQ4AAABIjQX2/v//SIkBSInIw4B6AEkPhZAAAACAegFuD4WGAAAAgHoCcw+FfAAAAIB6A3QPhXIAAACAegRhD4VoAAAAgHoFbg+FXgAAAIB6BmMPhVQAAACAegdlD4VKAAAAgHoIIA+FQAAAAIB6CU4PhTYAAACAegphD4UsAAAAgHoLbQ+FIgAAAIB6DGUPhRgAAACAeg0AD4UOAAAASI0FhP7//0iJAUiJyMOAegBWD4UsAAAAgHoBRg+FIgAAAIB6AlgPhRgAAACAegMAD4UOAAAASI0Fdv7//0iJAUiJyMOAegBTD4VAAAAAgHoBYw+FNgAAAIB6AmEPhSwAAACAegNsD4UiAAAAgHoEZQ+FGAAAAIB6BQAPhQ4AAABIjQVU/v//SIkBSInIw/8l72y8/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    {
+      "path": "working_data/Terry/status_tooltips.xml",
+      "originalSha256": "578B4CB2E2E2FCC8674D72BB24D5DE6C6B55430C86384C627156D12432A94D23",
+      "patchedSha256": "5A4B93C70B8272B4D9B1443E336D1A24105F822F31B7AEEB8EF1E31EA0779376",
+      "originalLength": 2411,
+      "patchedLength": 2263,
+      "replacement": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz4KPHN0YXR1c190b29sdGlwcyB2ZXJzaW9uPSIwIj4KCTx3aWRnZXQgbmFtZT0iVmlldzNEIj4KCQkKCQk8dG9vbHRpcD7lsIbpvKDmoIfmjIflkJHlt6XlhbfvvIzlj6/mn6XnnIvmk43kvZzmj5DnpLo8L3Rvb2x0aXA+CgkJPHRvb2x0aXAgdG9vbD0iU2VsZWN0Ij7lt6bplK7vvJrpgInmi6nvvI/lj5bmtojpgInmi6kgfHwg5bem6ZSu5ouW5Yqo77ya5qGG6YCJIHx8IOWPs+mUru+8muaJk+W8gOaTjeS9nOiPnOWNlTwvdG9vbHRpcD4KCQk8dG9vbHRpcCB0b29sPSJUcmFuc2xhdGUsUm90YXRlLFNjYWxlIj7mi5bliqjpgInkuK3lr7nosaHvvJrlnKjlnLDpnaLkuIrnp7vliqggfHwgU2hpZnTvvIvmi5bliqjvvJrlpI3liLblubbnp7vliqggfHwgQ3RybO+8i+aLluWKqO+8muaXi+i9rDwvdG9vbHRpcD4KCQk8dG9vbHRpcCB0b29sPSJQYWludCBUZXJyYWluLFRlcnJhaW4gSGVpZ2h0IFBhaW50aW5nLFRlcnJhaW4gVGV4dHVyZSBQYWludGluZyxUZXJyYWluIFBhaW50aW5nIChPdGhlciksVGVycmFpbiBGb3Jlc3QgUGFpbnRpbmciPuW3pumUru+8mue7mOWItiB8fCDlj7PplK7vvJrpgIDlh7ogfHwgU2hpZnTvvJrlv6vpgJ/lubPmu5EgfHwgQ3RybO+8i0FsdO+8i+S4iuS4i+enu+WKqOm8oOagh++8muaUueWPmOeslOWIt+Wkp+WwjyB8fCDlt6blj7Pnp7vliqjvvJrml4vovaznrJTliLcgfHwgWyAvIF3vvJrosIPoioLlpKflsI88L3Rvb2x0aXA+CgkJCgkJCgkJPHRvb2x0aXAgdG9vbD0iVGFwZSBNZWFzdXJlIj7kvp3mrKHngrnlh7vlt6bplK7mlL7nva7otbfngrnlkoznu4jngrnvvIzmtYvph4/ot53nprs8L3Rvb2x0aXA+CgkJCgkJCgkJPHRvb2x0aXAgdG9vbD0iQ3JlYXRlIFByZWZhYixDcmVhdGUgQnVpbGRpbmcsQ3JlYXRlIFByb3AsQ3JlYXRlIERlY2FsLENyZWF0ZSBWRlgsQ3JlYXRlIFZlZ2V0YXRpb24gKFBsYWNlKSxDcmVhdGUgUG9pbnQgTGlnaHQsQ3JlYXRlIFNwb3QgTGlnaHQsQ3JlYXRlIExpZ2h0IFByb2JlIj7lt6bplK7vvJrmlL7nva7lr7nosaEgfHwg5Y+z6ZSu77ya6YCA5Ye65pS+572uIHx8IFNoaWZ077yL5bem5Y+z56e75Yqo6byg5qCH77ya5peL6L2sIHx8IFsgLyBd77ya6LCD6IqC5aSn5bCPPC90b29sdGlwPgoJCTx0b29sdGlwIHRvb2w9IkNyZWF0ZSBQb2x5Z29uIE1lc2gsQ3JlYXRlIFRlcnJhaW4gSG9sZSI+5bem6ZSu77ya56ys5LiA5qyh56Gu5a6a5pyd5ZCR77yM5LmL5ZCO5re75Yqg6aG254K5IHx8IOWPs+mUru+8mumAgOWHujwvdG9vbHRpcD4KCQk8dG9vbHRpcCB0b29sPSJDcmVhdGUgVmVnZXRhdGlvbiAoUGFpbnQpIj7lt6bplK7vvJrnu5jliLbmpI3ooqsgfHwg5Y+z6ZSu77ya6YCA5Ye6IHx8IFsgLyBd77ya6LCD6IqC5aSn5bCPPC90b29sdGlwPgoJCTx0b29sdGlwIHRvb2w9IkNyZWF0ZSBQcm9jZWR1cmFsIEV4Y2x1c2lvbiBab25lIj7lt6bplK7vvJrmt7vliqDljLrln5/pobbngrkgfHwg5Y+z6ZSu77ya6YCA5Ye6PC90b29sdGlwPgoJCQoJCQoJCTx0b29sdGlwIHRvb2w9IkNyZWF0ZSBBSSBIaW50Ij7lt6bplK7vvJrkvp3mrKHorr7nva7otbfngrnlkoznu4jngrkgfHwg5Y+z6ZSu77ya6YCA5Ye6PC90b29sdGlwPgoJCTx0b29sdGlwIHRvb2w9IkNyZWF0ZSBOby1HbyBSZWdpb24sQ3JlYXRlIEdvIFJlZ2lvbiI+5bem6ZSu77ya5re75Yqg5Yy65Z+f6aG254K5IHx8IOWPs+mUru+8mumAgOWHujwvdG9vbHRpcD4KCQk8dG9vbHRpcCB0b29sPSJDcmVhdGUgRGVwbG95bWVudCBab25lLENyZWF0ZSBEZXBsb3ltZW50IFpvbmUgUmVnaW9uIj7lt6bplK7vvJrmlL7nva7pobbngrnvvI/osIPmlbTlpKflsI8gfHwg5Y+z6ZSu77ya6YCA5Ye6PC90b29sdGlwPgoJCTx0b29sdGlwIHRvb2w9IkNyZWF0ZSBQbGF5YWJsZSBBcmVhIj7lt6bplK7vvJrpgInmi6notbfngrnvvI/nu5PmnZ/nvJbovpEgfHwg5Y+z6ZSu77ya5Y+W5raIPC90b29sdGlwPgoJCQoJCQoJCTx0b29sdGlwIHRvb2w9IkNyZWF0ZSBTb3VuZCBNYXJrZXIiPuW3pumUru+8muaUvue9ru+8j+a3u+WKoOmhtueCue+8j+e7k+adn+e8lui+kSB8fCDlj7PplK7vvJrpgIDlh7ogfHwg5oyJ5L2PIFNoaWZ077ya5bCG5LiJ57u05oqY57q/6LS05ZCI5Zyw5b2iPC90b29sdGlwPgoKCQkKCQk8dG9vbHRpcCB0b29sPSJDcmVhdGUgQ2FtZXJhIEJvdW5kcyI+5bem6ZSu77ya5L6d5qyh6K6+572u6LW354K544CB6IyD5Zu05ZKM6auY5bqmPC90b29sdGlwPgoJCQoJPC93aWRnZXQ+Cjwvc3RhdHVzX3Rvb2x0aXBzPg=="
+    }
+  ]
+}

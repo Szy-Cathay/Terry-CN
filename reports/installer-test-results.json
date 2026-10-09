@@ -1,0 +1,19 @@
+{
+  "passed": 13,
+  "failed": 0,
+  "checks": [
+    "Install: all target hashes match",
+    "Repeated install: unchanged",
+    "Check: accepts patched files",
+    "Restore: all original hashes match",
+    "Repeated restore: unchanged",
+    "Version mismatch in last file: rejects before any target write",
+    "Damaged original backup: rejects before any target write",
+    "Damaged restore backup: rejects before any target write",
+    "No temporary target files remain",
+    "R2 upgrade without original backup: all targets unchanged",
+    "Direct R2 upgrade: all target hashes match",
+    "Restore after R2 upgrade: exact originals",
+    "Locked second target: earlier writes roll back"
+  ]
+}
