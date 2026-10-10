@@ -2,7 +2,7 @@
 
 《全面战争：战锤 3》Assembly Kit 的 Terry 简体中文差分补丁。
 
-**创作者：Szy-Cathay、Codex（ChatGPT 6 Astra）**。本汉化补丁由 Codex 完成。
+**创作者：Szy-Cathay**。本汉化补丁由 Codex（ChatGPT 6 Astra）完成。
 
 当前正式版：**v0.1.0（2026-10-10）**，适用于 Assembly Kit **build 25616861 / Qt 5.12.0**。补丁校验原版文件，版本不匹配会停止安装。
 
