@@ -3,12 +3,12 @@ Terry-CN 汉化补丁维护说明
 交付给玩家的文件是根目录 Terry-CN-WH3-20261010-R6.zip。
 ZIP 只包含差分清单、安装/恢复/检查工具和使用文档，不包含官方完整 DLL。
 
-本工程保留的目录均用于汉化补丁维护：
-backups/original-20261009：构建所需的官方原版基线，按 source-hashes.json 校验；不对外打包。
-build/r6-candidate-3：R6 的构建结果和调用点清单，可由原版基线重建；其他候选保留在本地。
-reports：原生代码、安装恢复、完整性、场景回读、快捷键及回收清单。
+本工程源码与本地生成目录的用途如下；本地基线、构建和缓存清理后按需重建：
+backups/original-20261009：构建所需的官方原版基线，按 README.md 准备并用 source-hashes.json 校验；不入库、不对外打包。
+build：候选构建、调用点清单和隔离测试目录，可由原版基线重建；不入库。
+reports：保留当前交付的验证报告；回收清单和本机记录仅留在本地。
 tests/fixtures：旧补丁升级与快捷键保护的回归测试基线。
-tools：构建器、检查器、打包器及 Python 依赖。
+tools：构建器、检查器和打包器；tools/python-libs 是按 requirements.txt 安装的本地依赖，不入库。
 
 词库分工：
 translations.zh-CN.json：原有汉化词库。
@@ -24,6 +24,7 @@ status-tooltips.zh-CN.json：15 条工具操作说明。
 protected-identifiers.json：禁止作为通用字面量改写的配置与快捷键标识。
 
 构建与检查顺序（Python 3，Windows x64）：
+先准备原版基线、Python 依赖及下文的旧版升级回归输入。
 python tools/build_patch.py --source backups/original-20261009 --output build/new-candidate
 python tools/test_display_hooks.py --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
 python tools/test_static_templates.py build/new-candidate --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
@@ -35,7 +36,17 @@ python tools/validate_patch.py build/new-candidate
 python tools/package_release.py
 
 原生测试记录词库哈希；模板、字体、完整性和安装测试记录差分哈希。场景回读及字体实机报告也须绑定当前差分，
-打包器拒绝过期报告。R3、R4、R5 ZIP 作为升级回归输入保留，不应随意覆盖或删除。
+打包器拒绝过期报告。当前分支只保留 R6 ZIP 及其校验文件；已发布的 R6 差分、ZIP 和验证记录保持原样。
+
+旧版升级回归输入（仅测试时需要）：
+R3、R4、R5 ZIP 及校验文件仍可从 Git 历史取回。在项目根目录执行以下 PowerShell 命令：
+$regressionSource = '5a9da4bdb1092fcecb01efbd31596a8264589e5f'
+foreach ($regressionVersion in 'R3', 'R4', 'R5') {
+    git restore --source=$regressionSource --worktree -- "Terry-CN-WH3-20261010-$regressionVersion.zip" "Terry-CN-WH3-20261010-$regressionVersion.zip.sha256"
+}
+按各 .sha256 文件核对对应 ZIP 后再运行安装测试；不能因旧包不在当前目录而跳过升级检查。
+这六个历史文件已加入 .gitignore，临时取回不会重新加入当前交付。测试结束按项目清理约定移入回收站。
+tests/fixtures/patch-r2.json 是必要的回归测试夹具，继续保留。清理当前分支不重写 Git 历史。
 
 源字符串审计不能只检查一种 QString 构造模式。可用以下命令扫描共享文字来源：
 python tools/audit_strings.py "你的 Assembly Kit/binaries" build/audit.json --data-strings --module warscape.modder.x64.dll
