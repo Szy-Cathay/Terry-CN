@@ -41,7 +41,12 @@ for r in manifest['files']:
         allowed_code_changes = set()
         for item in coverage[Path(r['path']).name]:
             rva = int(item['rva'], 16)
-            if 'displayHook' in item:
+            if item.get('fontUi'):
+                before, after = bytes.fromhex(item['beforeHex']), bytes.fromhex(item['afterHex'])
+                assert pe.get_data(rva, len(before)) == before
+                assert patched.get_data(rva, len(after)) == after
+                allowed_code_changes.update(range(pe.get_offset_from_rva(rva), pe.get_offset_from_rva(rva) + len(before)))
+            elif 'displayHook' in item:
                 allowed_code_changes.update(range(pe.get_offset_from_rva(rva), pe.get_offset_from_rva(rva) + 6))
             elif item.get('auditedUtf8Fragment'):
                 assert item['source'] not in protected, item
@@ -76,6 +81,9 @@ for r in manifest['files']:
         original_relocs = {(e.type, e.rva) for block in pe.DIRECTORY_ENTRY_BASERELOC for e in block.entries if e.type}
         new_relocs = {(e.type, e.rva) for block in patched.DIRECTORY_ENTRY_BASERELOC for e in block.entries if e.type}
         assert original_relocs <= new_relocs
+        original_runtime = {(e.struct.BeginAddress, e.struct.EndAddress, e.struct.UnwindData) for e in pe.DIRECTORY_ENTRY_EXCEPTION}
+        patched_runtime = {(e.struct.BeginAddress, e.struct.EndAddress, e.struct.UnwindData) for e in patched.DIRECTORY_ENTRY_EXCEPTION}
+        assert original_runtime <= patched_runtime
         checks.append(Path(r['path']).name + ': only declared display sites changed; original data/imports/relocations preserved')
     assert hashlib.sha256(original).hexdigest().upper() == r['originalSha256']
     assert hashlib.sha256(result).hexdigest().upper() == r['patchedSha256']

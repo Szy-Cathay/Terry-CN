@@ -1,0 +1,38 @@
+{
+  "passed": 4,
+  "failed": 0,
+  "checks": [
+    "600 relocated native calls preserve this, call order and original menuBar result",
+    "Windows runtime resolves the non-leaf hook unwind record",
+    "Actual Qt main window and menu bar use Microsoft YaHei UI at 10 pt",
+    "Actual Qt font metrics fit long Chinese labels inside the expanded icon canvas"
+  ],
+  "nativeCalls": 600,
+  "actualQtLabelWidths": {
+    "预制体": 54,
+    "派系预制体": 90,
+    "程序化排除区": 108,
+    "多边形洞口": 90,
+    "复合场景": 72,
+    "聚光灯": 54,
+    "植被（绘制）": 108,
+    "AI 轮廓吸附": 95
+  },
+  "font": {
+    "kind": "terry-font-ui",
+    "family": "Microsoft YaHei UI",
+    "iconPointSize": 9,
+    "iconSize": [
+      120,
+      32
+    ],
+    "stylesheet": "QMenuBar, QMenu { font-family: \"Microsoft YaHei UI\"; font-size: 10pt; font-weight: normal; }\nQMenuBar::item { padding: 3px 8px; }\nQMenu::item { padding: 4px 24px 4px 24px; }\nQToolBar { spacing: 3px; }\nQToolBar QToolButton { font-family: \"Microsoft YaHei UI\"; font-size: 9pt; font-weight: normal; padding: 3px 5px; }",
+    "menuHook": {
+      "beginRva": "0x20da5b0",
+      "endRva": "0x20da5d5",
+      "unwindRva": "0x20da5d8"
+    },
+    "exceptionTableRva": "0x20da5e0"
+  },
+  "manifestSha256": "2EFAB9F47C2CC07D9C85FB138DA66F40C853854B147B36FE57D1FAF2135ACC02"
+}

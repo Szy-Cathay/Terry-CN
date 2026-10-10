@@ -9,13 +9,13 @@ FILES = [
     'Install-TerryCN.ps1', 'patch.json', '安装汉化.cmd', '恢复英文.cmd',
     '检查安装.cmd', '使用说明.txt', '验证说明.txt',
 ]
-output = ROOT / 'Terry-CN-WH3-20261010-R5.zip'
+output = ROOT / 'Terry-CN-WH3-20261010-R6.zip'
 assert not output.exists(), 'Recycle an earlier delivery before rebuilding the archive'
 manifest = json.loads((ROOT / 'patch.json').read_text(encoding='utf-8'))
-assert len(manifest['files']) == 5 and manifest['version'] == '2026-10-10 R5'
+assert len(manifest['files']) == 5 and manifest['version'] == '2026-10-10 R6'
 manifest_hash = hashlib.sha256((ROOT / 'patch.json').read_bytes()).hexdigest().upper()
 hashes = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest().upper() for name in FILES}
-for report in ['native-hook-tests.json', 'installer-test-results.json', 'patch-integrity-tests.json', 'static-template-tests.json']:
+for report in ['native-hook-tests.json', 'installer-test-results.json', 'patch-integrity-tests.json', 'static-template-tests.json', 'font-tests.json']:
     result = json.loads((ROOT / 'reports' / report).read_text(encoding='utf-8'))
     assert result['failed'] == 0 and result['passed'] > 0, report
     if report == 'native-hook-tests.json':
@@ -26,6 +26,8 @@ for report in ['native-hook-tests.json', 'installer-test-results.json', 'patch-i
         assert result['manifestSha256'] == manifest_hash, 'Stale report: ' + report
 scene = json.loads((ROOT / 'reports/scene-roundtrip.json').read_text(encoding='utf-8'))
 assert scene['manifestSha256'] == manifest_hash and scene['englishRoundtripByteIdentical'], 'Current delivery needs a real scene roundtrip'
+font_ui = json.loads((ROOT / 'reports/font-ui-verification.json').read_text(encoding='utf-8'))
+assert font_ui['manifestSha256'] == manifest_hash and font_ui['passed'], 'Current delivery needs actual menu and toolbar checks'
 checksum = ''.join(f'{digest}  {name}\n' for name, digest in hashes.items())
 with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
     for name in FILES:

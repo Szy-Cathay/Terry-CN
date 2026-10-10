@@ -1,15 +1,15 @@
 {
-  "version": "2026-10-10 R5",
-  "manifestSha256": "7E9B958001604AA89805AEB8C3B1AD2267EAE6ABA348BFE42102E8BD1AFA5D2C",
+  "version": "2026-10-10 R6",
+  "manifestSha256": "2EFAB9F47C2CC07D9C85FB138DA66F40C853854B147B36FE57D1FAF2135ACC02",
   "files": {
+    "r5-light.1a12334538e2a9c.layer": {
+      "chineseSha256": "A2729B9C06E5B8232F740DD9C65FCD9CD9B1B6CF00930A653D7E92139485368F",
+      "englishSha256": "A2729B9C06E5B8232F740DD9C65FCD9CD9B1B6CF00930A653D7E92139485368F",
+      "byteIdentical": true
+    },
     "r5-light.terry": {
       "chineseSha256": "F3A7D50F3653E22C03C1A31B61109C0FE760DE7D30CB2C11F1C9A75643876364",
       "englishSha256": "F3A7D50F3653E22C03C1A31B61109C0FE760DE7D30CB2C11F1C9A75643876364",
-      "byteIdentical": true
-    },
-    "r5-light.1a12334538e2a9c.layer": {
-      "chineseSha256": "95F10C32A2A0EE3CF65130C9ED4C3A5CBEB0085A8F483B197BE3367A8F80AE01",
-      "englishSha256": "95F10C32A2A0EE3CF65130C9ED4C3A5CBEB0085A8F483B197BE3367A8F80AE01",
       "byteIdentical": true
     }
   },
@@ -18,7 +18,7 @@
   "pointLight": {
     "colour": "255 255 255 255",
     "colour_scale": "21000",
-    "radius": "16",
+    "radius": "17",
     "animation_type": "LAT_NONE",
     "animation_speed_scale": "0 0",
     "colour_min": "0",
@@ -30,27 +30,23 @@
     [
       "ECPointLight",
       "radius",
-      "15",
-      "16"
+      "16",
+      "17"
     ]
   ],
-  "selectionUndoRedo": "R5 candidate 4: 1 selected -> undo 0 -> redo 1, with Chinese Undo/Redo operation labels; candidate 5 changes only audited diagnostic references",
+  "selectionUndoRedo": "R6 candidate 3: Ctrl+A selects 1, Ctrl+Z selects 0, Ctrl+Y selects 1",
   "launchPath": "Steam > Battle Map Editor: Terry",
-  "englishUiRadius": "16",
-  "finalCandidateUiChecks": [
-    "Cold start and Chinese project wizard",
-    "Native Open dialog: Chinese project filter, unchanged *.terry wildcard",
-    "Invalid fixture: Chinese Failed to open project message and missing terrain style detail; filename unchanged",
-    "Open valid project after dismissing the diagnostic",
-    "Chinese Prefab/battle project summary and main title",
-    "Point light labels and radius edit 15 -> 16; save successful"
+  "englishUiRadius": "17",
+  "actualUiChecks": [
+    "R6 cold start and Chinese project wizard",
+    "Open independent battle prefab",
+    "File/Edit/View/Tools menus inspected at 10 pt; shortcuts legible",
+    "Toolbar overflow exposes long labels and Point Light tool remains selectable",
+    "Normal window and maximized layout inspected",
+    "Point Light radius 16 -> 17 and Ctrl+S save",
+    "Restore original files, cold start English, inspect Radius 17 and Colour Scale 21000, Ctrl+S save"
   ],
-  "additionalR5UiChecks": [
-    "Edit/View/Tools menus inspected",
-    "Project Errors Validate action returns Success in Chinese",
-    "Selection undo/redo functional and Chinese"
-  ],
-  "scope": "Independent point-light battle prefab, open failure recovery, properties, save, undo/redo and real English roundtrip. External Houdini/Perforce server tasks and exhaustive BOB/map algorithm testing are not claimed.",
+  "scope": "Independent point-light battle prefab, typography, tool selection, keyboard undo/redo and real English roundtrip. External servers and exhaustive map/BOB algorithms are not claimed.",
   "shortcutCount": 172,
   "shortcutIdsAndKeysUnchanged": true,
   "personalConfigsRestoredByteIdentically": true,
@@ -58,7 +54,9 @@
     "keyboard.xml",
     "settings.xml",
     "settings_internal.ini",
+    "settings_project_ProjectPrefab.xml",
+    "terry_error_log.txt",
     "tool_state.xml"
   ],
-  "r5ReinstalledAndHashesVerifiedAfterEnglishRoundtrip": true
+  "r6ReinstalledAndHashesVerifiedAfterEnglishRoundtrip": true
 }

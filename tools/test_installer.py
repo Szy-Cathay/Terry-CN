@@ -107,7 +107,7 @@ results.append('Restore after R2 upgrade: exact originals')
 
 # Also exercise the immediately preceding publicized delivery, whose Qt file
 # and display hooks differ from R2. Its archive remains recoverable in Git.
-for version in ['R3', 'R4']:
+for version in ['R3', 'R4', 'R5']:
     with zipfile.ZipFile(ROOT / f'Terry-CN-WH3-20261010-{version}.zip') as archive:
         previous = json.loads(archive.read('patch.json'))
     for record in previous['files']:

@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / 'tools' / 'python-libs'))
 import pefile
 pefile.MAX_IMPORT_SYMBOLS = 65536
 from display_hooks import DisplayPool
+from font_patch import apply_font_patch
 import capstone
 
 
@@ -312,6 +313,10 @@ def patch_module(source, translations, display_translations, shared_literals):
     assert item_layout_calls <= validated, 'View-item display hook no longer matches this build'
     assert status_argument_calls <= validated, 'Selection status hook no longer matches this build'
     assert title_fragment_calls <= validated, 'Project title composer no longer matches this build'
+    if source.name == 'tweak_terrainmetadataeditor.modder.x64.dll':
+        font_changes, font_metadata = apply_font_patch(pe, patched, dp)
+        changes.extend(font_changes)
+        dp.hooks.append({'kind': 'terry-font-ui', **font_metadata})
     executable_pool = bool(hooks)
     if dp.relocations:
         directory = pe.OPTIONAL_HEADER.DATA_DIRECTORY[5]
@@ -404,7 +409,7 @@ def main():
         older = next((r for r in previous['files'] if r['path'] == record['path']), None)
         if older and older['originalSha256'] == record['originalSha256']:
             record['previousPatchedSha256'] = sorted(set(older.get('previousPatchedSha256', []) + [older['patchedSha256']]) - {record['patchedSha256']})
-    (args.output / 'patch.json').write_text(json.dumps({'format': 1, 'version': '2026-10-10 R5', 'files': records}, ensure_ascii=False, indent=2), encoding='utf-8')
+    (args.output / 'patch.json').write_text(json.dumps({'format': 1, 'version': '2026-10-10 R6', 'files': records}, ensure_ascii=False, indent=2), encoding='utf-8')
     (args.output / 'coverage.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     (args.output / 'display-hooks.json').write_text(json.dumps(hook_report, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps({'files': len(records), 'displaySites': sum(len(v) for v in report.values()),

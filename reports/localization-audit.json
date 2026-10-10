@@ -1,9 +1,9 @@
 {
-  "version": "2026-10-10 R5",
-  "manifestSha256": "7E9B958001604AA89805AEB8C3B1AD2267EAE6ABA348BFE42102E8BD1AFA5D2C",
+  "version": "2026-10-10 R6",
+  "manifestSha256": "2EFAB9F47C2CC07D9C85FB138DA66F40C853854B147B36FE57D1FAF2135ACC02",
   "displayDictionaryEntries": 4557,
   "addedDictionaryEntriesSinceR4": 240,
-  "displayOrLiteralSites": 2200,
+  "displayOrLiteralSites": 2205,
   "distinctPatchedLiteralStrings": 1132,
   "staticQStringLiteralReferences": 208,
   "utf8LiteralReferences": 113,
@@ -32,6 +32,45 @@
     "Perforce command strings and file operations",
     "Unknown display strings pass through unchanged"
   ],
-  "regressionFoundDuringGuiValidation": "Failed to open project. was composed from a nonstandard QString constructor; corrected its audited reference and byte length before retesting",
-  "countMeaning": "Reference and dictionary counts describe this patch; they are not a percentage of all possible UI states."
+  "countMeaning": "Reference and dictionary counts describe this patch; they are not a percentage of all possible UI states.",
+  "fontUiSites": 5,
+  "historicalR5DiagnosticFix": "Failed to open project. was composed from a nonstandard QString constructor; corrected its audited reference and byte length before retesting",
+  "r6Changes": "Existing translation catalogs and audited references unchanged; five Terry-only font/canvas/menu initialization sites added.",
+  "fontUiChanges": [
+    {
+      "rva": "0x28034a",
+      "fontUi": true,
+      "purpose": "Text-icon font family: Helvetica -> Microsoft YaHei UI",
+      "beforeHex": "488d15a7566c00",
+      "afterHex": "488d15af9fe501"
+    },
+    {
+      "rva": "0x280346",
+      "fontUi": true,
+      "purpose": "Text-icon point size: 7 -> 9; default weight preserved",
+      "beforeHex": "458d4108",
+      "afterHex": "458d410a"
+    },
+    {
+      "rva": "0x1ffb50",
+      "fontUi": true,
+      "purpose": "Text-icon and toolbar canvas: 64x32 -> 120x32",
+      "beforeHex": "488b0551be4700",
+      "afterHex": "488b05b1a7ed01"
+    },
+    {
+      "rva": "0x244226",
+      "fontUi": true,
+      "purpose": "Snap AI text-icon canvas: allow its full Chinese label",
+      "beforeHex": "c7453020000000",
+      "afterHex": "c7453078000000"
+    },
+    {
+      "rva": "0x19849",
+      "fontUi": true,
+      "purpose": "MainWindow menu initialization: scoped menu/toolbar typography",
+      "beforeHex": "ff15b94e6300",
+      "afterHex": "e8620d0c0290"
+    }
+  ]
 }

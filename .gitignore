@@ -19,6 +19,8 @@ venv/
 !/reports/scene-roundtrip.json
 !/reports/static-template-tests.json
 !/reports/localization-audit.json
+!/reports/font-tests.json
+!/reports/font-ui-verification.json
 
 # Local credentials, editor state and temporary files
 .env

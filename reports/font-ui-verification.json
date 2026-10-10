@@ -1,0 +1,53 @@
+{
+  "version": "2026-10-10 R6",
+  "manifestSha256": "2EFAB9F47C2CC07D9C85FB138DA66F40C853854B147B36FE57D1FAF2135ACC02",
+  "passed": true,
+  "launchPath": "Steam > Battle Map Editor: Terry",
+  "environment": {
+    "assemblyKitBuild": "25616861",
+    "qtVersion": "5.12.0",
+    "systemScalingPercent": 150,
+    "windowSizesObserved": [
+      [
+        1795,
+        1170
+      ],
+      [
+        2560,
+        1530
+      ]
+    ]
+  },
+  "font": {
+    "family": "Microsoft YaHei UI",
+    "menuPointSize": 10,
+    "textIconPointSize": 9,
+    "textIconCanvas": [
+      120,
+      32
+    ]
+  },
+  "observedChecks": [
+    "Cold start succeeds with new menu and toolbar fonts",
+    "File, Edit, View and Tools menus remain legible; shortcut columns do not overlap",
+    "Normal and maximized main-window layouts remain usable",
+    "Toolbar extension expands to show all remaining tools",
+    "Long labels such as 程序化排除区 and 复合场景 are complete",
+    "Point Light selected from the extension opens its placement controls",
+    "Selection tool, Ctrl+A, Ctrl+Z, Ctrl+Y and Ctrl+S work in the independent prefab",
+    "Point Light radius edited from 16 to 17 and persisted",
+    "English restore returns original typography and reads Radius 17",
+    "R6 reinstalled; all five installed file hashes verified"
+  ],
+  "nativeOnlyChecks": [
+    "Snap AI label width and canvas instruction verified in actual Qt metrics and binary integrity tests; its dedicated tool UI was not exercised"
+  ],
+  "relatedReports": [
+    "font-tests.json",
+    "scene-roundtrip.json",
+    "installer-test-results.json",
+    "patch-integrity-tests.json"
+  ],
+  "personalConfigsRestoredByteIdentically": true,
+  "scope": "Visual checks at the existing 150 percent scaling only. No system DPI settings were changed. Exhaustive map algorithms and external services were not rerun."
+}
