@@ -409,7 +409,7 @@ def main():
         older = next((r for r in previous['files'] if r['path'] == record['path']), None)
         if older and older['originalSha256'] == record['originalSha256']:
             record['previousPatchedSha256'] = sorted(set(older.get('previousPatchedSha256', []) + [older['patchedSha256']]) - {record['patchedSha256']})
-    (args.output / 'patch.json').write_text(json.dumps({'format': 1, 'version': '2026-10-10 R6', 'files': records}, ensure_ascii=False, indent=2), encoding='utf-8')
+    (args.output / 'patch.json').write_text(json.dumps({'format': 1, 'version': 'v0.1.0', 'files': records}, ensure_ascii=False, indent=2), encoding='utf-8')
     (args.output / 'coverage.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     (args.output / 'display-hooks.json').write_text(json.dumps(hook_report, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps({'files': len(records), 'displaySites': sum(len(v) for v in report.values()),

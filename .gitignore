@@ -3,8 +3,8 @@
 /build/
 
 # Historical releases restored locally for upgrade regression tests
-/Terry-CN-WH3-20261010-R[345].zip
-/Terry-CN-WH3-20261010-R[345].zip.sha256
+/Terry-CN-WH3-20261010-R[3456].zip
+/Terry-CN-WH3-20261010-R[3456].zip.sha256
 
 # Reinstallable development dependencies and caches
 /tools/python-libs/

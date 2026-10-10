@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "version": "2026-10-10 R6",
+  "version": "v0.1.0",
   "files": [
     {
       "path": "binaries/tweak_terrainmetadataeditor.modder.x64.dll",

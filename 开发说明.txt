@@ -1,6 +1,6 @@
 Terry-CN 汉化补丁维护说明
 
-交付给玩家的文件是根目录 Terry-CN-WH3-20261010-R6.zip。
+交付给玩家的文件是根目录 Terry-CN-WH3-v0.1.0.zip，正式版本标签为 v0.1.0。
 ZIP 只包含差分清单、安装/恢复/检查工具和使用文档，不包含官方完整 DLL。
 
 本工程源码与本地生成目录的用途如下；本地基线、构建和缓存清理后按需重建：
@@ -36,7 +36,11 @@ python tools/validate_patch.py build/new-candidate
 python tools/package_release.py
 
 原生测试记录词库哈希；模板、字体、完整性和安装测试记录差分哈希。场景回读及字体实机报告也须绑定当前差分，
-打包器拒绝过期报告。当前分支只保留 R6 ZIP 及其校验文件；已发布的 R6 差分、ZIP 和验证记录保持原样。
+打包器拒绝过期报告。当前分支只保留 v0.1.0 ZIP 及其校验文件。
+v0.1.0 将已验证的 R6 更名为正式版，不改变任何目标的差分内容和安装工具。
+打包器仅在还原版本字段后重现 R6 清单的完整 SHA-256、安装工具也与原版次一致时，
+允许沿用 R6 的原始验证报告；原报告哈希不改写，沿用关系记入 package-verification.json。
+只要差分或安装工具发生变化，此更名规则即失效，必须重新提供与当前清单绑定的验证结果。
 
 旧版升级回归输入（仅测试时需要）：
 R3、R4、R5 ZIP 及校验文件仍可从 Git 历史取回。在项目根目录执行以下 PowerShell 命令：
@@ -45,7 +49,7 @@ foreach ($regressionVersion in 'R3', 'R4', 'R5') {
     git restore --source=$regressionSource --worktree -- "Terry-CN-WH3-20261010-$regressionVersion.zip" "Terry-CN-WH3-20261010-$regressionVersion.zip.sha256"
 }
 按各 .sha256 文件核对对应 ZIP 后再运行安装测试；不能因旧包不在当前目录而跳过升级检查。
-这六个历史文件已加入 .gitignore，临时取回不会重新加入当前交付。测试结束按项目清理约定移入回收站。
+历史候选 ZIP 及其校验文件已加入 .gitignore，临时取回不会重新加入当前交付。测试结束按项目清理约定移入回收站。
 tests/fixtures/patch-r2.json 是必要的回归测试夹具，继续保留。清理当前分支不重写 Git 历史。
 
 源字符串审计不能只检查一种 QString 构造模式。可用以下命令扫描共享文字来源：
@@ -70,7 +74,7 @@ R5 将 toolutilityqt.modder.x64.dll 纳入五目标白名单，只重定向九�
 Qt 元对象 tr 的返回遵循成员函数 ABI：rcx 为 this，rdx 为隐藏返回对象，r8 为原文。
 它与静态 QCoreApplication::translate 的 rcx 返回对象约定不同；原生测试分别覆盖。
 
-R6 的 tools/font_patch.py 只调整 Terry 主窗口菜单、工具栏及文字图标的显示。
+tools/font_patch.py 只调整 Terry 主窗口菜单、工具栏及文字图标的显示。
 菜单使用 Microsoft YaHei UI 10 pt，文字图标 9 pt、120×32 画布；独立的 Snap AI 画布同步加宽。
 菜单初始化包装保留 MainWindow this、原返回值、Windows x64 栈对齐和影子空间，
 附带 UNWIND_INFO，并复制原 PE 异常目录后追加函数记录。必须同时校验原运行时记录完整保留。
