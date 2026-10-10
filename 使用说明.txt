@@ -1,5 +1,7 @@
 Terry 中文补丁 · 战锤 3 Assembly Kit
 版本：v0.1.0 正式版（2026-10-10）
+创作者：Szy-Cathay、Codex（ChatGPT 6 Astra）
+制作说明：本汉化补丁由 Codex 完成。
 
 适用于官方 Assembly Kit build 25616861，Qt 5.12.0。
 非官方汉化，需要先安装官方 Assembly Kit 和《全面战争：战锤 3》。
