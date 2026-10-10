@@ -1,18 +1,24 @@
 {
-  "cn-saved.layer": {
-    "chineseSha256": "477AE762C36189CCF540EE53B56E69C52FD6EAC83A5BFE2A5BBDF2D953C0A10D",
-    "englishSha256": "477AE762C36189CCF540EE53B56E69C52FD6EAC83A5BFE2A5BBDF2D953C0A10D",
-    "byteIdentical": true
+  "version": "2026-10-10 R4",
+  "manifestSha256": "C3F43AFBD24D584A91B068E3ACCDD5AFDCD29DAA0E02EDE9BA5912F064BAEF64",
+  "files": {
+    "r4-light.1a12334538e2a9c.layer": {
+      "chineseSha256": "88B644AEDEDE40E20455F7E5DE1396BFCCF243695BA2DA5385B3D0410233517B",
+      "englishSha256": "88B644AEDEDE40E20455F7E5DE1396BFCCF243695BA2DA5385B3D0410233517B",
+      "byteIdentical": true
+    },
+    "r4-light.terry": {
+      "chineseSha256": "F3A7D50F3653E22C03C1A31B61109C0FE760DE7D30CB2C11F1C9A75643876364",
+      "englishSha256": "F3A7D50F3653E22C03C1A31B61109C0FE760DE7D30CB2C11F1C9A75643876364",
+      "byteIdentical": true
+    }
   },
-  "cn-saved.terry": {
-    "chineseSha256": "640D2A9C4A7B22776B6FEDA3AEDDFF8E5FF6FD4649FCE0438E098C4F89CA8C08",
-    "englishSha256": "640D2A9C4A7B22776B6FEDA3AEDDFF8E5FF6FD4649FCE0438E098C4F89CA8C08",
-    "byteIdentical": true
-  },
+  "englishRoundtripByteIdentical": true,
+  "englishOriginalHashesVerified": true,
   "pointLight": {
     "colour": "255 255 255 255",
     "colour_scale": "21000",
-    "radius": "12",
+    "radius": "13",
     "animation_type": "LAT_NONE",
     "animation_speed_scale": "0 0",
     "colour_min": "0",
@@ -20,7 +26,7 @@
     "falloff_type": "WPLFT_LINEAR",
     "for_light_probes_only": "false"
   },
-  "finalChineseEdit": [
+  "chineseEditChanges": [
     [
       "ECPointLight",
       "radius",
@@ -28,12 +34,19 @@
       "13"
     ]
   ],
-  "selectionUndoRedo": "Observed 1 selected -> undo 0 -> redo 1",
-  "finalChineseSave": true,
-  "deliveryVersionSmoke": {
-    "coldStart": true,
-    "reopenedRadius": "13",
-    "translatedUndoAndKeyboardMenus": true,
-    "manifestSha256": "91E2D55A791F662819C60BC2CC60A6B85CEC33A1A0F5C40165FD2ECA82577D38"
-  }
+  "selectionUndoRedo": "Final candidate: 1 selected -> undo 0 -> redo 1",
+  "launchPath": "Steam > Battle Map Editor: Terry",
+  "englishUiRadius": "13",
+  "finalCandidateUiChecks": [
+    "Cold start and project wizard",
+    "Open project summary: Chinese project type and battle database display",
+    "Native Save As dialog: Terry Chinese project filter with unchanged *.terry wildcard",
+    "Point light property labels, radius edit and save",
+    "Project title: Chinese type/database; filename unchanged"
+  ],
+  "scope": "Independent one-point-light battle prefab; no full BOB/Houdini/Perforce or all map-operation verification",
+  "shortcutCount": 172,
+  "shortcutIdsAndKeysUnchanged": true,
+  "personalConfigsRestoredByteIdentically": true,
+  "r4ReinstalledAndHashesVerifiedAfterEnglishRoundtrip": true
 }

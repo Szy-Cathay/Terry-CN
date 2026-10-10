@@ -44,7 +44,8 @@ for r in manifest['files']:
             if 'displayHook' in item:
                 allowed_code_changes.update(range(pe.get_offset_from_rva(rva), pe.get_offset_from_rva(rva) + 6))
             elif item.get('auditedDisplayLabel'):
-                allowed_code_changes.add(pe.get_offset_from_rva(rva - 1))
+                if item.get('lengthRva'):
+                    allowed_code_changes.add(pe.get_offset_from_rva(int(item['lengthRva'], 16)))
                 allowed_code_changes.update(range(pe.get_offset_from_rva(rva) + 3, pe.get_offset_from_rva(rva) + 7))
             else:
                 assert item['source'] not in protected or rva in permitted_label_sites, item
@@ -67,6 +68,7 @@ for r in manifest['files']:
     assert hashlib.sha256(result).hexdigest().upper() == r['patchedSha256']
     assert bytes(result) == (build / Path(r['path']).name).read_bytes()
     checks.append(r['path'] + ': differential reconstruction SHA-256 verified')
-result = {'passed': len(checks), 'failed': 0, 'checks': checks}
+result = {'passed': len(checks), 'failed': 0, 'checks': checks,
+          'manifestSha256': hashlib.sha256((build / 'patch.json').read_bytes()).hexdigest().upper()}
 (ROOT / 'reports/patch-integrity-tests.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
 print(json.dumps(result, indent=2))

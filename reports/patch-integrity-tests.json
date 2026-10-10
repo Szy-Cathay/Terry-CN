@@ -10,5 +10,6 @@
     "binaries/Qt5Widgets.dll: differential reconstruction SHA-256 verified",
     "Status tooltip schema and tool IDs unchanged",
     "working_data/Terry/status_tooltips.xml: differential reconstruction SHA-256 verified"
-  ]
+  ],
+  "manifestSha256": "C3F43AFBD24D584A91B068E3ACCDD5AFDCD29DAA0E02EDE9BA5912F064BAEF64"
 }

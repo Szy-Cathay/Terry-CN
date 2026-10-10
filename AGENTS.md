@@ -45,11 +45,11 @@
 
 ```powershell
 python tools/build_patch.py --source backups/original-20261009 --output build/candidate
-python tools/test_display_hooks.py
+python tools/test_display_hooks.py --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
 python tools/validate_patch.py build/candidate
 ```
 
-验证器和安装测试目前使用 `backups/original-20261009`。安装测试读取根目录 `patch.json`：保留当前交付副本后，将已验证候选清单复制到根目录，再运行 `python tools/test_installer.py`。该测试写入独立的 `build/installer-tests/`，不写实际游戏目录；安装器仍会检查 Terry/BOB 进程，不绕过此检查。
+验证器和安装测试目前使用 `backups/original-20261009`。安装测试读取根目录 `patch.json`，R3 升级输入取自保留的 R3 ZIP：保留当前交付副本后，将已验证候选清单复制到根目录，再运行 `python tools/test_installer.py`。该测试写入独立的 `build/installer-tests/`，不写实际游戏目录；安装器仍会检查 Terry/BOB 进程，不绕过此检查。交付打包要求原生词库哈希、完整性及安装报告的差分哈希、实际场景回读记录均与当前构建一致。
 
 实机验证使用独立测试工程，从受影响的菜单、对象或操作复现。涉及编辑与存储时核对属性值、快捷键，并进行中文保存与英文原版回读；只记录实际操作过的路径。保护用户未保存工作，不强杀编辑器；备份并恢复测试修改的个人配置。
 

@@ -1,5 +1,7 @@
 """Inventory literal QStrings and display imports without modifying installed files."""
 import json
+import argparse
+import hashlib
 import re
 import struct
 import sys
@@ -41,10 +43,45 @@ def inventory(path):
     return result
 
 
+def data_strings(path):
+    """Collect ordinary narrow/wide UI candidates, including non-Qt producers.
+
+    This deliberately includes internal identifiers and logs. An unmapped count
+    is an audit queue, never a translation percentage or permission to patch.
+    """
+    pe = pefile.PE(str(path), fast_load=True)
+    result = []
+    for section in pe.sections:
+        if section.Characteristics & 0x20000000:
+            continue
+        raw = section.get_data()
+        for pattern, encoding in [(rb'[\x20-\x7e\r\n\t]{4,}\x00', 'ascii'),
+                                  (rb'(?:[\x20-\x7e]\x00){4,}\x00\x00', 'utf-16-le')]:
+            for match in re.finditer(pattern, raw):
+                text = match.group().decode(encoding).rstrip('\0')
+                if re.search('[A-Za-z]{3}', text):
+                    result.append({'rva': hex(section.VirtualAddress + match.start()),
+                                   'encoding': encoding, 'source': text})
+    return result
+
+
 if __name__ == '__main__':
-    source = Path(sys.argv[1])
-    dest = Path(sys.argv[2])
-    names = ['tweak_terrainmetadataeditor.modder.x64.dll', 'qttoolutility.modder.x64.dll']
-    result = {name: inventory(source / name) for name in names}
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('source', type=Path)
+    parser.add_argument('dest', type=Path)
+    parser.add_argument('--data-strings', action='store_true', help='Also scan ordinary ASCII/UTF-16 constants')
+    parser.add_argument('--module', action='append', help='Module filename; repeat for shared producers such as Warscape')
+    options = parser.parse_args()
+    names = options.module or ['tweak_terrainmetadataeditor.modder.x64.dll', 'qttoolutility.modder.x64.dll']
+    result = {}
+    for name in names:
+        path = options.source / name
+        result[name] = {'sha256': hashlib.sha256(path.read_bytes()).hexdigest().upper(),
+                        'qstringLiterals': inventory(path)}
+        if options.data_strings:
+            result[name]['dataStrings'] = data_strings(path)
+    dest = options.dest
+    dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
-    print({k: len(v) for k, v in result.items()})
+    print({k: {field: len(v[field]) for field in ['qstringLiterals', 'dataStrings'] if field in v}
+           for k, v in result.items()})

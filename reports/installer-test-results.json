@@ -1,5 +1,5 @@
 {
-  "passed": 13,
+  "passed": 15,
   "failed": 0,
   "checks": [
     "Install: all target hashes match",
@@ -14,6 +14,9 @@
     "R2 upgrade without original backup: all targets unchanged",
     "Direct R2 upgrade: all target hashes match",
     "Restore after R2 upgrade: exact originals",
+    "Direct R3 upgrade: all target hashes match",
+    "Restore after R3 upgrade: exact originals",
     "Locked second target: earlier writes roll back"
-  ]
+  ],
+  "manifestSha256": "C3F43AFBD24D584A91B068E3ACCDD5AFDCD29DAA0E02EDE9BA5912F064BAEF64"
 }

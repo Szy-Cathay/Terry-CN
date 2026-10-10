@@ -1,11 +1,11 @@
 ﻿Terry-CN 汉化补丁维护说明
 
-交付给玩家的文件是根目录 Terry-CN-WH3-20261010-R3.zip。
+交付给玩家的文件是根目录 Terry-CN-WH3-20261010-R4.zip。
 ZIP 只包含差分清单、安装/恢复/检查工具和使用文档，不包含官方完整 DLL。
 
 本工程保留的目录均用于汉化补丁维护：
 backups/original-20261009：构建所需的官方原版基线，按 source-hashes.json 校验；不对外打包。
-build/release：当前版本的构建结果和调用点清单，可随时由原版基线重建。
+build/r4-candidate-8：R4 的构建结果和调用点清单，可由原版基线重建；其他候选保留在本地。
 reports：原生代码、安装恢复、完整性、场景回读、快捷键及回收清单。
 tests/fixtures：旧补丁升级与快捷键保护的回归测试基线。
 tools：构建器、检查器、打包器及 Python 依赖。
@@ -15,17 +15,27 @@ translations.zh-CN.json：原有汉化词库。
 translations.ui.zh-CN.json：已审计的 Terry 界面文字与文件筛选器。
 translations.messages.zh-CN.json：可用于共享工具组件的提示和错误消息。
 translations.display.zh-CN.json、translations.properties.zh-CN.json：显示层词库。
+translations.extended.zh-CN.json：设置、工具、动态 AI 分类和长说明的显示译文。
+translations.engine.zh-CN.json：引擎环境和共享界面译文，以及原版中实际存在的大小写变体。
 status-tooltips.zh-CN.json：15 条工具操作说明。
 protected-identifiers.json：禁止作为通用字面量改写的配置与快捷键标识。
 
 构建与检查顺序（Python 3，Windows x64）：
-python tools/build_patch.py --source backups/original-20261009 --output build/release
-python tools/test_display_hooks.py
-python tools/validate_patch.py build/release
-将验证过的 build/release/patch.json 复制到根目录 patch.json。
+python tools/build_patch.py --source backups/original-20261009 --output build/new-candidate
+python tools/test_display_hooks.py --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
+python tools/validate_patch.py build/new-candidate
+将验证过的 build/new-candidate/patch.json 复制到根目录 patch.json。
 关闭 Terry 和 BOB 后运行 python tools/test_installer.py。
 实际完成界面、编辑和跨语言保存测试，更新验证说明和报告。
 python tools/package_release.py
+
+原生测试记录词库哈希；完整性和安装测试记录差分哈希。场景回读报告也须绑定当前差分，
+打包器拒绝过期报告。R3 ZIP 作为升级回归输入保留，不应随意覆盖或删除。
+
+源字符串审计不能只检查一种 QString 构造模式。可用以下命令扫描共享文字来源：
+python tools/audit_strings.py "你的 Assembly Kit/binaries" build/audit.json --data-strings --module warscape.modder.x64.dll
+审计会列出 ASCII 与 UTF-16 候选，也包含内部标识和日志，不能把未匹配数量当作漏译率，
+更不能据此全局改写二进制。引擎环境译文通过既有 Qt 显示层生效，不修改 Warscape DLL。
 
 打包器拒绝覆盖同名 ZIP；应先将上次交付移入回收站或保留到明确的归档位置。
 构建器继承根目录 manifest 中的已知补丁哈希，旧版升级仍必须使用校验通过的原版备份。

@@ -1,7 +1,18 @@
 {
-  "passed": 11330,
+  "passed": 39585,
   "failed": 0,
-  "dictionaryEntries": 2258,
+  "dictionaryEntriesIncludingStyleVariants": 7789,
+  "catalogSha256": {
+    "translations.zh-CN.json": "87F4D065A5946BA2C5DEBF2A86CF2B3691F07D8E24D6CEC1F22C74D689A4B1ED",
+    "translations.ui.zh-CN.json": "A454B660EFF28378245AF496401C9CD9A63D8D414A23C8733BD28799FF2EF64B",
+    "translations.messages.zh-CN.json": "05B0D188CC4044FC681DEE6276EC5E0803B426D7C06CC90CC69F0FACDAD78767",
+    "translations.display.zh-CN.json": "3B02783355F4D864918099329B99902A8357CACA3A933BA3CD67C17958410BA0",
+    "translations.properties.zh-CN.json": "5C7400AF21BF9D2D7C160494C052B665D77846E176CA3BA0096A51A6156D0AFD",
+    "translations.extended.zh-CN.json": "60FC8DB3B924BD54CD5F1DF81543542795912F6270F8361B382A4049A39526EF",
+    "translations.engine.zh-CN.json": "6F365A6DB0ED5D66F223CF1BDB16EE1F45A9C1F4449A00CA727BDF0AD654A6E9"
+  },
+  "qtCopyOwnershipChecks": 600,
+  "longTextEntries": 14,
   "checks": [
     "All native mappings",
     "ASLR relocated QString pointers",

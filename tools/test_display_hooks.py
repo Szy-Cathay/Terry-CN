@@ -3,17 +3,26 @@
 Checks the native code, not a reimplementation of its comparisons. The fallback
 captures all five argument slots, including the first stack argument.
 """
+import argparse
 import ctypes as c
+import hashlib
 import json
+import os
 import struct
 from pathlib import Path
 from display_hooks import DisplayPool
 
 ROOT = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser()
+parser.add_argument('--qt-core', type=Path, help='Original Qt5Core.dll for real QString ownership checks')
+options = parser.parse_args()
 translations = {}
-for name in ['translations.zh-CN.json', 'translations.ui.zh-CN.json', 'translations.messages.zh-CN.json', 'translations.display.zh-CN.json', 'translations.properties.zh-CN.json']:
+catalog_hashes = {}
+for name in ['translations.zh-CN.json', 'translations.ui.zh-CN.json', 'translations.messages.zh-CN.json', 'translations.display.zh-CN.json', 'translations.properties.zh-CN.json', 'translations.extended.zh-CN.json', 'translations.engine.zh-CN.json']:
     translations.update(json.loads((ROOT / name).read_text(encoding='utf-8-sig')))
-translations = {s: t for s, t in translations.items() if len(s) <= 160}
+    catalog_hashes[name] = hashlib.sha256((ROOT / name).read_bytes()).hexdigest().upper()
+# Paint/layout sinks also receive uppercase labels from Qt styles.
+translations.update({s.upper(): t for s, t in list(translations.items()) if len(s) <= 60 and '%' not in s})
 k = c.WinDLL('kernel32', use_last_error=True)
 k.VirtualAlloc.argtypes = [c.c_void_p, c.c_size_t, c.c_uint32, c.c_uint32]
 k.VirtualAlloc.restype = c.c_void_p
@@ -105,7 +114,55 @@ for kind, argument in [('qstring-argument', 'rdx'), ('qstring-argument', 'r8'), 
         checks += 1
     finally:
         k.VirtualFree(memory, 0, 0x8000)
-result = {'passed': checks, 'failed': 0, 'dictionaryEntries': len(translations),
+ownership_checks = 0
+if options.qt_core:
+    # The project-title composer uses a const copy assignment instead of moving
+    # from an immutable translated QString. Exercise the actual bundled Qt ABI
+    # with both static translated data and heap-owned passthrough strings.
+    with os.add_dll_directory(str(options.qt_core.resolve().parent)):
+        qt = c.WinDLL(str(options.qt_core.resolve()))
+    assign = getattr(qt, '??4QString@@QEAAAEAV0@AEBV0@@Z')
+    assign.argtypes = [c.c_void_p, c.c_void_p]
+    assign.restype = c.c_void_p
+    create = getattr(qt, '?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z')
+    create.argtypes = [c.c_char_p, c.c_int]
+    create.restype = c.c_void_p
+    destroy = getattr(qt, '??1QString@@QEAA@XZ')
+    destroy.argtypes = [c.c_void_p]
+    destroy.restype = None
+    pool = bytearray()
+    dp = DisplayPool(pool, 0x1000, 0)
+    start = dp.make_hook(translations, 0x100, 'qstring-argument', 'rdx')
+    memory = k.VirtualAlloc(None, 0x1000 + len(pool), 0x3000, 0x40)
+    assert memory, c.get_last_error()
+    try:
+        c.memmove(memory + 0x1000, bytes(pool), len(pool))
+        c.c_void_p.from_address(memory + 0x100).value = c.cast(assign, c.c_void_p).value
+        for rva in dp.relocations:
+            pointer = c.c_uint64.from_address(memory + rva)
+            pointer.value += memory
+        native = c.WINFUNCTYPE(c.c_void_p, c.c_void_p, c.c_void_p)(memory + start)
+        for source in ['Prefab', 'Tile', 'Tile Map', 'battle', 'campaign', 'unmapped_custom_project_type']:
+            for _ in range(100):
+                obj = c.c_void_p(create(source.encode(), -1))
+                dest = c.c_void_p(create(b'previous title', -1))
+                original_pointer = obj.value
+                original_ref = c.c_int.from_address(obj.value).value
+                assert native(c.addressof(dest), c.addressof(obj)) == c.addressof(dest)
+                assert obj.value == original_pointer and read_qstring(c.addressof(obj)) == source
+                expected_ref = original_ref if source in translations else original_ref + 1
+                assert c.c_int.from_address(obj.value).value == expected_ref
+                assert read_qstring(c.addressof(dest)) == translations.get(source, source)
+                destroy(c.addressof(obj))
+                assert read_qstring(c.addressof(dest)) == translations.get(source, source)
+                destroy(c.addressof(dest))
+                ownership_checks += 1
+    finally:
+        k.VirtualFree(memory, 0, 0x8000)
+    checks += ownership_checks
+result = {'passed': checks, 'failed': 0, 'dictionaryEntriesIncludingStyleVariants': len(translations),
+          'catalogSha256': catalog_hashes, 'qtCopyOwnershipChecks': ownership_checks,
+          'longTextEntries': sum(len(s) > 160 for s in translations),
           'checks': ['All native mappings', 'ASLR relocated QString pointers', 'Five ABI arguments preserved',
                      'Original strings unchanged', 'Unknown/empty/Unicode passthrough', 'Explicit lengths and null passthrough']}
 (ROOT / 'reports/native-hook-tests.json').write_text(json.dumps(result, indent=2), encoding='utf-8')

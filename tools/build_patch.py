@@ -78,6 +78,9 @@ def patch_module(source, translations, display_translations, shared_literals):
             except (UnicodeDecodeError, pefile.PEFormatError):
                 continue
             translated = translations.get(text)
+            if source.name == 'tweak_terrainmetadataeditor.modder.x64.dll' and rva == 0x1c5989:
+                assert text == ', in TILESET="'
+                translated = '，所属地块集="'
             if translated is None:
                 continue
             # Shared tool code is restricted to the audited VFX chooser label.
@@ -119,11 +122,25 @@ def patch_module(source, translations, display_translations, shared_literals):
     special = {
         'tweak_terrainmetadataeditor.modder.x64.dll': [
             (0x144c26, 'Project Wizard', '工程向导', 0x144c25, 14),
+            # Native open/save filters use QMetaObject::tr, bypassing both
+            # QString's common constructor and Qt's painted item text.
+            # Keep the wildcard byte-for-byte; these references only name
+            # the file type in QTU::select_file dialogs.
+            (0xf8386, 'Terry Project (*.terry)', 'Terry 工程 (*.terry)', None, None),
+            (0xf95ab, 'Terry Project (*.terry)', 'Terry 工程 (*.terry)', None, None),
+            # Fixed fragments in the audited display-only project composer.
+            (0x1c5940, ' [has MASK]', ' [有遮罩]', None, None),
+            (0x1c5947, ' [no mask]', ' [无遮罩]', None, None),
+            (0x1c595e, ' [has LINKS]', ' [有连接]', None, None),
+            (0x1c5965, ' [no links]', ' [无连接]', None, None),
+        ],
+        'qttoolutility.modder.x64.dll': [
+            (0xb6403, ', with custom mesh', '，含自定义网格', None, None),
         ],
     }
     for rva, text, translated, length_rva, old_length in special.get(source.name, []):
         offset = pe.get_offset_from_rva(rva)
-        assert original[offset:offset + 3] in (b'\x48\x8d\x0d', b'\x48\x8d\x15')
+        assert original[offset:offset + 3] in (b'\x48\x8d\x0d', b'\x48\x8d\x15', b'\x48\x8d\x05', b'\x4c\x8d\x05')
         text_rva = rva + 7 + struct.unpack_from('<i', original, offset + 3)[0]
         text_offset = pe.get_offset_from_rva(text_rva)
         assert original[text_offset:text_offset + len(text) + 1] == text.encode() + b'\0'
@@ -132,7 +149,8 @@ def patch_module(source, translations, display_translations, shared_literals):
             length_offset = pe.get_offset_from_rva(length_rva)
             assert original[length_offset] == old_length
             patched[length_offset] = len(translated.encode('utf-8'))
-        changes.append({'rva': hex(rva), 'source': text, 'translation': translated, 'auditedDisplayLabel': True})
+        changes.append({'rva': hex(rva), 'source': text, 'translation': translated, 'auditedDisplayLabel': True,
+                        'lengthRva': hex(length_rva) if length_rva is not None else None})
 
     # Display sinks only: no line edits, model storage, action IDs or combo values.
     sinks = {
@@ -143,11 +161,31 @@ def patch_module(source, translations, display_translations, shared_literals):
         '?setToolTip@QAction@@QEAAXAEBVQString@@@Z': 'rdx',
         '?setWindowTitle@QWidget@@QEAAXAEBVQString@@@Z': 'rdx',
         '?setTitle@QGroupBox@@QEAAXAEBVQString@@@Z': 'rdx',
+        '?setText@QAbstractButton@@QEAAXAEBVQString@@@Z': 'rdx',
+        '?setText@QAction@@QEAAXAEBVQString@@@Z': 'rdx',
+        '?showText@QToolTip@@SAXAEBVQPoint@@AEBVQString@@PEAVQWidget@@@Z': 'rdx',
+        '?addButton@QMessageBox@@QEAAPEAVQPushButton@@AEBVQString@@W4ButtonRole@1@@Z': 'rdx',
+        '?addTab@QTabWidget@@QEAAHPEAVQWidget@@AEBVQString@@@Z': 'r8',
+        '?setTabText@QTabWidget@@QEAAXHAEBVQString@@@Z': 'r8',
+        '?setDetailedText@QMessageBox@@QEAAXAEBVQString@@@Z': 'rdx',
+        '?setInformativeText@QMessageBox@@QEAAXAEBVQString@@@Z': 'rdx',
+        '??0QMessageBox@@QEAA@W4Icon@0@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@PEAVQWidget@@V?$QFlags@W4WindowType@Qt@@@@@Z': 'r9',
+        '?drawText@QPainter@@QEAAXHHAEBVQString@@@Z': 'r9',
         '?drawText@QPainter@@QEAAXAEBVQRect@@HAEBVQString@@PEAV2@@Z': 'r9',
         '?drawText@QPainter@@QEAAXAEBVQRectF@@HAEBVQString@@PEAV2@@Z': 'r9',
         '?drawText@QPainter@@QEAAXAEBVQRectF@@AEBVQString@@AEBVQTextOption@@@Z': 'r8',
         '?drawText@QPainter@@QEAAXAEBVQPointF@@AEBVQString@@@Z': 'r8',
     }
+    # Static message boxes: parent, title, body. Only substitute the const
+    # display body; preserve return values, button enums and all stack arguments.
+    for level in ['information', 'question', 'warning', 'critical']:
+        for signature in [
+            'SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@W421@@Z',
+            'SAHPEAVQWidget@@AEBVQString@@1W4StandardButton@1@2@Z',
+            'SAHPEAVQWidget@@AEBVQString@@1HHH@Z',
+            'SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1W421@2@Z',
+        ]:
+            sinks[f'?{level}@QMessageBox@@{signature}'] = 'r8'
     dp = DisplayPool(pool, section_rva, pe.OPTIONAL_HEADER.ImageBase)
     qt_translate = '?translate@QCoreApplication@@SA?AVQString@@PEBD00H@Z'
     # QCommonStyle view-item layout and QItemDelegate display/size calculation.
@@ -157,10 +195,20 @@ def patch_module(source, translations, display_translations, shared_literals):
     display_calls = {0x2d2600, 0x2d2d42} if source.name == 'qttoolutility.modder.x64.dll' else set()
     # QString::arg for the selection-status label only; schema uses of
     # "entity" elsewhere must remain unchanged.
-    status_argument_calls = {0x172f80} if source.name == 'tweak_terrainmetadataeditor.modder.x64.dll' else set()
-    short_display = {s: t for s, t in display_translations.items() if len(s) <= 160}
-    paint_display = dict(short_display)
-    paint_display.update({s.upper(): t for s, t in short_display.items() if len(s) <= 60 and '%' not in s})
+    status_argument_calls = {
+        'tweak_terrainmetadataeditor.modder.x64.dll': {0x172f80},
+        # ProjectTile/ProjectTileMap::description compose UI text with dimensions.
+        # Translate only the database name passed to QString::arg, before the
+        # numeric width/height substitutions; project database enums are untouched.
+        'qttoolutility.modder.x64.dll': {0xb6339, 0xda692},
+    }.get(source.name, set())
+    # Project title/status and open-project summary composers only. Translate
+    # name/description fragments before formatting (including <b>...</b><br>),
+    # leaving the project component, user filename and stored IDs intact.
+    title_fragment_calls = {0x1c572f, 0x1c583b, 0x1c57b6, 0x1573f6, 0x157462,
+                            0x13d53f, 0x13d5c3} if source.name == 'tweak_terrainmetadataeditor.modder.x64.dll' else set()
+    paint_display = dict(display_translations)
+    paint_display.update({s.upper(): t for s, t in display_translations.items() if len(s) <= 60 and '%' not in s})
     candidates = {}
     for section in pe.sections:
         if not section.Characteristics & 0x20000000:
@@ -173,7 +221,9 @@ def patch_module(source, translations, display_translations, shared_literals):
                 assert name.startswith(('??0QTextLayout@@', '?setText@QTextLayout@@'))
             if rva in status_argument_calls:
                 assert name == '?arg@QString@@QEBA?AV1@AEBV1@HVQChar@@@Z'
-            if name in sinks or (source.name == 'Qt5Widgets.dll' and name == qt_translate) or rva in display_calls or rva in item_layout_calls or rva in status_argument_calls:
+            if rva in title_fragment_calls:
+                assert name == ('??4QString@@QEAAAEAV0@$$QEAV0@@Z' if rva == 0x1c57b6 else '?append@QString@@QEAAAEAV1@AEBV1@@Z')
+            if name in sinks or (source.name == 'Qt5Widgets.dll' and name == qt_translate) or rva in display_calls or rva in item_layout_calls or rva in status_argument_calls or rva in title_fragment_calls:
                 candidates[rva] = (iat, name, match.group()[1] == 0x25)
     # Validate instruction boundaries against the x64 runtime function table.
     validated = set()
@@ -189,9 +239,15 @@ def patch_module(source, translations, display_translations, shared_literals):
         iat, name, is_jump = candidates[rva]
         kind = 'latin1-return' if rva in display_calls else 'translate-return' if name == qt_translate else 'qstring-argument'
         argument = 'r8' if rva in status_argument_calls else sinks.get(name, 'rdx')
+        if rva == 0x1c57b6 and rva in title_fragment_calls:
+            # A static translated QString must never be passed as a move source.
+            # Use the imported const-reference assignment at this one display
+            # temporary. Qt retains/releases its data; the source is destroyed
+            # by the existing caller, as before.
+            iat = next(k for k, v in imports.items() if v == '??4QString@@QEAAAEAV0@AEBV0@@Z')
         key = (iat, kind, argument)
         if key not in hooks:
-            dictionary = paint_display if name.startswith('?drawText@') or rva in item_layout_calls else short_display
+            dictionary = paint_display if name.startswith('?drawText@') or rva in item_layout_calls else display_translations
             hooks[key] = dp.make_hook(dictionary, iat, kind, argument)
         offset = pe.get_offset_from_rva(rva)
         patched[offset:offset + 6] = (b'\xe9' if is_jump else b'\xe8') + struct.pack('<i', hooks[key] - (rva + 5)) + b'\x90'
@@ -199,6 +255,7 @@ def patch_module(source, translations, display_translations, shared_literals):
     assert display_calls <= validated, 'Property label hook no longer matches this build'
     assert item_layout_calls <= validated, 'View-item display hook no longer matches this build'
     assert status_argument_calls <= validated, 'Selection status hook no longer matches this build'
+    assert title_fragment_calls <= validated, 'Project title composer no longer matches this build'
     executable_pool = bool(hooks)
     if dp.relocations:
         directory = pe.OPTIONAL_HEADER.DATA_DIRECTORY[5]
@@ -256,6 +313,10 @@ def main():
     properties = json.loads((ROOT / 'translations.properties.zh-CN.json').read_text(encoding='utf-8'), object_pairs_hook=unique_json)
     assert not set(properties) & set(display), 'Duplicate property translation across dictionaries'
     display.update(properties)
+    for filename in ['translations.extended.zh-CN.json', 'translations.engine.zh-CN.json']:
+        extra = json.loads((ROOT / filename).read_text(encoding='utf-8'), object_pairs_hook=unique_json)
+        assert not set(extra) & set(display), f'Duplicate translation in {filename}: {set(extra) & set(display)}'
+        display.update(extra)
     for source, translated in display.items():
         assert sorted(re.findall(r'%L?\d+|%n', source)) == sorted(re.findall(r'%L?\d+|%n', translated)), source
     args.output.mkdir(parents=True, exist_ok=True)
@@ -287,7 +348,7 @@ def main():
         older = next((r for r in previous['files'] if r['path'] == record['path']), None)
         if older and older['originalSha256'] == record['originalSha256']:
             record['previousPatchedSha256'] = sorted(set(older.get('previousPatchedSha256', []) + [older['patchedSha256']]) - {record['patchedSha256']})
-    (args.output / 'patch.json').write_text(json.dumps({'format': 1, 'version': '2026-10-10 R3', 'files': records}, ensure_ascii=False, indent=2), encoding='utf-8')
+    (args.output / 'patch.json').write_text(json.dumps({'format': 1, 'version': '2026-10-10 R4', 'files': records}, ensure_ascii=False, indent=2), encoding='utf-8')
     (args.output / 'coverage.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     (args.output / 'display-hooks.json').write_text(json.dumps(hook_report, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps({'files': len(records), 'displaySites': sum(len(v) for v in report.values()),
