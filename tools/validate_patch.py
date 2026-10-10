@@ -43,6 +43,19 @@ for r in manifest['files']:
             rva = int(item['rva'], 16)
             if 'displayHook' in item:
                 allowed_code_changes.update(range(pe.get_offset_from_rva(rva), pe.get_offset_from_rva(rva) + 6))
+            elif item.get('auditedUtf8Fragment'):
+                assert item['source'] not in protected, item
+                allowed_code_changes.update(range(pe.get_offset_from_rva(rva) + 3, pe.get_offset_from_rva(rva) + 7))
+                if 'lengthByteRva' in item:
+                    allowed_code_changes.add(pe.get_offset_from_rva(int(item['lengthByteRva'], 16)))
+                encoded = item['translation'].encode('utf-8')
+                assert patched.get_data(int(item['translatedDataRva'], 16), len(encoded) + 1) == encoded + b'\0'
+            elif item.get('staticQStringLiteral'):
+                assert item['source'] not in protected, item
+                allowed_code_changes.update(range(pe.get_offset_from_rva(rva) + 3, pe.get_offset_from_rva(rva) + 7))
+                data_rva = int(item['translatedDataRva'], 16)
+                encoded = item['translation'].encode('utf-16-le')
+                assert patched.get_data(data_rva + 24, len(encoded) + 2) == encoded + b'\0\0'
             elif item.get('auditedDisplayLabel'):
                 if item.get('lengthRva'):
                     allowed_code_changes.add(pe.get_offset_from_rva(int(item['lengthRva'], 16)))

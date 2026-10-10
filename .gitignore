@@ -17,6 +17,8 @@ venv/
 !/reports/patch-integrity-tests.json
 !/reports/package-verification.json
 !/reports/scene-roundtrip.json
+!/reports/static-template-tests.json
+!/reports/localization-audit.json
 
 # Local credentials, editor state and temporary files
 .env

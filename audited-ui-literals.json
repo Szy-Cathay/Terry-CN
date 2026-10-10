@@ -1,0 +1,1464 @@
+{
+  "tweak_terrainmetadataeditor.modder.x64.dll": [
+    {
+      "dataRva": "0x92f3d0",
+      "source": "Processing:",
+      "references": [
+        "0x29823"
+      ]
+    },
+    {
+      "dataRva": "0x92f400",
+      "source": "Exited with error code: %1 (0x%2)\n",
+      "references": [
+        "0x295dc"
+      ]
+    },
+    {
+      "dataRva": "0x92f670",
+      "source": "Failed to load map data for this map: %1.",
+      "references": [
+        "0x3bac2"
+      ]
+    },
+    {
+      "dataRva": "0x92f730",
+      "source": "Failed to load table %1 in database.",
+      "references": [
+        "0x3c3b3"
+      ]
+    },
+    {
+      "dataRva": "0x92f7a0",
+      "source": "Failed to load map data for this map: %1.",
+      "references": [
+        "0x3c54b"
+      ]
+    },
+    {
+      "dataRva": "0x92f810",
+      "source": "Database Error: ",
+      "references": [
+        "0x3cb24"
+      ]
+    },
+    {
+      "dataRva": "0x92f850",
+      "source": "Database Error: ",
+      "references": [
+        "0x3cd1b"
+      ]
+    },
+    {
+      "dataRva": "0x92f890",
+      "source": "Failed to export %1 as binary. %2",
+      "references": [
+        "0x3d2af"
+      ]
+    },
+    {
+      "dataRva": "0x92f8f0",
+      "source": "Rotations (%1) successfully written to database and exported as binary. Use DAVE to submit these changes.",
+      "references": [
+        "0x3d349"
+      ]
+    },
+    {
+      "dataRva": "0x92fad8",
+      "source": "Select %1...",
+      "references": [
+        "0x48fde"
+      ]
+    },
+    {
+      "dataRva": "0x92fb10",
+      "source": "Set %1 key",
+      "references": [
+        "0x49121"
+      ]
+    },
+    {
+      "dataRva": "0x92fb60",
+      "source": "Colour is already in use by ",
+      "references": [
+        "0x4d323"
+      ]
+    },
+    {
+      "dataRva": "0x92fbf0",
+      "source": "Clear Houdini Input Node",
+      "references": [
+        "0xc7b90"
+      ]
+    },
+    {
+      "dataRva": "0x92fc40",
+      "source": "Paste Houdini Asset Node Inputs",
+      "references": [
+        "0xc7980"
+      ]
+    },
+    {
+      "dataRva": "0x92fca0",
+      "source": "Add Houdini Input Node Slot",
+      "references": [
+        "0xc6630"
+      ]
+    },
+    {
+      "dataRva": "0x92fd40",
+      "source": "Clear all slots",
+      "references": [
+        "0x541a1"
+      ]
+    },
+    {
+      "dataRva": "0x92fd80",
+      "source": "Paste from clipboard",
+      "references": [
+        "0x541d2"
+      ]
+    },
+    {
+      "dataRva": "0x92fdf0",
+      "source": "<i>&lt;empty&gt;</i>",
+      "references": [
+        "0xc8320"
+      ]
+    },
+    {
+      "dataRva": "0x92fe40",
+      "source": "<i>&lt;invalid&gt;</i>",
+      "references": [
+        "0xc7fa0"
+      ]
+    },
+    {
+      "dataRva": "0x92fe90",
+      "source": "Remove Houdini Input Node Slot",
+      "references": [
+        "0xc6940"
+      ]
+    },
+    {
+      "dataRva": "0x92fee8",
+      "source": "Pick Entity",
+      "references": [
+        "0x5477d"
+      ]
+    },
+    {
+      "dataRva": "0x92ff20",
+      "source": "Pick Terrain Map",
+      "references": [
+        "0x547cb"
+      ]
+    },
+    {
+      "dataRva": "0x92ff60",
+      "source": "Select This Entity",
+      "references": [
+        "0x5480d"
+      ]
+    },
+    {
+      "dataRva": "0x92ffd0",
+      "source": "Clear Houdini Multiparm",
+      "references": [
+        "0x50768"
+      ]
+    },
+    {
+      "dataRva": "0x9300b0",
+      "source": "Insert Here",
+      "references": [
+        "0x54d14"
+      ]
+    },
+    {
+      "dataRva": "0x9300e0",
+      "source": "Another instance of this prefab is already being edited",
+      "references": [
+        "0x5dfa9"
+      ]
+    },
+    {
+      "dataRva": "0x930170",
+      "source": "Cannot unpack prefab(s) with transform children",
+      "references": [
+        "0x5e7a9"
+      ]
+    },
+    {
+      "dataRva": "0x9301e8",
+      "source": "Flip Polyline X",
+      "references": [
+        "0x5faa6"
+      ]
+    },
+    {
+      "dataRva": "0x930220",
+      "source": "Flip Polyline Z",
+      "references": [
+        "0x5fb96"
+      ]
+    },
+    {
+      "dataRva": "0x930260",
+      "source": "Failed to save \"%1\": %2",
+      "references": [
+        "0xc72b0"
+      ]
+    },
+    {
+      "dataRva": "0x9302b0",
+      "source": "Failed to process \"%1\" because BOB is already running. It will have to be processed manually",
+      "references": [
+        "0x66b5e"
+      ]
+    },
+    {
+      "dataRva": "0x9303e0",
+      "source": "This will generate a tilemap project at <b>%1</b> and attempt to build it with BOB.<br>Do you want to continue?",
+      "references": [
+        "0x66ec9"
+      ]
+    },
+    {
+      "dataRva": "0x9305f0",
+      "source": "Failed to start Houdini session: %1",
+      "references": [
+        "0x73c2b"
+      ]
+    },
+    {
+      "dataRva": "0x930650",
+      "source": "Unable to sync Houdini Engine %1 from Perforce. Please add the following path to your workspace view: %2",
+      "references": [
+        "0x73de7"
+      ]
+    },
+    {
+      "dataRva": "0x930740",
+      "source": "Sync Houdini Engine %1 from Perforce",
+      "references": [
+        "0x73eb2"
+      ]
+    },
+    {
+      "dataRva": "0x9307b0",
+      "source": "Unable to find file for HDA with key '%1'",
+      "references": [
+        "0x767a3"
+      ]
+    },
+    {
+      "dataRva": "0x930a90",
+      "source": "Loading '%1'",
+      "references": [
+        "0x84cfa"
+      ]
+    },
+    {
+      "dataRva": "0x930ac8",
+      "source": "Adjusting '%1'",
+      "references": [
+        "0x854ca"
+      ]
+    },
+    {
+      "dataRva": "0x930b00",
+      "source": "Old height range for '%1' is unadjustable",
+      "references": [
+        "0xc6b40"
+      ]
+    },
+    {
+      "dataRva": "0x930cb0",
+      "source": "Input data has a resolution of <b>%7x%8</b>.\nSo this will result in a grid of <b>%1x%2</b> tiles, each of size <b>%3x%4</b>, and a <b>%5x%6</b> tile map containing them.",
+      "references": [
+        "0xc7b60"
+      ]
+    },
+    {
+      "dataRva": "0x930e20",
+      "source": "<b>Invalid project</b>: %1",
+      "references": [
+        "0x8a49e"
+      ]
+    },
+    {
+      "dataRva": "0x930e70",
+      "source": "<b>Invalid source file</b>: %1",
+      "references": [
+        "0x8a5ff"
+      ]
+    },
+    {
+      "dataRva": "0x930ed0",
+      "source": "<b>Source file doesn't match dimensions of megatile heightmap!</b>\nShould be %1x%2, got %3x%4",
+      "references": [
+        "0x8a749"
+      ]
+    },
+    {
+      "dataRva": "0x930fb0",
+      "source": "<b>Invalid project</b>: %1",
+      "references": [
+        "0x8b9a9"
+      ]
+    },
+    {
+      "dataRva": "0x931060",
+      "source": "Invalid tile size! %1x%2",
+      "references": [
+        "0xc8030"
+      ]
+    },
+    {
+      "dataRva": "0x9310b0",
+      "source": "Invalid tile map size! %1x%2",
+      "references": [
+        "0xc68e0"
+      ]
+    },
+    {
+      "dataRva": "0x931110",
+      "source": "Invalid heightmap size! %1x%2",
+      "references": [
+        "0xc6cb0"
+      ]
+    },
+    {
+      "dataRva": "0x931170",
+      "source": "Invalid triangle density! %1",
+      "references": [
+        "0xc6b10"
+      ]
+    },
+    {
+      "dataRva": "0x9311d0",
+      "source": "Input data is a bad size! expected a multiple of %1x%2 but got %3x%4",
+      "references": [
+        "0xc76c0"
+      ]
+    },
+    {
+      "dataRva": "0x931280",
+      "source": "Tile map too small to fit tiles! It must be at least %1x%2",
+      "references": [
+        "0xc7130"
+      ]
+    },
+    {
+      "dataRva": "0x931310",
+      "source": "Unable to connect to Perforce: %1",
+      "references": [
+        "0xc67e0"
+      ]
+    },
+    {
+      "dataRva": "0x931370",
+      "source": "Failed to load project '%1'",
+      "references": [
+        "0xc6ab0"
+      ]
+    },
+    {
+      "dataRva": "0x9313c0",
+      "source": "Failed to save component '%2'",
+      "references": [
+        "0xc7840"
+      ]
+    },
+    {
+      "dataRva": "0x931460",
+      "source": "Set Property '%1'",
+      "references": [
+        "0xb8b16"
+      ]
+    },
+    {
+      "dataRva": "0x9314a0",
+      "source": "Set Property '%1'",
+      "references": [
+        "0xb8cab"
+      ]
+    },
+    {
+      "dataRva": "0x931940",
+      "source": "Tileset %1 not found",
+      "references": [
+        "0x1b6fb0"
+      ]
+    },
+    {
+      "dataRva": "0x931990",
+      "source": "Create tile (%1,%2)",
+      "references": [
+        "0x10b564"
+      ]
+    },
+    {
+      "dataRva": "0x9319d0",
+      "source": "'%1' is not a valid TIFF: \"%2\"",
+      "references": [
+        "0x10bc4c"
+      ]
+    },
+    {
+      "dataRva": "0x931a30",
+      "source": "dimensions of '%1' don't match the height map",
+      "references": [
+        "0x10c2cf"
+      ]
+    },
+    {
+      "dataRva": "0x931ab0",
+      "source": "Create tile auxilliary data (%1)",
+      "references": [
+        "0xf5edc"
+      ]
+    },
+    {
+      "dataRva": "0x931b60",
+      "source": "Failed to save '%1' to disk",
+      "references": [
+        "0x1b4f00"
+      ]
+    },
+    {
+      "dataRva": "0x931bb0",
+      "source": "Failed to open '%1'",
+      "references": [
+        "0x1b5f50"
+      ]
+    },
+    {
+      "dataRva": "0x931bf0",
+      "source": "Failed to write to '%1'",
+      "references": [
+        "0x1b6400"
+      ]
+    },
+    {
+      "dataRva": "0x931d00",
+      "source": "Set Spline Width",
+      "references": [
+        "0x11970b"
+      ]
+    },
+    {
+      "dataRva": "0x931d40",
+      "source": "Add Entity",
+      "references": [
+        "0x1112e8"
+      ]
+    },
+    {
+      "dataRva": "0x931d70",
+      "source": "Remove Entity",
+      "references": [
+        "0x11168e"
+      ]
+    },
+    {
+      "dataRva": "0x931db0",
+      "source": "Add Entity Component",
+      "references": [
+        "0x1117c8"
+      ]
+    },
+    {
+      "dataRva": "0x931df8",
+      "source": "Set Entity Key",
+      "references": [
+        "0x1119be"
+      ]
+    },
+    {
+      "dataRva": "0x931e30",
+      "source": "Add Association",
+      "references": [
+        "0x111bd6"
+      ]
+    },
+    {
+      "dataRva": "0x931e70",
+      "source": "Set Layer Opacity",
+      "references": [
+        "0x11ab7a"
+      ]
+    },
+    {
+      "dataRva": "0x931eb0",
+      "source": "Change Terrain Layer Visibility",
+      "references": [
+        "0x11ace4"
+      ]
+    },
+    {
+      "dataRva": "0x931f10",
+      "source": "Insert Property '%1'",
+      "references": [
+        "0x11ccf8"
+      ]
+    },
+    {
+      "dataRva": "0x931f60",
+      "source": "Remove Property '%1'",
+      "references": [
+        "0x11cfaa"
+      ]
+    },
+    {
+      "dataRva": "0x931fb0",
+      "source": "Set Attribute '%1' in Property '%2'",
+      "references": [
+        "0x11c8a7"
+      ]
+    },
+    {
+      "dataRva": "0x932010",
+      "source": "Remove Attribute '%1' in Property '%2'",
+      "references": [
+        "0x11cb18"
+      ]
+    },
+    {
+      "dataRva": "0x932080",
+      "source": "Insert Houdini Multiparm Instance",
+      "references": [
+        "0x11d2e2"
+      ]
+    },
+    {
+      "dataRva": "0x9320e0",
+      "source": "Remove Houdini Multiparm Instance",
+      "references": [
+        "0x11d456"
+      ]
+    },
+    {
+      "dataRva": "0x932140",
+      "source": "Add Project Component",
+      "references": [
+        "0x11d4ff"
+      ]
+    },
+    {
+      "dataRva": "0x932188",
+      "source": "Add %1 Layer",
+      "references": [
+        "0x11e0d5"
+      ]
+    },
+    {
+      "dataRva": "0x932390",
+      "source": "Not a Terry project",
+      "references": [
+        "0x1b6fe0"
+      ]
+    },
+    {
+      "dataRva": "0x9323d0",
+      "source": "Project has no scene",
+      "references": [
+        "0x1b53f0"
+      ]
+    },
+    {
+      "dataRva": "0x932420",
+      "source": "Project has no terrain",
+      "references": [
+        "0x1b6460"
+      ]
+    },
+    {
+      "dataRva": "0x932570",
+      "source": "Failed to resolve %1: %2",
+      "references": [
+        "0x1b5880"
+      ]
+    },
+    {
+      "dataRva": "0x9325c0",
+      "source": "Terry has detected that your last session didn't end properly. There is autosave data available. Do you want to recover the project?<br><br>%1",
+      "references": [
+        "0xf7f43"
+      ]
+    },
+    {
+      "dataRva": "0x932700",
+      "source": "Terry has detected that your last session didn't end properly. There is autosave data available but information about the project's original location is missing. Do you want to recover the project anyway?",
+      "references": [
+        "0xf7fa8"
+      ]
+    },
+    {
+      "dataRva": "0x9328c0",
+      "source": "Autosave Recovery",
+      "references": [
+        "0x1b4b10"
+      ]
+    },
+    {
+      "dataRva": "0x932900",
+      "source": "<i>%1</i><br>Your changes mean that the <b>.terry</b> file needs saving, and this file has also been upgraded. For this reason, the whole project needs to be upgraded and saved.  So you may find files checked out and changed that you didn't expect to be.",
+      "references": [
+        "0xfa03c"
+      ]
+    },
+    {
+      "dataRva": "0x932bc0",
+      "source": "<b>This is an autosave</b> and will save to '%1' instead of where it was loaded from",
+      "references": [
+        "0x13dce2"
+      ]
+    },
+    {
+      "dataRva": "0x932c90",
+      "source": "<b>This is an autosave</b> but there's no information about the original project location, so it will be treated as if it's a new project",
+      "references": [
+        "0x13dd4d"
+      ]
+    },
+    {
+      "dataRva": "0x932dc0",
+      "source": "don't know yet",
+      "references": [
+        "0x1b81d0"
+      ]
+    },
+    {
+      "dataRva": "0x932e90",
+      "source": "Terry Project Cleanup",
+      "references": [
+        "0x149531"
+      ]
+    },
+    {
+      "dataRva": "0x932ee0",
+      "source": "Unable to delete selected files:<br>%1",
+      "references": [
+        "0x1497d9"
+      ]
+    },
+    {
+      "dataRva": "0x932f50",
+      "source": "Successfully deleted <b>%1</b> files, saving approximately <b>%2</b>.",
+      "references": [
+        "0x1b58b0"
+      ]
+    },
+    {
+      "dataRva": "0x933000",
+      "source": "<br><b>Note,</b> some files weren't able to be properly deleted:<br>",
+      "references": [
+        "0x1b4ab0"
+      ]
+    },
+    {
+      "dataRva": "0x9332d0",
+      "source": "Prefab '%1' has internal errors",
+      "references": [
+        "0x14db69"
+      ]
+    },
+    {
+      "dataRva": "0x9333c0",
+      "source": "Transform parent is not a building. This is not supported by the game",
+      "references": [
+        "0x14bede"
+      ]
+    },
+    {
+      "dataRva": "0x933498",
+      "source": "Key is empty",
+      "references": [
+        "0x14e198"
+      ]
+    },
+    {
+      "dataRva": "0x933520",
+      "source": "Should have exactly one child entity",
+      "references": [
+        "0x14e320"
+      ]
+    },
+    {
+      "dataRva": "0x9335e0",
+      "source": "Child entity should be a BCA Boundary",
+      "references": [
+        "0x14e4f0"
+      ]
+    },
+    {
+      "dataRva": "0x933650",
+      "source": "More than one playable area.",
+      "references": [
+        "0x1b53c0"
+      ]
+    },
+    {
+      "dataRva": "0x9336b0",
+      "source": "More than one playable area for export type '%1'.",
+      "references": [
+        "0x150bae"
+      ]
+    },
+    {
+      "dataRva": "0x933780",
+      "source": "Emitter not associated to any building",
+      "references": [
+        "0x14c17a"
+      ]
+    },
+    {
+      "dataRva": "0x933820",
+      "source": "Protrudes outside of tile (masked) border",
+      "references": [
+        "0x14e845"
+      ]
+    },
+    {
+      "dataRva": "0x9338c0",
+      "source": "Project still contains live prefabs inside. Remember to commit/revert live prefabs.",
+      "references": [
+        "0x14ea96"
+      ]
+    },
+    {
+      "dataRva": "0x9339b0",
+      "source": "Individual river materials are not supported in tiles. You can only set the material for the tile as a whole.",
+      "references": [
+        "0x14ec11"
+      ]
+    },
+    {
+      "dataRva": "0x933b20",
+      "source": "Blend8 layer %1 has data in channel %2 but there is no texture assigned to that channel",
+      "references": [
+        "0x1b8140"
+      ]
+    },
+    {
+      "dataRva": "0x933c10",
+      "source": "The terrain setup path doesn't match the working data directory of the current project. \nThe rendered terrain will not match exported data until corrected",
+      "references": [
+        "0x1b6490"
+      ]
+    },
+    {
+      "dataRva": "0x933da0",
+      "source": "Duplicate of BMD Export Type '%1'.",
+      "references": [
+        "0x153657"
+      ]
+    },
+    {
+      "dataRva": "0x933e00",
+      "source": "Out Of Bounds",
+      "references": [
+        "0x1538b0"
+      ]
+    },
+    {
+      "dataRva": "0x933e40",
+      "source": "Outside the quadtree area for this campaign map.\nConsider increasing the 'quadtree_margin' for this map in the database",
+      "references": [
+        "0x1538b7"
+      ]
+    },
+    {
+      "dataRva": "0x933f80",
+      "source": "A colour is set in tile settings, but there's no matching entry in the tile database! Make sure this tile has been added to the tile database, or set it's colour to black",
+      "references": [
+        "0x1b8170"
+      ]
+    },
+    {
+      "dataRva": "0x9340f0",
+      "source": "The tile database colour set in tile properties is already in use by %1",
+      "references": [
+        "0x153dbb"
+      ]
+    },
+    {
+      "dataRva": "0x934198",
+      "source": "Validate!",
+      "references": [
+        "0x15542d"
+      ]
+    },
+    {
+      "dataRva": "0x934220",
+      "source": "Entity Name/Description",
+      "references": [
+        "0x15d52d"
+      ]
+    },
+    {
+      "dataRva": "0x934268",
+      "source": "Entity ID",
+      "references": [
+        "0x15d4e7"
+      ]
+    },
+    {
+      "dataRva": "0x934448",
+      "source": "AI Hint: ",
+      "references": [
+        "0xfb83f"
+      ]
+    },
+    {
+      "dataRva": "0x934500",
+      "source": "Change Terrain Layer Opacity",
+      "references": [
+        "0x128e84"
+      ]
+    },
+    {
+      "dataRva": "0x934560",
+      "source": "Failed to create layer",
+      "references": [
+        "0x127ca3"
+      ]
+    },
+    {
+      "dataRva": "0x9345b0",
+      "source": "Failed to import layer '%1'.<br>%2",
+      "references": [
+        "0x1281fa"
+      ]
+    },
+    {
+      "dataRva": "0x934610",
+      "source": "Failed to create layer",
+      "references": [
+        "0x128435"
+      ]
+    },
+    {
+      "dataRva": "0x934660",
+      "source": "Apply and Reset Opacity in Terrain Layer",
+      "references": [
+        "0x128bed"
+      ]
+    },
+    {
+      "dataRva": "0x9346d0",
+      "source": "Process Modified Tiles?",
+      "references": [
+        "0x18dce4"
+      ]
+    },
+    {
+      "dataRva": "0x934720",
+      "source": "You have modified one or more tiles. Do you want to process them with BOB?",
+      "references": [
+        "0x18dcd2"
+      ]
+    },
+    {
+      "dataRva": "0x9347d0",
+      "source": "Cannot change the properties of the tile currently being edited.",
+      "references": [
+        "0x190300"
+      ]
+    },
+    {
+      "dataRva": "0x934870",
+      "source": "Failed to load project for tile: %1",
+      "references": [
+        "0x190c5d"
+      ]
+    },
+    {
+      "dataRva": "0x934c00",
+      "source": "Colour is already in use by ",
+      "references": [
+        "0x1e80d2"
+      ]
+    },
+    {
+      "dataRva": "0x934c60",
+      "source": "Colour is already in use by ",
+      "references": [
+        "0x1ea3df"
+      ]
+    },
+    {
+      "dataRva": "0x934cc0",
+      "source": "Colour is already in use by ",
+      "references": [
+        "0x1eadff"
+      ]
+    },
+    {
+      "dataRva": "0x934dc8",
+      "source": "Create ",
+      "references": [
+        "0x1ffacd"
+      ]
+    },
+    {
+      "dataRva": "0x934e50",
+      "source": "Sound Marker Generation",
+      "references": [
+        "0x26cb90"
+      ]
+    },
+    {
+      "dataRva": "0x934ea0",
+      "source": "After generation, select any single-point or polyline Sound Marker entity and then <b>Alt-click</b> the left mouse button to absorb another single-point Sound Marker entity into the selected entity, extending its polyline.",
+      "references": [
+        "0x26d4c0"
+      ]
+    },
+    {
+      "dataRva": "0x9351f0",
+      "source": "Rotate Entity",
+      "references": [
+        "0x239268"
+      ]
+    },
+    {
+      "dataRva": "0x935228",
+      "source": "Scale Entity",
+      "references": [
+        "0x23924c"
+      ]
+    },
+    {
+      "dataRva": "0x935280",
+      "source": "Paste the composited result into a new layer",
+      "references": [
+        "0x278ad8"
+      ]
+    },
+    {
+      "dataRva": "0x935300",
+      "source": "Paste the composited result into the top layer",
+      "references": [
+        "0x278b29"
+      ]
+    },
+    {
+      "dataRva": "0x935380",
+      "source": "Paste each layer of the map into the same layer",
+      "references": [
+        "0x278b7a"
+      ]
+    },
+    {
+      "dataRva": "0x935420",
+      "source": "Imported layer has incorrect dimensions.<br>Expecting <b>%1x%2</b>, but got <b>%3x%4</b>.",
+      "references": [
+        "0x26d460"
+      ]
+    },
+    {
+      "dataRva": "0x9354f0",
+      "source": "Imported layer has wrong number of channels.<br>Expecting <b>%1</b> channels, but got <b>%2</b>.",
+      "references": [
+        "0x26d040"
+      ]
+    },
+    {
+      "dataRva": "0x9355d0",
+      "source": "Single Channel for ",
+      "references": [
+        "0x26cd90"
+      ]
+    },
+    {
+      "dataRva": "0x935650",
+      "source": "Failed to import layer '%1'.<br>%2",
+      "references": [
+        "0x2567a6"
+      ]
+    },
+    {
+      "dataRva": "0x9356b0",
+      "source": "Failed to import layer '%1'.<br>%2",
+      "references": [
+        "0x256cf5"
+      ]
+    },
+    {
+      "dataRva": "0x935c98",
+      "source": "not in database",
+      "references": [
+        "0x2f99a1"
+      ]
+    },
+    {
+      "dataRva": "0x935fa0",
+      "source": "Remove Buildings...",
+      "references": [
+        "0x2eb5b0"
+      ]
+    },
+    {
+      "dataRva": "0x936000",
+      "source": "Failed to revert database changes: %1",
+      "references": [
+        "0x29ba89"
+      ]
+    },
+    {
+      "dataRva": "0x936070",
+      "source": "[%1] Remove Building(s): %2",
+      "references": [
+        "0x29bd7c"
+      ]
+    },
+    {
+      "dataRva": "0x9360c0",
+      "source": "Failed to start BOB",
+      "references": [
+        "0x29c22d"
+      ]
+    },
+    {
+      "dataRva": "0x936100",
+      "source": "Remove Buildings...",
+      "references": [
+        "0x2ebf00"
+      ]
+    },
+    {
+      "dataRva": "0x936140",
+      "source": "BOB finished with errors. Look at binaries.x64/bob_error.log for details",
+      "references": [
+        "0x29c4a0"
+      ]
+    },
+    {
+      "dataRva": "0x9361f0",
+      "source": "BOB has finished successfully. Do you want to submit the changes?",
+      "references": [
+        "0x29c6c8"
+      ]
+    },
+    {
+      "dataRva": "0x9362b0",
+      "source": "Database merge failed: ",
+      "references": [
+        "0x29c7e2"
+      ]
+    },
+    {
+      "dataRva": "0x936300",
+      "source": "Database submit failed: ",
+      "references": [
+        "0x29c8e0"
+      ]
+    },
+    {
+      "dataRva": "0x936350",
+      "source": "Submit failed: ",
+      "references": [
+        "0x29cc58"
+      ]
+    },
+    {
+      "dataRva": "0x936390",
+      "source": "Changes successfully submitted to Perforce",
+      "references": [
+        "0x29ccf3"
+      ]
+    },
+    {
+      "dataRva": "0x936400",
+      "source": "Failed to load BMD %1",
+      "references": [
+        "0x29de38"
+      ]
+    },
+    {
+      "dataRva": "0x936450",
+      "source": "Position: %1x%2\n",
+      "references": [
+        "0x2a5132"
+      ]
+    },
+    {
+      "dataRva": "0x936490",
+      "source": "Tile: %1\n",
+      "references": [
+        "0x2a51e0"
+      ]
+    },
+    {
+      "dataRva": "0x936590",
+      "source": "Set Property '%1'",
+      "references": [
+        "0x2e7800"
+      ]
+    },
+    {
+      "dataRva": "0x9365d0",
+      "source": "Set Property '%1'",
+      "references": [
+        "0x2e7906"
+      ]
+    }
+  ],
+  "qttoolutility.modder.x64.dll": [
+    {
+      "dataRva": "0x811d68",
+      "source": ", alliance ",
+      "references": [
+        "0x25983"
+      ]
+    },
+    {
+      "dataRva": "0x811e00",
+      "source": "Unexpected number of root entities",
+      "references": [
+        "0x8f50c"
+      ]
+    },
+    {
+      "dataRva": "0x811e60",
+      "source": "Root entity is not a File Layer",
+      "references": [
+        "0x8f629"
+      ]
+    },
+    {
+      "dataRva": "0x811ff0",
+      "source": "Could not find prefab for key '%1'",
+      "references": [
+        "0x85dc9"
+      ]
+    },
+    {
+      "dataRva": "0x812050",
+      "source": "Prefab '%1' is malformed: missing a Scene",
+      "references": [
+        "0x85f13"
+      ]
+    },
+    {
+      "dataRva": "0x812b70",
+      "source": "Couldn't retrieve attribute '%1': %2",
+      "references": [
+        "0xcbe95"
+      ]
+    },
+    {
+      "dataRva": "0x812be0",
+      "source": "Attribute '%1' not found",
+      "references": [
+        "0xcbf81"
+      ]
+    },
+    {
+      "dataRva": "0x812c30",
+      "source": "Unknown value for %1: %2",
+      "references": [
+        "0xcc266"
+      ]
+    },
+    {
+      "dataRva": "0x812c80",
+      "source": "HAPI Error: %1",
+      "references": [
+        "0xcdc62"
+      ]
+    },
+    {
+      "dataRva": "0x812cc0",
+      "source": "Failed to retrieve heightfield data: %1",
+      "references": [
+        "0xce924"
+      ]
+    },
+    {
+      "dataRva": "0x812d30",
+      "source": "Failed to find entity type: ",
+      "references": [
+        "0xcf488"
+      ]
+    },
+    {
+      "dataRva": "0x812d90",
+      "source": "Failed to create entity of type '%1'",
+      "references": [
+        "0xcf52f"
+      ]
+    },
+    {
+      "dataRva": "0x812e00",
+      "source": "Unsupported curve type %1",
+      "references": [
+        "0xcff0b"
+      ]
+    },
+    {
+      "dataRva": "0x812e50",
+      "source": "No valid component found in %1 entity in which to output a linear curve",
+      "references": [
+        "0xd0377"
+      ]
+    },
+    {
+      "dataRva": "0x812f00",
+      "source": "Curve has order %1. Only cubic (order 4) Bezier curves are supported",
+      "references": [
+        "0xcff76"
+      ]
+    },
+    {
+      "dataRva": "0x812fb0",
+      "source": "No valid component found in %1 entity in which to output a Bezier curve",
+      "references": [
+        "0xd01f5"
+      ]
+    },
+    {
+      "dataRva": "0x8131d0",
+      "source": "Failed to find tileset with name '%1' in the tile database",
+      "references": [
+        "0xb9267"
+      ]
+    },
+    {
+      "dataRva": "0x813520",
+      "source": "Couldn't import stylesheet '%1'",
+      "references": [
+        "0x1ad311"
+      ]
+    },
+    {
+      "dataRva": "0x8137c0",
+      "source": "Expected 'import', 'debug' or 'palette' after '@', got '%1'",
+      "references": [
+        "0x11b1dc"
+      ]
+    },
+    {
+      "dataRva": "0x813870",
+      "source": "Expected '(' when parsing '%1' call",
+      "references": [
+        "0x11c8b5"
+      ]
+    },
+    {
+      "dataRva": "0x8138d0",
+      "source": "Expected ')' when parsing '%1' call",
+      "references": [
+        "0x11cb8f"
+      ]
+    },
+    {
+      "dataRva": "0x813930",
+      "source": "Expected ',' when parsing '%1' call",
+      "references": [
+        "0x11cd15"
+      ]
+    },
+    {
+      "dataRva": "0x813990",
+      "source": "Expected ')' when parsing '%1' call",
+      "references": [
+        "0x11ce87"
+      ]
+    },
+    {
+      "dataRva": "0x8139f0",
+      "source": "unknown function '%1'",
+      "references": [
+        "0x11cfad"
+      ]
+    },
+    {
+      "dataRva": "0x813a40",
+      "source": "Unknown unit '%1'",
+      "references": [
+        "0x11d679"
+      ]
+    },
+    {
+      "dataRva": "0x813a80",
+      "source": "Variable '$%1' hasn't been declared yet",
+      "references": [
+        "0x11da08"
+      ]
+    },
+    {
+      "dataRva": "0x813af0",
+      "source": "Variable '$%1' hasn't been resolved",
+      "references": [
+        "0x11da94"
+      ]
+    },
+    {
+      "dataRva": "0x813b50",
+      "source": "Unknown function '%1'",
+      "references": [
+        "0x11dc3b"
+      ]
+    },
+    {
+      "dataRva": "0x813ba0",
+      "source": "Incorrect number of arguments to '%1'. Expected %2, got %3",
+      "references": [
+        "0x11dd3f"
+      ]
+    },
+    {
+      "dataRva": "0x813c30",
+      "source": "Failed to resolve expression while evaluating function call '%1'",
+      "references": [
+        "0x11e0b7"
+      ]
+    },
+    {
+      "dataRva": "0x813cd0",
+      "source": "Incorrect argument type passed to function '%1'",
+      "references": [
+        "0x11dff6"
+      ]
+    },
+    {
+      "dataRva": "0x813d50",
+      "source": "Failed to open '%1' for reading",
+      "references": [
+        "0x1b768a"
+      ]
+    },
+    {
+      "dataRva": "0x813db0",
+      "source": "Conflict found - unable to merge",
+      "references": [
+        "0x1b6d7f"
+      ]
+    },
+    {
+      "dataRva": "0x813e10",
+      "source": "Cannot merge layers after resize",
+      "references": [
+        "0x12b330"
+      ]
+    },
+    {
+      "dataRva": "0x813e70",
+      "source": "Failed to load base layer '%1':\n%2",
+      "references": [
+        "0x12a93e"
+      ]
+    },
+    {
+      "dataRva": "0x813ed0",
+      "source": "Failed to load local layer '%1':\n%2",
+      "references": [
+        "0x12ab4c"
+      ]
+    },
+    {
+      "dataRva": "0x813f30",
+      "source": "Failed to load remote layer '%1':\n%2",
+      "references": [
+        "0x12ad5f"
+      ]
+    },
+    {
+      "dataRva": "0x813fa0",
+      "source": "Failed to save merged layer %1:\n%2",
+      "references": [
+        "0x12b09a"
+      ]
+    },
+    {
+      "dataRva": "0x815d70",
+      "source": "Refresh List",
+      "references": [
+        "0x2c0715"
+      ]
+    },
+    {
+      "dataRva": "0x815f30",
+      "source": "Set Property '%1'",
+      "references": [
+        "0x2f6995"
+      ]
+    },
+    {
+      "dataRva": "0x8161e8",
+      "source": "Set ",
+      "references": [
+        "0x317cc1"
+      ]
+    }
+  ],
+  "toolutilityqt.modder.x64.dll": [
+    {
+      "dataRva": "0x84a350",
+      "source": "Failed to mark '%1' for delete in perforce: %2",
+      "references": [
+        "0x14bac6"
+      ]
+    },
+    {
+      "dataRva": "0x84a3d0",
+      "source": "Failed to revert '%1': %2",
+      "references": [
+        "0x14c586"
+      ]
+    },
+    {
+      "dataRva": "0x84a440",
+      "source": "Failed to mark '%1' as resolved",
+      "references": [
+        "0x14e283"
+      ]
+    },
+    {
+      "dataRva": "0x84a4a0",
+      "source": "Failed to fetch '%1' to '%2'",
+      "references": [
+        "0x14e4f6"
+      ]
+    },
+    {
+      "dataRva": "0x84a500",
+      "source": "Failed to set permissions for fetched filed '%1'",
+      "references": [
+        "0x14e591"
+      ]
+    },
+    {
+      "dataRva": "0x84a580",
+      "source": "'%1' has been moved to '%2' - deletion of move source not supported",
+      "references": [
+        "0x14f24c"
+      ]
+    },
+    {
+      "dataRva": "0x84a620",
+      "source": "Unable to mark '%1' as writeable",
+      "references": [
+        "0x14f449"
+      ]
+    },
+    {
+      "dataRva": "0x84a680",
+      "source": "Unable to delete '%1'",
+      "references": [
+        "0x14f4ac"
+      ]
+    },
+    {
+      "dataRva": "0x84a7d0",
+      "source": "Unhandled perforce state!",
+      "references": [
+        "0x14f727"
+      ]
+    }
+  ]
+}

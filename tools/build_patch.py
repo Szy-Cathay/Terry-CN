@@ -186,8 +186,61 @@ def patch_module(source, translations, display_translations, shared_literals):
             'SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1W421@2@Z',
         ]:
             sinks[f'?{level}@QMessageBox@@{signature}'] = 'r8'
+    if source.name == 'toolutilityqt.modder.x64.dll':
+        # This additional module is scoped to nine reviewed diagnostic literals.
+        # Perforce commands, state tokens, permissions and operations are intact.
+        sinks = {}
     dp = DisplayPool(pool, section_rva, pe.OPTIONAL_HEADER.ImageBase)
+    fragment_sites = {}
+    fragments = json.loads((ROOT / 'audited-ui-fragments.json').read_text(encoding='utf-8'))
+    for item in fragments.get(source.name, []):
+        rva = int(item['rva'], 16)
+        offset = pe.get_offset_from_rva(rva)
+        instruction = original[offset:offset + 7]
+        assert re.fullmatch(rb'[\x48\x4c]\x8d[\x05\x0d\x15\x1d\x25\x2d\x35\x3d].{4}', instruction, re.S)
+        data_rva = rva + 7 + struct.unpack_from('<i', instruction, 3)[0]
+        text = item['source']
+        assert pe.get_data(data_rva, len(text) + 1) == text.encode('ascii') + b'\0'
+        translated = display_translations[text]
+        new_rva = store_text(translated)
+        struct.pack_into('<i', patched, offset + 3, new_rva - (rva + 7))
+        if 'lengthByteRva' in item:
+            length_offset = pe.get_offset_from_rva(int(item['lengthByteRva'], 16))
+            assert original[length_offset] == item['lengthByte']
+            new_length = len(translated.encode('utf-8')) + item.get('lengthBias', 0)
+            assert 0 < new_length < 128
+            patched[length_offset] = new_length
+        fragment_sites[rva] = item
+        changes.append({**item, 'translation': translated, 'auditedUtf8Fragment': True,
+                        'translatedDataRva': hex(new_rva)})
+    # QStringLiteral stores a Qt UTF-16 data header, not a UTF-8 literal.
+    # These reviewed messages/undo labels are constructed BEFORE QString::arg
+    # fills in paths, values and sizes. Redirect only the listed LEA operands;
+    # leave the original data, argument values and all formatting calls intact.
+    static_literals = json.loads((ROOT / 'audited-ui-literals.json').read_text(encoding='utf-8'))
+    static_sites = {}
+    for item in static_literals.get(source.name, []):
+        data_rva = int(item['dataRva'], 16)
+        text = item['source']
+        encoded = text.encode('utf-16-le')
+        expected = struct.pack('<iII4xq', -1, len(encoded) // 2, 0, 24) + encoded + b'\0\0'
+        assert pe.get_data(data_rva, len(expected)) == expected, item
+        translated = display_translations[text]
+        new_data_rva, _ = dp.string(translated)
+        assert item['references'], item
+        for address in item['references']:
+            rva = int(address, 16)
+            offset = pe.get_offset_from_rva(rva)
+            instruction = original[offset:offset + 7]
+            assert re.fullmatch(rb'[\x48\x4c]\x8d[\x05\x0d\x15\x1d\x25\x2d\x35\x3d].{4}', instruction, re.S)
+            assert rva + 7 + struct.unpack_from('<i', instruction, 3)[0] == data_rva, item
+            struct.pack_into('<i', patched, offset + 3, new_data_rva - (rva + 7))
+            static_sites[rva] = item
+            changes.append({'rva': address, 'source': text, 'translation': translated,
+                            'staticQStringLiteral': True, 'originalDataRva': item['dataRva'],
+                            'translatedDataRva': hex(new_data_rva)})
     qt_translate = '?translate@QCoreApplication@@SA?AVQString@@PEBD00H@Z'
+    qt_meta_translate = '?tr@QMetaObject@@QEBA?AVQString@@PEBD0H@Z'
     # QCommonStyle view-item layout and QItemDelegate display/size calculation.
     # Deliberately exclude QWidgetLineControl::updateDisplayText (0x13c3a7):
     # user text, filenames and editable values must retain their exact display.
@@ -223,21 +276,24 @@ def patch_module(source, translations, display_translations, shared_literals):
                 assert name == '?arg@QString@@QEBA?AV1@AEBV1@HVQChar@@@Z'
             if rva in title_fragment_calls:
                 assert name == ('??4QString@@QEAAAEAV0@$$QEAV0@@Z' if rva == 0x1c57b6 else '?append@QString@@QEAAAEAV1@AEBV1@@Z')
-            if name in sinks or (source.name == 'Qt5Widgets.dll' and name == qt_translate) or rva in display_calls or rva in item_layout_calls or rva in status_argument_calls or rva in title_fragment_calls:
+            if name in sinks or (source.name == 'Qt5Widgets.dll' and name in (qt_translate, qt_meta_translate)) or rva in display_calls or rva in item_layout_calls or rva in status_argument_calls or rva in title_fragment_calls:
                 candidates[rva] = (iat, name, match.group()[1] == 0x25)
     # Validate instruction boundaries against the x64 runtime function table.
     validated = set()
     md = capstone.Cs(capstone.CS_ARCH_X86, capstone.CS_MODE_64)
     for entry in pe.DIRECTORY_ENTRY_EXCEPTION:
         begin, end = entry.struct.BeginAddress, entry.struct.EndAddress
-        relevant = [r for r in candidates if begin <= r < end]
+        relevant = [r for r in candidates.keys() | static_sites.keys() | fragment_sites.keys() if begin <= r < end]
         if relevant:
             addresses = {addr for addr, size, mnemonic, operands in md.disasm_lite(pe.get_data(begin, end - begin), begin)}
             validated.update(set(relevant) & addresses)
     hooks = {}
-    for rva in sorted(validated):
+    assert static_sites.keys() <= validated, 'Static UI literal is not at an instruction boundary'
+    assert fragment_sites.keys() <= validated, 'UTF-8 UI fragment is not at an instruction boundary'
+    for rva in sorted(validated & candidates.keys()):
         iat, name, is_jump = candidates[rva]
-        kind = 'latin1-return' if rva in display_calls else 'translate-return' if name == qt_translate else 'qstring-argument'
+        kind = ('latin1-return' if rva in display_calls else 'translate-return' if name == qt_translate
+                else 'meta-translate-return' if name == qt_meta_translate else 'qstring-argument')
         argument = 'r8' if rva in status_argument_calls else sinks.get(name, 'rdx')
         if rva == 0x1c57b6 and rva in title_fragment_calls:
             # A static translated QString must never be passed as a move source.
@@ -313,7 +369,7 @@ def main():
     properties = json.loads((ROOT / 'translations.properties.zh-CN.json').read_text(encoding='utf-8'), object_pairs_hook=unique_json)
     assert not set(properties) & set(display), 'Duplicate property translation across dictionaries'
     display.update(properties)
-    for filename in ['translations.extended.zh-CN.json', 'translations.engine.zh-CN.json']:
+    for filename in ['translations.extended.zh-CN.json', 'translations.engine.zh-CN.json', 'translations.templates.zh-CN.json']:
         extra = json.loads((ROOT / filename).read_text(encoding='utf-8'), object_pairs_hook=unique_json)
         assert not set(extra) & set(display), f'Duplicate translation in {filename}: {set(extra) & set(display)}'
         display.update(extra)
@@ -321,7 +377,7 @@ def main():
         assert sorted(re.findall(r'%L?\d+|%n', source)) == sorted(re.findall(r'%L?\d+|%n', translated)), source
     args.output.mkdir(parents=True, exist_ok=True)
     records, report, hook_report = [], {}, {}
-    for name in ['tweak_terrainmetadataeditor.modder.x64.dll', 'qttoolutility.modder.x64.dll', 'Qt5Widgets.dll']:
+    for name in ['tweak_terrainmetadataeditor.modder.x64.dll', 'qttoolutility.modder.x64.dll', 'Qt5Widgets.dll', 'toolutilityqt.modder.x64.dll']:
         result = patch_module(args.source / name, translations, display, set(messages) | set(additions))
         if result:
             binary, record, changes, hooks = result
@@ -348,7 +404,7 @@ def main():
         older = next((r for r in previous['files'] if r['path'] == record['path']), None)
         if older and older['originalSha256'] == record['originalSha256']:
             record['previousPatchedSha256'] = sorted(set(older.get('previousPatchedSha256', []) + [older['patchedSha256']]) - {record['patchedSha256']})
-    (args.output / 'patch.json').write_text(json.dumps({'format': 1, 'version': '2026-10-10 R4', 'files': records}, ensure_ascii=False, indent=2), encoding='utf-8')
+    (args.output / 'patch.json').write_text(json.dumps({'format': 1, 'version': '2026-10-10 R5', 'files': records}, ensure_ascii=False, indent=2), encoding='utf-8')
     (args.output / 'coverage.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     (args.output / 'display-hooks.json').write_text(json.dumps(hook_report, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps({'files': len(records), 'displaySites': sum(len(v) for v in report.values()),

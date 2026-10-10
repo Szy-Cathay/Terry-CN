@@ -1,11 +1,11 @@
-﻿Terry-CN 汉化补丁维护说明
+Terry-CN 汉化补丁维护说明
 
-交付给玩家的文件是根目录 Terry-CN-WH3-20261010-R4.zip。
+交付给玩家的文件是根目录 Terry-CN-WH3-20261010-R5.zip。
 ZIP 只包含差分清单、安装/恢复/检查工具和使用文档，不包含官方完整 DLL。
 
 本工程保留的目录均用于汉化补丁维护：
 backups/original-20261009：构建所需的官方原版基线，按 source-hashes.json 校验；不对外打包。
-build/r4-candidate-8：R4 的构建结果和调用点清单，可由原版基线重建；其他候选保留在本地。
+build/r5-candidate-5：R5 的构建结果和调用点清单，可由原版基线重建；其他候选保留在本地。
 reports：原生代码、安装恢复、完整性、场景回读、快捷键及回收清单。
 tests/fixtures：旧补丁升级与快捷键保护的回归测试基线。
 tools：构建器、检查器、打包器及 Python 依赖。
@@ -17,20 +17,24 @@ translations.messages.zh-CN.json：可用于共享工具组件的提示和错误
 translations.display.zh-CN.json、translations.properties.zh-CN.json：显示层词库。
 translations.extended.zh-CN.json：设置、工具、动态 AI 分类和长说明的显示译文。
 translations.engine.zh-CN.json：引擎环境和共享界面译文，以及原版中实际存在的大小写变体。
+translations.templates.zh-CN.json：UTF-16 模板、UTF-8 拼接片段和诊断消息。
+audited-ui-literals.json：静态 Qt 字符串原文、数据地址和引用白名单。
+audited-ui-fragments.json：经确认只用于界面的 UTF-8 片段引用及长度操作数。
 status-tooltips.zh-CN.json：15 条工具操作说明。
 protected-identifiers.json：禁止作为通用字面量改写的配置与快捷键标识。
 
 构建与检查顺序（Python 3，Windows x64）：
 python tools/build_patch.py --source backups/original-20261009 --output build/new-candidate
 python tools/test_display_hooks.py --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
+python tools/test_static_templates.py build/new-candidate --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
 python tools/validate_patch.py build/new-candidate
 将验证过的 build/new-candidate/patch.json 复制到根目录 patch.json。
 关闭 Terry 和 BOB 后运行 python tools/test_installer.py。
 实际完成界面、编辑和跨语言保存测试，更新验证说明和报告。
 python tools/package_release.py
 
-原生测试记录词库哈希；完整性和安装测试记录差分哈希。场景回读报告也须绑定当前差分，
-打包器拒绝过期报告。R3 ZIP 作为升级回归输入保留，不应随意覆盖或删除。
+原生测试记录词库哈希；模板、完整性和安装测试记录差分哈希。场景回读报告也须绑定当前差分，
+打包器拒绝过期报告。R3、R4 ZIP 作为升级回归输入保留，不应随意覆盖或删除。
 
 源字符串审计不能只检查一种 QString 构造模式。可用以下命令扫描共享文字来源：
 python tools/audit_strings.py "你的 Assembly Kit/binaries" build/audit.json --data-strings --module warscape.modder.x64.dll
@@ -48,3 +52,8 @@ python tools/audit_strings.py "你的 Assembly Kit/binaries" build/audit.json --
 
 当前仅支持 source-hashes.json 对应的 Assembly Kit build 25616861。
 官方更新后必须重新审计调用点和 Qt ABI，不能仅修改版本号或跳过哈希校验。
+
+R5 将 toolutilityqt.modder.x64.dll 纳入五目标白名单，只重定向九条文件/Perforce 诊断文字，
+不改变命令、状态标记或文件操作。新增基线也由 source-hashes.json 严格校验。
+Qt 元对象 tr 的返回遵循成员函数 ABI：rcx 为 this，rdx 为隐藏返回对象，r8 为原文。
+它与静态 QCoreApplication::translate 的 rcx 返回对象约定不同；原生测试分别覆盖。

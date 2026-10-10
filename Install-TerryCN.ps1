@@ -101,7 +101,7 @@ try {
     }
     $manifestPath = Join-Path $PSScriptRoot 'patch.json'
     $manifest = [IO.File]::ReadAllText($manifestPath) | ConvertFrom-Json
-    $allowedPaths = @('binaries/tweak_terrainmetadataeditor.modder.x64.dll', 'binaries/qttoolutility.modder.x64.dll', 'binaries/Qt5Widgets.dll', 'working_data/Terry/status_tooltips.xml')
+    $allowedPaths = @('binaries/tweak_terrainmetadataeditor.modder.x64.dll', 'binaries/qttoolutility.modder.x64.dll', 'binaries/Qt5Widgets.dll', 'binaries/toolutilityqt.modder.x64.dll', 'working_data/Terry/status_tooltips.xml')
     $actualPaths = @($manifest.files | ForEach-Object { $_.path })
     if ($manifest.format -ne 1 -or $actualPaths.Count -ne $allowedPaths.Count -or
         @(Compare-Object $actualPaths $allowedPaths).Count -ne 0) { throw '补丁清单格式不正确。' }

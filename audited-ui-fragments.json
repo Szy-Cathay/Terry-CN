@@ -1,0 +1,723 @@
+{
+  "tweak_terrainmetadataeditor.modder.x64.dll": [
+    {
+      "rva": "0x15ab7",
+      "source": "The project contains errors that may cause issues in BOB or in the game.  See the <b>",
+      "consumerRva": "0x15ac6",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x15b0c",
+      "source": "</b> window for details.",
+      "consumerRva": "0x15b18",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x295c1",
+      "source": "BOB crashed while processing!\n",
+      "consumerRva": "0x295d5",
+      "consumer": "?append@QString@@QEAAAEAV1@PEBD@Z"
+    },
+    {
+      "rva": "0x295ca",
+      "source": "BOB process failed to start!\nMake sure the BOB executable exists\n",
+      "consumerRva": "0x295d5",
+      "consumer": "?append@QString@@QEAAAEAV1@PEBD@Z"
+    },
+    {
+      "rva": "0x29749",
+      "source": "BOB failed but no error was received",
+      "consumerRva": "0x29754",
+      "consumer": "?append@QString@@QEAAAEAV1@PEBD@Z"
+    },
+    {
+      "rva": "0x3b92e",
+      "source": "Unable to find any campaigns for this map.",
+      "consumerRva": "0x3b935",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0x3b92d",
+      "lengthByte": 42,
+      "lengthBias": 0
+    },
+    {
+      "rva": "0x613c2",
+      "source": "There were issues during BCA generation. See ",
+      "consumerRva": "0x613cd",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x61410",
+      "source": " for details.",
+      "consumerRva": "0x6141b",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0xf56d2",
+      "source": "Failed to create entry in tile database",
+      "consumerRva": "0xf56d9",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0xf56d1",
+      "lengthByte": 39,
+      "lengthBias": 0
+    },
+    {
+      "rva": "0xf577e",
+      "source": "Failed to create tile variation in tile database",
+      "consumerRva": "0xf5785",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0xf577d",
+      "lengthByte": 48,
+      "lengthBias": 0
+    },
+    {
+      "rva": "0x103edf",
+      "source": "Failed to get latest battle prefabs: ",
+      "consumerRva": "0x103eea",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x103f52",
+      "source": "Failed to get latest campaign prefabs: ",
+      "consumerRva": "0x103f5d",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x127531",
+      "source": "Merge Layers in ",
+      "consumerRva": "0x12753c",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x13e04c",
+      "source": "Other users making changes to this project: ",
+      "consumerRva": "0x13e057",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x14c6a7",
+      "source": "Props with applied height patches cannot be rotated on any axis other than the y-axis (yaw)",
+      "consumerRva": "0x14c6b2",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x14c809",
+      "source": "Prop marked with 'apply height patch' doesn't have an associated height patch on disk",
+      "consumerRva": "0x14c814",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x14c9f4",
+      "source": "Should at least have one valid region",
+      "consumerRva": "0x14ca00",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x14cbc1",
+      "source": "Node: Should have exactly one boundary",
+      "consumerRva": "0x14cbcc",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x14cca1",
+      "source": "Boundary must be closed",
+      "consumerRva": "0x14ccac",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x14cea4",
+      "source": "Edge: Should either have no boundary or exactly two boundaries",
+      "consumerRva": "0x14ceaf",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x14cf81",
+      "source": "Boundary must be open",
+      "consumerRva": "0x14cf8c",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x14d18a",
+      "source": "Polygon Node must be convex",
+      "consumerRva": "0x14d196",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x14d308",
+      "source": "Polyline (or polygon) has overlapping edges",
+      "consumerRva": "0x14d313",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x14f508",
+      "source": "Overlapping entities.",
+      "consumerRva": "0x14f514",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x15102d",
+      "source": "Entity is in a different file layer to its transform parent. This could cause unexpected behaviour.",
+      "consumerRva": "0x151038",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x19067c",
+      "source": "Failed to rename the tile.",
+      "consumerRva": "0x190683",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0x19067b",
+      "lengthByte": 27,
+      "lengthBias": 1
+    },
+    {
+      "rva": "0x1c46a3",
+      "source": "Failed to create project in memory",
+      "consumerRva": "0x1c46aa",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0x1c46a2",
+      "lengthByte": 34,
+      "lengthBias": 0
+    },
+    {
+      "rva": "0x1d7544",
+      "source": "Failed to open project.",
+      "consumerRva": "0x1d754b",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0x1d7543",
+      "lengthByte": 23,
+      "lengthBias": 0
+    },
+    {
+      "rva": "0x1d8295",
+      "source": " There are pending Perforce operations preventing the action. Most likely these are files marked for <i>delete</i> or <i>move/delete</i>.",
+      "consumerRva": "0x1d82a1",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1f48b3",
+      "source": "Processing: ",
+      "consumerRva": "0x1f48be",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x21865a",
+      "source": "Invalid brush key: ",
+      "consumerRva": "0x218666",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x22ca9a",
+      "source": "Failed to load ",
+      "consumerRva": "0x22caa6",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x22dbe6",
+      "source": "Failed to load ",
+      "consumerRva": "0x22dbf1",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x255dad",
+      "source": "TIFF read failed: ",
+      "consumerRva": "0x255db4",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    }
+  ],
+  "qttoolutility.modder.x64.dll": [
+    {
+      "rva": "0xb94a1",
+      "source": "Failed to create a tile in the tile database",
+      "consumerRva": "0xb94a8",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0xb94a0",
+      "lengthByte": 44,
+      "lengthBias": 0
+    },
+    {
+      "rva": "0xb94e2",
+      "source": "Failed to create a tile variation",
+      "consumerRva": "0xb94a8",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0xb94e1",
+      "lengthByte": 33,
+      "lengthBias": 0
+    },
+    {
+      "rva": "0x11a231",
+      "source": "Tried to clone unresolved or invalid node",
+      "consumerRva": "0x11a238",
+      "consumer": "??4QString@@QEAAAEAV0@PEBD@Z"
+    },
+    {
+      "rva": "0x11d426",
+      "source": "Expected ':' when parsing gradient",
+      "consumerRva": "0x11d463",
+      "consumer": "fromAscii_helper branch",
+      "lengthByteRva": "0x11d422",
+      "lengthByte": 34,
+      "lengthBias": 0
+    },
+    {
+      "rva": "0x11ed16",
+      "source": "Unknown gradient function",
+      "consumerRva": "0x11ed24",
+      "consumer": "??0QString@@QEAA@PEBD@Z"
+    },
+    {
+      "rva": "0x11f64c",
+      "source": "qradialgradient fx and fy arguments must be unitless numbers",
+      "consumerRva": "0x11f65a",
+      "consumer": "??0QString@@QEAA@PEBD@Z"
+    },
+    {
+      "rva": "0x11f702",
+      "source": "qradialgradient requires cx, cy, and radius arguments must be unitless numbers",
+      "consumerRva": "0x11f710",
+      "consumer": "??0QString@@QEAA@PEBD@Z"
+    },
+    {
+      "rva": "0x11f7b8",
+      "source": "qradialgradient requires cx, cy, and radius arguments",
+      "consumerRva": "0x11f7c6",
+      "consumer": "??0QString@@QEAA@PEBD@Z"
+    },
+    {
+      "rva": "0x11fa40",
+      "source": "qconicalgradient requires cx, cy and angle arguments",
+      "consumerRva": "0x11fa4e",
+      "consumer": "??0QString@@QEAA@PEBD@Z"
+    },
+    {
+      "rva": "0x11fa9b",
+      "source": "qconicalgradient angle argument must be an angle",
+      "consumerRva": "0x11faa9",
+      "consumer": "??0QString@@QEAA@PEBD@Z"
+    },
+    {
+      "rva": "0x11fbe1",
+      "source": "Gradient spread must be either pad, reflect or repeat",
+      "consumerRva": "0x11fbef",
+      "consumer": "??0QString@@QEAA@PEBD@Z"
+    },
+    {
+      "rva": "0x11fca1",
+      "source": "Gradient spread must be either pad, reflect or repeat",
+      "consumerRva": "0x11fcaf",
+      "consumer": "??0QString@@QEAA@PEBD@Z"
+    },
+    {
+      "rva": "0x11fd99",
+      "source": "qconicalgradient cx, cy arguments must be unitless numbers",
+      "consumerRva": "0x11fda7",
+      "consumer": "??0QString@@QEAA@PEBD@Z"
+    },
+    {
+      "rva": "0x11fe44",
+      "source": "qconicalgradient requires cx, cy and angle arguments",
+      "consumerRva": "0x11fe52",
+      "consumer": "??0QString@@QEAA@PEBD@Z"
+    },
+    {
+      "rva": "0x1282e8",
+      "source": "Can't load an orphan terrain map layer",
+      "consumerRva": "0x1282ef",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0x1282e7",
+      "lengthByte": 38,
+      "lengthBias": 0
+    },
+    {
+      "rva": "0x1283b7",
+      "source": "TIFF error: ",
+      "consumerRva": "0x1283c2",
+      "consumer": "0xf5170"
+    },
+    {
+      "rva": "0x128a35",
+      "source": "Can't save an orphan terrain map layer",
+      "consumerRva": "0x128a3c",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0x128a34",
+      "lengthByte": 38,
+      "lengthBias": 0
+    },
+    {
+      "rva": "0x128bc4",
+      "source": "TIFF error: ",
+      "consumerRva": "0x128bcf",
+      "consumer": "0xf5170"
+    },
+    {
+      "rva": "0x1c1f48",
+      "source": "Warning: Missing animation filename.",
+      "consumerRva": "0x1c1f56",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1c241d",
+      "source": "Warning: Animation file doesn't exist. ",
+      "consumerRva": "0x1c242b",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1c2572",
+      "source": "Warning: Metadata file doesn't exist. ",
+      "consumerRva": "0x1c2580",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1c2ad5",
+      "source": "Warning: Missing rider animation filename.",
+      "consumerRva": "0x1c2ae3",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1c2bed",
+      "source": "Warning: Animation file doesn't exist. ",
+      "consumerRva": "0x1c2bfb",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1c2d4f",
+      "source": "Warning: Metadata file doesn't exist. ",
+      "consumerRva": "0x1c2d5d",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1cf1a6",
+      "source": "Failed to open '",
+      "consumerRva": "0x1cf1b1",
+      "consumer": "0xf5170"
+    },
+    {
+      "rva": "0x1cf1b7",
+      "source": "' for reading.",
+      "consumerRva": "0x1cf1c8",
+      "consumer": "0x79ec0"
+    },
+    {
+      "rva": "0x1cf33e",
+      "source": "Failed to parse '",
+      "consumerRva": "0x1cf349",
+      "consumer": "0xf5170"
+    },
+    {
+      "rva": "0x1d2193",
+      "source": "Failed to open '",
+      "consumerRva": "0x1d21a1",
+      "consumer": "0xf5170"
+    },
+    {
+      "rva": "0x1d21a7",
+      "source": "' for writing.",
+      "consumerRva": "0x1d21b8",
+      "consumer": "0x79ec0"
+    },
+    {
+      "rva": "0x1dc43c",
+      "source": "Failed to open '",
+      "consumerRva": "0x1dc447",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1dc483",
+      "source": "' for reading.",
+      "consumerRva": "0x1dc491",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1dc57f",
+      "source": "Failed to parse '",
+      "consumerRva": "0x1dc58a",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1dc798",
+      "source": "Failed to deserialise '",
+      "consumerRva": "0x1dc7a3",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1dcab2",
+      "source": "Failed to open '",
+      "consumerRva": "0x1dcabd",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1dcafb",
+      "source": "' for reading.",
+      "consumerRva": "0x1dcb09",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1dcc0a",
+      "source": "Failed to parse '",
+      "consumerRva": "0x1dcc15",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1dd2d9",
+      "source": "Failed to deserialise table: '",
+      "consumerRva": "0x1dd2e4",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1de3c2",
+      "source": "Table: ",
+      "consumerRva": "0x1de3d0",
+      "consumer": "0xf5170 "
+    },
+    {
+      "rva": "0x1de5c9",
+      "source": "Failed to open '",
+      "consumerRva": "0x1de5d7",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1de61a",
+      "source": "' for writing.",
+      "consumerRva": "0x1de628",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1de8e5",
+      "source": "Fragment: ",
+      "consumerRva": "0x1de8f3",
+      "consumer": "0xf5170 "
+    },
+    {
+      "rva": "0x1deadc",
+      "source": "Failed to open '",
+      "consumerRva": "0x1deae7",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1deb26",
+      "source": "' for writing.",
+      "consumerRva": "0x1deb34",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1dff86",
+      "source": "Failed to open '",
+      "consumerRva": "0x1dff91",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1dffce",
+      "source": "' for writing.",
+      "consumerRva": "0x1dffdc",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1e3cc8",
+      "source": "Table does not exist: ",
+      "consumerRva": "0x1e3cd3",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1e40f8",
+      "source": "Fragment does not exist: ",
+      "consumerRva": "0x1e4103",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1e6753",
+      "source": "Invalid entry type: ",
+      "consumerRva": "0x1e675f",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1e927d",
+      "source": "Failed to deserialise slot: ",
+      "consumerRva": "0x1e9288",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1f3222",
+      "source": "Failed to open ",
+      "consumerRva": "0x1f322e",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1f3250",
+      "source": " for reading.",
+      "consumerRva": "0x1f325e",
+      "consumer": "0x79ec0"
+    },
+    {
+      "rva": "0x1f32c3",
+      "source": "Failed to open ",
+      "consumerRva": "0x1f32cf",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1f32f1",
+      "source": " for reading.",
+      "consumerRva": "0x1f32ff",
+      "consumer": "0x79ec0"
+    },
+    {
+      "rva": "0x1f3dea",
+      "source": "Failed to open ",
+      "consumerRva": "0x1f3df5",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1f3e12",
+      "source": " for writing.",
+      "consumerRva": "0x1f3e23",
+      "consumer": "0x79ec0"
+    },
+    {
+      "rva": "0x1f404b",
+      "source": "Failed to open ",
+      "consumerRva": "0x1f4057",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x1f4078",
+      "source": " for writing.",
+      "consumerRva": "0x1f4086",
+      "consumer": "0x79ec0"
+    },
+    {
+      "rva": "0x1f4de7",
+      "source": "Failed to save binary file: ",
+      "consumerRva": "0x1f4df2",
+      "consumer": "0xf5170"
+    },
+    {
+      "rva": "0x1f4e96",
+      "source": "Failed to open binary file for writing: ",
+      "consumerRva": "0x1f4ea1",
+      "consumer": "0xf5170"
+    },
+    {
+      "rva": "0x1f6ad0",
+      "source": "Failed to begin transaction.\n\n",
+      "consumerRva": "0x1f6adc",
+      "consumer": "0xf5170 "
+    },
+    {
+      "rva": "0x1f786c",
+      "source": "Failed to end transaction.\n\n",
+      "consumerRva": "0x1f7878",
+      "consumer": "0xf5170 "
+    },
+    {
+      "rva": "0x20737b",
+      "source": "Failed to parse legacy Matched Animation DB.",
+      "consumerRva": "0x207382",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0x20737a",
+      "lengthByte": 44,
+      "lengthBias": 0
+    },
+    {
+      "rva": "0x2094cb",
+      "source": "Failed to save entry: ",
+      "consumerRva": "0x2094d6",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x209680",
+      "source": "Failed to save entry: ",
+      "consumerRva": "0x20968b",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x2098d2",
+      "source": "Name contains invalid characters and cannot be saved: ",
+      "consumerRva": "0x2098dd",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x209c0d",
+      "source": "Failed to open entry: ",
+      "consumerRva": "0x209c19",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x209cff",
+      "source": "Failed to parse entry: ",
+      "consumerRva": "0x209d0b",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x21282d",
+      "source": "Cannot open file for writing: ",
+      "consumerRva": "0x212838",
+      "consumer": "0xf5170"
+    },
+    {
+      "rva": "0x212e3a",
+      "source": "Cannot open file for writing: ",
+      "consumerRva": "0x212e45",
+      "consumer": "0xf5170"
+    },
+    {
+      "rva": "0x2164eb",
+      "source": "Failed to open file for writing: ",
+      "consumerRva": "0x2164f9",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x216604",
+      "source": "Failed to open file for writing: ",
+      "consumerRva": "0x216612",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x216777",
+      "source": "Failed to open file for writing: ",
+      "consumerRva": "0x216785",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x23da98",
+      "source": "Table: ",
+      "consumerRva": "0x23daa4",
+      "consumer": "0xf5170 "
+    },
+    {
+      "rva": "0x23dc59",
+      "source": "Table: ",
+      "consumerRva": "0x23dc65",
+      "consumer": "0xf5170 "
+    },
+    {
+      "rva": "0x23dca5",
+      "source": "Fragment: ",
+      "consumerRva": "0x23dcb1",
+      "consumer": "0xf5170 "
+    },
+    {
+      "rva": "0x2cd805",
+      "source": "Matrix Element #%1",
+      "consumerRva": "0x2cd810",
+      "consumer": "??0QString@@QEAA@PEBD@Z"
+    },
+    {
+      "rva": "0x2e642c",
+      "source": " (Mount)",
+      "consumerRva": "0x2e643a",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x2e690e",
+      "source": " (Engine)",
+      "consumerRva": "0x2e691c",
+      "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
+    },
+    {
+      "rva": "0x3298fd",
+      "source": "Failed to set environment.",
+      "consumerRva": "0x329904",
+      "consumer": "?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z",
+      "lengthByteRva": "0x3298fc",
+      "lengthByte": 26,
+      "lengthBias": 0
+    }
+  ]
+}

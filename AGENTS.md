@@ -25,7 +25,8 @@
 - 同一个英文词可能兼作界面标签与内部标识。直接替换字面量前确认具体调用点只用于显示，并维护 `protected-identifiers.json`；不要全局替换二进制字符串。
 - 显示层按完整字符串匹配，未知内容透传。保留原参数、源字符串、Windows x64 ABI、Qt 字符串寿命、重定位和 ASLR。修改 `display_hooks.py` 或调用点后检查这些行为。
 - 适配依据是 `source-hashes.json` 的原版文件。官方版本、Qt ABI 或哈希变化时重新审计；禁止跳过校验或仅改版本号来冒充兼容。
-- 安装器保持四个明确目标、先完整预检再写入、验证原版备份、失败回滚。旧版汉化文件不能作为原版备份；扩大目标范围须有明确任务依据和相应验证。
+- 安装器保持五个明确目标、先完整预检再写入、验证原版备份、失败回滚。R5 增加的 `toolutilityqt.modder.x64.dll` 仅改九条已审计的文件/Perforce 诊断文字。旧版汉化文件不能作为原版备份；扩大目标范围须有明确任务依据和相应验证。
+- UTF-16 模板与 UTF-8 拼接片段分别由 `audited-ui-literals.json`、`audited-ui-fragments.json` 限定原文及引用位置。在填参前转换已审计文字，保留动态参数；不要用全局前缀替换猜译用户输入。修改这些清单后运行真实 Qt 模板测试。
 - 词库和 JSON 使用 UTF-8；Windows PowerShell 5.1 使用的中文脚本保留 UTF-8 BOM。遵守 `.gitattributes`，交付文件的字节变化需要重新打包和校验。
 
 ## 构建与验证
@@ -46,10 +47,11 @@
 ```powershell
 python tools/build_patch.py --source backups/original-20261009 --output build/candidate
 python tools/test_display_hooks.py --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
+python tools/test_static_templates.py build/candidate --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
 python tools/validate_patch.py build/candidate
 ```
 
-验证器和安装测试目前使用 `backups/original-20261009`。安装测试读取根目录 `patch.json`，R3 升级输入取自保留的 R3 ZIP：保留当前交付副本后，将已验证候选清单复制到根目录，再运行 `python tools/test_installer.py`。该测试写入独立的 `build/installer-tests/`，不写实际游戏目录；安装器仍会检查 Terry/BOB 进程，不绕过此检查。交付打包要求原生词库哈希、完整性及安装报告的差分哈希、实际场景回读记录均与当前构建一致。
+验证器和安装测试目前使用 `backups/original-20261009`。安装测试读取根目录 `patch.json`，R3/R4 升级输入取自保留的对应 ZIP：保留当前交付副本后，将已验证候选清单复制到根目录，再运行 `python tools/test_installer.py`。该测试写入独立的 `build/installer-tests/`，不写实际游戏目录；安装器仍会检查 Terry/BOB 进程，不绕过此检查。交付打包要求原生词库哈希、模板/完整性/安装报告的差分哈希、实际场景回读记录均与当前构建一致。
 
 实机验证使用独立测试工程，从受影响的菜单、对象或操作复现。涉及编辑与存储时核对属性值、快捷键，并进行中文保存与英文原版回读；只记录实际操作过的路径。保护用户未保存工作，不强杀编辑器；备份并恢复测试修改的个人配置。
 

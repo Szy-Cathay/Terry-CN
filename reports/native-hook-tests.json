@@ -1,7 +1,7 @@
 {
-  "passed": 39585,
+  "passed": 49547,
   "failed": 0,
-  "dictionaryEntriesIncludingStyleVariants": 7789,
+  "dictionaryEntriesIncludingStyleVariants": 8150,
   "catalogSha256": {
     "translations.zh-CN.json": "87F4D065A5946BA2C5DEBF2A86CF2B3691F07D8E24D6CEC1F22C74D689A4B1ED",
     "translations.ui.zh-CN.json": "A454B660EFF28378245AF496401C9CD9A63D8D414A23C8733BD28799FF2EF64B",
@@ -9,10 +9,11 @@
     "translations.display.zh-CN.json": "3B02783355F4D864918099329B99902A8357CACA3A933BA3CD67C17958410BA0",
     "translations.properties.zh-CN.json": "5C7400AF21BF9D2D7C160494C052B665D77846E176CA3BA0096A51A6156D0AFD",
     "translations.extended.zh-CN.json": "60FC8DB3B924BD54CD5F1DF81543542795912F6270F8361B382A4049A39526EF",
-    "translations.engine.zh-CN.json": "6F365A6DB0ED5D66F223CF1BDB16EE1F45A9C1F4449A00CA727BDF0AD654A6E9"
+    "translations.engine.zh-CN.json": "6F365A6DB0ED5D66F223CF1BDB16EE1F45A9C1F4449A00CA727BDF0AD654A6E9",
+    "translations.templates.zh-CN.json": "190B6AA26F92970661D5EADA7016E70B15A6BD9DF5CE9E19E77C8E81199C5DF9"
   },
   "qtCopyOwnershipChecks": 600,
-  "longTextEntries": 14,
+  "longTextEntries": 19,
   "checks": [
     "All native mappings",
     "ASLR relocated QString pointers",

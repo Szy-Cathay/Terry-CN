@@ -107,27 +107,28 @@ results.append('Restore after R2 upgrade: exact originals')
 
 # Also exercise the immediately preceding publicized delivery, whose Qt file
 # and display hooks differ from R2. Its archive remains recoverable in Git.
-with zipfile.ZipFile(ROOT / 'Terry-CN-WH3-20261010-R3.zip') as archive:
-    previous = json.loads(archive.read('patch.json'))
-for record in previous['files']:
-    target = kit / record['path']
-    data = bytearray(target.read_bytes())
-    if 'replacement' in record:
-        data = base64.b64decode(record['replacement'])
-    else:
-        for edit in record['edits']:
-            before, after = (base64.b64decode(edit[key]) for key in ['before', 'after'])
-            assert data[edit['offset']:edit['offset'] + len(before)] == before
-            data[edit['offset']:edit['offset'] + len(after)] = after
-        data.extend(base64.b64decode(record['append']))
-    target.write_bytes(data)
-    assert sha(target) == record['patchedSha256']
-run('Install')
-assert hashes() == expected_patched
-results.append('Direct R3 upgrade: all target hashes match')
-run('Restore')
-assert hashes() == expected_original
-results.append('Restore after R3 upgrade: exact originals')
+for version in ['R3', 'R4']:
+    with zipfile.ZipFile(ROOT / f'Terry-CN-WH3-20261010-{version}.zip') as archive:
+        previous = json.loads(archive.read('patch.json'))
+    for record in previous['files']:
+        target = kit / record['path']
+        data = bytearray(target.read_bytes())
+        if 'replacement' in record:
+            data = base64.b64decode(record['replacement'])
+        else:
+            for edit in record['edits']:
+                before, after = (base64.b64decode(edit[key]) for key in ['before', 'after'])
+                assert data[edit['offset']:edit['offset'] + len(before)] == before
+                data[edit['offset']:edit['offset'] + len(after)] = after
+            data.extend(base64.b64decode(record['append']))
+        target.write_bytes(data)
+        assert sha(target) == record['patchedSha256']
+    run('Install')
+    assert hashes() == expected_patched
+    results.append(f'Direct {version} upgrade: all target hashes match')
+    run('Restore')
+    assert hashes() == expected_original
+    results.append(f'Restore after {version} upgrade: exact originals')
 
 # Allow reading file 2 but deny replacement: file 1 must roll back after failure.
 k = c.WinDLL('kernel32', use_last_error=True)

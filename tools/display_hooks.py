@@ -56,7 +56,7 @@ class DisplayPool:
         return self.strings[text]
 
     def make_hook(self, translations, original_iat, kind, argument='rdx'):
-        """kind: qstring-argument, latin1-return, or translate-return."""
+        """Display arguments or Qt static/member translation return conventions."""
         mapping = {s: self.string(t) for s, t in translations.items() if s and s != t}
         start = self.align()
         c = Code(start)
@@ -102,7 +102,10 @@ class DisplayPool:
                     c.emit(b'\x41\x80\xba' + struct.pack('<I', offset) + bytes([value]))
                     c.branch(b'\x0f\x85', target)
                 c.rip(b'\x48\x8d\x05', data_rva)
-                c.emit(b'\x48\x89\x01\x48\x89\xc8\xc3')
+                # QCoreApplication::translate is static: hidden result in rcx.
+                # QMetaObject::tr is a member: rcx=this, hidden result in rdx.
+                c.emit(b'\x48\x89\x02\x48\x89\xd0\xc3' if kind == 'meta-translate-return'
+                       else b'\x48\x89\x01\x48\x89\xc8\xc3')
                 c.label(target)
         c.label('fallback')
         c.rip(b'\xff\x25', original_iat)

@@ -1,0 +1,37 @@
+{
+  "version": "2026-10-10 R5",
+  "manifestSha256": "7E9B958001604AA89805AEB8C3B1AD2267EAE6ABA348BFE42102E8BD1AFA5D2C",
+  "displayDictionaryEntries": 4557,
+  "addedDictionaryEntriesSinceR4": 240,
+  "displayOrLiteralSites": 2200,
+  "distinctPatchedLiteralStrings": 1132,
+  "staticQStringLiteralReferences": 208,
+  "utf8LiteralReferences": 113,
+  "statusTooltips": 15,
+  "targets": [
+    "binaries/tweak_terrainmetadataeditor.modder.x64.dll",
+    "binaries/qttoolutility.modder.x64.dll",
+    "binaries/Qt5Widgets.dll",
+    "binaries/toolutilityqt.modder.x64.dll",
+    "working_data/Terry/status_tooltips.xml"
+  ],
+  "auditedReferenceManifests": {
+    "audited-ui-literals.json": "D991B0CDE70455C6DB7A5CE1A5707FDE0301134FF2040ACE3347FC9C9F6A4503",
+    "audited-ui-fragments.json": "74E197648B572773DC9A15F10C78A42678FD0331CF5D4E3F088971C7794069F3"
+  },
+  "displayPaths": [
+    "UTF-16 QStringLiteral templates translated before QString::arg",
+    "Audited UTF-8 construction, assignment and concatenation",
+    "Qt QMetaObject::tr member-return ABI for Undo/Redo templates",
+    "Existing exact-match QLabel/QAction/QMessageBox/view painting and property display"
+  ],
+  "preservedCategories": [
+    "Serialized component, setting, enum and shortcut identifiers",
+    "Resource keys, asset names, paths, extensions and wildcard filters",
+    "User input and project data",
+    "Perforce command strings and file operations",
+    "Unknown display strings pass through unchanged"
+  ],
+  "regressionFoundDuringGuiValidation": "Failed to open project. was composed from a nonstandard QString constructor; corrected its audited reference and byte length before retesting",
+  "countMeaning": "Reference and dictionary counts describe this patch; they are not a percentage of all possible UI states."
+}

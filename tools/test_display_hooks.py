@@ -18,7 +18,7 @@ parser.add_argument('--qt-core', type=Path, help='Original Qt5Core.dll for real 
 options = parser.parse_args()
 translations = {}
 catalog_hashes = {}
-for name in ['translations.zh-CN.json', 'translations.ui.zh-CN.json', 'translations.messages.zh-CN.json', 'translations.display.zh-CN.json', 'translations.properties.zh-CN.json', 'translations.extended.zh-CN.json', 'translations.engine.zh-CN.json']:
+for name in ['translations.zh-CN.json', 'translations.ui.zh-CN.json', 'translations.messages.zh-CN.json', 'translations.display.zh-CN.json', 'translations.properties.zh-CN.json', 'translations.extended.zh-CN.json', 'translations.engine.zh-CN.json', 'translations.templates.zh-CN.json']:
     translations.update(json.loads((ROOT / name).read_text(encoding='utf-8-sig')))
     catalog_hashes[name] = hashlib.sha256((ROOT / name).read_bytes()).hexdigest().upper()
 # Paint/layout sinks also receive uppercase labels from Qt styles.
@@ -53,7 +53,7 @@ def read_qstring(obj):
 
 checks = 0
 for kind, argument in [('qstring-argument', 'rdx'), ('qstring-argument', 'r8'), ('qstring-argument', 'r9'),
-                       ('latin1-return', 'rdx'), ('translate-return', 'r8')]:
+                       ('latin1-return', 'rdx'), ('translate-return', 'r8'), ('meta-translate-return', 'r8')]:
     pool = bytearray()
     dp = DisplayPool(pool, 0x1000, 0)
     start = dp.make_hook(translations, 0x100, kind, argument)
@@ -76,7 +76,8 @@ for kind, argument in [('qstring-argument', 'rdx'), ('qstring-argument', 'r8'), 
             else:
                 result_obj = c.c_void_p()
                 source_data = c.create_string_buffer(source.encode('utf-8'))
-                args[0] = c.addressof(result_obj)
+                result_index = 1 if kind == 'meta-translate-return' else 0
+                args[result_index] = c.addressof(result_obj)
                 args[1 if kind == 'latin1-return' else 2] = c.addressof(source_data)
                 if kind == 'latin1-return':
                     args[2] = 0xffffffff
@@ -92,8 +93,8 @@ for kind, argument in [('qstring-argument', 'rdx'), ('qstring-argument', 'r8'), 
                 if not matched:
                     assert captured[0][index] == args[index]
             elif matched:
-                assert not captured and value == args[0]
-                assert read_qstring(args[0]) == translations[source]
+                assert not captured and value == args[result_index]
+                assert read_qstring(args[result_index]) == translations[source]
             else:
                 assert value == 123 and captured == [tuple(args)]
             assert data.raw == original_data and obj.value == original_obj, 'Input mutated'
