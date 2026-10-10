@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FILES = [
     'Install-TerryCN.ps1', 'patch.json', '安装汉化.cmd', '恢复英文.cmd',
-    '检查安装.cmd', '使用说明.txt', '验证说明.txt',
+    '检查安装.cmd', '使用说明.txt', '验证说明.txt', '发布说明-v0.1.0.txt',
 ]
 output = ROOT / 'Terry-CN-WH3-v0.1.0.zip'
 assert not output.exists(), 'Recycle an earlier delivery before rebuilding the archive'

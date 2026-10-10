@@ -8,4 +8,5 @@
 /*.cmd -text
 /使用说明.txt -text
 /验证说明.txt -text
+/发布说明-v0.1.0.txt -text
 /*.zip.sha256 -text
