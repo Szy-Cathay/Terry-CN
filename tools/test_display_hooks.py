@@ -15,6 +15,7 @@ from display_hooks import DisplayPool
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
 parser.add_argument('--qt-core', type=Path, help='Original Qt5Core.dll for real QString ownership checks')
+parser.add_argument('--report', type=Path, default=ROOT / 'reports/native-hook-tests.json')
 options = parser.parse_args()
 translations = {}
 catalog_hashes = {}
@@ -166,5 +167,6 @@ result = {'passed': checks, 'failed': 0, 'dictionaryEntriesIncludingStyleVariant
           'longTextEntries': sum(len(s) > 160 for s in translations),
           'checks': ['All native mappings', 'ASLR relocated QString pointers', 'Five ABI arguments preserved',
                      'Original strings unchanged', 'Unknown/empty/Unicode passthrough', 'Explicit lengths and null passthrough']}
-(ROOT / 'reports/native-hook-tests.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
+options.report.parent.mkdir(parents=True, exist_ok=True)
+options.report.write_text(json.dumps(result, indent=2), encoding='utf-8')
 print(json.dumps(result, indent=2))

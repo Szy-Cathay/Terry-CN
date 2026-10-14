@@ -1,0 +1,44 @@
+{
+  "version": "v0.1.1",
+  "manifestSha256": "89BD446921E6F148968D7A57160178D1FCE936299C3FD8B0428DC3A38AE31343",
+  "payloadSha256": "E734A937ABC9E901B12227826358D1C48590FE20AB368D755E3054E25C1C2A2A",
+  "acceptedCandidateVersion": "v0.1.1-rc1",
+  "acceptedCandidateManifestSha256": "EB4EF0C5F0C657678C719E97B21170447A6412EB1B6D8FC9F79F527ADFD849BA",
+  "candidateToFinalChange": "Version field only; original manifest bytes reproduced by reversing that field",
+  "verificationMethod": "user-reported",
+  "recordedAtUtc": "2026-10-14T09:07:38.691038+00:00",
+  "agentOperatedTerry": false,
+  "overallUserStatement": "好吧，我以为你替我安装了，我刚才安装了一下，没什么问题，可以进入收尾了",
+  "roundtripUserStatement": "已完成，回读和属性值正常",
+  "installationHashesVerifiedReadOnly": [
+    {
+      "path": "binaries/tweak_terrainmetadataeditor.modder.x64.dll",
+      "sha256": "56CFAD16BDD836F871164B882FA54532FC6590FB2D1B906DE1DCEBFDAF4C0D16",
+      "state": "current-official-original"
+    },
+    {
+      "path": "binaries/qttoolutility.modder.x64.dll",
+      "sha256": "1A82D23AF22A67291D417C2D9A9E8E0B6FB899407E36E83F03EBFF5DC4663FA4",
+      "state": "current-official-original"
+    },
+    {
+      "path": "binaries/Qt5Widgets.dll",
+      "sha256": "A50045B2A38F5B6F5D885E3A9995AB3C693D3CB99165D22D982CC9E481686A7F",
+      "state": "current-official-original"
+    },
+    {
+      "path": "binaries/toolutilityqt.modder.x64.dll",
+      "sha256": "3660678BF03515F2F12E755A19DDB0ACB30A2F729314BE04126B6A911ABEF504",
+      "state": "current-official-original"
+    },
+    {
+      "path": "working_data/Terry/status_tooltips.xml",
+      "sha256": "578B4CB2E2E2FCC8674D72BB24D5DE6C6B55430C86384C627156D12432A94D23",
+      "state": "current-official-original"
+    }
+  ],
+  "previousReadOnlyCheck": "All five installed files matched the rc1 candidate before the user confirmed the English restore/reload test.",
+  "earlierFailureExplanation": "User clarified that the earlier screenshot/feedback was from before they installed the candidate. Investigation stopped without a functional change.",
+  "screenshotPixelsViewed": false,
+  "scope": "Manual acceptance is recorded as user feedback; automatic verification results remain separate."
+}

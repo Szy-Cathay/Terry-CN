@@ -1,0 +1,13 @@
+{
+  "passed": 5,
+  "failed": 0,
+  "checks": [
+    "scene-roundtrip.json: invalid englishRoundtripVerified rejected before ZIP creation",
+    "scene-roundtrip.json: invalid payloadSha256 rejected before ZIP creation",
+    "font-ui-verification.json: invalid passed rejected before ZIP creation",
+    "static-template-tests.json: invalid manifestSha256 rejected before ZIP creation",
+    "installer-test-results.json: invalid installerSha256 rejected before ZIP creation"
+  ],
+  "manifestSha256": "89BD446921E6F148968D7A57160178D1FCE936299C3FD8B0428DC3A38AE31343",
+  "packagerSha256": "C7A8DA77049F4CDFDCE7EFC5DF890115A353864C11359583DF76C0ABF3FDAF51"
+}

@@ -1,0 +1,91 @@
+Terry 官方更新核查与 v0.1.1 交付说明
+核查日期：2026-10-14；下列时间统一为 UTC。
+
+已确认更新
+
+这里的 Terry 是《全面战争：战锤 3》Assembly Kit 的 Battle Map Editor，Steam 工具 App 1880380。
+启动入口为 assembly_kit/binaries/tweak.modder.x64.exe /standalone TerrainMetadataEditor。
+v0.1.0 汉化（2026-10-10）适配 build 25616861；当前官方 public 分支和本机安装均为 build 25792521。
+新 build 的构建时间为 2026-10-08 01:15:15，公开分支更新时间为 2026-10-09 07:55:36。
+本机 Steam 安装记录的更新时间为 2026-10-11 01:19:07。这些时间分别表示构建、发布、安装，不能混为一谈。
+
+证据来自本机 Steam 的 appmanifest/appinfo、两个官方 Depot 1880381 清单，以及实际文件的 SHA-1/SHA-256。
+旧 Depot manifest：453024838656834636；新 Depot manifest：6612321361241691650。
+旧备份与旧官方清单、新基线与新官方清单的五个目标文件哈希均吻合。
+SteamDB 只作为公开分支信息的交叉核对，不作为官方更新日志：
+https://steamdb.info/app/1880380/depots/
+
+能确认 Terry / Assembly Kit 更新了什么
+
+1. 两份官方清单之间共 131 个路径发生变化：43 个程序文件、88 个 raw_data 文件；其中新增 4 个，没有删除。
+   程序变化包含 Terry、BOB 与共享模块。Terry-CN 涉及的三个 CA DLL 均已更新：
+   tweak_terrainmetadataeditor.modder.x64.dll、qttoolutility.modder.x64.dll、toolutilityqt.modder.x64.dll。
+   Qt5Widgets.dll 与 status_tooltips.xml 的官方内容未变，Qt ABI 仍为 5.12.0。
+2. 新增数据库 XML：TWaD_ritual_calculation_override_types、TWaD_ritual_calculation_overrides、
+   ritual_calculation_override_types、ritual_calculation_overrides（均位于 raw_data/db，扩展名 .xml）。
+   raw_data/EmpireDesignData/campaign_maps/wh3_main_combi_map_7/map.hex 及部分其他数据库 XML 也有变化。
+3. 本次扫描的 Qt ASCII 构造文本与合法 UTF-16 静态对象，原文及出现次数没有增删。
+   三个 CA 模块分别扫描到 ASCII 2609/2970/398 处，UTF-16 对象 358/171/25 个。
+   这只覆盖已说明的扫描模式，不等于证明全部界面、功能或算法没有变化。
+
+未找到本次 Terry / Assembly Kit 专项功能或修复公告。Steam 工具 App 的新闻接口返回空列表。
+文件变化可以确认更新发生，却不能据此编造“新增地图编辑功能”或具体编辑器修复日志。
+
+同期游戏官方 9.0.3 公告（2026-10-09）
+
+CA 公告说明了纳加什战役经济、印记进度和臣服目标调整；修复合邦后物品丢失、混沌勇士领主战败后无法招募、
+高崔克与菲利克斯任务战斗无法结束，以及部分存档加载和战役崩溃；另有单位、角色和尼赫喀拉法术平衡。
+地图相关条目为部分战斗地图的雪、沙、湿润等地形/天气效果未渲染的修复。
+以上是游戏更新内容，公告未把这些条目标为 Terry 编辑器改动。
+官方原文：
+https://community.creative-assembly.com/total-war/total-war-warhammer/forums/7-total-war-warhammer/threads/16126-total-war-warhammer-iii-patch-9-0-3
+官方新闻接口核对：
+https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1880380&count=30&maxlength=0
+https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1142710&count=50&maxlength=0&feeds=steam_community_announcements
+
+汉化适配结果
+
+最终版本：v0.1.1，仅接受 build 25792521 对应的严格原版哈希。
+与用户已验收的 v0.1.1-rc1 仅版本字段不同，补丁内容及五个结果文件完全相同。
+已更新 source-hashes.json 的三个 CA DLL 哈希，并重新审计全部 208 处静态 Qt 引用，修正 40 处引用地址。
+匹配依据为完整原文、Qt 数据头、函数内相对位置、归一化后的函数指令和导入调用序列。
+两个同名“Remove Buildings...”辅助函数以各自未移动的静态对象地址区分；不依靠模糊文本或旧地址猜测。
+构建器另自动识别了 1 处普通文本和 3 处显示调用的新位置；这四处所在函数也完成同构检查。
+113 处 UTF-8 片段、5 个字体修改点及原参数保持有效。原词库、术语、变量占位符和内部标识没有修改。
+重新构建的 2205 个显示/字体/文字调用点，按译文、种类和参数比较，与旧交付语义清单完全一致。
+旧版构建也重新生成，五个目标的结果哈希与 v0.1.0 一致，用于确认新旧比较的起点。
+
+安装器仍为原五目标版本，字节未改。候选不把旧 CA DLL 或旧汉化当作新原版。
+官方更新可能只替换三个 CA DLL，留下旧汉化 Qt 和工具提示；此混合状态已纳入升级回归。
+新旧原版备份按各自哈希并存，恢复得到当前 build 25792521 原版，旧备份继续保留。
+
+本次验证
+
+原生显示：49547 项通过，包括 600 次真实 QString 所有权检查、参数保持、未知文本透传和 ASLR。
+真实 Qt 模板：482 项通过，覆盖 208 静态引用、113 拼接片段和 161 次参数替换。
+字体：4 项通过，包含 600 次重定位后原生包装调用、异常展开和真实 Qt 字体/长标签度量；未显示测试窗口。
+差分完整性：10 项通过，检查差分重建、代码白名单、数据/导入/重定位/异常记录和工具提示结构。
+隔离安装：28 项通过，覆盖安装/重复安装/检查/恢复、未知版本、损坏和缺失备份、旧原版冒充新备份、
+R2/R3/R4/R5/v0.1.0 在旧上游拒装及 Steam 更新后升级，以及第二个目标锁定时回滚前项。
+上述测试没有写实际游戏目录，没有启动或操纵 Terry / BOB，也没有操作 AECN 任务的目录或进程。
+
+用户人工验收与边界
+
+用户亲自安装后确认汉化和字体无问题，并明确确认“中文保存 → 恢复英文 → 回读同一工程”的属性值正常。
+此前缺失反馈随后澄清为未安装候选时的现象，未据此修改补丁功能。详情见 reports/manual-test-acceptance.json。
+助手未操作 Terry 界面；没有逐项观察所有消息、长标签、溢出入口、快捷键或不同 DPI。
+未收到中文/英文保存文件的两份快照，不声称本版工程文件逐字节比较通过。
+最终清单的模板、字体、完整性及隔离安装测试已重新执行；旧报告没有冒充本版实机结果。
+原 v0.1.0 交付及历史报告保留在可恢复副本和 Git 历史，原版基线及实际恢复备份保持。
+本次只形成 v0.1.1 本地交付，未提交、推送、合并或公开发布。
+
+交付与证据路径（相对仓库）
+
+Terry-CN-WH3-v0.1.1.zip 及 .zip.sha256：最终差分交付与整个 ZIP 的校验值；不含官方完整 DLL。
+reports/：最终自动验证、用户人工验收和打包报告。
+build/candidate-25792521-rc1/：保留已验收候选及最初验证记录。
+build/final-25792521-v0.1.1/：最终构建与报告副本。
+build/update-check-20261014：原始官方清单解析、逐文件差异、调用点审计及辅助脚本。
+reports/upstream-update-25792521.json：去除本机绝对路径的更新与审计证据摘要。
+候选 patch.json SHA-256：EB4EF0C5F0C657678C719E97B21170447A6412EB1B6D8FC9F79F527ADFD849BA。
+最终 patch.json SHA-256：89BD446921E6F148968D7A57160178D1FCE936299C3FD8B0428DC3A38AE31343。

@@ -16,6 +16,7 @@ pefile.MAX_IMPORT_SYMBOLS = 65536
 parser = argparse.ArgumentParser()
 parser.add_argument('build', type=Path)
 parser.add_argument('--qt-bin', type=Path, required=True)
+parser.add_argument('--report', type=Path, default=ROOT / 'reports/font-tests.json')
 args = parser.parse_args()
 pe = pefile.PE(str(args.build / 'tweak_terrainmetadataeditor.modder.x64.dll'))
 metadata = next(x for x in json.loads((args.build / 'display-hooks.json').read_text())[
@@ -177,5 +178,6 @@ finally:
 report = {'passed': len(checks), 'failed': 0, 'checks': checks,
           'nativeCalls': 600, 'actualQtLabelWidths': widths, 'font': metadata,
           'manifestSha256': hashlib.sha256((args.build / 'patch.json').read_bytes()).hexdigest().upper()}
-(ROOT / 'reports/font-tests.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+args.report.parent.mkdir(parents=True, exist_ok=True)
+args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(report, ensure_ascii=False, indent=2))

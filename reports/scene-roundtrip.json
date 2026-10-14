@@ -1,62 +1,19 @@
 {
-  "version": "2026-10-10 R6",
-  "manifestSha256": "2EFAB9F47C2CC07D9C85FB138DA66F40C853854B147B36FE57D1FAF2135ACC02",
-  "files": {
-    "r5-light.1a12334538e2a9c.layer": {
-      "chineseSha256": "A2729B9C06E5B8232F740DD9C65FCD9CD9B1B6CF00930A653D7E92139485368F",
-      "englishSha256": "A2729B9C06E5B8232F740DD9C65FCD9CD9B1B6CF00930A653D7E92139485368F",
-      "byteIdentical": true
-    },
-    "r5-light.terry": {
-      "chineseSha256": "F3A7D50F3653E22C03C1A31B61109C0FE760DE7D30CB2C11F1C9A75643876364",
-      "englishSha256": "F3A7D50F3653E22C03C1A31B61109C0FE760DE7D30CB2C11F1C9A75643876364",
-      "byteIdentical": true
-    }
-  },
-  "englishRoundtripByteIdentical": true,
-  "englishOriginalHashesVerified": true,
-  "pointLight": {
-    "colour": "255 255 255 255",
-    "colour_scale": "21000",
-    "radius": "17",
-    "animation_type": "LAT_NONE",
-    "animation_speed_scale": "0 0",
-    "colour_min": "0",
-    "random_offset": "0",
-    "falloff_type": "WPLFT_LINEAR",
-    "for_light_probes_only": "false"
-  },
-  "chineseEditChanges": [
-    [
-      "ECPointLight",
-      "radius",
-      "16",
-      "17"
-    ]
-  ],
-  "selectionUndoRedo": "R6 candidate 3: Ctrl+A selects 1, Ctrl+Z selects 0, Ctrl+Y selects 1",
-  "launchPath": "Steam > Battle Map Editor: Terry",
-  "englishUiRadius": "17",
-  "actualUiChecks": [
-    "R6 cold start and Chinese project wizard",
-    "Open independent battle prefab",
-    "File/Edit/View/Tools menus inspected at 10 pt; shortcuts legible",
-    "Toolbar overflow exposes long labels and Point Light tool remains selectable",
-    "Normal window and maximized layout inspected",
-    "Point Light radius 16 -> 17 and Ctrl+S save",
-    "Restore original files, cold start English, inspect Radius 17 and Colour Scale 21000, Ctrl+S save"
-  ],
-  "scope": "Independent point-light battle prefab, typography, tool selection, keyboard undo/redo and real English roundtrip. External servers and exhaustive map/BOB algorithms are not claimed.",
-  "shortcutCount": 172,
-  "shortcutIdsAndKeysUnchanged": true,
-  "personalConfigsRestoredByteIdentically": true,
-  "restoredConfigFiles": [
-    "keyboard.xml",
-    "settings.xml",
-    "settings_internal.ini",
-    "settings_project_ProjectPrefab.xml",
-    "terry_error_log.txt",
-    "tool_state.xml"
-  ],
-  "r6ReinstalledAndHashesVerifiedAfterEnglishRoundtrip": true
+  "version": "v0.1.1",
+  "manifestSha256": "89BD446921E6F148968D7A57160178D1FCE936299C3FD8B0428DC3A38AE31343",
+  "payloadSha256": "E734A937ABC9E901B12227826358D1C48590FE20AB368D755E3054E25C1C2A2A",
+  "acceptedCandidateVersion": "v0.1.1-rc1",
+  "acceptedCandidateManifestSha256": "EB4EF0C5F0C657678C719E97B21170447A6412EB1B6D8FC9F79F527ADFD849BA",
+  "candidateToFinalChange": "Version field only; original manifest bytes reproduced by reversing that field",
+  "verificationMethod": "user-reported",
+  "recordedAtUtc": "2026-10-14T09:07:38.691038+00:00",
+  "agentOperatedTerry": false,
+  "englishRoundtripVerified": true,
+  "propertyValuesVerified": true,
+  "englishRoundtripByteIdentical": null,
+  "englishOriginalHashesVerifiedDuringUserTest": null,
+  "userStatement": "已完成，回读和属性值正常",
+  "questionAnswered": "你安装候选后，是否也完成了“中文界面保存测试工程 → 恢复英文 → 打开同一工程并核对属性值”？",
+  "scope": "User explicitly confirmed Chinese save, English restore/reload and matching property values. No scene-file byte comparison or specific object/value inventory was supplied.",
+  "agentObservedOperations": []
 }

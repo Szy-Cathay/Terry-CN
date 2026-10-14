@@ -4,16 +4,18 @@
 
 **创作者：Szy-Cathay**。本汉化补丁由 Codex（ChatGPT 6 Astra）完成。
 
-当前正式版：**v0.1.0（2026-10-10）**，适用于 Assembly Kit **build 25616861 / Qt 5.12.0**。补丁校验原版文件，版本不匹配会停止安装。
+当前交付：**v0.1.1（2026-10-14）**，适用于 Assembly Kit **build 25792521 / Qt 5.12.0**。补丁校验原版文件，版本不匹配会停止安装。
+
+本版适配官方 2026-10-09 更新，重定位 40 处静态文字引用，保留完整词库和字体调整。用户已亲自安装验收，并明确确认中文保存后英文回读及属性值正常；记录区分人工反馈与自动测试。更新内容与证据见 [更新核查](更新核查-build25792521.txt)。本次完成本地交付，GitHub 提交、推送和公开发布尚未进行。
 
 ## 使用
 
-从 [正式版本页面](https://github.com/Szy-Cathay/Terry-CN/releases/tag/v0.1.0) 下载，或使用仓库内的 [Terry-CN-WH3-v0.1.0.zip](Terry-CN-WH3-v0.1.0.zip)。完整解压后，关闭 Terry 与 BOB，运行 `安装汉化.cmd`。安装不需要 Python；可用 `恢复英文.cmd` 恢复原版，用 `检查安装.cmd` 检查状态。保留原版备份时，支持从 R2、R3、R4、R5、R6 直接安装正式版；R6 的汉化文件与正式版相同。
+使用 [Terry-CN-WH3-v0.1.1.zip](Terry-CN-WH3-v0.1.1.zip)，完整解压后，关闭 Terry 与 BOB，运行 `安装汉化.cmd`。安装不需要 Python；可用 `恢复英文.cmd` 恢复原版，用 `检查安装.cmd` 检查状态。已有 R2～R6 或 v0.1.0 时，先完成官方 Assembly Kit 更新，保留 `Terry-CN-backup`，再安装本版。新版安装器保留各版本原版备份，恢复得到当前上游原版。
 
 - [使用说明](使用说明.txt)：安装、升级、恢复及汉化范围。
 - [验证说明](验证说明.txt)：实际测试结果和未覆盖边界。
-- [玩家发布说明](发布说明-v0.1.0.txt)：可直接转发给玩家，已包含在补丁 ZIP 中。
-- [ZIP SHA-256](Terry-CN-WH3-v0.1.0.zip.sha256)：整个交付包的校验值。
+- [玩家发布说明](发布说明-v0.1.1.txt)：可直接转发给玩家，已包含在补丁 ZIP 中。
+- [ZIP SHA-256](Terry-CN-WH3-v0.1.1.zip.sha256)：整个交付包的校验值。
 
 本版将 Terry 顶部菜单、下拉菜单和工具栏文字改为 **微软雅黑 UI**。菜单 10 pt、文字图标 9 pt，扩展文字图标画布并调整菜单留白，改善原版 7 pt 位图文字对中文的可读性。字体使用系统已有字体，不额外分发字体文件；恢复英文时同时恢复原版字体与布局。
 
@@ -31,7 +33,7 @@
 python -m pip install --target tools/python-libs -r requirements.txt
 ```
 
-从自己的官方 Assembly Kit 准备下列**未汉化的原版文件**，按文件名放在 `backups/original-20261009/`，并核对 [source-hashes.json](source-hashes.json)：
+从自己的官方 Assembly Kit **build 25792521** 准备下列**未汉化的原版文件**，按文件名放在 `backups/original-build-25792521/`，并核对 [source-hashes.json](source-hashes.json)：
 
 - `binaries/tweak_terrainmetadataeditor.modder.x64.dll`
 - `binaries/qttoolutility.modder.x64.dll`
@@ -40,15 +42,15 @@ python -m pip install --target tools/python-libs -r requirements.txt
 - `working_data/Terry/status_tooltips.xml`
 
 ```powershell
-python tools/build_patch.py --source backups/original-20261009 --output build/candidate
-python tools/test_display_hooks.py --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
-python tools/test_static_templates.py build/candidate --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
-python tools/test_font_patch.py build/candidate --qt-bin "你的 Assembly Kit/binaries"
-python tools/validate_patch.py build/candidate
+python tools/build_patch.py --source backups/original-build-25792521 --output build/candidate
+python tools/test_display_hooks.py --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll" --report build/candidate/reports/native-hook-tests.json
+python tools/test_static_templates.py build/candidate --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll" --report build/candidate/reports/static-template-tests.json
+python tools/test_font_patch.py build/candidate --qt-bin "你的 Assembly Kit/binaries" --report build/candidate/reports/font-tests.json
+python tools/validate_patch.py build/candidate --source backups/original-build-25792521 --report build/candidate/reports/patch-integrity-tests.json
 ```
 
-安装回归测试读取根目录 `patch.json`，使用隔离的 `build/installer-tests/`；具体替换、测试和打包顺序见开发说明。根目录的差分与 ZIP 是已验证交付，候选构建不要未经检查覆盖它们。
+安装回归测试通过 `--bundle` 选择含安装器和候选清单的目录，通过 `--source` 选择新版原版基线，使用隔离的 `build/installer-tests/`；准备步骤见开发说明。保留 `backups/original-20261009/` 作为旧版升级输入，其原版哈希由旧交付清单校验。根目录的差分、ZIP 与历史报告是已验证交付，候选测试通过 `--report` 另存记录。
 
-`reports/` 内的验证记录绑定实际测试的差分或词库哈希，不表示后续功能修改已经测试。v0.1.0 仅将已验证的 R6 更名为正式版；打包器核对除版本字段外的差分和安装工具逐字节一致，保留原测试记录及其原始哈希，并在交付报告中记录沿用关系。其他变更仍须提供对应的新验证结果。
+`reports/` 内的自动验证记录绑定实际测试的差分或词库哈希。人工验收记录另注明反馈来源和范围，并绑定已验收候选与最终版相同的差分内容；未测量工程文件的逐字节一致性。打包器拒绝过期报告、未确认的回读或不一致的补丁内容。历史 v0.1.0/R6 记录不作为本版实机证据。
 
-当前分支只保留 v0.1.0 ZIP 及其校验文件；旧候选包从 Git 历史按需临时取回用于回归测试。仓库及 Release 已公开，玩家无需登录即可下载正式补丁。
+当前分支只保留 v0.1.1 ZIP 及其校验文件；旧包从 Git 历史按需临时取回用于回归测试。仓库保持公开，本次交付尚未上传或创建 GitHub Release。

@@ -88,21 +88,21 @@
       "dataRva": "0x92fbf0",
       "source": "Clear Houdini Input Node",
       "references": [
-        "0xc7b90"
+        "0xc7ae0"
       ]
     },
     {
       "dataRva": "0x92fc40",
       "source": "Paste Houdini Asset Node Inputs",
       "references": [
-        "0xc7980"
+        "0xc6660"
       ]
     },
     {
       "dataRva": "0x92fca0",
       "source": "Add Houdini Input Node Slot",
       "references": [
-        "0xc6630"
+        "0xc6f90"
       ]
     },
     {
@@ -123,21 +123,21 @@
       "dataRva": "0x92fdf0",
       "source": "<i>&lt;empty&gt;</i>",
       "references": [
-        "0xc8320"
+        "0xc7e40"
       ]
     },
     {
       "dataRva": "0x92fe40",
       "source": "<i>&lt;invalid&gt;</i>",
       "references": [
-        "0xc7fa0"
+        "0xc7960"
       ]
     },
     {
       "dataRva": "0x92fe90",
       "source": "Remove Houdini Input Node Slot",
       "references": [
-        "0xc6940"
+        "0xc7b40"
       ]
     },
     {
@@ -207,7 +207,7 @@
       "dataRva": "0x930260",
       "source": "Failed to save \"%1\": %2",
       "references": [
-        "0xc72b0"
+        "0xc69e0"
       ]
     },
     {
@@ -270,14 +270,14 @@
       "dataRva": "0x930b00",
       "source": "Old height range for '%1' is unadjustable",
       "references": [
-        "0xc6b40"
+        "0xc8290"
       ]
     },
     {
       "dataRva": "0x930cb0",
       "source": "Input data has a resolution of <b>%7x%8</b>.\nSo this will result in a grid of <b>%1x%2</b> tiles, each of size <b>%3x%4</b>, and a <b>%5x%6</b> tile map containing them.",
       "references": [
-        "0xc7b60"
+        "0xc6ab0"
       ]
     },
     {
@@ -312,63 +312,63 @@
       "dataRva": "0x931060",
       "source": "Invalid tile size! %1x%2",
       "references": [
-        "0xc8030"
+        "0xc66c0"
       ]
     },
     {
       "dataRva": "0x9310b0",
       "source": "Invalid tile map size! %1x%2",
       "references": [
-        "0xc68e0"
+        "0xc7c00"
       ]
     },
     {
       "dataRva": "0x931110",
       "source": "Invalid heightmap size! %1x%2",
       "references": [
-        "0xc6cb0"
+        "0xc7140"
       ]
     },
     {
       "dataRva": "0x931170",
       "source": "Invalid triangle density! %1",
       "references": [
-        "0xc6b10"
+        "0xc8470"
       ]
     },
     {
       "dataRva": "0x9311d0",
       "source": "Input data is a bad size! expected a multiple of %1x%2 but got %3x%4",
       "references": [
-        "0xc76c0"
+        "0xc6c60"
       ]
     },
     {
       "dataRva": "0x931280",
       "source": "Tile map too small to fit tiles! It must be at least %1x%2",
       "references": [
-        "0xc7130"
+        "0xc7930"
       ]
     },
     {
       "dataRva": "0x931310",
       "source": "Unable to connect to Perforce: %1",
       "references": [
-        "0xc67e0"
+        "0xc7cf0"
       ]
     },
     {
       "dataRva": "0x931370",
       "source": "Failed to load project '%1'",
       "references": [
-        "0xc6ab0"
+        "0xc7d50"
       ]
     },
     {
       "dataRva": "0x9313c0",
       "source": "Failed to save component '%2'",
       "references": [
-        "0xc7840"
+        "0xc7c30"
       ]
     },
     {
@@ -389,7 +389,7 @@
       "dataRva": "0x931940",
       "source": "Tileset %1 not found",
       "references": [
-        "0x1b6fb0"
+        "0x1b81d0"
       ]
     },
     {
@@ -424,21 +424,21 @@
       "dataRva": "0x931b60",
       "source": "Failed to save '%1' to disk",
       "references": [
-        "0x1b4f00"
+        "0x1b7c40"
       ]
     },
     {
       "dataRva": "0x931bb0",
       "source": "Failed to open '%1'",
       "references": [
-        "0x1b5f50"
+        "0x1b4930"
       ]
     },
     {
       "dataRva": "0x931bf0",
       "source": "Failed to write to '%1'",
       "references": [
-        "0x1b6400"
+        "0x1b6140"
       ]
     },
     {
@@ -557,28 +557,28 @@
       "dataRva": "0x932390",
       "source": "Not a Terry project",
       "references": [
-        "0x1b6fe0"
+        "0x1b81a0"
       ]
     },
     {
       "dataRva": "0x9323d0",
       "source": "Project has no scene",
       "references": [
-        "0x1b53f0"
+        "0x1b5850"
       ]
     },
     {
       "dataRva": "0x932420",
       "source": "Project has no terrain",
       "references": [
-        "0x1b6460"
+        "0x1b7b80"
       ]
     },
     {
       "dataRva": "0x932570",
       "source": "Failed to resolve %1: %2",
       "references": [
-        "0x1b5880"
+        "0x1b5820"
       ]
     },
     {
@@ -599,7 +599,7 @@
       "dataRva": "0x9328c0",
       "source": "Autosave Recovery",
       "references": [
-        "0x1b4b10"
+        "0x1b5f70"
       ]
     },
     {
@@ -627,7 +627,7 @@
       "dataRva": "0x932dc0",
       "source": "don't know yet",
       "references": [
-        "0x1b81d0"
+        "0x1b5fd0"
       ]
     },
     {
@@ -648,14 +648,14 @@
       "dataRva": "0x932f50",
       "source": "Successfully deleted <b>%1</b> files, saving approximately <b>%2</b>.",
       "references": [
-        "0x1b58b0"
+        "0x1b4900"
       ]
     },
     {
       "dataRva": "0x933000",
       "source": "<br><b>Note,</b> some files weren't able to be properly deleted:<br>",
       "references": [
-        "0x1b4ab0"
+        "0x1b7be0"
       ]
     },
     {
@@ -697,7 +697,7 @@
       "dataRva": "0x933650",
       "source": "More than one playable area.",
       "references": [
-        "0x1b53c0"
+        "0x1b4870"
       ]
     },
     {
@@ -739,14 +739,14 @@
       "dataRva": "0x933b20",
       "source": "Blend8 layer %1 has data in channel %2 but there is no texture assigned to that channel",
       "references": [
-        "0x1b8140"
+        "0x1b6170"
       ]
     },
     {
       "dataRva": "0x933c10",
       "source": "The terrain setup path doesn't match the working data directory of the current project. \nThe rendered terrain will not match exported data until corrected",
       "references": [
-        "0x1b6490"
+        "0x1b60e0"
       ]
     },
     {
@@ -774,7 +774,7 @@
       "dataRva": "0x933f80",
       "source": "A colour is set in tile settings, but there's no matching entry in the tile database! Make sure this tile has been added to the tile database, or set it's colour to black",
       "references": [
-        "0x1b8170"
+        "0x1b5400"
       ]
     },
     {
@@ -914,7 +914,7 @@
       "dataRva": "0x934ea0",
       "source": "After generation, select any single-point or polyline Sound Marker entity and then <b>Alt-click</b> the left mouse button to absorb another single-point Sound Marker entity into the selected entity, extending its polyline.",
       "references": [
-        "0x26d4c0"
+        "0x26d660"
       ]
     },
     {
@@ -956,21 +956,21 @@
       "dataRva": "0x935420",
       "source": "Imported layer has incorrect dimensions.<br>Expecting <b>%1x%2</b>, but got <b>%3x%4</b>.",
       "references": [
-        "0x26d460"
+        "0x26d630"
       ]
     },
     {
       "dataRva": "0x9354f0",
       "source": "Imported layer has wrong number of channels.<br>Expecting <b>%1</b> channels, but got <b>%2</b>.",
       "references": [
-        "0x26d040"
+        "0x26d210"
       ]
     },
     {
       "dataRva": "0x9355d0",
       "source": "Single Channel for ",
       "references": [
-        "0x26cd90"
+        "0x26cf60"
       ]
     },
     {
@@ -998,7 +998,7 @@
       "dataRva": "0x935fa0",
       "source": "Remove Buildings...",
       "references": [
-        "0x2eb5b0"
+        "0x2ebe30"
       ]
     },
     {
@@ -1026,7 +1026,7 @@
       "dataRva": "0x936100",
       "source": "Remove Buildings...",
       "references": [
-        "0x2ebf00"
+        "0x2ebd30"
       ]
     },
     {

@@ -1,10 +1,12 @@
 Terry-CN 汉化补丁维护说明
 
-交付给玩家的文件是根目录 Terry-CN-WH3-v0.1.0.zip，正式版本标签为 v0.1.0。
+当前本地交付文件是根目录 Terry-CN-WH3-v0.1.1.zip，版本为 v0.1.1；公开发布另行授权。
 ZIP 只包含差分清单、安装/恢复/检查工具、使用/验证/玩家发布说明和校验文件，共九项，不包含官方完整 DLL。
+源码当前构建 v0.1.1，适配 build 25792521；与用户已验收候选 v0.1.1-rc1 的功能载荷相同。
 
 本工程源码与本地生成目录的用途如下；本地基线、构建和缓存清理后按需重建：
-backups/original-20261009：构建所需的官方原版基线，按 README.md 准备并用 source-hashes.json 校验；不入库、不对外打包。
+backups/original-build-25792521：当前构建所需的官方原版基线，按 README.md 准备并用 source-hashes.json 校验；不入库、不对外打包。
+backups/original-20261009：保留 build 25616861 原版，用旧交付清单的哈希校验，供 R2～v0.1.0 升级回归；不作为新版本备份。
 build：候选构建、调用点清单和隔离测试目录，可由原版基线重建；不入库。
 reports：保留当前交付的验证报告；回收清单和本机记录仅留在本地。
 tests/fixtures：旧补丁升级与快捷键保护的回归测试基线。
@@ -25,22 +27,30 @@ protected-identifiers.json：禁止作为通用字面量改写的配置与快捷
 
 构建与检查顺序（Python 3，Windows x64）：
 先准备原版基线、Python 依赖及下文的旧版升级回归输入。
-python tools/build_patch.py --source backups/original-20261009 --output build/new-candidate
-python tools/test_display_hooks.py --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
-python tools/test_static_templates.py build/new-candidate --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll"
-python tools/test_font_patch.py build/new-candidate --qt-bin "你的 Assembly Kit/binaries"
-python tools/validate_patch.py build/new-candidate
-将验证过的 build/new-candidate/patch.json 复制到根目录 patch.json。
-关闭 Terry 和 BOB 后运行 python tools/test_installer.py。
-实际完成界面、编辑和跨语言保存测试，更新验证说明和报告。
+python tools/build_patch.py --source backups/original-build-25792521 --output build/new-candidate
+python tools/test_display_hooks.py --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll" --report build/new-candidate/reports/native-hook-tests.json
+python tools/test_static_templates.py build/new-candidate --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll" --report build/new-candidate/reports/static-template-tests.json
+python tools/test_font_patch.py build/new-candidate --qt-bin "你的 Assembly Kit/binaries" --report build/new-candidate/reports/font-tests.json
+python tools/validate_patch.py build/new-candidate --source backups/original-build-25792521 --report build/new-candidate/reports/patch-integrity-tests.json
+New-Item -ItemType Directory -Path build/new-candidate/bundle
+Copy-Item -LiteralPath build/new-candidate/patch.json, Install-TerryCN.ps1, 安装汉化.cmd, 恢复英文.cmd, 检查安装.cmd -Destination build/new-candidate/bundle
+关闭 Terry 和 BOB 后运行：
+python tools/test_installer.py --bundle build/new-candidate/bundle --source backups/original-build-25792521 --report build/new-candidate/reports/installer-test-results.json
+测试只写 build/installer-tests，不写实际安装目录，不替换根目录交付。
+测试覆盖旧上游拒绝、Steam 更新三个 CA DLL 后仍保留旧 Qt/工具提示汉化的混合状态、缺失或损坏备份、安装/恢复和失败回滚。
+
+实际完成新版界面、编辑和中文保存/英文回读验收后，才进入最终交付步骤：
+保留上一版可恢复副本，同步版本号、根目录差分、打包文件名、使用/验证说明及当前构建报告。
+python tools/test_package_release.py
 python tools/package_release.py
+用户自行验收时，报告必须标明 user-reported、原话、实际确认范围及对应补丁内容哈希；
+明确的中文保存/英文回读和属性核对确认仍是必要条件。未取得两份保存文件时，不填写逐字节一致为真。
 
 原生测试记录词库哈希；模板、字体、完整性和安装测试记录差分哈希。场景回读及字体实机报告也须绑定当前差分，
-打包器拒绝过期报告。当前分支只保留 v0.1.0 ZIP 及其校验文件。
-v0.1.0 将已验证的 R6 更名为正式版，不改变任何目标的差分内容和安装工具。
-打包器仅在还原版本字段后重现 R6 清单的完整 SHA-256、安装工具也与原版次一致时，
-允许沿用 R6 的原始验证报告；原报告哈希不改写，沿用关系记入 package-verification.json。
-只要差分或安装工具发生变化，此更名规则即失效，必须重新提供与当前清单绑定的验证结果。
+打包器拒绝过期报告。当前分支只保留 v0.1.1 ZIP 及其校验文件。
+最终清单改变版本字段后，模板、字体、完整性和安装报告重新运行并绑定最终清单哈希；
+原生显示报告继续核对完整词库哈希。人工候选验收通过相同补丁内容哈希绑定到最终版，
+保留用户实际反馈，不扩大逐项实测范围。旧 R6/v0.1.0 的界面或场景报告不作为本版结果。
 
 旧版升级回归输入（仅测试时需要）：
 R3、R4、R5 ZIP 及校验文件仍可从 Git 历史取回。在项目根目录执行以下 PowerShell 命令：
@@ -49,6 +59,8 @@ foreach ($regressionVersion in 'R3', 'R4', 'R5') {
     git restore --source=$regressionSource --worktree -- "Terry-CN-WH3-20261010-$regressionVersion.zip" "Terry-CN-WH3-20261010-$regressionVersion.zip.sha256"
 }
 按各 .sha256 文件核对对应 ZIP 后再运行安装测试；不能因旧包不在当前目录而跳过升级检查。
+v0.1.0 也参与升级回归，可从发布后的提交取回：
+git restore --source=b1371dc --worktree -- Terry-CN-WH3-v0.1.0.zip Terry-CN-WH3-v0.1.0.zip.sha256
 历史候选 ZIP 及其校验文件已加入 .gitignore，临时取回不会重新加入当前交付。测试结束按项目清理约定移入回收站。
 tests/fixtures/patch-r2.json 是必要的回归测试夹具，继续保留。清理当前分支不重写 Git 历史。
 
@@ -58,7 +70,8 @@ python tools/audit_strings.py "你的 Assembly Kit/binaries" build/audit.json --
 更不能据此全局改写二进制。引擎环境译文通过既有 Qt 显示层生效，不修改 Warscape DLL。
 
 打包器拒绝覆盖同名 ZIP；应先将上次交付移入回收站或保留到明确的归档位置。
-构建器继承根目录 manifest 中的已知补丁哈希，旧版升级仍必须使用校验通过的原版备份。
+构建器只在原版哈希相同时继承根目录 manifest 中的已知补丁哈希；原版已变的三个 CA DLL 不接受旧汉化作为新版输入。
+旧版升级必须先完成官方更新，再使用各目标对应的已校验原版备份。新旧原版备份按哈希命名并存，恢复得到当前上游版本。
 
 不要将属性键、枚举值、文件路径、资源键或快捷键 ID 翻译后写回模型。
 新增词条优先使用显示层；只在确认调用点仅服务界面时改写字面量。
@@ -66,7 +79,7 @@ python tools/audit_strings.py "你的 Assembly Kit/binaries" build/audit.json --
 对列表的显示转换不会改变选择项的内部值，但恰好与词条同名的自定义列表名称
 也可能显示为译文，编辑和存储的实际名称仍然保留。不要把显示文字当作资源键复制。
 
-当前仅支持 source-hashes.json 对应的 Assembly Kit build 25616861。
+当前源码与根目录 v0.1.1 交付均支持 source-hashes.json 对应的 Assembly Kit build 25792521。
 官方更新后必须重新审计调用点和 Qt ABI，不能仅修改版本号或跳过哈希校验。
 
 R5 将 toolutilityqt.modder.x64.dll 纳入五目标白名单，只重定向九条文件/Perforce 诊断文字，

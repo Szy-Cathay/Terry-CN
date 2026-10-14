@@ -1,3 +1,4 @@
+import argparse
 import base64
 import hashlib
 import json
@@ -10,14 +11,19 @@ sys.path.insert(0, str(ROOT / 'tools/python-libs'))
 import pefile
 pefile.MAX_IMPORT_SYMBOLS = 65536
 
-build = Path(sys.argv[1])
+parser = argparse.ArgumentParser()
+parser.add_argument('build', type=Path)
+parser.add_argument('--source', type=Path, default=ROOT / 'backups/original-build-25792521')
+parser.add_argument('--report', type=Path, default=ROOT / 'reports/patch-integrity-tests.json')
+options = parser.parse_args()
+build = options.build
 manifest = json.loads((build / 'patch.json').read_text(encoding='utf-8'))
 coverage = json.loads((build / 'coverage.json').read_text(encoding='utf-8'))
 protected = set(json.loads((ROOT / 'protected-identifiers.json').read_text(encoding='utf-8'))['identifiers'])
 permitted_label_sites = {0x1cc73, 0x19885, 0x1ba34, 0x1c762, 0x1cfd6}
 checks = []
 for r in manifest['files']:
-    original = (ROOT / 'backups/original-20261009' / Path(r['path']).name).read_bytes()
+    original = (options.source / Path(r['path']).name).read_bytes()
     result = bytearray(original)
     if 'replacement' in r:
         result = base64.b64decode(r['replacement'])
@@ -91,5 +97,6 @@ for r in manifest['files']:
     checks.append(r['path'] + ': differential reconstruction SHA-256 verified')
 result = {'passed': len(checks), 'failed': 0, 'checks': checks,
           'manifestSha256': hashlib.sha256((build / 'patch.json').read_bytes()).hexdigest().upper()}
-(ROOT / 'reports/patch-integrity-tests.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
+options.report.parent.mkdir(parents=True, exist_ok=True)
+options.report.write_text(json.dumps(result, indent=2), encoding='utf-8')
 print(json.dumps(result, indent=2))

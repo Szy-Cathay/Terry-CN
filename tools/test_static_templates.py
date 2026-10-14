@@ -21,6 +21,7 @@ import pefile
 parser = argparse.ArgumentParser()
 parser.add_argument('build', type=Path)
 parser.add_argument('--qt-core', type=Path, required=True)
+parser.add_argument('--report', type=Path, default=ROOT / 'reports/static-template-tests.json')
 options = parser.parse_args()
 with os.add_dll_directory(str(options.qt_core.resolve().parent)):
     qt = c.WinDLL(str(options.qt_core.resolve()))
@@ -145,5 +146,6 @@ result = {'passed': checks, 'failed': 0, 'staticLiteralSites': sites,
                      'Real UTF-8 construction, assignment and concatenation',
                      'Unicode/path/percent/HTML parameters preserved', 'Placeholder order and multiplicity',
                      'Immutable literal refcounts and data preserved']}
-(ROOT / 'reports/static-template-tests.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
+options.report.parent.mkdir(parents=True, exist_ok=True)
+options.report.write_text(json.dumps(result, indent=2), encoding='utf-8')
 print(json.dumps(result, indent=2))
