@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-10 R6",
-  "manifestSha256": "2EFAB9F47C2CC07D9C85FB138DA66F40C853854B147B36FE57D1FAF2135ACC02",
+  "version": "v0.1.2",
+  "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
   "displayDictionaryEntries": 4557,
   "addedDictionaryEntriesSinceR4": 240,
   "displayOrLiteralSites": 2205,
@@ -16,8 +16,8 @@
     "working_data/Terry/status_tooltips.xml"
   ],
   "auditedReferenceManifests": {
-    "audited-ui-literals.json": "D991B0CDE70455C6DB7A5CE1A5707FDE0301134FF2040ACE3347FC9C9F6A4503",
-    "audited-ui-fragments.json": "74E197648B572773DC9A15F10C78A42678FD0331CF5D4E3F088971C7794069F3"
+    "audited-ui-literals.json": "F741B493639B6F2EE3E6D4076D6A562DFE4BDC4BAAFE06FFB3B542773C6A9B25",
+    "audited-ui-fragments.json": "7A8D2021EA3DD498F9A98288D14D38524129153DA5B7B58D289ED8D43AF64978"
   },
   "displayPaths": [
     "UTF-16 QStringLiteral templates translated before QString::arg",
@@ -35,7 +35,6 @@
   "countMeaning": "Reference and dictionary counts describe this patch; they are not a percentage of all possible UI states.",
   "fontUiSites": 5,
   "historicalR5DiagnosticFix": "Failed to open project. was composed from a nonstandard QString constructor; corrected its audited reference and byte length before retesting",
-  "r6Changes": "Existing translation catalogs and audited references unchanged; five Terry-only font/canvas/menu initialization sites added.",
   "fontUiChanges": [
     {
       "rva": "0x28034a",
@@ -54,7 +53,7 @@
     {
       "rva": "0x1ffb50",
       "fontUi": true,
-      "purpose": "Text-icon and toolbar canvas: 64x32 -> 120x32",
+      "purpose": "Text-icon and toolbar canvas: 64x32 -> 112x32",
       "beforeHex": "488b0551be4700",
       "afterHex": "488b05b1a7ed01"
     },
@@ -63,7 +62,7 @@
       "fontUi": true,
       "purpose": "Snap AI text-icon canvas: allow its full Chinese label",
       "beforeHex": "c7453020000000",
-      "afterHex": "c7453078000000"
+      "afterHex": "c7453070000000"
     },
     {
       "rva": "0x19849",
@@ -72,5 +71,7 @@
       "beforeHex": "ff15b94e6300",
       "afterHex": "e8620d0c0290"
     }
-  ]
+  ],
+  "payloadSha256": "95935A0BA824B7D2D5143DDEFE881E3EEDAC17161E2924E3945165DC94749C13",
+  "currentChanges": "Build 25922678 reference rebasing and compact toolbar spacing; font family and point sizes retained."
 }

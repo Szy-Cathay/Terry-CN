@@ -13,7 +13,7 @@ pefile.MAX_IMPORT_SYMBOLS = 65536
 
 parser = argparse.ArgumentParser()
 parser.add_argument('build', type=Path)
-parser.add_argument('--source', type=Path, default=ROOT / 'backups/original-build-25792521')
+parser.add_argument('--source', type=Path, default=ROOT / 'backups/original-build-25922678')
 parser.add_argument('--report', type=Path, default=ROOT / 'reports/patch-integrity-tests.json')
 options = parser.parse_args()
 build = options.build

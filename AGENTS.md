@@ -46,14 +46,14 @@
 候选构建的命令如下；输出目录已有需保留的结果时换用新的候选目录：
 
 ```powershell
-python tools/build_patch.py --source backups/original-build-25792521 --output build/candidate
+python tools/build_patch.py --source backups/original-build-25922678 --output build/candidate --version v0.1.2
 python tools/test_display_hooks.py --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll" --report build/candidate/reports/native-hook-tests.json
 python tools/test_static_templates.py build/candidate --qt-core "你的 Assembly Kit/binaries/Qt5Core.dll" --report build/candidate/reports/static-template-tests.json
 python tools/test_font_patch.py build/candidate --qt-bin "你的 Assembly Kit/binaries" --report build/candidate/reports/font-tests.json
-python tools/validate_patch.py build/candidate --source backups/original-build-25792521 --report build/candidate/reports/patch-integrity-tests.json
+python tools/validate_patch.py build/candidate --source backups/original-build-25922678 --report build/candidate/reports/patch-integrity-tests.json
 ```
 
-验证器和安装测试通过 `--source` 指定当前原版基线。安装测试通过 `--bundle` 读取单独保存的安装器及候选清单，通过 `--report` 另存报告，准备命令见 `开发说明.txt`；不要为候选测试覆盖根目录已交付差分及报告。`backups/original-20261009` 保留为旧版升级输入；R3/R4/R5 ZIP 需从 Git 历史临时取回并核对校验文件。升级测试覆盖旧上游拒绝、Steam 更新后的混合状态、原版备份校验及恢复，不能省略旧版检查。测试写入独立的 `build/installer-tests/`，不写实际游戏目录；安装器仍会检查 Terry/BOB 进程，不绕过此检查。交付打包要求原生词库哈希、模板/字体/完整性/安装报告的差分哈希、实际字体界面及场景回读记录均与当前构建一致。
+验证器和安装测试通过 `--source` 指定当前原版基线。安装测试通过 `--bundle` 读取单独保存的安装器及候选清单，通过 `--report` 另存报告，准备命令见 `开发说明.txt`；不要为候选测试覆盖根目录已交付差分及报告。`backups/original-20261009` 保留为 R2～v0.1.0 升级输入，`backups/original-build-25792521` 保留为 v0.1.1 升级输入；所需旧 ZIP 从 Git 历史取回并核对校验文件，可用 `--historical-dir` 指定位置、`--previous-release-source` 指定 v0.1.1 基线。升级测试覆盖旧上游拒绝、Steam 更新后的混合状态、原版备份校验及恢复，不能省略旧版检查。测试写入独立的 `build/installer-tests/`，不写实际游戏目录；安装器仍会检查 Terry/BOB 进程，不绕过此检查。交付打包要求原生词库哈希、模板/字体/完整性/安装报告的差分哈希、实际字体界面及场景回读记录均与当前构建一致。
 
 实机验证使用独立测试工程，从受影响的菜单、对象或操作复现。涉及编辑与存储时核对属性值、快捷键，并进行中文保存与英文原版回读；只记录实际操作过的路径。保护用户未保存工作，不强杀编辑器；备份并恢复测试修改的个人配置。
 
@@ -61,7 +61,7 @@ python tools/validate_patch.py build/candidate --source backups/original-build-2
 
 ## 交付、Git 与清理
 
-- 项目只维护汉化补丁。Git 跟踪源码、词库、差分、必要测试夹具、使用文档及经过检查的最新交付包；当前分支只保留 v0.1.1，旧交付包从 Git 历史按需取回作本地测试输入，不重新提交。官方完整 DLL、原版备份、候选构建、依赖缓存和本机个人记录不入库。
+- 项目只维护汉化补丁。Git 跟踪源码、词库、差分、必要测试夹具、使用文档及经过检查的最新交付包；当前分支只保留 v0.1.2，旧交付包从 Git 历史按需取回作本地测试输入，不重新提交。官方完整 DLL、原版备份、候选构建、依赖缓存和本机个人记录不入库。
 - 发布新补丁时同步清单版本、打包文件名、使用说明与验证记录，再运行 `python tools/package_release.py`。打包器拒绝覆盖同名 ZIP；先保留可恢复的上一版。单纯修改项目规则不重做已验证的补丁。
 - Git 操作前核对目标仓库、分支与工作区；保留已有改动，不执行未经授权的强推或历史重写。上传后核对远端目标分支的提交和文件，不能用本地提交或其他分支的状态代替。
 - 仓库使用用户确定的可见性；当前为公开。GitHub 源码上传、Release 附件和其他平台发布分别报告；公开发布后核对匿名访问和附件下载，不把其中一项当作全部完成。

@@ -5,7 +5,7 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = 'v0.1.1'
+VERSION = 'v0.1.2'
 FILES = [
     'Install-TerryCN.ps1', 'patch.json', '安装汉化.cmd', '恢复英文.cmd',
     '检查安装.cmd', '使用说明.txt', '验证说明.txt', f'发布说明-{VERSION}.txt',

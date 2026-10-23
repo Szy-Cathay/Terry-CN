@@ -1,29 +1,29 @@
 {
-  "version": "v0.1.1",
-  "manifestSha256": "89BD446921E6F148968D7A57160178D1FCE936299C3FD8B0428DC3A38AE31343",
-  "payloadSha256": "E734A937ABC9E901B12227826358D1C48590FE20AB368D755E3054E25C1C2A2A",
-  "acceptedCandidateVersion": "v0.1.1-rc1",
-  "acceptedCandidateManifestSha256": "EB4EF0C5F0C657678C719E97B21170447A6412EB1B6D8FC9F79F527ADFD849BA",
-  "candidateToFinalChange": "Version field only; original manifest bytes reproduced by reversing that field",
+  "version": "v0.1.2",
+  "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
+  "payloadSha256": "95935A0BA824B7D2D5143DDEFE881E3EEDAC17161E2924E3945165DC94749C13",
+  "acceptedCandidateVersion": "v0.1.2-rc2",
+  "acceptedCandidateManifestSha256": "AB7AB35D8382F91B040ED80266CB3885ED3912141E37ADB7D59CCBC99CA836B8",
+  "candidateToFinalChange": "Version field only; reversing it reproduces the accepted candidate manifest bytes exactly",
   "verificationMethod": "user-reported",
-  "recordedAtUtc": "2026-10-14T09:07:38.691038+00:00",
+  "recordedAtUtc": "2026-10-22T03:34:57.688527+00:00",
   "agentOperatedTerry": false,
   "passed": true,
-  "userStatement": "好吧，我以为你替我安装了，我刚才安装了一下，没什么问题，可以进入收尾了",
-  "scope": "User confirmed no problem after personally installing the candidate, in response to the earlier translation and font report.",
+  "userStatement": "我装了 rc2，间距现在可以了，字体和字号也正常，继续收尾吧。",
+  "scope": "User explicitly accepted rc2 toolbar spacing, font family and size after installing it.",
   "fontDefinition": {
     "family": "Microsoft YaHei UI",
     "menuPointSize": 10,
     "textIconPointSize": 9,
     "textIconCanvas": [
-      120,
+      112,
       32
     ]
   },
   "individuallyObservedByAgent": [],
   "notIndividuallyReported": [
     "Every affected dialog",
-    "Every menu and toolbar overflow state",
+    "Every dropdown and overflow state",
     "Normal/maximized window sizes",
     "Shortcut-by-shortcut testing",
     "Multiple DPI settings"

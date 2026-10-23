@@ -1,11 +1,12 @@
 {
-  "passed": 4,
+  "passed": 5,
   "failed": 0,
   "checks": [
     "600 relocated native calls preserve this, call order and original menuBar result",
     "Windows runtime resolves the non-leaf hook unwind record",
     "Actual Qt main window and menu bar use Microsoft YaHei UI at 10 pt",
-    "Actual Qt font metrics fit long Chinese labels inside the expanded icon canvas"
+    "Actual Qt font metrics fit long Chinese labels inside the expanded icon canvas",
+    "Real Qt toolbar button width decreases while font family, 9 pt size and height remain unchanged"
   ],
   "nativeCalls": 600,
   "actualQtLabelWidths": {
@@ -23,10 +24,10 @@
     "family": "Microsoft YaHei UI",
     "iconPointSize": 9,
     "iconSize": [
-      120,
+      112,
       32
     ],
-    "stylesheet": "QMenuBar, QMenu { font-family: \"Microsoft YaHei UI\"; font-size: 10pt; font-weight: normal; }\nQMenuBar::item { padding: 3px 8px; }\nQMenu::item { padding: 4px 24px 4px 24px; }\nQToolBar { spacing: 3px; }\nQToolBar QToolButton { font-family: \"Microsoft YaHei UI\"; font-size: 9pt; font-weight: normal; padding: 3px 5px; }",
+    "stylesheet": "QMenuBar, QMenu { font-family: \"Microsoft YaHei UI\"; font-size: 10pt; font-weight: normal; }\nQMenuBar::item { padding: 3px 8px; }\nQMenu::item { padding: 4px 24px 4px 24px; }\nQToolBar { spacing: 1px; }\nQToolBar QToolButton { font-family: \"Microsoft YaHei UI\"; font-size: 9pt; font-weight: normal; padding: 3px 1px; }",
     "menuHook": {
       "beginRva": "0x20da5b0",
       "endRva": "0x20da5d5",
@@ -34,5 +35,15 @@
     },
     "exceptionTableRva": "0x20da5e0"
   },
-  "manifestSha256": "89BD446921E6F148968D7A57160178D1FCE936299C3FD8B0428DC3A38AE31343"
+  "actualQtToolbarButtonSizeHints": {
+    "previous": [
+      137,
+      45
+    ],
+    "current": [
+      121,
+      45
+    ]
+  },
+  "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B"
 }
