@@ -358,6 +358,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--source', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--version', default='v0.1.2', help='Version recorded in the generated manifest')
+    parser.add_argument('--previous-manifest', type=Path, action='append', default=[],
+                        help='Additional verified same-baseline candidate manifest for direct upgrades')
     args = parser.parse_args()
     expected = json.loads((ROOT / 'source-hashes.json').read_text(encoding='utf-8'))
     for name, digest in expected.items():
@@ -404,14 +407,18 @@ def main():
     records.append({'path': 'working_data/Terry/status_tooltips.xml', 'originalSha256': sha(tooltip_original),
                     'patchedSha256': sha(tooltip_result), 'originalLength': len(tooltip_original),
                     'patchedLength': len(tooltip_result), 'replacement': base64.b64encode(tooltip_result).decode()})
-    previous = json.loads((ROOT / 'patch.json').read_text(encoding='utf-8'))
+    previous_manifests = [json.loads(path.read_text(encoding='utf-8'))
+                          for path in [ROOT / 'patch.json', *args.previous_manifest]]
     for record in records:
-        older = next((r for r in previous['files'] if r['path'] == record['path']), None)
-        if older and older['originalSha256'] == record['originalSha256']:
-            previous_hashes = sorted(set(older.get('previousPatchedSha256', []) + [older['patchedSha256']]) - {record['patchedSha256']})
-            if previous_hashes or 'previousPatchedSha256' in older:
+        older_records = [item for previous in previous_manifests for item in previous['files']
+                         if item['path'] == record['path'] and item['originalSha256'] == record['originalSha256']]
+        if older_records:
+            previous_hashes = sorted({value for older in older_records
+                                      for value in [older['patchedSha256'], *older.get('previousPatchedSha256', [])]}
+                                     - {record['patchedSha256']})
+            if previous_hashes or any('previousPatchedSha256' in older for older in older_records):
                 record['previousPatchedSha256'] = previous_hashes
-    (args.output / 'patch.json').write_text(json.dumps({'format': 1, 'version': 'v0.1.1', 'files': records}, ensure_ascii=False, indent=2), encoding='utf-8')
+    (args.output / 'patch.json').write_text(json.dumps({'format': 1, 'version': args.version, 'files': records}, ensure_ascii=False, indent=2), encoding='utf-8')
     (args.output / 'coverage.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     (args.output / 'display-hooks.json').write_text(json.dumps(hook_report, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps({'files': len(records), 'displaySites': sum(len(v) for v in report.values()),

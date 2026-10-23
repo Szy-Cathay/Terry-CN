@@ -7,6 +7,8 @@
 /Terry-CN-WH3-20261010-R[3456].zip.sha256
 /Terry-CN-WH3-v0.1.0.zip
 /Terry-CN-WH3-v0.1.0.zip.sha256
+/Terry-CN-WH3-v0.1.1.zip
+/Terry-CN-WH3-v0.1.1.zip.sha256
 
 # Reinstallable development dependencies and caches
 /tools/python-libs/
@@ -28,6 +30,7 @@ venv/
 !/reports/font-tests.json
 !/reports/font-ui-verification.json
 !/reports/upstream-update-25792521.json
+!/reports/upstream-update-25922678.json
 !/reports/manual-test-acceptance.json
 !/reports/package-gate-tests.json
 

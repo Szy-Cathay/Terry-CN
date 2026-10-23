@@ -13,8 +13,14 @@ ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
 parser.add_argument('--bundle', type=Path, default=ROOT,
                     help='Directory containing the installer and candidate patch.json')
-parser.add_argument('--source', type=Path, default=ROOT / 'backups/original-build-25792521')
+parser.add_argument('--source', type=Path, default=ROOT / 'backups/original-build-25922678')
 parser.add_argument('--previous-source', type=Path, default=ROOT / 'backups/original-20261009')
+parser.add_argument('--previous-release-source', type=Path, default=ROOT / 'backups/original-build-25792521',
+                    help='Original baseline for v0.1.1 upgrade regression')
+parser.add_argument('--historical-dir', type=Path, default=ROOT,
+                    help='Directory containing verified historical release ZIPs and checksums')
+parser.add_argument('--previous-candidate', type=Path, action='append', default=[],
+                    help='Same-baseline candidate manifest for direct-upgrade regression')
 parser.add_argument('--report', type=Path, default=ROOT / 'reports/installer-test-results.json')
 options = parser.parse_args()
 manifest_path = options.bundle / 'patch.json'
@@ -124,14 +130,17 @@ if changed:
     results.append('Old original under new backup name: rejects before any target write')
 
 historical_inputs = {}
-for version in ['R2', 'R3', 'R4', 'R5', 'v0.1.0']:
+for version in ['R2', 'R3', 'R4', 'R5', 'v0.1.0', 'v0.1.1']:
+    previous_source = options.previous_release_source if version == 'v0.1.1' else options.previous_source
+    version_changed = [r for r in manifest['files']
+                       if sha(previous_source / Path(r['path']).name) != r['originalSha256']]
     if version == 'R2':
         fixture = ROOT / 'tests/fixtures/patch-r2.json'
         previous = json.loads(fixture.read_text(encoding='utf-8'))
         historical_inputs[version] = sha(fixture)
     else:
-        filename = 'Terry-CN-WH3-v0.1.0.zip' if version == 'v0.1.0' else f'Terry-CN-WH3-20261010-{version}.zip'
-        archive_path = ROOT / filename
+        filename = f'Terry-CN-WH3-{version}.zip' if version.startswith('v') else f'Terry-CN-WH3-20261010-{version}.zip'
+        archive_path = options.historical_dir / filename
         expected = Path(str(archive_path) + '.sha256').read_text(encoding='utf-8-sig').split()[0].upper()
         assert sha(archive_path) == expected
         historical_inputs[version] = expected
@@ -142,9 +151,9 @@ for version in ['R2', 'R3', 'R4', 'R5', 'v0.1.0']:
     # Recreate the actual old installation, including targets which were not
     # patched until later releases, with independently verified old originals.
     for record in manifest['files']:
-        shutil.copyfile(options.previous_source / Path(record['path']).name, kit / record['path'])
+        shutil.copyfile(previous_source / Path(record['path']).name, kit / record['path'])
     for record in previous['files']:
-        original = options.previous_source / Path(record['path']).name
+        original = previous_source / Path(record['path']).name
         (kit / record['path']).write_bytes(reconstruct(record, original))
         old_backup = backup_path(record)
         if old_backup.exists():
@@ -153,17 +162,17 @@ for version in ['R2', 'R3', 'R4', 'R5', 'v0.1.0']:
             shutil.copyfile(original, old_backup)
     preserved_backups = {p.name: sha(p) for p in (kit / 'Terry-CN-backup').glob('*.original')}
 
-    if changed:
+    if version_changed:
         before = hashes()
         run('Install', False)
         assert hashes() == before
         results.append(f'{version} on old upstream build: refuses without changing targets')
         # Steam updates the three changed CA DLLs and leaves unchanged depot
         # files alone: old translated Qt/tooltips coexist with new CA binaries.
-        for record in changed:
+        for record in version_changed:
             shutil.copyfile(options.source / Path(record['path']).name, kit / record['path'])
 
-    if version in ['R2', 'v0.1.0']:
+    if version in ['R2', 'v0.1.0', 'v0.1.1']:
         missing = backup if version == 'R2' else backup_path(next(r for r in manifest['files'] if Path(r['path']).name == 'Qt5Widgets.dll'))
         moved_backup = missing.with_name(missing.name + '.test-held')
         assert not moved_backup.exists()
@@ -177,12 +186,28 @@ for version in ['R2', 'R3', 'R4', 'R5', 'v0.1.0']:
         results.append(f'{version} upgrade without required unchanged-file backup: all targets unchanged')
     run('Install')
     assert hashes() == expected_patched
-    mode = 'after official Steam update' if changed else 'direct upgrade'
+    mode = 'after official Steam update' if version_changed else 'direct upgrade'
     results.append(f'{version} {mode}: all target hashes match')
     run('Restore')
     assert hashes() == expected_original
     assert all(sha(kit / 'Terry-CN-backup' / name) == value for name, value in preserved_backups.items())
     results.append(f'{version} restore: exact current originals; all earlier backups preserved')
+
+for candidate_path in options.previous_candidate:
+    candidate = json.loads(candidate_path.read_text(encoding='utf-8'))
+    assert {r['path']: r['originalSha256'] for r in candidate['files']} == expected_original
+    historical_inputs[candidate['version']] = sha(candidate_path)
+    preserved_backups = {p.name: sha(p) for p in (kit / 'Terry-CN-backup').glob('*.original')}
+    for record in candidate['files']:
+        (kit / record['path']).write_bytes(reconstruct(record, options.source / Path(record['path']).name))
+    run('Install')
+    assert hashes() == expected_patched
+    run('Check')
+    results.append(f'{candidate["version"]} direct candidate upgrade: all target hashes match')
+    run('Restore')
+    assert hashes() == expected_original
+    assert all(sha(kit / 'Terry-CN-backup' / name) == value for name, value in preserved_backups.items())
+    results.append(f'{candidate["version"]} candidate upgrade restore: current originals and all backups preserved')
 
 # Allow reading file 2 but deny replacement: file 1 must roll back after failure.
 k = c.WinDLL('kernel32', use_last_error=True)

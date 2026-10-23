@@ -16,6 +16,8 @@ pefile.MAX_IMPORT_SYMBOLS = 65536
 parser = argparse.ArgumentParser()
 parser.add_argument('build', type=Path)
 parser.add_argument('--qt-bin', type=Path, required=True)
+parser.add_argument('--qt-widgets', type=Path, help='Verified original Qt5Widgets.dll when the installed file is patched')
+parser.add_argument('--compare-build', type=Path, help='Earlier candidate for actual Qt toolbar size comparison')
 parser.add_argument('--report', type=Path, default=ROOT / 'reports/font-tests.json')
 args = parser.parse_args()
 pe = pefile.PE(str(args.build / 'tweak_terrainmetadataeditor.modder.x64.dll'))
@@ -43,7 +45,8 @@ for block in pe.DIRECTORY_ENTRY_BASERELOC:
             value.value += memory - pe.OPTIONAL_HEADER.ImageBase
 table = c.create_string_buffer(struct.pack('<III', begin, end, unwind))
 assert k.RtlAddFunctionTable(table, 1, memory)
-checks, widths = [], {}
+checks, widths, toolbar_hints = [], {}, {}
+toolbar_style_storage = []
 
 
 def read_qstring(pointer):
@@ -101,7 +104,7 @@ try:
     os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = str(args.qt_bin.resolve() / 'platforms')
     core = c.WinDLL(str(args.qt_bin / 'Qt5Core.dll'))
     gui = c.WinDLL(str(args.qt_bin / 'Qt5Gui.dll'))
-    widgets = c.WinDLL(str(args.qt_bin / 'Qt5Widgets.dll'))
+    widgets = c.WinDLL(str((args.qt_widgets or (args.qt_bin / 'Qt5Widgets.dll')).resolve()))
     ptr = c.c_void_p
     create_app = bind(widgets, '??0QApplication@@QEAA@AEAHPEAPEADH@Z', ptr, ptr, ptr, ptr, c.c_int)
     destroy_app = bind(widgets, '??1QApplication@@UEAA@XZ', None, ptr)
@@ -167,6 +170,64 @@ try:
                 checks.append('Actual Qt font metrics fit long Chinese labels inside the expanded icon canvas')
             finally:
                 destroy_font(font)
+
+            if args.compare_build:
+                earlier = next(x for x in json.loads((args.compare_build / 'display-hooks.json').read_text())[
+                    'tweak_terrainmetadataeditor.modder.x64.dll'] if x['kind'] == 'terry-font-ui')
+                assert earlier['family'] == metadata['family']
+                assert earlier['iconPointSize'] == metadata['iconPointSize']
+                assert earlier['iconSize'][1] == metadata['iconSize'][1]
+                create_toolbar = bind(widgets, '??0QToolBar@@QEAA@PEAVQWidget@@@Z', ptr, ptr, ptr)
+                set_stylesheet = bind(widgets, '?setStyleSheet@QWidget@@QEAAXAEBVQString@@@Z', None, ptr, ptr)
+                destroy_toolbar = bind(widgets, '??1QToolBar@@UEAA@XZ', None, ptr)
+                create_button = bind(widgets, '??0QToolButton@@QEAA@PEAVQWidget@@@Z', ptr, ptr, ptr)
+                destroy_button = bind(widgets, '??1QToolButton@@UEAA@XZ', None, ptr)
+                set_icon = bind(widgets, '?setIcon@QAbstractButton@@QEAAXAEBVQIcon@@@Z', None, ptr, ptr)
+                set_icon_size = bind(widgets, '?setIconSize@QAbstractButton@@QEAAXAEBVQSize@@@Z', None, ptr, ptr)
+                set_toolbar_icon_size = bind(widgets, '?setIconSize@QToolBar@@QEAAXAEBVQSize@@@Z', None, ptr, ptr)
+                size_hint = bind(widgets, '?sizeHint@QToolButton@@UEBA?AVQSize@@XZ', ptr, ptr, ptr)
+                fill_image = bind(gui, '?fill@QImage@@QEAAXI@Z', None, ptr, c.c_uint32)
+                from_image = bind(gui, '?fromImage@QPixmap@@SA?AV1@AEBVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z', ptr, ptr, ptr, c.c_int)
+                destroy_pixmap = bind(gui, '??1QPixmap@@UEAA@XZ', None, ptr)
+                create_icon = bind(gui, '??0QIcon@@QEAA@AEBVQPixmap@@@Z', ptr, ptr, ptr)
+                destroy_icon = bind(gui, '??1QIcon@@QEAA@XZ', None, ptr)
+                for label, settings in [('previous', earlier), ('current', metadata)]:
+                    style_data, style_text = qstring(settings['stylesheet'])
+                    # Static QString data must outlive Qt's shared stylesheet caches.
+                    toolbar_style_storage.append((style_data, style_text))
+                    set_stylesheet(window, c.byref(style_text))
+                    toolbar = c.create_string_buffer(4096)
+                    create_toolbar(toolbar, window)
+                    try:
+                        image, pixmap, icon, button = (c.create_string_buffer(4096) for _ in range(4))
+                        image_size = (c.c_int * 2)(*settings['iconSize'])
+                        set_toolbar_icon_size(toolbar, image_size)
+                        create_image(image, image_size, 5)
+                        fill_image(image, 0xff000000)
+                        from_image(pixmap, image, 0)
+                        create_icon(icon, pixmap)
+                        create_button(button, toolbar)
+                        try:
+                            set_icon(button, icon)
+                            set_icon_size(button, image_size)
+                            polish(button)
+                            assert font_points(widget_font(button)) == 9
+                            font_family(widget_font(button), c.byref(family_result))
+                            assert read_qstring(c.addressof(family_result)) == metadata['family']
+                            destroy_string(c.byref(family_result))
+                            result_size = (c.c_int * 2)()
+                            size_hint(button, result_size)
+                            toolbar_hints[label] = list(result_size)
+                        finally:
+                            destroy_button(button)
+                            destroy_icon(icon)
+                            destroy_pixmap(pixmap)
+                            destroy_image(image)
+                    finally:
+                        destroy_toolbar(toolbar)
+                assert toolbar_hints['current'][0] < toolbar_hints['previous'][0], toolbar_hints
+                assert toolbar_hints['current'][1] == toolbar_hints['previous'][1], toolbar_hints
+                checks.append('Real Qt toolbar button width decreases while font family, 9 pt size and height remain unchanged')
         finally:
             destroy_window(window)
     finally:
@@ -177,6 +238,7 @@ finally:
 
 report = {'passed': len(checks), 'failed': 0, 'checks': checks,
           'nativeCalls': 600, 'actualQtLabelWidths': widths, 'font': metadata,
+          'actualQtToolbarButtonSizeHints': toolbar_hints,
           'manifestSha256': hashlib.sha256((args.build / 'patch.json').read_bytes()).hexdigest().upper()}
 args.report.parent.mkdir(parents=True, exist_ok=True)
 args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

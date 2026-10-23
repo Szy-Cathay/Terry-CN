@@ -5,13 +5,13 @@ from display_hooks import Code
 
 FONT_FAMILY = 'Microsoft YaHei UI'
 ICON_POINT_SIZE = 9
-ICON_SIZE = (120, 32)
+ICON_SIZE = (112, 32)
 MENU_STYLESHEET = '''
 QMenuBar, QMenu { font-family: "Microsoft YaHei UI"; font-size: 10pt; font-weight: normal; }
 QMenuBar::item { padding: 3px 8px; }
 QMenu::item { padding: 4px 24px 4px 24px; }
-QToolBar { spacing: 3px; }
-QToolBar QToolButton { font-family: "Microsoft YaHei UI"; font-size: 9pt; font-weight: normal; padding: 3px 5px; }
+QToolBar { spacing: 1px; }
+QToolBar QToolButton { font-family: "Microsoft YaHei UI"; font-size: 9pt; font-weight: normal; padding: 3px 1px; }
 '''.strip()
 
 

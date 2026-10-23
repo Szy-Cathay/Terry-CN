@@ -1,0 +1,4476 @@
+{
+  "checkedAt": "2026-10-22T03:39:56.613133+00:00",
+  "version": "v0.1.2",
+  "status": "final-local-delivery-complete",
+  "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
+  "payloadSha256": "95935A0BA824B7D2D5143DDEFE881E3EEDAC17161E2924E3945165DC94749C13",
+  "oldBuild": 25792521,
+  "newBuild": 25922678,
+  "qtVersion": "5.12.0",
+  "depotId": 1880381,
+  "oldDepotManifest": "6612321361241691650",
+  "newDepotManifest": "6784956814448094521",
+  "targets": [
+    {
+      "path": "binaries/tweak_terrainmetadataeditor.modder.x64.dll",
+      "length": 10129920,
+      "sha256": "C8227FA6F3F3779A7C2937FD1A6D2CF81709A2551087820C1B2128F2D2C04D2B",
+      "officialSha1": "A02783623C581B33DABE3CA1723492D52B797B9B",
+      "matchesOfficialDepot": true,
+      "changed": true
+    },
+    {
+      "path": "binaries/qttoolutility.modder.x64.dll",
+      "length": 8940032,
+      "sha256": "9969B3EF1384604AF507CAA18A785630E108F69B0F0C17C805451E4349DDD82E",
+      "officialSha1": "4951B18F8CE894B46237ECFD40DBE9D678560374",
+      "matchesOfficialDepot": true,
+      "changed": true
+    },
+    {
+      "path": "binaries/Qt5Widgets.dll",
+      "length": 5522432,
+      "sha256": "A50045B2A38F5B6F5D885E3A9995AB3C693D3CB99165D22D982CC9E481686A7F",
+      "officialSha1": "9F45A12B7B44599A090EB4CAFBC7D5810A61D38A",
+      "matchesOfficialDepot": true,
+      "changed": false
+    },
+    {
+      "path": "binaries/toolutilityqt.modder.x64.dll",
+      "length": 9743872,
+      "sha256": "92F4D3488759E0A0E21C7BCB02202C845B04B79592BC6F1F17987E5C62C92D5A",
+      "officialSha1": "BC155F3F7E5C5FA33836D3ABE4425ACD0A0747F9",
+      "matchesOfficialDepot": true,
+      "changed": true
+    },
+    {
+      "path": "working_data/Terry/status_tooltips.xml",
+      "length": 2411,
+      "sha256": "578B4CB2E2E2FCC8674D72BB24D5DE6C6B55430C86384C627156D12432A94D23",
+      "officialSha1": "9C2EFA6FE838EC595BE852061BD9E9C92D593F33",
+      "matchesOfficialDepot": true,
+      "changed": false
+    }
+  ],
+  "cachedPublicBranch": {
+    "buildid": 25922678,
+    "timeupdated": 1792072554,
+    "timebuildupdated": 1791942033
+  },
+  "sourceProvenance": "Local Steam appmanifest, cached official depot manifests, original-file hashes; not an online latest-version claim",
+  "officialDepotChangedFileCount": 90,
+  "literalAudit": {
+    "matched": 208,
+    "movedReferences": 41,
+    "failures": [],
+    "evidence": [
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Processing:",
+        "oldRef": "0x29823",
+        "newRef": "0x29823",
+        "oldData": "0x92f3d0",
+        "newData": "0x92f3d0",
+        "oldFunction": "0x29800",
+        "newFunction": "0x29800",
+        "instructionShapeSha256": "74152BDB94114E071EBA62EAFD57170D540B7312E33163C116FADB8FA1380297",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Exited with error code: %1 (0x%2)\n",
+        "oldRef": "0x295dc",
+        "newRef": "0x295dc",
+        "oldData": "0x92f400",
+        "newData": "0x92f400",
+        "oldFunction": "0x294f0",
+        "newFunction": "0x294f0",
+        "instructionShapeSha256": "C663ADE9BDC4DC951623E8EBA8A7E99B8C71C98C160697F1734A5EB7AD801C40",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to load map data for this map: %1.",
+        "oldRef": "0x3bac2",
+        "newRef": "0x3bac2",
+        "oldData": "0x92f670",
+        "newData": "0x92f670",
+        "oldFunction": "0x3b740",
+        "newFunction": "0x3b740",
+        "instructionShapeSha256": "3A9A2461480A8BBC2F26FA66D35F5F11EE9EDB23704736ACE1CFE97C1539887B",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to load table %1 in database.",
+        "oldRef": "0x3c3b3",
+        "newRef": "0x3c3b3",
+        "oldData": "0x92f730",
+        "newData": "0x92f730",
+        "oldFunction": "0x3c2d0",
+        "newFunction": "0x3c2d0",
+        "instructionShapeSha256": "EA9F99DD0246A7DCCF833C1866D12DB4A9448A5A402A29D7F23B06F4E4D687FC",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to load map data for this map: %1.",
+        "oldRef": "0x3c54b",
+        "newRef": "0x3c54b",
+        "oldData": "0x92f7a0",
+        "newData": "0x92f7a0",
+        "oldFunction": "0x3c2d0",
+        "newFunction": "0x3c2d0",
+        "instructionShapeSha256": "EA9F99DD0246A7DCCF833C1866D12DB4A9448A5A402A29D7F23B06F4E4D687FC",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Database Error: ",
+        "oldRef": "0x3cb24",
+        "newRef": "0x3cb24",
+        "oldData": "0x92f810",
+        "newData": "0x92f810",
+        "oldFunction": "0x3c2d0",
+        "newFunction": "0x3c2d0",
+        "instructionShapeSha256": "EA9F99DD0246A7DCCF833C1866D12DB4A9448A5A402A29D7F23B06F4E4D687FC",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Database Error: ",
+        "oldRef": "0x3cd1b",
+        "newRef": "0x3cd1b",
+        "oldData": "0x92f850",
+        "newData": "0x92f850",
+        "oldFunction": "0x3c2d0",
+        "newFunction": "0x3c2d0",
+        "instructionShapeSha256": "EA9F99DD0246A7DCCF833C1866D12DB4A9448A5A402A29D7F23B06F4E4D687FC",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to export %1 as binary. %2",
+        "oldRef": "0x3d2af",
+        "newRef": "0x3d2af",
+        "oldData": "0x92f890",
+        "newData": "0x92f890",
+        "oldFunction": "0x3c2d0",
+        "newFunction": "0x3c2d0",
+        "instructionShapeSha256": "EA9F99DD0246A7DCCF833C1866D12DB4A9448A5A402A29D7F23B06F4E4D687FC",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Rotations (%1) successfully written to database and exported as binary. Use DAVE to submit these changes.",
+        "oldRef": "0x3d349",
+        "newRef": "0x3d349",
+        "oldData": "0x92f8f0",
+        "newData": "0x92f8f0",
+        "oldFunction": "0x3c2d0",
+        "newFunction": "0x3c2d0",
+        "instructionShapeSha256": "EA9F99DD0246A7DCCF833C1866D12DB4A9448A5A402A29D7F23B06F4E4D687FC",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Select %1...",
+        "oldRef": "0x48fde",
+        "newRef": "0x48fde",
+        "oldData": "0x92fad8",
+        "newData": "0x92fad8",
+        "oldFunction": "0x48ec0",
+        "newFunction": "0x48ec0",
+        "instructionShapeSha256": "2DEC5915CF9A0EC0399BEA61BC2F2E940831924ABA08FDA17E7EE2F14D02B40F",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Set %1 key",
+        "oldRef": "0x49121",
+        "newRef": "0x49121",
+        "oldData": "0x92fb10",
+        "newData": "0x92fb10",
+        "oldFunction": "0x48ec0",
+        "newFunction": "0x48ec0",
+        "instructionShapeSha256": "2DEC5915CF9A0EC0399BEA61BC2F2E940831924ABA08FDA17E7EE2F14D02B40F",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Colour is already in use by ",
+        "oldRef": "0x4d323",
+        "newRef": "0x4d323",
+        "oldData": "0x92fb60",
+        "newData": "0x92fb60",
+        "oldFunction": "0x4d0b0",
+        "newFunction": "0x4d0b0",
+        "instructionShapeSha256": "113BC5B168647A7AD596FE644F2E8B865ED51F6CF3D83A58826B2690CEF5F150",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Clear Houdini Input Node",
+        "oldRef": "0xc7ae0",
+        "newRef": "0xc6cc0",
+        "oldData": "0x92fbf0",
+        "newData": "0x92fbf0",
+        "oldFunction": "0xc7ad0",
+        "newFunction": "0xc6cb0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Paste Houdini Asset Node Inputs",
+        "oldRef": "0xc6660",
+        "newRef": "0xc6f00",
+        "oldData": "0x92fc40",
+        "newData": "0x92fc40",
+        "oldFunction": "0xc6650",
+        "newFunction": "0xc6ef0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Add Houdini Input Node Slot",
+        "oldRef": "0xc6f90",
+        "newRef": "0xc77b0",
+        "oldData": "0x92fca0",
+        "newData": "0x92fca0",
+        "oldFunction": "0xc6f80",
+        "newFunction": "0xc77a0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Clear all slots",
+        "oldRef": "0x541a1",
+        "newRef": "0x541a1",
+        "oldData": "0x92fd40",
+        "newData": "0x92fd40",
+        "oldFunction": "0x53f90",
+        "newFunction": "0x53f90",
+        "instructionShapeSha256": "98ECB24625F51FC398058EF9A465BA722F5A8C1C107C84C5C73A2A1DA3BEC001",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Paste from clipboard",
+        "oldRef": "0x541d2",
+        "newRef": "0x541d2",
+        "oldData": "0x92fd80",
+        "newData": "0x92fd80",
+        "oldFunction": "0x53f90",
+        "newFunction": "0x53f90",
+        "instructionShapeSha256": "98ECB24625F51FC398058EF9A465BA722F5A8C1C107C84C5C73A2A1DA3BEC001",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "<i>&lt;empty&gt;</i>",
+        "oldRef": "0xc7e40",
+        "newRef": "0xc7f90",
+        "oldData": "0x92fdf0",
+        "newData": "0x92fdf0",
+        "oldFunction": "0xc7e30",
+        "newFunction": "0xc7f80",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "<i>&lt;invalid&gt;</i>",
+        "oldRef": "0xc7960",
+        "newRef": "0xc6ba0",
+        "oldData": "0x92fe40",
+        "newData": "0x92fe40",
+        "oldFunction": "0xc7950",
+        "newFunction": "0xc6b90",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Remove Houdini Input Node Slot",
+        "oldRef": "0xc7b40",
+        "newRef": "0xc8230",
+        "oldData": "0x92fe90",
+        "newData": "0x92fe90",
+        "oldFunction": "0xc7b30",
+        "newFunction": "0xc8220",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Pick Entity",
+        "oldRef": "0x5477d",
+        "newRef": "0x5477d",
+        "oldData": "0x92fee8",
+        "newData": "0x92fee8",
+        "oldFunction": "0x54260",
+        "newFunction": "0x54260",
+        "instructionShapeSha256": "784B202FCAB8EE3AEC0B8F63FEC57A6EA6E500B4D1C769957F14C947C86F0F3F",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Pick Terrain Map",
+        "oldRef": "0x547cb",
+        "newRef": "0x547cb",
+        "oldData": "0x92ff20",
+        "newData": "0x92ff20",
+        "oldFunction": "0x54260",
+        "newFunction": "0x54260",
+        "instructionShapeSha256": "784B202FCAB8EE3AEC0B8F63FEC57A6EA6E500B4D1C769957F14C947C86F0F3F",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Select This Entity",
+        "oldRef": "0x5480d",
+        "newRef": "0x5480d",
+        "oldData": "0x92ff60",
+        "newData": "0x92ff60",
+        "oldFunction": "0x54260",
+        "newFunction": "0x54260",
+        "instructionShapeSha256": "784B202FCAB8EE3AEC0B8F63FEC57A6EA6E500B4D1C769957F14C947C86F0F3F",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Clear Houdini Multiparm",
+        "oldRef": "0x50768",
+        "newRef": "0x50768",
+        "oldData": "0x92ffd0",
+        "newData": "0x92ffd0",
+        "oldFunction": "0x50730",
+        "newFunction": "0x50730",
+        "instructionShapeSha256": "B1F949E2887BB55439C57CA98C45960E3E308F176369E1476406DF4C0CF0F858",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Insert Here",
+        "oldRef": "0x54d14",
+        "newRef": "0x54d14",
+        "oldData": "0x9300b0",
+        "newData": "0x9300b0",
+        "oldFunction": "0x54ab0",
+        "newFunction": "0x54ab0",
+        "instructionShapeSha256": "154AC0BC59A94E8BCEA5D7FF3C816B79291C0FC9C4EA472EB5730264C17D631F",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Another instance of this prefab is already being edited",
+        "oldRef": "0x5dfa9",
+        "newRef": "0x5dfa9",
+        "oldData": "0x9300e0",
+        "newData": "0x9300e0",
+        "oldFunction": "0x5dd00",
+        "newFunction": "0x5dd00",
+        "instructionShapeSha256": "76DC6BFADF258A220B18FDEE28F0B32127742D328A0FEB09C307020010626466",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Cannot unpack prefab(s) with transform children",
+        "oldRef": "0x5e7a9",
+        "newRef": "0x5e7a9",
+        "oldData": "0x930170",
+        "newData": "0x930170",
+        "oldFunction": "0x5e600",
+        "newFunction": "0x5e600",
+        "instructionShapeSha256": "00EE9E5241054CF365FE6A42AA4082C2C8B813CC448DC88F0429A2D56AAADA68",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Flip Polyline X",
+        "oldRef": "0x5faa6",
+        "newRef": "0x5faa6",
+        "oldData": "0x9301e8",
+        "newData": "0x9301e8",
+        "oldFunction": "0x5fa70",
+        "newFunction": "0x5fa70",
+        "instructionShapeSha256": "FFB9D2E961B9DC6639D6E3ECB14B2C6CB0336BAED79F515438C222B9AC3A56EA",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Flip Polyline Z",
+        "oldRef": "0x5fb96",
+        "newRef": "0x5fb96",
+        "oldData": "0x930220",
+        "newData": "0x930220",
+        "oldFunction": "0x5fb60",
+        "newFunction": "0x5fb60",
+        "instructionShapeSha256": "FFB9D2E961B9DC6639D6E3ECB14B2C6CB0336BAED79F515438C222B9AC3A56EA",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to save \"%1\": %2",
+        "oldRef": "0xc69e0",
+        "newRef": "0xc7980",
+        "oldData": "0x930260",
+        "newData": "0x930260",
+        "oldFunction": "0xc69d0",
+        "newFunction": "0xc7970",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to process \"%1\" because BOB is already running. It will have to be processed manually",
+        "oldRef": "0x66b5e",
+        "newRef": "0x66b5e",
+        "oldData": "0x9302b0",
+        "newData": "0x9302b0",
+        "oldFunction": "0x66b40",
+        "newFunction": "0x66b40",
+        "instructionShapeSha256": "14EB7114388BA784273F47184FF5DD5E744387F80208C178BFF9171BAC305398",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "This will generate a tilemap project at <b>%1</b> and attempt to build it with BOB.<br>Do you want to continue?",
+        "oldRef": "0x66ec9",
+        "newRef": "0x66ec9",
+        "oldData": "0x9303e0",
+        "newData": "0x9303e0",
+        "oldFunction": "0x66e20",
+        "newFunction": "0x66e20",
+        "instructionShapeSha256": "A8076A660A032393A42139F2C452F8A09B155065C0D5B6F8BF4167556204D256",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to start Houdini session: %1",
+        "oldRef": "0x73c2b",
+        "newRef": "0x73c2b",
+        "oldData": "0x9305f0",
+        "newData": "0x9305f0",
+        "oldFunction": "0x73b20",
+        "newFunction": "0x73b20",
+        "instructionShapeSha256": "BD287FBD2E962DF79E627FF5B419070C161D73FAD69C04474C191AE3C7E19641",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Unable to sync Houdini Engine %1 from Perforce. Please add the following path to your workspace view: %2",
+        "oldRef": "0x73de7",
+        "newRef": "0x73de7",
+        "oldData": "0x930650",
+        "newData": "0x930650",
+        "oldFunction": "0x73d90",
+        "newFunction": "0x73d90",
+        "instructionShapeSha256": "67BA85DEA84AE1DFFF1EA66346B5D34057622CDD0C6C686E8DF9D188C133A691",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Sync Houdini Engine %1 from Perforce",
+        "oldRef": "0x73eb2",
+        "newRef": "0x73eb2",
+        "oldData": "0x930740",
+        "newData": "0x930740",
+        "oldFunction": "0x73d90",
+        "newFunction": "0x73d90",
+        "instructionShapeSha256": "67BA85DEA84AE1DFFF1EA66346B5D34057622CDD0C6C686E8DF9D188C133A691",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Unable to find file for HDA with key '%1'",
+        "oldRef": "0x767a3",
+        "newRef": "0x767a3",
+        "oldData": "0x9307b0",
+        "newData": "0x9307b0",
+        "oldFunction": "0x766e0",
+        "newFunction": "0x766e0",
+        "instructionShapeSha256": "E8D4CF6C0C6DFC3187D2377CB9FEF3820620C63DC494A73348B1ED1D9A236983",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Loading '%1'",
+        "oldRef": "0x84cfa",
+        "newRef": "0x84cfa",
+        "oldData": "0x930a90",
+        "newData": "0x930a90",
+        "oldFunction": "0x84730",
+        "newFunction": "0x84730",
+        "instructionShapeSha256": "E91E087FAECD92C0B516D985EA6A505FB0CA2529C739CC0D8EFFA2DF42A2690D",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Adjusting '%1'",
+        "oldRef": "0x854ca",
+        "newRef": "0x854ca",
+        "oldData": "0x930ac8",
+        "newData": "0x930ac8",
+        "oldFunction": "0x84730",
+        "newFunction": "0x84730",
+        "instructionShapeSha256": "E91E087FAECD92C0B516D985EA6A505FB0CA2529C739CC0D8EFFA2DF42A2690D",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Old height range for '%1' is unadjustable",
+        "oldRef": "0xc8290",
+        "newRef": "0xc7870",
+        "oldData": "0x930b00",
+        "newData": "0x930b00",
+        "oldFunction": "0xc8280",
+        "newFunction": "0xc7860",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Input data has a resolution of <b>%7x%8</b>.\nSo this will result in a grid of <b>%1x%2</b> tiles, each of size <b>%3x%4</b>, and a <b>%5x%6</b> tile map containing them.",
+        "oldRef": "0xc6ab0",
+        "newRef": "0xc6d20",
+        "oldData": "0x930cb0",
+        "newData": "0x930cb0",
+        "oldFunction": "0xc6aa0",
+        "newFunction": "0xc6d10",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "<b>Invalid project</b>: %1",
+        "oldRef": "0x8a49e",
+        "newRef": "0x8a49e",
+        "oldData": "0x930e20",
+        "newData": "0x930e20",
+        "oldFunction": "0x8a330",
+        "newFunction": "0x8a330",
+        "instructionShapeSha256": "2A79D8B7177BFC3BFD9388C815F8370CB03D0F9CCF8D6C2BB7D60886831AEC17",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "<b>Invalid source file</b>: %1",
+        "oldRef": "0x8a5ff",
+        "newRef": "0x8a5ff",
+        "oldData": "0x930e70",
+        "newData": "0x930e70",
+        "oldFunction": "0x8a330",
+        "newFunction": "0x8a330",
+        "instructionShapeSha256": "2A79D8B7177BFC3BFD9388C815F8370CB03D0F9CCF8D6C2BB7D60886831AEC17",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "<b>Source file doesn't match dimensions of megatile heightmap!</b>\nShould be %1x%2, got %3x%4",
+        "oldRef": "0x8a749",
+        "newRef": "0x8a749",
+        "oldData": "0x930ed0",
+        "newData": "0x930ed0",
+        "oldFunction": "0x8a330",
+        "newFunction": "0x8a330",
+        "instructionShapeSha256": "2A79D8B7177BFC3BFD9388C815F8370CB03D0F9CCF8D6C2BB7D60886831AEC17",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "<b>Invalid project</b>: %1",
+        "oldRef": "0x8b9a9",
+        "newRef": "0x8b9a9",
+        "oldData": "0x930fb0",
+        "newData": "0x930fb0",
+        "oldFunction": "0x8b880",
+        "newFunction": "0x8b880",
+        "instructionShapeSha256": "6D381AAD9243CF7E5C7E1382E169ED193C8FA40ADC0B7F943A56378FB8D01CFF",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Invalid tile size! %1x%2",
+        "oldRef": "0xc66c0",
+        "newRef": "0xc80b0",
+        "oldData": "0x931060",
+        "newData": "0x931060",
+        "oldFunction": "0xc66b0",
+        "newFunction": "0xc80a0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Invalid tile map size! %1x%2",
+        "oldRef": "0xc7c00",
+        "newRef": "0xc6ea0",
+        "oldData": "0x9310b0",
+        "newData": "0x9310b0",
+        "oldFunction": "0xc7bf0",
+        "newFunction": "0xc6e90",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Invalid heightmap size! %1x%2",
+        "oldRef": "0xc7140",
+        "newRef": "0xc7aa0",
+        "oldData": "0x931110",
+        "newData": "0x931110",
+        "oldFunction": "0xc7130",
+        "newFunction": "0xc7a90",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Invalid triangle density! %1",
+        "oldRef": "0xc8470",
+        "newRef": "0xc6e40",
+        "oldData": "0x931170",
+        "newData": "0x931170",
+        "oldFunction": "0xc8460",
+        "newFunction": "0xc6e30",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Input data is a bad size! expected a multiple of %1x%2 but got %3x%4",
+        "oldRef": "0xc6c60",
+        "newRef": "0xc7750",
+        "oldData": "0x9311d0",
+        "newData": "0x9311d0",
+        "oldFunction": "0xc6c50",
+        "newFunction": "0xc7740",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Tile map too small to fit tiles! It must be at least %1x%2",
+        "oldRef": "0xc7930",
+        "newRef": "0xc8260",
+        "oldData": "0x931280",
+        "newData": "0x931280",
+        "oldFunction": "0xc7920",
+        "newFunction": "0xc8250",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Unable to connect to Perforce: %1",
+        "oldRef": "0xc7cf0",
+        "newRef": "0xc7ad0",
+        "oldData": "0x931310",
+        "newData": "0x931310",
+        "oldFunction": "0xc7ce0",
+        "newFunction": "0xc7ac0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to load project '%1'",
+        "oldRef": "0xc7d50",
+        "newRef": "0xc7570",
+        "oldData": "0x931370",
+        "newData": "0x931370",
+        "oldFunction": "0xc7d40",
+        "newFunction": "0xc7560",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to save component '%2'",
+        "oldRef": "0xc7c30",
+        "newRef": "0xc82c0",
+        "oldData": "0x9313c0",
+        "newData": "0x9313c0",
+        "oldFunction": "0xc7c20",
+        "newFunction": "0xc82b0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Set Property '%1'",
+        "oldRef": "0xb8b16",
+        "newRef": "0xb8b16",
+        "oldData": "0x931460",
+        "newData": "0x931460",
+        "oldFunction": "0xb8af0",
+        "newFunction": "0xb8af0",
+        "instructionShapeSha256": "2208915CB1F64570485AEFD376715966983A7A24C363E5E5B39E185F3DD07788",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Set Property '%1'",
+        "oldRef": "0xb8cab",
+        "newRef": "0xb8cab",
+        "oldData": "0x9314a0",
+        "newData": "0x9314a0",
+        "oldFunction": "0xb8c80",
+        "newFunction": "0xb8c80",
+        "instructionShapeSha256": "BFD5B0219E7890BDC68A4BFCCF6D776225475AC235EFD16FD79F5B9535A9268C",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Tileset %1 not found",
+        "oldRef": "0x1b81d0",
+        "newRef": "0x1b6f40",
+        "oldData": "0x931940",
+        "newData": "0x931940",
+        "oldFunction": "0x1b81c0",
+        "newFunction": "0x1b6f30",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Create tile (%1,%2)",
+        "oldRef": "0x10b564",
+        "newRef": "0x10b564",
+        "oldData": "0x931990",
+        "newData": "0x931990",
+        "oldFunction": "0x10b530",
+        "newFunction": "0x10b530",
+        "instructionShapeSha256": "31B3FC21CF1241350021A4C944FF4BBCE2B820B75AD267525E6E5D09F141B86E",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "'%1' is not a valid TIFF: \"%2\"",
+        "oldRef": "0x10bc4c",
+        "newRef": "0x10bc4c",
+        "oldData": "0x9319d0",
+        "newData": "0x9319d0",
+        "oldFunction": "0x10bbc0",
+        "newFunction": "0x10bbc0",
+        "instructionShapeSha256": "FDACB282F7CE99A98D8ABE35EE9F7337F7F5C2A2DBEF9217B3839607B93D09B2",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "dimensions of '%1' don't match the height map",
+        "oldRef": "0x10c2cf",
+        "newRef": "0x10c2cf",
+        "oldData": "0x931a30",
+        "newData": "0x931a30",
+        "oldFunction": "0x10bbc0",
+        "newFunction": "0x10bbc0",
+        "instructionShapeSha256": "FDACB282F7CE99A98D8ABE35EE9F7337F7F5C2A2DBEF9217B3839607B93D09B2",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Create tile auxilliary data (%1)",
+        "oldRef": "0xf5edc",
+        "newRef": "0xf5edc",
+        "oldData": "0x931ab0",
+        "newData": "0x931ab0",
+        "oldFunction": "0xf5e80",
+        "newFunction": "0xf5e80",
+        "instructionShapeSha256": "68F056CFAFACF0F0E92836BE32CAF897D93DEB8436FDFA831498241B6880021C",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to save '%1' to disk",
+        "oldRef": "0x1b7c40",
+        "newRef": "0x1b76d0",
+        "oldData": "0x931b60",
+        "newData": "0x931b60",
+        "oldFunction": "0x1b7c30",
+        "newFunction": "0x1b76c0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to open '%1'",
+        "oldRef": "0x1b4930",
+        "newRef": "0x1b74f0",
+        "oldData": "0x931bb0",
+        "newData": "0x931bb0",
+        "oldFunction": "0x1b4920",
+        "newFunction": "0x1b74e0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to write to '%1'",
+        "oldRef": "0x1b6140",
+        "newRef": "0x1b6fa0",
+        "oldData": "0x931bf0",
+        "newData": "0x931bf0",
+        "oldFunction": "0x1b6130",
+        "newFunction": "0x1b6f90",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Set Spline Width",
+        "oldRef": "0x11970b",
+        "newRef": "0x11970b",
+        "oldData": "0x931d00",
+        "newData": "0x931d00",
+        "oldFunction": "0x1196e0",
+        "newFunction": "0x1196e0",
+        "instructionShapeSha256": "DD8FB59076AEFB311069D914F96A6781B540D55F8B3992074046D63917CF7E3B",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Add Entity",
+        "oldRef": "0x1112e8",
+        "newRef": "0x1112e8",
+        "oldData": "0x931d40",
+        "newData": "0x931d40",
+        "oldFunction": "0x1112c0",
+        "newFunction": "0x1112c0",
+        "instructionShapeSha256": "39C0A89A4C6F66B3AD3E5DFD670696632C72BCC6E3661457161B521E8C4BD4F6",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Remove Entity",
+        "oldRef": "0x11168e",
+        "newRef": "0x11168e",
+        "oldData": "0x931d70",
+        "newData": "0x931d70",
+        "oldFunction": "0x111610",
+        "newFunction": "0x111610",
+        "instructionShapeSha256": "C0A3414381C21C5610EA3A3CA025E6346DDE6C3E0DAA116D6EAF743519708696",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Add Entity Component",
+        "oldRef": "0x1117c8",
+        "newRef": "0x1117c8",
+        "oldData": "0x931db0",
+        "newData": "0x931db0",
+        "oldFunction": "0x1117a0",
+        "newFunction": "0x1117a0",
+        "instructionShapeSha256": "854CD5CD82AE76FE2D2E1120DF940E0A9341D5D9EBB9FB481AC5F58F46C8D360",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Set Entity Key",
+        "oldRef": "0x1119be",
+        "newRef": "0x1119be",
+        "oldData": "0x931df8",
+        "newData": "0x931df8",
+        "oldFunction": "0x111990",
+        "newFunction": "0x111990",
+        "instructionShapeSha256": "980FC3583E8414AFAB45D1CD82B6C34BA9C72B1D4BEBAD9511289BB654924609",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Add Association",
+        "oldRef": "0x111bd6",
+        "newRef": "0x111bd6",
+        "oldData": "0x931e30",
+        "newData": "0x931e30",
+        "oldFunction": "0x111ba0",
+        "newFunction": "0x111ba0",
+        "instructionShapeSha256": "7F60BDD938CDD6F1F92A6E7060449A5B4A204B47559336DCC78561693358FF6D",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Set Layer Opacity",
+        "oldRef": "0x11ab7a",
+        "newRef": "0x11ab7a",
+        "oldData": "0x931e70",
+        "newData": "0x931e70",
+        "oldFunction": "0x11ab50",
+        "newFunction": "0x11ab50",
+        "instructionShapeSha256": "9A3F0266A8FDD9E16D37D44132E3D369556B820D85B643969DBD2F6CBF5478EF",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Change Terrain Layer Visibility",
+        "oldRef": "0x11ace4",
+        "newRef": "0x11ace4",
+        "oldData": "0x931eb0",
+        "newData": "0x931eb0",
+        "oldFunction": "0x11acc0",
+        "newFunction": "0x11acc0",
+        "instructionShapeSha256": "93A2F636A3020E41351CAC3100D4A9EAE9D841314935F12DE8594EC28E564724",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Insert Property '%1'",
+        "oldRef": "0x11ccf8",
+        "newRef": "0x11ccf8",
+        "oldData": "0x931f10",
+        "newData": "0x931f10",
+        "oldFunction": "0x11ccc0",
+        "newFunction": "0x11ccc0",
+        "instructionShapeSha256": "B37A1C0607AF62A9C9A3DFEE12BAC78640CDF248B38A15068BE79F73773011B0",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Remove Property '%1'",
+        "oldRef": "0x11cfaa",
+        "newRef": "0x11cfaa",
+        "oldData": "0x931f60",
+        "newData": "0x931f60",
+        "oldFunction": "0x11cf80",
+        "newFunction": "0x11cf80",
+        "instructionShapeSha256": "1681A5C73B6540DE1A58B5FA2F417A9E00B6C922D652456ECE9D9CD8A4A0DD9D",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Set Attribute '%1' in Property '%2'",
+        "oldRef": "0x11c8a7",
+        "newRef": "0x11c8a7",
+        "oldData": "0x931fb0",
+        "newData": "0x931fb0",
+        "oldFunction": "0x11c880",
+        "newFunction": "0x11c880",
+        "instructionShapeSha256": "2EE677ED9D8B3C8FB4438F61D3D58B1EDBE0F0FF831BA508409C6FC6C32B2865",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Remove Attribute '%1' in Property '%2'",
+        "oldRef": "0x11cb18",
+        "newRef": "0x11cb18",
+        "oldData": "0x932010",
+        "newData": "0x932010",
+        "oldFunction": "0x11cac0",
+        "newFunction": "0x11cac0",
+        "instructionShapeSha256": "BAE439EAD70045386B6D6037157EE3EFEFBB0FCEAE8CF905A0A2DECD4DF0DA33",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Insert Houdini Multiparm Instance",
+        "oldRef": "0x11d2e2",
+        "newRef": "0x11d2e2",
+        "oldData": "0x932080",
+        "newData": "0x932080",
+        "oldFunction": "0x11d2c0",
+        "newFunction": "0x11d2c0",
+        "instructionShapeSha256": "BD1DBCF863D3F876292CBE8CB745562245C64FD7B4566EBBDE3DDAF67EDDC2EF",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Remove Houdini Multiparm Instance",
+        "oldRef": "0x11d456",
+        "newRef": "0x11d456",
+        "oldData": "0x9320e0",
+        "newData": "0x9320e0",
+        "oldFunction": "0x11d430",
+        "newFunction": "0x11d430",
+        "instructionShapeSha256": "596081EE40F9C3E0E38C1DF046DFB488C7CF85B985975AF2B05ED9BEB99BFA41",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Add Project Component",
+        "oldRef": "0x11d4ff",
+        "newRef": "0x11d4ff",
+        "oldData": "0x932140",
+        "newData": "0x932140",
+        "oldFunction": "0x11d4e0",
+        "newFunction": "0x11d4e0",
+        "instructionShapeSha256": "511215A8DBDD5C011CF10760B34F48C820531CAD03291812B9147B7E544AB0E3",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Add %1 Layer",
+        "oldRef": "0x11e0d5",
+        "newRef": "0x11e0d5",
+        "oldData": "0x932188",
+        "newData": "0x932188",
+        "oldFunction": "0x11e050",
+        "newFunction": "0x11e050",
+        "instructionShapeSha256": "80B2FC373F97BFA78B13594A71FC7BD38804BE55A288605016E8CA8CEC478539",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Not a Terry project",
+        "oldRef": "0x1b81a0",
+        "newRef": "0x1b5c40",
+        "oldData": "0x932390",
+        "newData": "0x932390",
+        "oldFunction": "0x1b8190",
+        "newFunction": "0x1b5c30",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Project has no scene",
+        "oldRef": "0x1b5850",
+        "newRef": "0x1b5220",
+        "oldData": "0x9323d0",
+        "newData": "0x9323d0",
+        "oldFunction": "0x1b5840",
+        "newFunction": "0x1b5210",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Project has no terrain",
+        "oldRef": "0x1b7b80",
+        "newRef": "0x1b48a0",
+        "oldData": "0x932420",
+        "newData": "0x932420",
+        "oldFunction": "0x1b7b70",
+        "newFunction": "0x1b4890",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to resolve %1: %2",
+        "oldRef": "0x1b5820",
+        "newRef": "0x1b6230",
+        "oldData": "0x932570",
+        "newData": "0x932570",
+        "oldFunction": "0x1b5810",
+        "newFunction": "0x1b6220",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Terry has detected that your last session didn't end properly. There is autosave data available. Do you want to recover the project?<br><br>%1",
+        "oldRef": "0xf7f43",
+        "newRef": "0xf7f43",
+        "oldData": "0x9325c0",
+        "newData": "0x9325c0",
+        "oldFunction": "0xf7ec0",
+        "newFunction": "0xf7ec0",
+        "instructionShapeSha256": "C16F8A4597EAD027637698CF596497CB968FB00C60AE5427C5887B9CC44B202A",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Terry has detected that your last session didn't end properly. There is autosave data available but information about the project's original location is missing. Do you want to recover the project anyway?",
+        "oldRef": "0xf7fa8",
+        "newRef": "0xf7fa8",
+        "oldData": "0x932700",
+        "newData": "0x932700",
+        "oldFunction": "0xf7ec0",
+        "newFunction": "0xf7ec0",
+        "instructionShapeSha256": "C16F8A4597EAD027637698CF596497CB968FB00C60AE5427C5887B9CC44B202A",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Autosave Recovery",
+        "oldRef": "0x1b5f70",
+        "newRef": "0x1b6260",
+        "oldData": "0x9328c0",
+        "newData": "0x9328c0",
+        "oldFunction": "0x1b5f60",
+        "newFunction": "0x1b6250",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "<i>%1</i><br>Your changes mean that the <b>.terry</b> file needs saving, and this file has also been upgraded. For this reason, the whole project needs to be upgraded and saved.  So you may find files checked out and changed that you didn't expect to be.",
+        "oldRef": "0xfa03c",
+        "newRef": "0xfa03c",
+        "oldData": "0x932900",
+        "newData": "0x932900",
+        "oldFunction": "0xf9f00",
+        "newFunction": "0xf9f00",
+        "instructionShapeSha256": "6F3BB2813021A6FFD032EA5D799FCC6B31BDD80163193ABE49717D623C9742B7",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "<b>This is an autosave</b> and will save to '%1' instead of where it was loaded from",
+        "oldRef": "0x13dce2",
+        "newRef": "0x13dce2",
+        "oldData": "0x932bc0",
+        "newData": "0x932bc0",
+        "oldFunction": "0x13d160",
+        "newFunction": "0x13d160",
+        "instructionShapeSha256": "642658A8584AD3320EA6E0528AB59C8C8FA5A8A827D041621A5077C8D3FF34BF",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "<b>This is an autosave</b> but there's no information about the original project location, so it will be treated as if it's a new project",
+        "oldRef": "0x13dd4d",
+        "newRef": "0x13dd4d",
+        "oldData": "0x932c90",
+        "newData": "0x932c90",
+        "oldFunction": "0x13d160",
+        "newFunction": "0x13d160",
+        "instructionShapeSha256": "642658A8584AD3320EA6E0528AB59C8C8FA5A8A827D041621A5077C8D3FF34BF",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "don't know yet",
+        "oldRef": "0x1b5fd0",
+        "newRef": "0x1b5d00",
+        "oldData": "0x932dc0",
+        "newData": "0x932dc0",
+        "oldFunction": "0x1b5fc0",
+        "newFunction": "0x1b5cf0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Terry Project Cleanup",
+        "oldRef": "0x149531",
+        "newRef": "0x149531",
+        "oldData": "0x932e90",
+        "newData": "0x932e90",
+        "oldFunction": "0x149410",
+        "newFunction": "0x149410",
+        "instructionShapeSha256": "A9C7271B642390F1DE45EB246DA251C686D4CB1839B241EB2B91DA5DA3571256",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Unable to delete selected files:<br>%1",
+        "oldRef": "0x1497d9",
+        "newRef": "0x1497d9",
+        "oldData": "0x932ee0",
+        "newData": "0x932ee0",
+        "oldFunction": "0x149410",
+        "newFunction": "0x149410",
+        "instructionShapeSha256": "A9C7271B642390F1DE45EB246DA251C686D4CB1839B241EB2B91DA5DA3571256",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Successfully deleted <b>%1</b> files, saving approximately <b>%2</b>.",
+        "oldRef": "0x1b4900",
+        "newRef": "0x1b4870",
+        "oldData": "0x932f50",
+        "newData": "0x932f50",
+        "oldFunction": "0x1b48f0",
+        "newFunction": "0x1b4860",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "<br><b>Note,</b> some files weren't able to be properly deleted:<br>",
+        "oldRef": "0x1b7be0",
+        "newRef": "0x1b6a10",
+        "oldData": "0x933000",
+        "newData": "0x933000",
+        "oldFunction": "0x1b7bd0",
+        "newFunction": "0x1b6a00",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Prefab '%1' has internal errors",
+        "oldRef": "0x14db69",
+        "newRef": "0x14db69",
+        "oldData": "0x9332d0",
+        "newData": "0x9332d0",
+        "oldFunction": "0x14d7d0",
+        "newFunction": "0x14d7d0",
+        "instructionShapeSha256": "4E8A63323E8F30AF9BAC735878524C2B0B767E88962CB12DE4AE34A6EDDF03B0",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Transform parent is not a building. This is not supported by the game",
+        "oldRef": "0x14bede",
+        "newRef": "0x14bede",
+        "oldData": "0x9333c0",
+        "newData": "0x9333c0",
+        "oldFunction": "0x14bb00",
+        "newFunction": "0x14bb00",
+        "instructionShapeSha256": "0153E801BA716240E061F709ACFF9D62D781244CE274AA20A08E2A2DD086AAA3",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Key is empty",
+        "oldRef": "0x14e198",
+        "newRef": "0x14e198",
+        "oldData": "0x933498",
+        "newData": "0x933498",
+        "oldFunction": "0x14e0f0",
+        "newFunction": "0x14e0f0",
+        "instructionShapeSha256": "51BE929C406EC2638A51B0205381B4510EEA203D469B01418682479B875D7CB6",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Should have exactly one child entity",
+        "oldRef": "0x14e320",
+        "newRef": "0x14e320",
+        "oldData": "0x933520",
+        "newData": "0x933520",
+        "oldFunction": "0x14e270",
+        "newFunction": "0x14e270",
+        "instructionShapeSha256": "42DE6DC2FBB79EE7C479A09D900B7128FC15BFA3122E6A9ED8E90AC62A578B72",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Child entity should be a BCA Boundary",
+        "oldRef": "0x14e4f0",
+        "newRef": "0x14e4f0",
+        "oldData": "0x9335e0",
+        "newData": "0x9335e0",
+        "oldFunction": "0x14e270",
+        "newFunction": "0x14e270",
+        "instructionShapeSha256": "42DE6DC2FBB79EE7C479A09D900B7128FC15BFA3122E6A9ED8E90AC62A578B72",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "More than one playable area.",
+        "oldRef": "0x1b4870",
+        "newRef": "0x1b7c70",
+        "oldData": "0x933650",
+        "newData": "0x933650",
+        "oldFunction": "0x1b4860",
+        "newFunction": "0x1b7c60",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "More than one playable area for export type '%1'.",
+        "oldRef": "0x150bae",
+        "newRef": "0x150bae",
+        "oldData": "0x9336b0",
+        "newData": "0x9336b0",
+        "oldFunction": "0x1507a0",
+        "newFunction": "0x1507a0",
+        "instructionShapeSha256": "D1ACF133CF4598B8ECD7477F865CD926AA328C280CC6EB36E9F8B5A55A5CCB3D",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Emitter not associated to any building",
+        "oldRef": "0x14c17a",
+        "newRef": "0x14c17a",
+        "oldData": "0x933780",
+        "newData": "0x933780",
+        "oldFunction": "0x14c040",
+        "newFunction": "0x14c040",
+        "instructionShapeSha256": "5D445CF8D971E55A465BFBCA7867CA0815592E661A20C44F55AFE4A25B889857",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Protrudes outside of tile (masked) border",
+        "oldRef": "0x14e845",
+        "newRef": "0x14e845",
+        "oldData": "0x933820",
+        "newData": "0x933820",
+        "oldFunction": "0x14e6f0",
+        "newFunction": "0x14e6f0",
+        "instructionShapeSha256": "1ED867E7E28DE927B5D46A76D6153524285EE8FBBDD11B2377D4B2AB48E0EE48",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Project still contains live prefabs inside. Remember to commit/revert live prefabs.",
+        "oldRef": "0x14ea96",
+        "newRef": "0x14ea96",
+        "oldData": "0x9338c0",
+        "newData": "0x9338c0",
+        "oldFunction": "0x14ea20",
+        "newFunction": "0x14ea20",
+        "instructionShapeSha256": "340F1DD7EB6C5CE64D7223B1A55E3CE11FF6799E8840E140CB0DD5C696707FAF",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Individual river materials are not supported in tiles. You can only set the material for the tile as a whole.",
+        "oldRef": "0x14ec11",
+        "newRef": "0x14ec11",
+        "oldData": "0x9339b0",
+        "newData": "0x9339b0",
+        "oldFunction": "0x14eb50",
+        "newFunction": "0x14eb50",
+        "instructionShapeSha256": "B196B82E28F6A342541F23E52963A2ABF459608D060F09216132D1392C1DE16A",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Blend8 layer %1 has data in channel %2 but there is no texture assigned to that channel",
+        "oldRef": "0x1b6170",
+        "newRef": "0x1b5c10",
+        "oldData": "0x933b20",
+        "newData": "0x933b20",
+        "oldFunction": "0x1b6160",
+        "newFunction": "0x1b5c00",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "The terrain setup path doesn't match the working data directory of the current project. \nThe rendered terrain will not match exported data until corrected",
+        "oldRef": "0x1b60e0",
+        "newRef": "0x1b6f10",
+        "oldData": "0x933c10",
+        "newData": "0x933c10",
+        "oldFunction": "0x1b60d0",
+        "newFunction": "0x1b6f00",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Duplicate of BMD Export Type '%1'.",
+        "oldRef": "0x153657",
+        "newRef": "0x153657",
+        "oldData": "0x933da0",
+        "newData": "0x933da0",
+        "oldFunction": "0x153380",
+        "newFunction": "0x153380",
+        "instructionShapeSha256": "AEEA11359FD9CFC38390836A34B6737DDFF4FDCEB86D7501255CE57D66FCD0D8",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Out Of Bounds",
+        "oldRef": "0x1538b0",
+        "newRef": "0x1538b0",
+        "oldData": "0x933e00",
+        "newData": "0x933e00",
+        "oldFunction": "0x153820",
+        "newFunction": "0x153820",
+        "instructionShapeSha256": "936454C81DF6756DD145D691B1F9EFC2866ACE056F9BA1388C6622F54093D2E5",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Outside the quadtree area for this campaign map.\nConsider increasing the 'quadtree_margin' for this map in the database",
+        "oldRef": "0x1538b7",
+        "newRef": "0x1538b7",
+        "oldData": "0x933e40",
+        "newData": "0x933e40",
+        "oldFunction": "0x153820",
+        "newFunction": "0x153820",
+        "instructionShapeSha256": "936454C81DF6756DD145D691B1F9EFC2866ACE056F9BA1388C6622F54093D2E5",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "A colour is set in tile settings, but there's no matching entry in the tile database! Make sure this tile has been added to the tile database, or set it's colour to black",
+        "oldRef": "0x1b5400",
+        "newRef": "0x1b7000",
+        "oldData": "0x933f80",
+        "newData": "0x933f80",
+        "oldFunction": "0x1b53f0",
+        "newFunction": "0x1b6ff0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "The tile database colour set in tile properties is already in use by %1",
+        "oldRef": "0x153dbb",
+        "newRef": "0x153dbb",
+        "oldData": "0x9340f0",
+        "newData": "0x9340f0",
+        "oldFunction": "0x1539d0",
+        "newFunction": "0x1539d0",
+        "instructionShapeSha256": "F7DCD41732746A68A173CD962F961E85B48318128BAA7D56A2B14486E8900EED",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Validate!",
+        "oldRef": "0x15542d",
+        "newRef": "0x15542d",
+        "oldData": "0x934198",
+        "newData": "0x934198",
+        "oldFunction": "0x155250",
+        "newFunction": "0x155250",
+        "instructionShapeSha256": "AAA7E0580FB2F79FB9366A757749C984C98AA094AE87079650D4DAD15E279413",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Entity Name/Description",
+        "oldRef": "0x15d52d",
+        "newRef": "0x15d52d",
+        "oldData": "0x934220",
+        "newData": "0x934220",
+        "oldFunction": "0x15d460",
+        "newFunction": "0x15d460",
+        "instructionShapeSha256": "04FFC9764A6568D380C7661527DD05573DC88579CF38FA2A2F68F678A705AB8E",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Entity ID",
+        "oldRef": "0x15d4e7",
+        "newRef": "0x15d4e7",
+        "oldData": "0x934268",
+        "newData": "0x934268",
+        "oldFunction": "0x15d460",
+        "newFunction": "0x15d460",
+        "instructionShapeSha256": "04FFC9764A6568D380C7661527DD05573DC88579CF38FA2A2F68F678A705AB8E",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "AI Hint: ",
+        "oldRef": "0xfb83f",
+        "newRef": "0xfb83f",
+        "oldData": "0x934448",
+        "newData": "0x934448",
+        "oldFunction": "0xfb7a0",
+        "newFunction": "0xfb7a0",
+        "instructionShapeSha256": "9373430DF526327880BB951EF7BC50459F5558B3886B84E8C38A6CAD64D6A60F",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Change Terrain Layer Opacity",
+        "oldRef": "0x128e84",
+        "newRef": "0x128e84",
+        "oldData": "0x934500",
+        "newData": "0x934500",
+        "oldFunction": "0x128e70",
+        "newFunction": "0x128e70",
+        "instructionShapeSha256": "03F063EDA9E4E7B72BA301AA67D535667DE7E9F10A0D501DEA2E4415AE737E67",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to create layer",
+        "oldRef": "0x127ca3",
+        "newRef": "0x127ca3",
+        "oldData": "0x934560",
+        "newData": "0x934560",
+        "oldFunction": "0x1278c0",
+        "newFunction": "0x1278c0",
+        "instructionShapeSha256": "3197B59CC0BF46C4EAA3875EECC61500DCFDC339C3763394AB90FD957C5EA2C0",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to import layer '%1'.<br>%2",
+        "oldRef": "0x1281fa",
+        "newRef": "0x1281fa",
+        "oldData": "0x9345b0",
+        "newData": "0x9345b0",
+        "oldFunction": "0x1280b0",
+        "newFunction": "0x1280b0",
+        "instructionShapeSha256": "A5624BF4B7CC1DF7A9475D8F3FC96F38F7C1618DE9EBA1C6BB18A63EDBD2C2A7",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to create layer",
+        "oldRef": "0x128435",
+        "newRef": "0x128435",
+        "oldData": "0x934610",
+        "newData": "0x934610",
+        "oldFunction": "0x1280b0",
+        "newFunction": "0x1280b0",
+        "instructionShapeSha256": "A5624BF4B7CC1DF7A9475D8F3FC96F38F7C1618DE9EBA1C6BB18A63EDBD2C2A7",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Apply and Reset Opacity in Terrain Layer",
+        "oldRef": "0x128bed",
+        "newRef": "0x128bed",
+        "oldData": "0x934660",
+        "newData": "0x934660",
+        "oldFunction": "0x128af0",
+        "newFunction": "0x128af0",
+        "instructionShapeSha256": "80DCF5B015DEAE180B2D3F115DA97251FCC95DF8DFA2C8AF0AD628FF45F6C2B8",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Process Modified Tiles?",
+        "oldRef": "0x18dce4",
+        "newRef": "0x18dce4",
+        "oldData": "0x9346d0",
+        "newData": "0x9346d0",
+        "oldFunction": "0x18dbd0",
+        "newFunction": "0x18dbd0",
+        "instructionShapeSha256": "DA8512FFD7ADEB0E5AB229FEA9BB983072DE4EB2980D12D6B255C15FAF27229D",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "You have modified one or more tiles. Do you want to process them with BOB?",
+        "oldRef": "0x18dcd2",
+        "newRef": "0x18dcd2",
+        "oldData": "0x934720",
+        "newData": "0x934720",
+        "oldFunction": "0x18dbd0",
+        "newFunction": "0x18dbd0",
+        "instructionShapeSha256": "DA8512FFD7ADEB0E5AB229FEA9BB983072DE4EB2980D12D6B255C15FAF27229D",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Cannot change the properties of the tile currently being edited.",
+        "oldRef": "0x190300",
+        "newRef": "0x190300",
+        "oldData": "0x9347d0",
+        "newData": "0x9347d0",
+        "oldFunction": "0x1900e0",
+        "newFunction": "0x1900e0",
+        "instructionShapeSha256": "141A463564939CF678993CB462A0109D542201F7AC62D1A02C5D5511C8902CB0",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to load project for tile: %1",
+        "oldRef": "0x190c5d",
+        "newRef": "0x190c5d",
+        "oldData": "0x934870",
+        "newData": "0x934870",
+        "oldFunction": "0x190b90",
+        "newFunction": "0x190b90",
+        "instructionShapeSha256": "5841D6B6CB497906C6A6E18E56A6E3551467625FC0DAC092F101D43699B6E5F8",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Colour is already in use by ",
+        "oldRef": "0x1e80d2",
+        "newRef": "0x1e80d2",
+        "oldData": "0x934c00",
+        "newData": "0x934c00",
+        "oldFunction": "0x1e7f80",
+        "newFunction": "0x1e7f80",
+        "instructionShapeSha256": "9F94855D5994205F66A0E3135263262411AC702B762345187F1FB06F43ED7A7F",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Colour is already in use by ",
+        "oldRef": "0x1ea3df",
+        "newRef": "0x1ea3df",
+        "oldData": "0x934c60",
+        "newData": "0x934c60",
+        "oldFunction": "0x1ea230",
+        "newFunction": "0x1ea230",
+        "instructionShapeSha256": "B9AAE6D1E6690C5B3D938A123065525BE8A459997F79787C2A6D89FE68AA459E",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Colour is already in use by ",
+        "oldRef": "0x1eadff",
+        "newRef": "0x1eadff",
+        "oldData": "0x934cc0",
+        "newData": "0x934cc0",
+        "oldFunction": "0x1eac30",
+        "newFunction": "0x1eac30",
+        "instructionShapeSha256": "16B571DB561D250FE1447134AE824AD4E4CA870C5E5527AA59DBC980C55041BE",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Create ",
+        "oldRef": "0x1ffacd",
+        "newRef": "0x1ffacd",
+        "oldData": "0x934dc8",
+        "newData": "0x934dc8",
+        "oldFunction": "0x1ffa70",
+        "newFunction": "0x1ffa70",
+        "instructionShapeSha256": "F418A4943C70E01ACB685BDD0B60F195B33A802848EA57EFA6EF06DD6B37080F",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Sound Marker Generation",
+        "oldRef": "0x26cb90",
+        "newRef": "0x26d2a0",
+        "oldData": "0x934e50",
+        "newData": "0x934e50",
+        "oldFunction": "0x26cb80",
+        "newFunction": "0x26d290",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "After generation, select any single-point or polyline Sound Marker entity and then <b>Alt-click</b> the left mouse button to absorb another single-point Sound Marker entity into the selected entity, extending its polyline.",
+        "oldRef": "0x26d660",
+        "newRef": "0x26cfc0",
+        "oldData": "0x934ea0",
+        "newData": "0x934ea0",
+        "oldFunction": "0x26d650",
+        "newFunction": "0x26cfb0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Rotate Entity",
+        "oldRef": "0x239268",
+        "newRef": "0x239268",
+        "oldData": "0x9351f0",
+        "newData": "0x9351f0",
+        "oldFunction": "0x239210",
+        "newFunction": "0x239210",
+        "instructionShapeSha256": "11A5EBCBA0AD9035D6D25717858F21E5AB456502BDB5AF58E52FCEBD85356EAE",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Scale Entity",
+        "oldRef": "0x23924c",
+        "newRef": "0x23924c",
+        "oldData": "0x935228",
+        "newData": "0x935228",
+        "oldFunction": "0x239210",
+        "newFunction": "0x239210",
+        "instructionShapeSha256": "11A5EBCBA0AD9035D6D25717858F21E5AB456502BDB5AF58E52FCEBD85356EAE",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Paste the composited result into a new layer",
+        "oldRef": "0x278ad8",
+        "newRef": "0x278ad8",
+        "oldData": "0x935280",
+        "newData": "0x935280",
+        "oldFunction": "0x278aa0",
+        "newFunction": "0x278aa0",
+        "instructionShapeSha256": "A23DC5F0A42848A0F302B15C963154471D682A0B1F8D589C0FC53DF591977DDC",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Paste the composited result into the top layer",
+        "oldRef": "0x278b29",
+        "newRef": "0x278b29",
+        "oldData": "0x935300",
+        "newData": "0x935300",
+        "oldFunction": "0x278aa0",
+        "newFunction": "0x278aa0",
+        "instructionShapeSha256": "A23DC5F0A42848A0F302B15C963154471D682A0B1F8D589C0FC53DF591977DDC",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Paste each layer of the map into the same layer",
+        "oldRef": "0x278b7a",
+        "newRef": "0x278b7a",
+        "oldData": "0x935380",
+        "newData": "0x935380",
+        "oldFunction": "0x278aa0",
+        "newFunction": "0x278aa0",
+        "instructionShapeSha256": "A23DC5F0A42848A0F302B15C963154471D682A0B1F8D589C0FC53DF591977DDC",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Imported layer has incorrect dimensions.<br>Expecting <b>%1x%2</b>, but got <b>%3x%4</b>.",
+        "oldRef": "0x26d630",
+        "newRef": "0x26cf60",
+        "oldData": "0x935420",
+        "newData": "0x935420",
+        "oldFunction": "0x26d620",
+        "newFunction": "0x26cf50",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Imported layer has wrong number of channels.<br>Expecting <b>%1</b> channels, but got <b>%2</b>.",
+        "oldRef": "0x26d210",
+        "newRef": "0x26cb90",
+        "oldData": "0x9354f0",
+        "newData": "0x9354f0",
+        "oldFunction": "0x26d200",
+        "newFunction": "0x26cb80",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Single Channel for ",
+        "oldRef": "0x26cf60",
+        "newRef": "0x26d460",
+        "oldData": "0x9355d0",
+        "newData": "0x9355d0",
+        "oldFunction": "0x26cf50",
+        "newFunction": "0x26d450",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to import layer '%1'.<br>%2",
+        "oldRef": "0x2567a6",
+        "newRef": "0x2567a6",
+        "oldData": "0x935650",
+        "newData": "0x935650",
+        "oldFunction": "0x256620",
+        "newFunction": "0x256620",
+        "instructionShapeSha256": "57A9F4A503D22D4B99541410AEC6B1D1CA3538C9940119DEE242912E5293ABD7",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to import layer '%1'.<br>%2",
+        "oldRef": "0x256cf5",
+        "newRef": "0x256cf5",
+        "oldData": "0x9356b0",
+        "newData": "0x9356b0",
+        "oldFunction": "0x256b40",
+        "newFunction": "0x256b40",
+        "instructionShapeSha256": "784D91AAB99CF25BA460AD417A943D551906F46EE765B1EB1E3F8B07C4036A36",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "not in database",
+        "oldRef": "0x2f99a1",
+        "newRef": "0x2f99a1",
+        "oldData": "0x935c98",
+        "newData": "0x935c98",
+        "oldFunction": "0x2f9550",
+        "newFunction": "0x2f9550",
+        "instructionShapeSha256": "B698CB037C1CFD7B6CEBEF3429EF3E71CE5BD801CD0CF0219FF05AA5247CAC1A",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Remove Buildings...",
+        "oldRef": "0x2ebe30",
+        "newRef": "0x2ebbf0",
+        "oldData": "0x935fa0",
+        "newData": "0x935fa0",
+        "oldFunction": "0x2ebe20",
+        "newFunction": "0x2ebbe0",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to revert database changes: %1",
+        "oldRef": "0x29ba89",
+        "newRef": "0x29ba89",
+        "oldData": "0x936000",
+        "newData": "0x936000",
+        "oldFunction": "0x29b6d0",
+        "newFunction": "0x29b6d0",
+        "instructionShapeSha256": "110966B844CBB188A324B71EC99A65CFBE53E3DB4494987183F1F77C1BEB8549",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "[%1] Remove Building(s): %2",
+        "oldRef": "0x29bd7c",
+        "newRef": "0x29bd7c",
+        "oldData": "0x936070",
+        "newData": "0x936070",
+        "oldFunction": "0x29b6d0",
+        "newFunction": "0x29b6d0",
+        "instructionShapeSha256": "110966B844CBB188A324B71EC99A65CFBE53E3DB4494987183F1F77C1BEB8549",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to start BOB",
+        "oldRef": "0x29c22d",
+        "newRef": "0x29c22d",
+        "oldData": "0x9360c0",
+        "newData": "0x9360c0",
+        "oldFunction": "0x29b6d0",
+        "newFunction": "0x29b6d0",
+        "instructionShapeSha256": "110966B844CBB188A324B71EC99A65CFBE53E3DB4494987183F1F77C1BEB8549",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Remove Buildings...",
+        "oldRef": "0x2ebd30",
+        "newRef": "0x2eb440",
+        "oldData": "0x936100",
+        "newData": "0x936100",
+        "oldFunction": "0x2ebd20",
+        "newFunction": "0x2eb430",
+        "instructionShapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "BOB finished with errors. Look at binaries.x64/bob_error.log for details",
+        "oldRef": "0x29c4a0",
+        "newRef": "0x29c4a0",
+        "oldData": "0x936140",
+        "newData": "0x936140",
+        "oldFunction": "0x29c440",
+        "newFunction": "0x29c440",
+        "instructionShapeSha256": "C5745E1619DD842EA8A7C7D0B84A72346C42D8A2257B9C3A7B6B2637C0998D67",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "BOB has finished successfully. Do you want to submit the changes?",
+        "oldRef": "0x29c6c8",
+        "newRef": "0x29c6c8",
+        "oldData": "0x9361f0",
+        "newData": "0x9361f0",
+        "oldFunction": "0x29c440",
+        "newFunction": "0x29c440",
+        "instructionShapeSha256": "C5745E1619DD842EA8A7C7D0B84A72346C42D8A2257B9C3A7B6B2637C0998D67",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Database merge failed: ",
+        "oldRef": "0x29c7e2",
+        "newRef": "0x29c7e2",
+        "oldData": "0x9362b0",
+        "newData": "0x9362b0",
+        "oldFunction": "0x29c440",
+        "newFunction": "0x29c440",
+        "instructionShapeSha256": "C5745E1619DD842EA8A7C7D0B84A72346C42D8A2257B9C3A7B6B2637C0998D67",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Database submit failed: ",
+        "oldRef": "0x29c8e0",
+        "newRef": "0x29c8e0",
+        "oldData": "0x936300",
+        "newData": "0x936300",
+        "oldFunction": "0x29c440",
+        "newFunction": "0x29c440",
+        "instructionShapeSha256": "C5745E1619DD842EA8A7C7D0B84A72346C42D8A2257B9C3A7B6B2637C0998D67",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Submit failed: ",
+        "oldRef": "0x29cc58",
+        "newRef": "0x29cc58",
+        "oldData": "0x936350",
+        "newData": "0x936350",
+        "oldFunction": "0x29c440",
+        "newFunction": "0x29c440",
+        "instructionShapeSha256": "C5745E1619DD842EA8A7C7D0B84A72346C42D8A2257B9C3A7B6B2637C0998D67",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Changes successfully submitted to Perforce",
+        "oldRef": "0x29ccf3",
+        "newRef": "0x29ccf3",
+        "oldData": "0x936390",
+        "newData": "0x936390",
+        "oldFunction": "0x29c440",
+        "newFunction": "0x29c440",
+        "instructionShapeSha256": "C5745E1619DD842EA8A7C7D0B84A72346C42D8A2257B9C3A7B6B2637C0998D67",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to load BMD %1",
+        "oldRef": "0x29de38",
+        "newRef": "0x29de38",
+        "oldData": "0x936400",
+        "newData": "0x936400",
+        "oldFunction": "0x29dd00",
+        "newFunction": "0x29dd00",
+        "instructionShapeSha256": "048C61416D1A517DC12563EE424CF2848D026FDCFFC95878CCB840470DAFE330",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Position: %1x%2\n",
+        "oldRef": "0x2a5132",
+        "newRef": "0x2a5132",
+        "oldData": "0x936450",
+        "newData": "0x936450",
+        "oldFunction": "0x2a50a0",
+        "newFunction": "0x2a50a0",
+        "instructionShapeSha256": "C2EFA4849806EBCFC326DEB70D5E26787106E2407C62E4AE3D07D0E8896F24A8",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Tile: %1\n",
+        "oldRef": "0x2a51e0",
+        "newRef": "0x2a51e0",
+        "oldData": "0x936490",
+        "newData": "0x936490",
+        "oldFunction": "0x2a50a0",
+        "newFunction": "0x2a50a0",
+        "instructionShapeSha256": "C2EFA4849806EBCFC326DEB70D5E26787106E2407C62E4AE3D07D0E8896F24A8",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Set Property '%1'",
+        "oldRef": "0x2e7800",
+        "newRef": "0x2e7800",
+        "oldData": "0x936590",
+        "newData": "0x936590",
+        "oldFunction": "0x2e77e0",
+        "newFunction": "0x2e77e0",
+        "instructionShapeSha256": "68F1EC73A46AC7E075F9FCA10C2BE57C660E4DA56457822783C085D8DBF41728",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Set Property '%1'",
+        "oldRef": "0x2e7906",
+        "newRef": "0x2e7906",
+        "oldData": "0x9365d0",
+        "newData": "0x9365d0",
+        "oldFunction": "0x2e78e0",
+        "newFunction": "0x2e78e0",
+        "instructionShapeSha256": "77E87A99326DD56C33C032B8CED32D9FA03DFB6105D550AF94E2115C2F12F205",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": ", alliance ",
+        "oldRef": "0x25983",
+        "newRef": "0x25983",
+        "oldData": "0x811d68",
+        "newData": "0x812d68",
+        "oldFunction": "0x25920",
+        "newFunction": "0x25920",
+        "instructionShapeSha256": "46B97B14CD2DDDDCE611F46D632C57AC41668D33B4500C78F056CFF45B0EC826",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Unexpected number of root entities",
+        "oldRef": "0x8f50c",
+        "newRef": "0x8f50c",
+        "oldData": "0x811e00",
+        "newData": "0x812e00",
+        "oldFunction": "0x8f4b0",
+        "newFunction": "0x8f4b0",
+        "instructionShapeSha256": "0B03ACD911B3B8B8A21F6C7B9C19D0176BD6D5A471203A90BDFB9E869A482B62",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Root entity is not a File Layer",
+        "oldRef": "0x8f629",
+        "newRef": "0x8f629",
+        "oldData": "0x811e60",
+        "newData": "0x812e60",
+        "oldFunction": "0x8f4b0",
+        "newFunction": "0x8f4b0",
+        "instructionShapeSha256": "0B03ACD911B3B8B8A21F6C7B9C19D0176BD6D5A471203A90BDFB9E869A482B62",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Could not find prefab for key '%1'",
+        "oldRef": "0x85dc9",
+        "newRef": "0x85dc9",
+        "oldData": "0x811ff0",
+        "newData": "0x812ff0",
+        "oldFunction": "0x85d40",
+        "newFunction": "0x85d40",
+        "instructionShapeSha256": "9A2BD3BF64360AB3180DC71C376CEF7A5E59EBAB8EE05C6A13F782629E7C969A",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Prefab '%1' is malformed: missing a Scene",
+        "oldRef": "0x85f13",
+        "newRef": "0x85f13",
+        "oldData": "0x812050",
+        "newData": "0x813050",
+        "oldFunction": "0x85d40",
+        "newFunction": "0x85d40",
+        "instructionShapeSha256": "9A2BD3BF64360AB3180DC71C376CEF7A5E59EBAB8EE05C6A13F782629E7C969A",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Couldn't retrieve attribute '%1': %2",
+        "oldRef": "0xcbe95",
+        "newRef": "0xcbe95",
+        "oldData": "0x812b70",
+        "newData": "0x813b70",
+        "oldFunction": "0xcbe40",
+        "newFunction": "0xcbe40",
+        "instructionShapeSha256": "E53C1493E4BD31F1CF4FF4B0880486049727F04135AEC94F05E7B361BA09E2DA",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Attribute '%1' not found",
+        "oldRef": "0xcbf81",
+        "newRef": "0xcbf81",
+        "oldData": "0x812be0",
+        "newData": "0x813be0",
+        "oldFunction": "0xcbe40",
+        "newFunction": "0xcbe40",
+        "instructionShapeSha256": "E53C1493E4BD31F1CF4FF4B0880486049727F04135AEC94F05E7B361BA09E2DA",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Unknown value for %1: %2",
+        "oldRef": "0xcc266",
+        "newRef": "0xcc266",
+        "oldData": "0x812c30",
+        "newData": "0x813c30",
+        "oldFunction": "0xcc130",
+        "newFunction": "0xcc130",
+        "instructionShapeSha256": "2EC60B36B496DF654BEEA5FF6A34721B9D87A8007DF0E17A4CD0CAF88122A6C3",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "HAPI Error: %1",
+        "oldRef": "0xcdc62",
+        "newRef": "0xcdc62",
+        "oldData": "0x812c80",
+        "newData": "0x813c80",
+        "oldFunction": "0xcdc50",
+        "newFunction": "0xcdc50",
+        "instructionShapeSha256": "EF546282B026A365E767966C159A45A9DFE001EC7B86597C1FDF27C525AF26C8",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to retrieve heightfield data: %1",
+        "oldRef": "0xce924",
+        "newRef": "0xce924",
+        "oldData": "0x812cc0",
+        "newData": "0x813cc0",
+        "oldFunction": "0xce890",
+        "newFunction": "0xce890",
+        "instructionShapeSha256": "643D9FE88EBCD7CE634F79EDC2FB195EBA8687B2922E387A95EC18494BABECE4",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to find entity type: ",
+        "oldRef": "0xcf488",
+        "newRef": "0xcf488",
+        "oldData": "0x812d30",
+        "newData": "0x813d30",
+        "oldFunction": "0xcf430",
+        "newFunction": "0xcf430",
+        "instructionShapeSha256": "B071A6CB97C9FBE452990F407435CA116F569E6592579BCC099AF36FE7E33220",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to create entity of type '%1'",
+        "oldRef": "0xcf52f",
+        "newRef": "0xcf52f",
+        "oldData": "0x812d90",
+        "newData": "0x813d90",
+        "oldFunction": "0xcf430",
+        "newFunction": "0xcf430",
+        "instructionShapeSha256": "B071A6CB97C9FBE452990F407435CA116F569E6592579BCC099AF36FE7E33220",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Unsupported curve type %1",
+        "oldRef": "0xcff0b",
+        "newRef": "0xcff0b",
+        "oldData": "0x812e00",
+        "newData": "0x813e00",
+        "oldFunction": "0xcfed0",
+        "newFunction": "0xcfed0",
+        "instructionShapeSha256": "767FB2597DA3BDA4354388D5CCDB9AFE511BB021C66CC262ACAD2B98C8A716EA",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "No valid component found in %1 entity in which to output a linear curve",
+        "oldRef": "0xd0377",
+        "newRef": "0xd0377",
+        "oldData": "0x812e50",
+        "newData": "0x813e50",
+        "oldFunction": "0xcfed0",
+        "newFunction": "0xcfed0",
+        "instructionShapeSha256": "767FB2597DA3BDA4354388D5CCDB9AFE511BB021C66CC262ACAD2B98C8A716EA",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Curve has order %1. Only cubic (order 4) Bezier curves are supported",
+        "oldRef": "0xcff76",
+        "newRef": "0xcff76",
+        "oldData": "0x812f00",
+        "newData": "0x813f00",
+        "oldFunction": "0xcfed0",
+        "newFunction": "0xcfed0",
+        "instructionShapeSha256": "767FB2597DA3BDA4354388D5CCDB9AFE511BB021C66CC262ACAD2B98C8A716EA",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "No valid component found in %1 entity in which to output a Bezier curve",
+        "oldRef": "0xd01f5",
+        "newRef": "0xd01f5",
+        "oldData": "0x812fb0",
+        "newData": "0x813fb0",
+        "oldFunction": "0xcfed0",
+        "newFunction": "0xcfed0",
+        "instructionShapeSha256": "767FB2597DA3BDA4354388D5CCDB9AFE511BB021C66CC262ACAD2B98C8A716EA",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to find tileset with name '%1' in the tile database",
+        "oldRef": "0xb9267",
+        "newRef": "0xb9267",
+        "oldData": "0x8131d0",
+        "newData": "0x8141d0",
+        "oldFunction": "0xb91e0",
+        "newFunction": "0xb91e0",
+        "instructionShapeSha256": "7DC80B6BEFF7AF0250A5E4BCFBF98210C932F10616F4F742EAB02A1BC1D96FFD",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Couldn't import stylesheet '%1'",
+        "oldRef": "0x1ad311",
+        "newRef": "0x1ad311",
+        "oldData": "0x813520",
+        "newData": "0x814520",
+        "oldFunction": "0x1ad210",
+        "newFunction": "0x1ad210",
+        "instructionShapeSha256": "E5B2278F72F3239B9950B3C0A0B2EBAA6DF981B748788BC5DD3448DB37294506",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Expected 'import', 'debug' or 'palette' after '@', got '%1'",
+        "oldRef": "0x11b1dc",
+        "newRef": "0x11b1dc",
+        "oldData": "0x8137c0",
+        "newData": "0x8147c0",
+        "oldFunction": "0x11ada0",
+        "newFunction": "0x11ada0",
+        "instructionShapeSha256": "FF01707507C3435DD1BF60144E7C1959E70D07E1D4FC1EE6F909021DA0D61D3A",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Expected '(' when parsing '%1' call",
+        "oldRef": "0x11c8b5",
+        "newRef": "0x11c8b5",
+        "oldData": "0x813870",
+        "newData": "0x814870",
+        "oldFunction": "0x11c690",
+        "newFunction": "0x11c690",
+        "instructionShapeSha256": "952BEB5E12C3F2E7413DD7E8F823DFA65C89C3D401FAB93893804E71BDF433F1",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Expected ')' when parsing '%1' call",
+        "oldRef": "0x11cb8f",
+        "newRef": "0x11cb8f",
+        "oldData": "0x8138d0",
+        "newData": "0x8148d0",
+        "oldFunction": "0x11c690",
+        "newFunction": "0x11c690",
+        "instructionShapeSha256": "952BEB5E12C3F2E7413DD7E8F823DFA65C89C3D401FAB93893804E71BDF433F1",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Expected ',' when parsing '%1' call",
+        "oldRef": "0x11cd15",
+        "newRef": "0x11cd15",
+        "oldData": "0x813930",
+        "newData": "0x814930",
+        "oldFunction": "0x11c690",
+        "newFunction": "0x11c690",
+        "instructionShapeSha256": "952BEB5E12C3F2E7413DD7E8F823DFA65C89C3D401FAB93893804E71BDF433F1",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Expected ')' when parsing '%1' call",
+        "oldRef": "0x11ce87",
+        "newRef": "0x11ce87",
+        "oldData": "0x813990",
+        "newData": "0x814990",
+        "oldFunction": "0x11c690",
+        "newFunction": "0x11c690",
+        "instructionShapeSha256": "952BEB5E12C3F2E7413DD7E8F823DFA65C89C3D401FAB93893804E71BDF433F1",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "unknown function '%1'",
+        "oldRef": "0x11cfad",
+        "newRef": "0x11cfad",
+        "oldData": "0x8139f0",
+        "newData": "0x8149f0",
+        "oldFunction": "0x11c690",
+        "newFunction": "0x11c690",
+        "instructionShapeSha256": "952BEB5E12C3F2E7413DD7E8F823DFA65C89C3D401FAB93893804E71BDF433F1",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Unknown unit '%1'",
+        "oldRef": "0x11d679",
+        "newRef": "0x11d679",
+        "oldData": "0x813a40",
+        "newData": "0x814a40",
+        "oldFunction": "0x11d4d0",
+        "newFunction": "0x11d4d0",
+        "instructionShapeSha256": "74E77D70969D7DFD9EF878FC7A5C3C6F68B3C0DFD99A6BEA7333FA4141A82CE6",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Variable '$%1' hasn't been declared yet",
+        "oldRef": "0x11da08",
+        "newRef": "0x11da08",
+        "oldData": "0x813a80",
+        "newData": "0x814a80",
+        "oldFunction": "0x11d900",
+        "newFunction": "0x11d900",
+        "instructionShapeSha256": "13B71E463D2E344F137FCD3C870CBDFA970EF869EE0C316C07CF4554A5601969",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Variable '$%1' hasn't been resolved",
+        "oldRef": "0x11da94",
+        "newRef": "0x11da94",
+        "oldData": "0x813af0",
+        "newData": "0x814af0",
+        "oldFunction": "0x11d900",
+        "newFunction": "0x11d900",
+        "instructionShapeSha256": "13B71E463D2E344F137FCD3C870CBDFA970EF869EE0C316C07CF4554A5601969",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Unknown function '%1'",
+        "oldRef": "0x11dc3b",
+        "newRef": "0x11dc3b",
+        "oldData": "0x813b50",
+        "newData": "0x814b50",
+        "oldFunction": "0x11db70",
+        "newFunction": "0x11db70",
+        "instructionShapeSha256": "082A2A920292D49866DEF41F6A65035C3CC387234C60B1EE3B36202F3843A91B",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Incorrect number of arguments to '%1'. Expected %2, got %3",
+        "oldRef": "0x11dd3f",
+        "newRef": "0x11dd3f",
+        "oldData": "0x813ba0",
+        "newData": "0x814ba0",
+        "oldFunction": "0x11db70",
+        "newFunction": "0x11db70",
+        "instructionShapeSha256": "082A2A920292D49866DEF41F6A65035C3CC387234C60B1EE3B36202F3843A91B",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to resolve expression while evaluating function call '%1'",
+        "oldRef": "0x11e0b7",
+        "newRef": "0x11e0b7",
+        "oldData": "0x813c30",
+        "newData": "0x814c30",
+        "oldFunction": "0x11db70",
+        "newFunction": "0x11db70",
+        "instructionShapeSha256": "082A2A920292D49866DEF41F6A65035C3CC387234C60B1EE3B36202F3843A91B",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Incorrect argument type passed to function '%1'",
+        "oldRef": "0x11dff6",
+        "newRef": "0x11dff6",
+        "oldData": "0x813cd0",
+        "newData": "0x814cd0",
+        "oldFunction": "0x11db70",
+        "newFunction": "0x11db70",
+        "instructionShapeSha256": "082A2A920292D49866DEF41F6A65035C3CC387234C60B1EE3B36202F3843A91B",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open '%1' for reading",
+        "oldRef": "0x1b768a",
+        "newRef": "0x1b768a",
+        "oldData": "0x813d50",
+        "newData": "0x814d50",
+        "oldFunction": "0x1b7650",
+        "newFunction": "0x1b7650",
+        "instructionShapeSha256": "F5BCC319E633494D5F02BFA38208D19086DED62C19C14E7BA6CB15DF51882E75",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Conflict found - unable to merge",
+        "oldRef": "0x1b6d7f",
+        "newRef": "0x1b6d7f",
+        "oldData": "0x813db0",
+        "newData": "0x814db0",
+        "oldFunction": "0x1b6ce0",
+        "newFunction": "0x1b6ce0",
+        "instructionShapeSha256": "278BD24A7102BDD0A862D03376B567F3D98F8951B117332A8F67E2C409DD521D",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Cannot merge layers after resize",
+        "oldRef": "0x12b330",
+        "newRef": "0x12b330",
+        "oldData": "0x813e10",
+        "newData": "0x814e10",
+        "oldFunction": "0x12a610",
+        "newFunction": "0x12a610",
+        "instructionShapeSha256": "76C1FA08E77CC441AAD989998D3107D797A262BBB3BD403F38ED79C25CCEE615",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to load base layer '%1':\n%2",
+        "oldRef": "0x12a93e",
+        "newRef": "0x12a93e",
+        "oldData": "0x813e70",
+        "newData": "0x814e70",
+        "oldFunction": "0x12a610",
+        "newFunction": "0x12a610",
+        "instructionShapeSha256": "76C1FA08E77CC441AAD989998D3107D797A262BBB3BD403F38ED79C25CCEE615",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to load local layer '%1':\n%2",
+        "oldRef": "0x12ab4c",
+        "newRef": "0x12ab4c",
+        "oldData": "0x813ed0",
+        "newData": "0x814ed0",
+        "oldFunction": "0x12a610",
+        "newFunction": "0x12a610",
+        "instructionShapeSha256": "76C1FA08E77CC441AAD989998D3107D797A262BBB3BD403F38ED79C25CCEE615",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to load remote layer '%1':\n%2",
+        "oldRef": "0x12ad5f",
+        "newRef": "0x12ad5f",
+        "oldData": "0x813f30",
+        "newData": "0x814f30",
+        "oldFunction": "0x12a610",
+        "newFunction": "0x12a610",
+        "instructionShapeSha256": "76C1FA08E77CC441AAD989998D3107D797A262BBB3BD403F38ED79C25CCEE615",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to save merged layer %1:\n%2",
+        "oldRef": "0x12b09a",
+        "newRef": "0x12b09a",
+        "oldData": "0x813fa0",
+        "newData": "0x814fa0",
+        "oldFunction": "0x12a610",
+        "newFunction": "0x12a610",
+        "instructionShapeSha256": "76C1FA08E77CC441AAD989998D3107D797A262BBB3BD403F38ED79C25CCEE615",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Refresh List",
+        "oldRef": "0x2c0715",
+        "newRef": "0x2c0715",
+        "oldData": "0x815d70",
+        "newData": "0x816d70",
+        "oldFunction": "0x2bff40",
+        "newFunction": "0x2bff40",
+        "instructionShapeSha256": "0DECB0FBAED9B929C2F271451C088205DA5F846B40D71EC3586DEF961D79D5E3",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Set Property '%1'",
+        "oldRef": "0x2f6995",
+        "newRef": "0x2f6995",
+        "oldData": "0x815f30",
+        "newData": "0x816f30",
+        "oldFunction": "0x2f6930",
+        "newFunction": "0x2f6930",
+        "instructionShapeSha256": "99B54B7367C2DFDEC41E165A0AB02DE53A646C95E77A1F7DB747C302CC15B3B3",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Set ",
+        "oldRef": "0x317cc1",
+        "newRef": "0x317cc1",
+        "oldData": "0x8161e8",
+        "newData": "0x8171e8",
+        "oldFunction": "0x317b30",
+        "newFunction": "0x317b30",
+        "instructionShapeSha256": "ECE03852073E465B250BCB1EC68D256D5CB1669971EA6CB8FF29C9CD4721677D",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "toolutilityqt.modder.x64.dll",
+        "source": "Failed to mark '%1' for delete in perforce: %2",
+        "oldRef": "0x14bac6",
+        "newRef": "0x14bac6",
+        "oldData": "0x84a350",
+        "newData": "0x84a350",
+        "oldFunction": "0x14bac6",
+        "newFunction": "0x14bac6",
+        "instructionShapeSha256": "80072978871D8F4A3C93BAE2B3992101CDFEF0353A26C9C7CB6FC144AB1EBD7E",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "toolutilityqt.modder.x64.dll",
+        "source": "Failed to revert '%1': %2",
+        "oldRef": "0x14c586",
+        "newRef": "0x14c586",
+        "oldData": "0x84a3d0",
+        "newData": "0x84a3d0",
+        "oldFunction": "0x14c586",
+        "newFunction": "0x14c586",
+        "instructionShapeSha256": "D40DFC4CF1F71867EEAFF9E1B31AA04210CBD113E661AAAF3FD42F653A067C80",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "toolutilityqt.modder.x64.dll",
+        "source": "Failed to mark '%1' as resolved",
+        "oldRef": "0x14e283",
+        "newRef": "0x14e283",
+        "oldData": "0x84a440",
+        "newData": "0x84a440",
+        "oldFunction": "0x14e110",
+        "newFunction": "0x14e110",
+        "instructionShapeSha256": "F3C6E36FCC3AFC40476CB54DDAC9BAE0663A1EA40F12DE4511B7B39249676F80",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "toolutilityqt.modder.x64.dll",
+        "source": "Failed to fetch '%1' to '%2'",
+        "oldRef": "0x14e4f6",
+        "newRef": "0x14e4f6",
+        "oldData": "0x84a4a0",
+        "newData": "0x84a4a0",
+        "oldFunction": "0x14e320",
+        "newFunction": "0x14e320",
+        "instructionShapeSha256": "B4388DE8FFF778781A12DFA10758C8F4E71B91559D987DD8795C88AF736BDDFE",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "toolutilityqt.modder.x64.dll",
+        "source": "Failed to set permissions for fetched filed '%1'",
+        "oldRef": "0x14e591",
+        "newRef": "0x14e591",
+        "oldData": "0x84a500",
+        "newData": "0x84a500",
+        "oldFunction": "0x14e320",
+        "newFunction": "0x14e320",
+        "instructionShapeSha256": "B4388DE8FFF778781A12DFA10758C8F4E71B91559D987DD8795C88AF736BDDFE",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "toolutilityqt.modder.x64.dll",
+        "source": "'%1' has been moved to '%2' - deletion of move source not supported",
+        "oldRef": "0x14f24c",
+        "newRef": "0x14f24c",
+        "oldData": "0x84a580",
+        "newData": "0x84a580",
+        "oldFunction": "0x14f140",
+        "newFunction": "0x14f140",
+        "instructionShapeSha256": "B3AE7C08C9F54114333A26D6DE94857505A12A1DD076E430B25DCE07867D5E73",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "toolutilityqt.modder.x64.dll",
+        "source": "Unable to mark '%1' as writeable",
+        "oldRef": "0x14f449",
+        "newRef": "0x14f449",
+        "oldData": "0x84a620",
+        "newData": "0x84a620",
+        "oldFunction": "0x14f140",
+        "newFunction": "0x14f140",
+        "instructionShapeSha256": "B3AE7C08C9F54114333A26D6DE94857505A12A1DD076E430B25DCE07867D5E73",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "toolutilityqt.modder.x64.dll",
+        "source": "Unable to delete '%1'",
+        "oldRef": "0x14f4ac",
+        "newRef": "0x14f4ac",
+        "oldData": "0x84a680",
+        "newData": "0x84a680",
+        "oldFunction": "0x14f140",
+        "newFunction": "0x14f140",
+        "instructionShapeSha256": "B3AE7C08C9F54114333A26D6DE94857505A12A1DD076E430B25DCE07867D5E73",
+        "sameRelativeOffsetAndImportSequence": true
+      },
+      {
+        "module": "toolutilityqt.modder.x64.dll",
+        "source": "Unhandled perforce state!",
+        "oldRef": "0x14f727",
+        "newRef": "0x14f727",
+        "oldData": "0x84a7d0",
+        "newData": "0x84a7d0",
+        "oldFunction": "0x14f500",
+        "newFunction": "0x14f500",
+        "instructionShapeSha256": "4336B4841A3014D83AAEE41B508E4688F4A33D2584957696DD1A95F28EADC414",
+        "sameRelativeOffsetAndImportSequence": true
+      }
+    ]
+  },
+  "fragmentAudit": {
+    "matched": 113,
+    "movedReferences": 3,
+    "failed": 0,
+    "evidence": [
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "The project contains errors that may cause issues in BOB or in the game.  See the <b>",
+        "oldRva": "0x15ab7",
+        "newRva": "0x15ab7",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "29610EBD41AC48C1F5768DECAAAEE25C1B7D5FDF866B8D0344FCC40ED1B3EE4E"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "</b> window for details.",
+        "oldRva": "0x15b0c",
+        "newRva": "0x15b0c",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "29610EBD41AC48C1F5768DECAAAEE25C1B7D5FDF866B8D0344FCC40ED1B3EE4E"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "BOB crashed while processing!\n",
+        "oldRva": "0x295c1",
+        "newRva": "0x295c1",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "C663ADE9BDC4DC951623E8EBA8A7E99B8C71C98C160697F1734A5EB7AD801C40"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "BOB process failed to start!\nMake sure the BOB executable exists\n",
+        "oldRva": "0x295ca",
+        "newRva": "0x295ca",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "C663ADE9BDC4DC951623E8EBA8A7E99B8C71C98C160697F1734A5EB7AD801C40"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "BOB failed but no error was received",
+        "oldRva": "0x29749",
+        "newRva": "0x29749",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "C663ADE9BDC4DC951623E8EBA8A7E99B8C71C98C160697F1734A5EB7AD801C40"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Unable to find any campaigns for this map.",
+        "oldRva": "0x3b92e",
+        "newRva": "0x3b92e",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "3A9A2461480A8BBC2F26FA66D35F5F11EE9EDB23704736ACE1CFE97C1539887B"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "There were issues during BCA generation. See ",
+        "oldRva": "0x613c2",
+        "newRva": "0x613c2",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "2B8C2F9D46D9B83CB01F08EE065712F06AFE7CB8EDE7226F7B5F5C4FD3C17220"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": " for details.",
+        "oldRva": "0x61410",
+        "newRva": "0x61410",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "2B8C2F9D46D9B83CB01F08EE065712F06AFE7CB8EDE7226F7B5F5C4FD3C17220"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to create entry in tile database",
+        "oldRva": "0xf56d2",
+        "newRva": "0xf56d2",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "CD32A3857587B7256D6F33EA86ACFB3016FC7A9160584B0A5ABA7B800A1A974B"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to create tile variation in tile database",
+        "oldRva": "0xf577e",
+        "newRva": "0xf577e",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "CD32A3857587B7256D6F33EA86ACFB3016FC7A9160584B0A5ABA7B800A1A974B"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to get latest battle prefabs: ",
+        "oldRva": "0x103edf",
+        "newRva": "0x103edf",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "91DA66EFDBA42CEE7A5DA7F13030705780DFB1DB094A8824AC36C8AAA35B3F45"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to get latest campaign prefabs: ",
+        "oldRva": "0x103f52",
+        "newRva": "0x103f52",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "91DA66EFDBA42CEE7A5DA7F13030705780DFB1DB094A8824AC36C8AAA35B3F45"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Merge Layers in ",
+        "oldRva": "0x127531",
+        "newRva": "0x127531",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "9E8FED136594483A5DF97F5B4CDF65FC53698FD20574032AB9DFC4EC92426AD6"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Other users making changes to this project: ",
+        "oldRva": "0x13e04c",
+        "newRva": "0x13e04c",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "642658A8584AD3320EA6E0528AB59C8C8FA5A8A827D041621A5077C8D3FF34BF"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Props with applied height patches cannot be rotated on any axis other than the y-axis (yaw)",
+        "oldRva": "0x14c6a7",
+        "newRva": "0x14c6a7",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "9C7F47149A0096167CE38B9E80E80C23B8A8F1B86C21B58DB73446C81B726787"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Prop marked with 'apply height patch' doesn't have an associated height patch on disk",
+        "oldRva": "0x14c809",
+        "newRva": "0x14c809",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "9C7F47149A0096167CE38B9E80E80C23B8A8F1B86C21B58DB73446C81B726787"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Should at least have one valid region",
+        "oldRva": "0x14c9f4",
+        "newRva": "0x14c9f4",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "CB2E55434A2AC2F68B07D2B32D566576EB19884C5E7E51B4520B4CC364C6FA18"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Node: Should have exactly one boundary",
+        "oldRva": "0x14cbc1",
+        "newRva": "0x14cbc1",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "6AF69E0177A922026A7CAA37EAAA3F4B10700B127AB54123578AD4E60C78D236"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Boundary must be closed",
+        "oldRva": "0x14cca1",
+        "newRva": "0x14cca1",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "6AF69E0177A922026A7CAA37EAAA3F4B10700B127AB54123578AD4E60C78D236"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Edge: Should either have no boundary or exactly two boundaries",
+        "oldRva": "0x14cea4",
+        "newRva": "0x14cea4",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "133A825E3144189CC5F3387523CB1810C0C4DB4EED90033E7B67AABA9FA14077"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Boundary must be open",
+        "oldRva": "0x14cf81",
+        "newRva": "0x14cf81",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "133A825E3144189CC5F3387523CB1810C0C4DB4EED90033E7B67AABA9FA14077"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Polygon Node must be convex",
+        "oldRva": "0x14d18a",
+        "newRva": "0x14d18a",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "F5637A17A85B00C061A7044821E8D3D2BC33BA99AB88FEA59534721F770F068E"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Polyline (or polygon) has overlapping edges",
+        "oldRva": "0x14d308",
+        "newRva": "0x14d308",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "67DD95240CFA3501E0F530E40AD68B694C2D06FDB1EC395B0438344F624AB7EB"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Overlapping entities.",
+        "oldRva": "0x14f508",
+        "newRva": "0x14f508",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "0E96F6B0E6E0B5CD256DC23D2D1418DA900AAB9F63787E616192A47A1D113044"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Entity is in a different file layer to its transform parent. This could cause unexpected behaviour.",
+        "oldRva": "0x15102d",
+        "newRva": "0x15102d",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "6005907BDB5C0728A43FE5160BD30D17D8974199409FD801AFF9909C7EC93EFB"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to rename the tile.",
+        "oldRva": "0x19067c",
+        "newRva": "0x19067c",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "35D23D8A6B31F80CF230F9383F35C91665A409B67A183FB0E69E8E4765C777F7"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to create project in memory",
+        "oldRva": "0x1c46a3",
+        "newRva": "0x1c46a3",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "CF2BA22E4FC251E486C90BF68B63B4A5C048E3A560AF123944CB27DA6C26E5FC"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to open project.",
+        "oldRva": "0x1d7544",
+        "newRva": "0x1d7544",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "2B223B0FD939633CC9C4AFA4048973D7B7D1A4F5CC6B0EE5F0C44CCC998DBE13"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": " There are pending Perforce operations preventing the action. Most likely these are files marked for <i>delete</i> or <i>move/delete</i>.",
+        "oldRva": "0x1d8295",
+        "newRva": "0x1d8295",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "04F43C8F88FF3FB16A846C6F4D41B21AA2A54F01A8696DAD5BE52BE11DFACA38"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Processing: ",
+        "oldRva": "0x1f48b3",
+        "newRva": "0x1f48b3",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "F7F65F86F9FA048CF97F5DB7B6E99B969280E4D389D638754B3DB3EEDBDE3B79"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Invalid brush key: ",
+        "oldRva": "0x21865a",
+        "newRva": "0x21865a",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "6A63175718E505742AA769DEB78DFCDFC91C8374ED14F05BE7812F8A7B591A03"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to load ",
+        "oldRva": "0x22ca9a",
+        "newRva": "0x22ca9a",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "3A5776EBF8C208B5D70B497C095A1051BF28799C61DD0F7913F2A34B807D75FC"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "Failed to load ",
+        "oldRva": "0x22dbe6",
+        "newRva": "0x22dbe6",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "57882D0F1B3B6263868F04FCC26579A0F7B91BA29E9B0269C4D236DE736F8DE2"
+      },
+      {
+        "module": "tweak_terrainmetadataeditor.modder.x64.dll",
+        "source": "TIFF read failed: ",
+        "oldRva": "0x255dad",
+        "newRva": "0x255dad",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "9E1FDDB5C54EB399E6A5ADE6FCBEB36D960177472EA57BDED973B64A01764F17"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to create a tile in the tile database",
+        "oldRva": "0xb94a1",
+        "newRva": "0xb94a1",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "7DC80B6BEFF7AF0250A5E4BCFBF98210C932F10616F4F742EAB02A1BC1D96FFD"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to create a tile variation",
+        "oldRva": "0xb94e2",
+        "newRva": "0xb94e2",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "7DC80B6BEFF7AF0250A5E4BCFBF98210C932F10616F4F742EAB02A1BC1D96FFD"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Tried to clone unresolved or invalid node",
+        "oldRva": "0x11a231",
+        "newRva": "0x11a231",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "5200FBA37D8608BD22A4BE6EAC71ACA8AF3327A08B2F14CE4B303C11FAC22A9A"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Expected ':' when parsing gradient",
+        "oldRva": "0x11d426",
+        "newRva": "0x11d426",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "CB3F01C001E5FCBEF470ABD40A41546E29FA952DF86A5D4BBDD7B8575D865EDB"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Unknown gradient function",
+        "oldRva": "0x11ed16",
+        "newRva": "0x11ed16",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "0AE0CF04BB44BC29166D79D656BA8E884443E66FDEC537138C6656C34D591BEC"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "qradialgradient fx and fy arguments must be unitless numbers",
+        "oldRva": "0x11f64c",
+        "newRva": "0x11f64c",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "0AE0CF04BB44BC29166D79D656BA8E884443E66FDEC537138C6656C34D591BEC"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "qradialgradient requires cx, cy, and radius arguments must be unitless numbers",
+        "oldRva": "0x11f702",
+        "newRva": "0x11f702",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "0AE0CF04BB44BC29166D79D656BA8E884443E66FDEC537138C6656C34D591BEC"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "qradialgradient requires cx, cy, and radius arguments",
+        "oldRva": "0x11f7b8",
+        "newRva": "0x11f7b8",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "0AE0CF04BB44BC29166D79D656BA8E884443E66FDEC537138C6656C34D591BEC"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "qconicalgradient requires cx, cy and angle arguments",
+        "oldRva": "0x11fa40",
+        "newRva": "0x11fa40",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "0AE0CF04BB44BC29166D79D656BA8E884443E66FDEC537138C6656C34D591BEC"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "qconicalgradient angle argument must be an angle",
+        "oldRva": "0x11fa9b",
+        "newRva": "0x11fa9b",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "0AE0CF04BB44BC29166D79D656BA8E884443E66FDEC537138C6656C34D591BEC"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Gradient spread must be either pad, reflect or repeat",
+        "oldRva": "0x11fbe1",
+        "newRva": "0x11fbe1",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "0AE0CF04BB44BC29166D79D656BA8E884443E66FDEC537138C6656C34D591BEC"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Gradient spread must be either pad, reflect or repeat",
+        "oldRva": "0x11fca1",
+        "newRva": "0x11fca1",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "0AE0CF04BB44BC29166D79D656BA8E884443E66FDEC537138C6656C34D591BEC"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "qconicalgradient cx, cy arguments must be unitless numbers",
+        "oldRva": "0x11fd99",
+        "newRva": "0x11fd99",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "0AE0CF04BB44BC29166D79D656BA8E884443E66FDEC537138C6656C34D591BEC"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "qconicalgradient requires cx, cy and angle arguments",
+        "oldRva": "0x11fe44",
+        "newRva": "0x11fe44",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "0AE0CF04BB44BC29166D79D656BA8E884443E66FDEC537138C6656C34D591BEC"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Can't load an orphan terrain map layer",
+        "oldRva": "0x1282e8",
+        "newRva": "0x1282e8",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "FA30CA63D7A9AFEDA3C77C8F6A3A43FB23154C977722110FC2769F346AD5210E"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "TIFF error: ",
+        "oldRva": "0x1283b7",
+        "newRva": "0x1283b7",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "FA30CA63D7A9AFEDA3C77C8F6A3A43FB23154C977722110FC2769F346AD5210E"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Can't save an orphan terrain map layer",
+        "oldRva": "0x128a35",
+        "newRva": "0x128a35",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "BA9DB774D5AF607AFFBF65AE0F5D26DF34F1C58D0C7BBA7E4B856BFF7EB9A180"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "TIFF error: ",
+        "oldRva": "0x128bc4",
+        "newRva": "0x128bc4",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "BA9DB774D5AF607AFFBF65AE0F5D26DF34F1C58D0C7BBA7E4B856BFF7EB9A180"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Warning: Missing animation filename.",
+        "oldRva": "0x1c1f48",
+        "newRva": "0x1c1f48",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "51C84D004ABFC2C758F9B9AE31A06F6CDC4F31BBA7C20A4717AC389148C4A4B4"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Warning: Animation file doesn't exist. ",
+        "oldRva": "0x1c241d",
+        "newRva": "0x1c241d",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "51C84D004ABFC2C758F9B9AE31A06F6CDC4F31BBA7C20A4717AC389148C4A4B4"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Warning: Metadata file doesn't exist. ",
+        "oldRva": "0x1c2572",
+        "newRva": "0x1c2572",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "51C84D004ABFC2C758F9B9AE31A06F6CDC4F31BBA7C20A4717AC389148C4A4B4"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Warning: Missing rider animation filename.",
+        "oldRva": "0x1c2ad5",
+        "newRva": "0x1c2ad5",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "51C84D004ABFC2C758F9B9AE31A06F6CDC4F31BBA7C20A4717AC389148C4A4B4"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Warning: Animation file doesn't exist. ",
+        "oldRva": "0x1c2bed",
+        "newRva": "0x1c2bed",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "51C84D004ABFC2C758F9B9AE31A06F6CDC4F31BBA7C20A4717AC389148C4A4B4"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Warning: Metadata file doesn't exist. ",
+        "oldRva": "0x1c2d4f",
+        "newRva": "0x1c2d4f",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "51C84D004ABFC2C758F9B9AE31A06F6CDC4F31BBA7C20A4717AC389148C4A4B4"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open '",
+        "oldRva": "0x1cf1a6",
+        "newRva": "0x1cf1a6",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "9DC4321A30E861BEA5993A969DF9F179383944884020781AAB5E35AEA425E440"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "' for reading.",
+        "oldRva": "0x1cf1b7",
+        "newRva": "0x1cf1b7",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "9DC4321A30E861BEA5993A969DF9F179383944884020781AAB5E35AEA425E440"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to parse '",
+        "oldRva": "0x1cf33e",
+        "newRva": "0x1cf33e",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "9DC4321A30E861BEA5993A969DF9F179383944884020781AAB5E35AEA425E440"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open '",
+        "oldRva": "0x1d2193",
+        "newRva": "0x1d2193",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "7D0DBA7F7A19CA9F5854BE5A0F6BDC1E11A000932C517D62178172FC8F68F11F"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "' for writing.",
+        "oldRva": "0x1d21a7",
+        "newRva": "0x1d21a7",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "7D0DBA7F7A19CA9F5854BE5A0F6BDC1E11A000932C517D62178172FC8F68F11F"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open '",
+        "oldRva": "0x1dc43c",
+        "newRva": "0x1dc43c",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "934601AD71ADFC71B7E97BC4C2BC2D532DE42FA0341520A1934EF64D680C03A1"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "' for reading.",
+        "oldRva": "0x1dc483",
+        "newRva": "0x1dc483",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "934601AD71ADFC71B7E97BC4C2BC2D532DE42FA0341520A1934EF64D680C03A1"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to parse '",
+        "oldRva": "0x1dc57f",
+        "newRva": "0x1dc57f",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "934601AD71ADFC71B7E97BC4C2BC2D532DE42FA0341520A1934EF64D680C03A1"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to deserialise '",
+        "oldRva": "0x1dc798",
+        "newRva": "0x1dc798",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "934601AD71ADFC71B7E97BC4C2BC2D532DE42FA0341520A1934EF64D680C03A1"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open '",
+        "oldRva": "0x1dcab2",
+        "newRva": "0x1dcab2",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "934601AD71ADFC71B7E97BC4C2BC2D532DE42FA0341520A1934EF64D680C03A1"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "' for reading.",
+        "oldRva": "0x1dcafb",
+        "newRva": "0x1dcafb",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "934601AD71ADFC71B7E97BC4C2BC2D532DE42FA0341520A1934EF64D680C03A1"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to parse '",
+        "oldRva": "0x1dcc0a",
+        "newRva": "0x1dcc0a",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "934601AD71ADFC71B7E97BC4C2BC2D532DE42FA0341520A1934EF64D680C03A1"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to deserialise table: '",
+        "oldRva": "0x1dd2d9",
+        "newRva": "0x1dd2d9",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "934601AD71ADFC71B7E97BC4C2BC2D532DE42FA0341520A1934EF64D680C03A1"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Table: ",
+        "oldRva": "0x1de3c2",
+        "newRva": "0x1de3c2",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "66D19BE6C7DA81020F25ED41E5500A318BCA2426E1346FEAA67EB20B7E65AB3B"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open '",
+        "oldRva": "0x1de5c9",
+        "newRva": "0x1de5c9",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "66D19BE6C7DA81020F25ED41E5500A318BCA2426E1346FEAA67EB20B7E65AB3B"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "' for writing.",
+        "oldRva": "0x1de61a",
+        "newRva": "0x1de61a",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "66D19BE6C7DA81020F25ED41E5500A318BCA2426E1346FEAA67EB20B7E65AB3B"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Fragment: ",
+        "oldRva": "0x1de8e5",
+        "newRva": "0x1de8e5",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "66D19BE6C7DA81020F25ED41E5500A318BCA2426E1346FEAA67EB20B7E65AB3B"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open '",
+        "oldRva": "0x1deadc",
+        "newRva": "0x1deadc",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "66D19BE6C7DA81020F25ED41E5500A318BCA2426E1346FEAA67EB20B7E65AB3B"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "' for writing.",
+        "oldRva": "0x1deb26",
+        "newRva": "0x1deb26",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "66D19BE6C7DA81020F25ED41E5500A318BCA2426E1346FEAA67EB20B7E65AB3B"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open '",
+        "oldRva": "0x1dff86",
+        "newRva": "0x1dff86",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "55E7952E29FF7F3FDE58F03961AB681ECC66D33733FA8E158E3905B610A3969D"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "' for writing.",
+        "oldRva": "0x1dffce",
+        "newRva": "0x1dffce",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "55E7952E29FF7F3FDE58F03961AB681ECC66D33733FA8E158E3905B610A3969D"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Table does not exist: ",
+        "oldRva": "0x1e3cc8",
+        "newRva": "0x1e3cc8",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "2B7599989B41DD84556EF97F9D4C96EC92B32A91011EDE86557D4DB8CB147C6B"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Fragment does not exist: ",
+        "oldRva": "0x1e40f8",
+        "newRva": "0x1e40f8",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "2B7599989B41DD84556EF97F9D4C96EC92B32A91011EDE86557D4DB8CB147C6B"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Invalid entry type: ",
+        "oldRva": "0x1e6753",
+        "newRva": "0x1e6753",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "88ED5B31C38846BF40C31B3B75F2D042B941080839D3D3EC2276C31877C2A188"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to deserialise slot: ",
+        "oldRva": "0x1e927d",
+        "newRva": "0x1e927d",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "34D29DA93D77B4866831A8278A3AAABCFE51E2B1CB81CE47C55675C711C1E9AD"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open ",
+        "oldRva": "0x1f3222",
+        "newRva": "0x1f3222",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "F89E42686BD60DCB96019AF97073774EC515137E7F79727A84C2C7C7F2EBB2FD"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": " for reading.",
+        "oldRva": "0x1f3250",
+        "newRva": "0x1f3250",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "F89E42686BD60DCB96019AF97073774EC515137E7F79727A84C2C7C7F2EBB2FD"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open ",
+        "oldRva": "0x1f32c3",
+        "newRva": "0x1f32c3",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "F89E42686BD60DCB96019AF97073774EC515137E7F79727A84C2C7C7F2EBB2FD"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": " for reading.",
+        "oldRva": "0x1f32f1",
+        "newRva": "0x1f32f1",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "F89E42686BD60DCB96019AF97073774EC515137E7F79727A84C2C7C7F2EBB2FD"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open ",
+        "oldRva": "0x1f3dea",
+        "newRva": "0x1f3dea",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "BFDD6F385A0DA00BE93B28B5EA4AE2B16735590C9D860E36794B58087269C276"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": " for writing.",
+        "oldRva": "0x1f3e12",
+        "newRva": "0x1f3e12",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "BFDD6F385A0DA00BE93B28B5EA4AE2B16735590C9D860E36794B58087269C276"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open ",
+        "oldRva": "0x1f404b",
+        "newRva": "0x1f404b",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "BFDD6F385A0DA00BE93B28B5EA4AE2B16735590C9D860E36794B58087269C276"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": " for writing.",
+        "oldRva": "0x1f4078",
+        "newRva": "0x1f4078",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "BFDD6F385A0DA00BE93B28B5EA4AE2B16735590C9D860E36794B58087269C276"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to save binary file: ",
+        "oldRva": "0x1f4de7",
+        "newRva": "0x1f4de7",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "83BE3BD0F77EC8E62A7C96F182C8DB07D7F99B90205B2B158B5A9CE69A00A40A"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open binary file for writing: ",
+        "oldRva": "0x1f4e96",
+        "newRva": "0x1f4e96",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "83BE3BD0F77EC8E62A7C96F182C8DB07D7F99B90205B2B158B5A9CE69A00A40A"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to begin transaction.\n\n",
+        "oldRva": "0x1f6ad0",
+        "newRva": "0x1f6ad0",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "4901C728615DDBB3C2232BD845CC6603CF2D172D558F7A3F5AA739302554406A"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to end transaction.\n\n",
+        "oldRva": "0x1f786c",
+        "newRva": "0x1f786c",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "4901C728615DDBB3C2232BD845CC6603CF2D172D558F7A3F5AA739302554406A"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to parse legacy Matched Animation DB.",
+        "oldRva": "0x20737b",
+        "newRva": "0x20737b",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "69363FA12DF7B3F95D474651633E0508E7CCF1AA218D6937D618345713C28B4B"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to save entry: ",
+        "oldRva": "0x2094cb",
+        "newRva": "0x2094cb",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "7FEFD8C4CF8DE63A03B2962B55614F5485DE59441D742D81ED030CAF88E85FFD"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to save entry: ",
+        "oldRva": "0x209680",
+        "newRva": "0x209680",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "7FEFD8C4CF8DE63A03B2962B55614F5485DE59441D742D81ED030CAF88E85FFD"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Name contains invalid characters and cannot be saved: ",
+        "oldRva": "0x2098d2",
+        "newRva": "0x2098d2",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "7FEFD8C4CF8DE63A03B2962B55614F5485DE59441D742D81ED030CAF88E85FFD"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open entry: ",
+        "oldRva": "0x209c0d",
+        "newRva": "0x209c0d",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "918F7FEA311536D2D741C957C928D96990E087C5D6F827DED8B601526EE3FBF2"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to parse entry: ",
+        "oldRva": "0x209cff",
+        "newRva": "0x209cff",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "918F7FEA311536D2D741C957C928D96990E087C5D6F827DED8B601526EE3FBF2"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Cannot open file for writing: ",
+        "oldRva": "0x21282d",
+        "newRva": "0x21282d",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "9482025189F14101EC19962FD024FA882790DA379D267FD5D434A53D3BF6BA86"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Cannot open file for writing: ",
+        "oldRva": "0x212e3a",
+        "newRva": "0x212e3a",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "9482025189F14101EC19962FD024FA882790DA379D267FD5D434A53D3BF6BA86"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open file for writing: ",
+        "oldRva": "0x2164eb",
+        "newRva": "0x2164eb",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "A644114F4EC762ED32798FC0AF17E0C8C38ACD70C519FDCFC01CB249E4674EE9"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open file for writing: ",
+        "oldRva": "0x216604",
+        "newRva": "0x216604",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "A644114F4EC762ED32798FC0AF17E0C8C38ACD70C519FDCFC01CB249E4674EE9"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to open file for writing: ",
+        "oldRva": "0x216777",
+        "newRva": "0x216777",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "A644114F4EC762ED32798FC0AF17E0C8C38ACD70C519FDCFC01CB249E4674EE9"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Table: ",
+        "oldRva": "0x23da98",
+        "newRva": "0x23d788",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "2C8ACCCBBCD0DBBD1CF5C8AC26CAAC72E5B4E5D0A7131A315C11A0DD4E0A21DE"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Table: ",
+        "oldRva": "0x23dc59",
+        "newRva": "0x23dad9",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "ED91D8564C3039971635A4963F538902C615F3F47F162BA1EAB790FC0A09BA80"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Fragment: ",
+        "oldRva": "0x23dca5",
+        "newRva": "0x23db25",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "ED91D8564C3039971635A4963F538902C615F3F47F162BA1EAB790FC0A09BA80"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Matrix Element #%1",
+        "oldRva": "0x2cd805",
+        "newRva": "0x2cd805",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "77339885CA8DF5DAD463C71756B147A523A4AA59B7189057E0EA8A6A8E8CB8D5"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": " (Mount)",
+        "oldRva": "0x2e642c",
+        "newRva": "0x2e642c",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "2627AAE267E2F4A1030CF26B622805E7E32FDA0A96C98BE449CF3F36AD0C6222"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": " (Engine)",
+        "oldRva": "0x2e690e",
+        "newRva": "0x2e690e",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "2627AAE267E2F4A1030CF26B622805E7E32FDA0A96C98BE449CF3F36AD0C6222"
+      },
+      {
+        "module": "qttoolutility.modder.x64.dll",
+        "source": "Failed to set environment.",
+        "oldRva": "0x3298fd",
+        "newRva": "0x3298fd",
+        "sameFunctionShapeRelativeOffsetAndImports": true,
+        "shapeSha256": "9845DD19A634D1B20124769972C08535AEE6B11FB3E26A0060B395378D89465B"
+      }
+    ]
+  },
+  "automatedChecks": {
+    "native-hook-tests": {
+      "passed": 49547,
+      "failed": 0,
+      "dictionaryEntriesIncludingStyleVariants": 8150,
+      "catalogSha256": {
+        "translations.zh-CN.json": "87F4D065A5946BA2C5DEBF2A86CF2B3691F07D8E24D6CEC1F22C74D689A4B1ED",
+        "translations.ui.zh-CN.json": "A454B660EFF28378245AF496401C9CD9A63D8D414A23C8733BD28799FF2EF64B",
+        "translations.messages.zh-CN.json": "05B0D188CC4044FC681DEE6276EC5E0803B426D7C06CC90CC69F0FACDAD78767",
+        "translations.display.zh-CN.json": "3B02783355F4D864918099329B99902A8357CACA3A933BA3CD67C17958410BA0",
+        "translations.properties.zh-CN.json": "5C7400AF21BF9D2D7C160494C052B665D77846E176CA3BA0096A51A6156D0AFD",
+        "translations.extended.zh-CN.json": "60FC8DB3B924BD54CD5F1DF81543542795912F6270F8361B382A4049A39526EF",
+        "translations.engine.zh-CN.json": "6F365A6DB0ED5D66F223CF1BDB16EE1F45A9C1F4449A00CA727BDF0AD654A6E9",
+        "translations.templates.zh-CN.json": "190B6AA26F92970661D5EADA7016E70B15A6BD9DF5CE9E19E77C8E81199C5DF9"
+      },
+      "qtCopyOwnershipChecks": 600,
+      "longTextEntries": 19,
+      "checks": [
+        "All native mappings",
+        "ASLR relocated QString pointers",
+        "Five ABI arguments preserved",
+        "Original strings unchanged",
+        "Unknown/empty/Unicode passthrough",
+        "Explicit lengths and null passthrough"
+      ]
+    },
+    "static-template-tests": {
+      "passed": 482,
+      "failed": 0,
+      "staticLiteralSites": 208,
+      "utf8FragmentSites": 113,
+      "qtArgumentSubstitutions": 161,
+      "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
+      "checks": [
+        "Candidate LEA operands resolve to declared Qt data",
+        "Real QString::arg and copy/destruction",
+        "Real UTF-8 construction, assignment and concatenation",
+        "Unicode/path/percent/HTML parameters preserved",
+        "Placeholder order and multiplicity",
+        "Immutable literal refcounts and data preserved"
+      ]
+    },
+    "font-tests": {
+      "passed": 5,
+      "failed": 0,
+      "checks": [
+        "600 relocated native calls preserve this, call order and original menuBar result",
+        "Windows runtime resolves the non-leaf hook unwind record",
+        "Actual Qt main window and menu bar use Microsoft YaHei UI at 10 pt",
+        "Actual Qt font metrics fit long Chinese labels inside the expanded icon canvas",
+        "Real Qt toolbar button width decreases while font family, 9 pt size and height remain unchanged"
+      ],
+      "nativeCalls": 600,
+      "actualQtLabelWidths": {
+        "预制体": 54,
+        "派系预制体": 90,
+        "程序化排除区": 108,
+        "多边形洞口": 90,
+        "复合场景": 72,
+        "聚光灯": 54,
+        "植被（绘制）": 108,
+        "AI 轮廓吸附": 95
+      },
+      "font": {
+        "kind": "terry-font-ui",
+        "family": "Microsoft YaHei UI",
+        "iconPointSize": 9,
+        "iconSize": [
+          112,
+          32
+        ],
+        "stylesheet": "QMenuBar, QMenu { font-family: \"Microsoft YaHei UI\"; font-size: 10pt; font-weight: normal; }\nQMenuBar::item { padding: 3px 8px; }\nQMenu::item { padding: 4px 24px 4px 24px; }\nQToolBar { spacing: 1px; }\nQToolBar QToolButton { font-family: \"Microsoft YaHei UI\"; font-size: 9pt; font-weight: normal; padding: 3px 1px; }",
+        "menuHook": {
+          "beginRva": "0x20da5b0",
+          "endRva": "0x20da5d5",
+          "unwindRva": "0x20da5d8"
+        },
+        "exceptionTableRva": "0x20da5e0"
+      },
+      "actualQtToolbarButtonSizeHints": {
+        "previous": [
+          137,
+          45
+        ],
+        "current": [
+          121,
+          45
+        ]
+      },
+      "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B"
+    },
+    "patch-integrity-tests": {
+      "passed": 10,
+      "failed": 0,
+      "checks": [
+        "tweak_terrainmetadataeditor.modder.x64.dll: only declared display sites changed; original data/imports/relocations preserved",
+        "binaries/tweak_terrainmetadataeditor.modder.x64.dll: differential reconstruction SHA-256 verified",
+        "qttoolutility.modder.x64.dll: only declared display sites changed; original data/imports/relocations preserved",
+        "binaries/qttoolutility.modder.x64.dll: differential reconstruction SHA-256 verified",
+        "Qt5Widgets.dll: only declared display sites changed; original data/imports/relocations preserved",
+        "binaries/Qt5Widgets.dll: differential reconstruction SHA-256 verified",
+        "toolutilityqt.modder.x64.dll: only declared display sites changed; original data/imports/relocations preserved",
+        "binaries/toolutilityqt.modder.x64.dll: differential reconstruction SHA-256 verified",
+        "Status tooltip schema and tool IDs unchanged",
+        "working_data/Terry/status_tooltips.xml: differential reconstruction SHA-256 verified"
+      ],
+      "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B"
+    },
+    "installer-test-results": {
+      "passed": 36,
+      "failed": 0,
+      "checks": [
+        "Install: all target hashes match",
+        "Repeated install: unchanged",
+        "Check: accepts patched files",
+        "Restore: all original hashes match",
+        "Repeated restore: unchanged",
+        "Version mismatch in last file: rejects before any target write",
+        "Damaged original backup: rejects before any target write",
+        "Damaged restore backup: rejects before any target write",
+        "No temporary target files remain",
+        "Old original under new backup name: rejects before any target write",
+        "R2 on old upstream build: refuses without changing targets",
+        "R2 upgrade without required unchanged-file backup: all targets unchanged",
+        "R2 after official Steam update: all target hashes match",
+        "R2 restore: exact current originals; all earlier backups preserved",
+        "R3 on old upstream build: refuses without changing targets",
+        "R3 after official Steam update: all target hashes match",
+        "R3 restore: exact current originals; all earlier backups preserved",
+        "R4 on old upstream build: refuses without changing targets",
+        "R4 after official Steam update: all target hashes match",
+        "R4 restore: exact current originals; all earlier backups preserved",
+        "R5 on old upstream build: refuses without changing targets",
+        "R5 after official Steam update: all target hashes match",
+        "R5 restore: exact current originals; all earlier backups preserved",
+        "v0.1.0 on old upstream build: refuses without changing targets",
+        "v0.1.0 upgrade without required unchanged-file backup: all targets unchanged",
+        "v0.1.0 after official Steam update: all target hashes match",
+        "v0.1.0 restore: exact current originals; all earlier backups preserved",
+        "v0.1.1 on old upstream build: refuses without changing targets",
+        "v0.1.1 upgrade without required unchanged-file backup: all targets unchanged",
+        "v0.1.1 after official Steam update: all target hashes match",
+        "v0.1.1 restore: exact current originals; all earlier backups preserved",
+        "v0.1.2-rc1 direct candidate upgrade: all target hashes match",
+        "v0.1.2-rc1 candidate upgrade restore: current originals and all backups preserved",
+        "v0.1.2-rc2 direct candidate upgrade: all target hashes match",
+        "v0.1.2-rc2 candidate upgrade restore: current originals and all backups preserved",
+        "Locked second target: earlier writes roll back"
+      ],
+      "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
+      "installerSha256": "0B578ACD3F3AD8EB790236AE6DB90AD99161A2D433278D966302313506F0DCBC",
+      "historicalInputSha256": {
+        "R2": "D18EBFBB73EF02432B62BD48901331B6D9222406876F4F4F7F3AAFA30A0FB0EA",
+        "R3": "EA4901D862CE1514D9EFD99BB617196948D4F1062FB68FBFB8B1BF6E7B9A0ABD",
+        "R4": "356DAC184586D52C02BBB14453651CB0C1EE75702CDDFCEE8A4BDDFC8BC1B602",
+        "R5": "7A78FD9D22F24FFB0E61403205542D684D474A94AE3DBE7E175F8F7285520959",
+        "v0.1.0": "8CF97E3FD0A0FD6D70602CF2FC16888C5621C53FAFD92A17163CF0025D0321C1",
+        "v0.1.1": "18F084FBC0C57B7F953F1D8304E0C9851420BC2888CF5C43500ED976BEE4D253",
+        "v0.1.2-rc1": "AE6514DAF41D2CBEB5324ACC97867A8553E1BD3C6D04A3CE71C9C096F722D7CA",
+        "v0.1.2-rc2": "AB7AB35D8382F91B040ED80266CB3885ED3912141E37ADB7D59CCBC99CA836B8"
+      },
+      "isolatedDirectory": "build\\installer-tests\\20261022-113419\\中文路径 有空格\\assembly_kit"
+    }
+  },
+  "manualAcceptance": {
+    "version": "v0.1.2",
+    "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
+    "payloadSha256": "95935A0BA824B7D2D5143DDEFE881E3EEDAC17161E2924E3945165DC94749C13",
+    "acceptedCandidateVersion": "v0.1.2-rc2",
+    "acceptedCandidateManifestSha256": "AB7AB35D8382F91B040ED80266CB3885ED3912141E37ADB7D59CCBC99CA836B8",
+    "candidateToFinalChange": "Version field only; reversing it reproduces the accepted candidate manifest bytes exactly",
+    "verificationMethod": "user-reported",
+    "recordedAtUtc": "2026-10-22T03:34:57.688527+00:00",
+    "agentOperatedTerry": false,
+    "overallUserStatement": "我装了 rc2，间距现在可以了，字体和字号也正常，继续收尾吧。",
+    "roundtripUserStatement": "已完成，英文回读和属性值正常",
+    "installationHashesVerifiedReadOnly": [
+      {
+        "path": "binaries/tweak_terrainmetadataeditor.modder.x64.dll",
+        "sha256": "AF581D884CC7CAB1670E3436021572F271DC1667A78B958FD16B4B4883EE0A46",
+        "state": "rc2-and-final-patched"
+      },
+      {
+        "path": "binaries/qttoolutility.modder.x64.dll",
+        "sha256": "00D8D906B39E6C4AE5C93ED636CE7C652E75640DD961E0CB2D81DFC8376AF104",
+        "state": "rc2-and-final-patched"
+      },
+      {
+        "path": "binaries/Qt5Widgets.dll",
+        "sha256": "16E17F8F98AE30692CDB49F26944A4A05C64B118621F012177F97428068A2814",
+        "state": "rc2-and-final-patched"
+      },
+      {
+        "path": "binaries/toolutilityqt.modder.x64.dll",
+        "sha256": "74F6FE7AEBDEBE36E49BBB9B598E7141A82BBF4233FB72D936EC4FB30B096918",
+        "state": "rc2-and-final-patched"
+      },
+      {
+        "path": "working_data/Terry/status_tooltips.xml",
+        "sha256": "5A4B93C70B8272B4D9B1443E336D1A24105F822F31B7AEEB8EF1E31EA0779376",
+        "state": "rc2-and-final-patched"
+      }
+    ],
+    "previousReadOnlyCheck": "All five installed targets matched the accepted rc2 manifest before finalization.",
+    "screenshotPixelsViewed": true,
+    "screenshotScope": "Earlier rc1 spacing screenshot only; no rc2/final screenshot was supplied.",
+    "scope": "Manual acceptance is recorded as user feedback and bound to the unchanged rc2/final payload; automated verification remains separate."
+  },
+  "candidateBundle": {
+    "path": "build/candidate-25922678-rc2/bundle",
+    "files": {
+      "Install-TerryCN.ps1": "0B578ACD3F3AD8EB790236AE6DB90AD99161A2D433278D966302313506F0DCBC",
+      "patch.json": "AB7AB35D8382F91B040ED80266CB3885ED3912141E37ADB7D59CCBC99CA836B8",
+      "安装汉化.cmd": "6CD4113282E93EA8028AB75561AB0774D9BE31AFAE9448653B045C3971D8E077",
+      "恢复英文.cmd": "6D756DC8E6E307FC3F86ED0D4F6D9D1292C5D44CEEB01C5F6F4C8ECAA20E013B",
+      "检查安装.cmd": "CD8F3579EC3722216E2C7466125E20D8B2A1A3A72F9B0110FA7C15FBB1A9633E",
+      "使用说明.txt": "B7CFDACAEDB8B129EBFD1EE3A77CECFF61357CD41674AB09B7A36638356E9EB8",
+      "验证说明.txt": "114E510B87D9CEB899C8F85EF8D468908BDF08C4F6473BB9EC62152C8219CB74"
+    },
+    "fullOfficialBinariesIncluded": false
+  },
+  "delivery": {
+    "officialZipCreated": true,
+    "zip": "Terry-CN-WH3-v0.1.2.zip",
+    "zipSha256": "08AE10B89CE25C1D94F2D56BCA14DCF5F94A64EE942C19362AB0FB36E5AB7BDA",
+    "zipSize": 12748304,
+    "zipCrc": "all passed",
+    "installedToGameByAgent": false,
+    "committed": false,
+    "pushed": false,
+    "published": false,
+    "recordScope": "Prepared before Git commit and publication; final remote outcomes verified separately"
+  },
+  "retainedArtifacts": [
+    {
+      "path": "backups/original-build-25922678",
+      "purpose": "Verified current original baseline; retain"
+    },
+    {
+      "path": "backups/original-build-25792521",
+      "purpose": "Previous baseline for v0.1.1 upgrades; retain"
+    },
+    {
+      "path": "backups/original-20261009",
+      "purpose": "Older baseline for R2-v0.1.0 upgrades; retain"
+    },
+    {
+      "path": "build/candidate-25922678-rc1",
+      "purpose": "Current candidate, bundle and test evidence; retain"
+    },
+    {
+      "path": "build/update-check-20261022",
+      "purpose": "Rebase evidence, historical inputs and reproducible audit scripts; retain until acceptance"
+    },
+    {
+      "path": "build\\installer-tests\\20261022-104624\\中文路径 有空格\\assembly_kit",
+      "purpose": "Regenerable isolated regression output; cleanup requires authorization"
+    },
+    {
+      "path": "build/candidate-25922678-rc2",
+      "purpose": "Current compact-toolbar candidate, installer bundle and evidence; retain"
+    },
+    {
+      "path": "build/toolbar-spacing-20261022",
+      "purpose": "Pre-change source/report snapshots, byte comparison, test diagnostics and finalization script; retain until acceptance"
+    },
+    {
+      "path": "build\\installer-tests\\20261022-112647\\中文路径 有空格\\assembly_kit",
+      "purpose": "Regenerable isolated regression output; cleanup requires authorization"
+    },
+    {
+      "path": "build/final-25922678-v0.1.2",
+      "purpose": "Final binaries/reports and verified pre-final root snapshot; retain"
+    },
+    {
+      "path": "build/final-25922678-v0.1.2/archive-v0.1.1",
+      "purpose": "Previous verified delivery ZIP/checksum archived without deletion"
+    },
+    {
+      "path": "build\\installer-tests\\20261022-113419\\中文路径 有空格\\assembly_kit",
+      "purpose": "Regenerable final installer regression output; retained, no cleanup performed"
+    }
+  ],
+  "cleanupPerformed": false,
+  "unverified": [
+    "All GUI states, every shortcut and DPI combination",
+    "Scene-file byte identity",
+    "Full BOB compilation and external Houdini/Perforce operations"
+  ],
+  "previousCandidate": {
+    "version": "v0.1.2-rc1",
+    "manifestSha256": "AE6514DAF41D2CBEB5324ACC97867A8553E1BD3C6D04A3CE71C9C096F722D7CA",
+    "payloadSha256": "90F59317F2847DD3655E3E22792A1CD3ABCCA3A10F94295FFA1AF0DCFA05BC69",
+    "preserved": true,
+    "installedFilesMatchedBeforeWork": true,
+    "guiFeedback": "User requested tighter top toolbar spacing; no full acceptance inferred"
+  },
+  "upstreamAdaptationCoverageComparison": {
+    "modules": {
+      "tweak_terrainmetadataeditor.modder.x64.dll": {
+        "oldSites": 1462,
+        "newSites": 1462,
+        "sameSemanticMultiset": true,
+        "moves": [
+          {
+            "oldRva": "0x38dff6",
+            "newRva": "0x38bfe6",
+            "staticQStringLiteral": false,
+            "auditedUtf8Fragment": false,
+            "source": "Do you want to load the map associated with the pasted camera? Current one will be closed!",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "24D5EFECE58DD120EAC8347402A4022CAF324EDE6773ED7F878520B4F78DE9C7"
+          },
+          {
+            "oldRva": "0xc7ae0",
+            "newRva": "0xc6cc0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Clear Houdini Input Node",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc6660",
+            "newRva": "0xc6f00",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Paste Houdini Asset Node Inputs",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc6f90",
+            "newRva": "0xc77b0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Add Houdini Input Node Slot",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc7e40",
+            "newRva": "0xc7f90",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "<i>&lt;empty&gt;</i>",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc7960",
+            "newRva": "0xc6ba0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "<i>&lt;invalid&gt;</i>",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc7b40",
+            "newRva": "0xc8230",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Remove Houdini Input Node Slot",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc69e0",
+            "newRva": "0xc7980",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Failed to save \"%1\": %2",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc8290",
+            "newRva": "0xc7870",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Old height range for '%1' is unadjustable",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc6ab0",
+            "newRva": "0xc6d20",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Input data has a resolution of <b>%7x%8</b>.\nSo this will result in a grid of <b>%1x%2</b> tiles, each of size <b>%3x%4</b>, and a <b>%5x%6</b> tile map containing them.",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc66c0",
+            "newRva": "0xc80b0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Invalid tile size! %1x%2",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc7c00",
+            "newRva": "0xc6ea0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Invalid tile map size! %1x%2",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc7140",
+            "newRva": "0xc7aa0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Invalid heightmap size! %1x%2",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc8470",
+            "newRva": "0xc6e40",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Invalid triangle density! %1",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc6c60",
+            "newRva": "0xc7750",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Input data is a bad size! expected a multiple of %1x%2 but got %3x%4",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc7930",
+            "newRva": "0xc8260",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Tile map too small to fit tiles! It must be at least %1x%2",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc7cf0",
+            "newRva": "0xc7ad0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Unable to connect to Perforce: %1",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc7d50",
+            "newRva": "0xc7570",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Failed to load project '%1'",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0xc7c30",
+            "newRva": "0xc82c0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Failed to save component '%2'",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b81d0",
+            "newRva": "0x1b6f40",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Tileset %1 not found",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b7c40",
+            "newRva": "0x1b76d0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Failed to save '%1' to disk",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b4930",
+            "newRva": "0x1b74f0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Failed to open '%1'",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b6140",
+            "newRva": "0x1b6fa0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Failed to write to '%1'",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b81a0",
+            "newRva": "0x1b5c40",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Not a Terry project",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b5850",
+            "newRva": "0x1b5220",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Project has no scene",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b7b80",
+            "newRva": "0x1b48a0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Project has no terrain",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b5820",
+            "newRva": "0x1b6230",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Failed to resolve %1: %2",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b5f70",
+            "newRva": "0x1b6260",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Autosave Recovery",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b5fd0",
+            "newRva": "0x1b5d00",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "don't know yet",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b4900",
+            "newRva": "0x1b4870",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Successfully deleted <b>%1</b> files, saving approximately <b>%2</b>.",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b7be0",
+            "newRva": "0x1b6a10",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "<br><b>Note,</b> some files weren't able to be properly deleted:<br>",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b4870",
+            "newRva": "0x1b7c70",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "More than one playable area.",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b6170",
+            "newRva": "0x1b5c10",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Blend8 layer %1 has data in channel %2 but there is no texture assigned to that channel",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b60e0",
+            "newRva": "0x1b6f10",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "The terrain setup path doesn't match the working data directory of the current project. \nThe rendered terrain will not match exported data until corrected",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x1b5400",
+            "newRva": "0x1b7000",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "A colour is set in tile settings, but there's no matching entry in the tile database! Make sure this tile has been added to the tile database, or set it's colour to black",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x26cb90",
+            "newRva": "0x26d2a0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Sound Marker Generation",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x26d660",
+            "newRva": "0x26cfc0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "After generation, select any single-point or polyline Sound Marker entity and then <b>Alt-click</b> the left mouse button to absorb another single-point Sound Marker entity into the selected entity, extending its polyline.",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x26d630",
+            "newRva": "0x26cf60",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Imported layer has incorrect dimensions.<br>Expecting <b>%1x%2</b>, but got <b>%3x%4</b>.",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x26d210",
+            "newRva": "0x26cb90",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Imported layer has wrong number of channels.<br>Expecting <b>%1</b> channels, but got <b>%2</b>.",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x26cf60",
+            "newRva": "0x26d460",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Single Channel for ",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x2ebe30",
+            "newRva": "0x2ebbf0",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Remove Buildings...",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x2ebd30",
+            "newRva": "0x2eb440",
+            "staticQStringLiteral": true,
+            "auditedUtf8Fragment": false,
+            "source": "Remove Buildings...",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "52F91906F8E46F5DA895DA2607D850C9995AACF333A9664177C3C52D32794176"
+          },
+          {
+            "oldRva": "0x38e030",
+            "newRva": "0x38c020",
+            "staticQStringLiteral": false,
+            "auditedUtf8Fragment": false,
+            "source": null,
+            "displayHook": "?warning@QMessageBox@@SAHPEAVQWidget@@AEBVQString@@1W4StandardButton@1@2@Z",
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "24D5EFECE58DD120EAC8347402A4022CAF324EDE6773ED7F878520B4F78DE9C7"
+          }
+        ]
+      },
+      "qttoolutility.modder.x64.dll": {
+        "oldSites": 374,
+        "newSites": 374,
+        "sameSemanticMultiset": true,
+        "moves": [
+          {
+            "oldRva": "0x157ffa",
+            "newRva": "0x15825a",
+            "staticQStringLiteral": false,
+            "auditedUtf8Fragment": false,
+            "source": "Trying to use unsupported expression type in palette declaration",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "D76B930306BBC1DEF977B3B49B036AC289648834F97BEAC5D77EF597339AC8F1"
+          },
+          {
+            "oldRva": "0x23da98",
+            "newRva": "0x23d788",
+            "staticQStringLiteral": false,
+            "auditedUtf8Fragment": true,
+            "source": "Table: ",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "2C8ACCCBBCD0DBBD1CF5C8AC26CAAC72E5B4E5D0A7131A315C11A0DD4E0A21DE"
+          },
+          {
+            "oldRva": "0x23dc59",
+            "newRva": "0x23dad9",
+            "staticQStringLiteral": false,
+            "auditedUtf8Fragment": true,
+            "source": "Table: ",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "ED91D8564C3039971635A4963F538902C615F3F47F162BA1EAB790FC0A09BA80"
+          },
+          {
+            "oldRva": "0x23dca5",
+            "newRva": "0x23db25",
+            "staticQStringLiteral": false,
+            "auditedUtf8Fragment": true,
+            "source": "Fragment: ",
+            "displayHook": null,
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "ED91D8564C3039971635A4963F538902C615F3F47F162BA1EAB790FC0A09BA80"
+          },
+          {
+            "oldRva": "0x301a25",
+            "newRva": "0x301b35",
+            "staticQStringLiteral": false,
+            "auditedUtf8Fragment": false,
+            "source": null,
+            "displayHook": "?setText@QLabel@@QEAAXAEBVQString@@@Z",
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "A856E2796F2709114B59A691F53154E0025789B68DC35311543C1C59E7A5F16C"
+          },
+          {
+            "oldRva": "0x301a68",
+            "newRva": "0x301b78",
+            "staticQStringLiteral": false,
+            "auditedUtf8Fragment": false,
+            "source": null,
+            "displayHook": "?setText@QLabel@@QEAAXAEBVQString@@@Z",
+            "sameFunctionShapeRelativeOffsetAndImports": true,
+            "shapeSha256": "A856E2796F2709114B59A691F53154E0025789B68DC35311543C1C59E7A5F16C"
+          }
+        ]
+      },
+      "Qt5Widgets.dll": {
+        "oldSites": 360,
+        "newSites": 360,
+        "sameSemanticMultiset": true,
+        "moves": []
+      },
+      "toolutilityqt.modder.x64.dll": {
+        "oldSites": 9,
+        "newSites": 9,
+        "sameSemanticMultiset": true,
+        "moves": []
+      }
+    },
+    "candidateManifestSha256": "AE6514DAF41D2CBEB5324ACC97867A8553E1BD3C6D04A3CE71C9C096F722D7CA"
+  },
+  "toolbarSpacing": {
+    "fontFamily": "Microsoft YaHei UI",
+    "menuPointSize": 10,
+    "iconPointSize": 9,
+    "fontAndSizeUnchanged": true,
+    "iconSizeBefore": [
+      120,
+      32
+    ],
+    "iconSizeAfter": [
+      112,
+      32
+    ],
+    "horizontalPaddingBefore": 5,
+    "horizontalPaddingAfter": 1,
+    "spacingBefore": 3,
+    "spacingAfter": 1,
+    "actualQtButtonSizeHints": {
+      "previous": [
+        137,
+        45
+      ],
+      "current": [
+        121,
+        45
+      ]
+    },
+    "realTerryAppearanceAccepted": true
+  },
+  "finalization": {
+    "acceptedCandidateVersion": "v0.1.2-rc2",
+    "candidateManifestSha256": "AB7AB35D8382F91B040ED80266CB3885ED3912141E37ADB7D59CCBC99CA836B8",
+    "versionFieldOnly": true,
+    "fiveTargetFilesByteIdentical": true,
+    "nativeDisplayReport": "retained-from-unchanged-rc2; catalog hashes reverified"
+  },
+  "spacingCandidateComparison": {
+    "passed": true,
+    "previousVersion": "v0.1.2-rc1",
+    "version": "v0.1.2-rc2",
+    "manifestSha256": "AB7AB35D8382F91B040ED80266CB3885ED3912141E37ADB7D59CCBC99CA836B8",
+    "fontFamilyUnchanged": true,
+    "menuPointSizeUnchanged": 10,
+    "iconPointSizeUnchanged": 9,
+    "heightUnchanged": 32,
+    "iconWidthBefore": 120,
+    "iconWidthAfter": 112,
+    "buttonHorizontalPaddingBefore": 5,
+    "buttonHorizontalPaddingAfter": 1,
+    "toolbarSpacingBefore": 3,
+    "toolbarSpacingAfter": 1,
+    "changedTerryByteCount": 6,
+    "changedOffsets": [
+      "0x158",
+      "0x159",
+      "0x243629",
+      "0x1f41508",
+      "0x1f416ac",
+      "0x1f41792"
+    ],
+    "onlySpacingCanvasAndChecksumBytesChanged": true,
+    "unchangedTargets": [
+      "binaries/qttoolutility.modder.x64.dll",
+      "binaries/Qt5Widgets.dll",
+      "binaries/toolutilityqt.modder.x64.dll",
+      "working_data/Terry/status_tooltips.xml"
+    ],
+    "sameCallsitesTranslationsAndArguments": true,
+    "rc1DirectUpgradeHashPresent": true
+  },
+  "coverageComparison": {
+    "version": "v0.1.2",
+    "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
+    "acceptedCandidateManifestSha256": "AB7AB35D8382F91B040ED80266CB3885ED3912141E37ADB7D59CCBC99CA836B8",
+    "versionFieldOnly": true,
+    "fiveTargetFilesByteIdentical": true
+  },
+  "packageGateChecks": {
+    "passed": 5,
+    "failed": 0,
+    "checks": [
+      "scene-roundtrip.json: invalid englishRoundtripVerified rejected before ZIP creation",
+      "scene-roundtrip.json: invalid payloadSha256 rejected before ZIP creation",
+      "font-ui-verification.json: invalid passed rejected before ZIP creation",
+      "static-template-tests.json: invalid manifestSha256 rejected before ZIP creation",
+      "installer-test-results.json: invalid installerSha256 rejected before ZIP creation"
+    ],
+    "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
+    "packagerSha256": "589786D303BD1F8D5332B2B26405FA1DEDC15BD3E21D1E2ED69DF8225DD82236"
+  },
+  "finalInstallerBundle": {
+    "path": "build/final-25922678-v0.1.2/bundle",
+    "files": {
+      "Install-TerryCN.ps1": "0B578ACD3F3AD8EB790236AE6DB90AD99161A2D433278D966302313506F0DCBC",
+      "patch.json": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
+      "安装汉化.cmd": "6CD4113282E93EA8028AB75561AB0774D9BE31AFAE9448653B045C3971D8E077",
+      "恢复英文.cmd": "6D756DC8E6E307FC3F86ED0D4F6D9D1292C5D44CEEB01C5F6F4C8ECAA20E013B",
+      "检查安装.cmd": "CD8F3579EC3722216E2C7466125E20D8B2A1A3A72F9B0110FA7C15FBB1A9633E",
+      "使用说明.txt": "86B4DA6217C0410E3E22DE4444F46C030E2F9A2F665461929E9B91A64B71F5D1",
+      "验证说明.txt": "91FC0C42B10E55D8971079FBCAF1F37701EB94184233C47919CECBAD29E1B333",
+      "发布说明-v0.1.2.txt": "CCD31C28FF0A16761ACA5DEADDAAA08754C99C1A54EB9195A9CBE26F5D66FE11"
+    },
+    "containsFullOfficialBinaries": false,
+    "recordScope": "Original 2026-10-22 verified bundle; public ZIP refreshes publication text only"
+  },
+  "releaseArchive": [
+    {
+      "Source": "Terry-CN-WH3-v0.1.1.zip",
+      "Archive": "build/final-25922678-v0.1.2/archive-v0.1.1/Terry-CN-WH3-v0.1.1.zip",
+      "SHA256": "18F084FBC0C57B7F953F1D8304E0C9851420BC2888CF5C43500ED976BEE4D253",
+      "SnapshotVerified": true
+    },
+    {
+      "Source": "Terry-CN-WH3-v0.1.1.zip.sha256",
+      "Archive": "build/final-25922678-v0.1.2/archive-v0.1.1/Terry-CN-WH3-v0.1.1.zip.sha256",
+      "SHA256": "116BADD427C61CB5E1C74B0297E720ED3A829E3D0F0F7A14061B49624AF57FFA",
+      "SnapshotVerified": true
+    }
+  ],
+  "temporaryCleanupPerformed": false,
+  "cleanupScope": "Previous release archived reversibly after SHA verification; no general temporary, baseline, map, Mod or cache cleanup.",
+  "localDeliveryBeforePublication": {
+    "officialZipCreated": true,
+    "zip": "Terry-CN-WH3-v0.1.2.zip",
+    "zipSha256": "8FD041B8249A3689D6BD5E457F15E14D71C41021FFEB60C9E8D781DD0CA40624",
+    "zipSize": 12748147,
+    "zipCrc": "all passed",
+    "installedToGameByAgent": false,
+    "committed": false,
+    "pushed": false,
+    "published": false
+  },
+  "publicationPreparation": {
+    "preparedOn": "2026-10-23",
+    "releaseUrl": "https://github.com/Szy-Cathay/Terry-CN/releases/tag/v0.1.2",
+    "tag": "v0.1.2",
+    "recordScope": "Preparation snapshot; final commit, merge and anonymous-download outcomes recorded locally after verification",
+    "binaryPayloadUnchanged": true,
+    "binaryTestsNotRerun": true,
+    "originalVerificationDate": "2026-10-22",
+    "earlierLocalZipSha256": "8FD041B8249A3689D6BD5E457F15E14D71C41021FFEB60C9E8D781DD0CA40624",
+    "earlierLocalDeliveryPreserved": true,
+    "zip": {
+      "file": "Terry-CN-WH3-v0.1.2.zip",
+      "size": 12748304,
+      "sha256": "08AE10B89CE25C1D94F2D56BCA14DCF5F94A64EE942C19362AB0FB36E5AB7BDA",
+      "crc": "all passed",
+      "files": {
+        "Install-TerryCN.ps1": "0B578ACD3F3AD8EB790236AE6DB90AD99161A2D433278D966302313506F0DCBC",
+        "patch.json": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
+        "安装汉化.cmd": "6CD4113282E93EA8028AB75561AB0774D9BE31AFAE9448653B045C3971D8E077",
+        "恢复英文.cmd": "6D756DC8E6E307FC3F86ED0D4F6D9D1292C5D44CEEB01C5F6F4C8ECAA20E013B",
+        "检查安装.cmd": "CD8F3579EC3722216E2C7466125E20D8B2A1A3A72F9B0110FA7C15FBB1A9633E",
+        "使用说明.txt": "86B4DA6217C0410E3E22DE4444F46C030E2F9A2F665461929E9B91A64B71F5D1",
+        "验证说明.txt": "8DA1AAE93834C81E24F5FC68EB8C636871E491D5D1DAAC059911411215D838A5",
+        "发布说明-v0.1.2.txt": "18FA562FA86CA716F4E52A3FC37487E12FB193CB95C3A1BF1203E46454748C31"
+      },
+      "fullOfficialBinariesIncluded": false,
+      "version": "v0.1.2",
+      "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
+      "payloadSha256": "95935A0BA824B7D2D5143DDEFE881E3EEDAC17161E2924E3945165DC94749C13",
+      "evidenceMethods": {
+        "sceneRoundtrip": "user-reported",
+        "fontUi": "user-reported"
+      },
+      "sceneByteIdentityMeasured": false,
+      "inheritedEvidence": null
+    },
+    "packageGateChecks": {
+      "passed": 5,
+      "failed": 0,
+      "checks": [
+        "scene-roundtrip.json: invalid englishRoundtripVerified rejected before ZIP creation",
+        "scene-roundtrip.json: invalid payloadSha256 rejected before ZIP creation",
+        "font-ui-verification.json: invalid passed rejected before ZIP creation",
+        "static-template-tests.json: invalid manifestSha256 rejected before ZIP creation",
+        "installer-test-results.json: invalid installerSha256 rejected before ZIP creation"
+      ],
+      "manifestSha256": "3FBEC7112527B684A588FE038D24095A8C84EAF2B47C24B689969F4E810CD73B",
+      "packagerSha256": "589786D303BD1F8D5332B2B26405FA1DEDC15BD3E21D1E2ED69DF8225DD82236"
+    }
+  }
+}

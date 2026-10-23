@@ -675,21 +675,21 @@
       "consumer": "?fromUtf8@QString@@SA?AV1@PEBDH@Z"
     },
     {
-      "rva": "0x23da98",
+      "rva": "0x23d788",
       "source": "Table: ",
-      "consumerRva": "0x23daa4",
+      "consumerRva": "0x23d794",
       "consumer": "0xf5170 "
     },
     {
-      "rva": "0x23dc59",
+      "rva": "0x23dad9",
       "source": "Table: ",
-      "consumerRva": "0x23dc65",
+      "consumerRva": "0x23dae5",
       "consumer": "0xf5170 "
     },
     {
-      "rva": "0x23dca5",
+      "rva": "0x23db25",
       "source": "Fragment: ",
-      "consumerRva": "0x23dcb1",
+      "consumerRva": "0x23db31",
       "consumer": "0xf5170 "
     },
     {
